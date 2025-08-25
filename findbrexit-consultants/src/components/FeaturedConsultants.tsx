@@ -88,10 +88,10 @@ export function FeaturedConsultants() {
                         {consultant.company_name}
                       </h3>
                       {consultant.verified && (
-                        <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" title="Verified Consultant" />
+                        <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
                       )}
                       {consultant.featured && (
-                        <Star className="w-5 h-5 text-[#FFD700] flex-shrink-0 fill-current" title="Featured" />
+                        <Star className="w-5 h-5 text-[#FFD700] flex-shrink-0 fill-current" />
                       )}
                     </div>
                     <p className="text-gray-600 text-sm">{consultant.contact_person}</p>
