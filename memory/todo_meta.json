@@ -3,29 +3,29 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Set up Supabase backend infrastructure and obtain user credentials",
-        "details": "Request Supabase authentication credentials from user to set up the backend database, authentication, storage, and payment processing infrastructure.",
+        "content": "Choose development approach and set up infrastructure",
+        "details": "OPTION A - Fast WordPress Launch (2 weeks): Use WordPress + ListingPro/Directoria plugin for immediate launch, then rebuild later. OPTION B - Progressive React Deployment: Build basic React directory in Week 1, add features weekly. Get Supabase credentials and determine which approach to take.",
         "status": "pending",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Build the core full-stack directory application",
-        "details": "Develop the complete web application including: 1) React frontend with responsive design 2) Supabase backend with database tables for consultants, businesses, reviews, payments 3) User authentication system 4) Advanced search and filtering system 5) Consultant profile pages and business dashboard 6) Three-tier membership system (Free/Professional/Premium) 7) Stripe payment integration for subscriptions 8) Lead generation and quote request system 9) Review and rating functionality 10) Admin dashboard for revenue tracking",
+        "content": "Build and deploy MVP directory (Week 1)",
+        "details": "Launch basic working directory with core features: 1) Search and filtering 2) Basic consultant profiles 3) Contact forms 4) Homepage with trust indicators 5) Simple admin panel for approving listings. Focus on getting something live that can collect consultants and generate leads immediately.",
         "status": "pending",
         "priority": "high"
       },
       "3": {
         "id": "3",
-        "content": "Create comprehensive content and SEO optimization",
-        "details": "Generate all required content including: 1) 10 blog posts (500-1000 words each) on Brexit compliance topics 2) Static pages (About, How It Works, Pricing, etc.) 3) Dynamic landing page templates for cities, services, industries 4) Brexit Compliance Guide (5000 words) 5) SEO meta descriptions and schema markup 6) XML sitemap generation",
+        "content": "Add monetization and advanced features (Week 2-4)",
+        "details": "Progressive feature rollout: Week 2: Stripe payment system and membership tiers, Week 3: Consultant dashboards and analytics, Week 4: Quote request system and reviews. Include email notifications, GDPR compliance, backup strategy, and admin panel for managing everything.",
         "status": "pending",
-        "priority": "medium"
+        "priority": "high"
       },
       "4": {
         "id": "4",
-        "content": "Deploy and launch the platform",
-        "details": "Deploy the application with all features working including payment processing, user registration, directory functionality, and content management. Ensure fast loading, mobile optimization, and all technical requirements are met.",
+        "content": "Content creation and SEO optimization",
+        "details": "Create all content including blog posts, static pages, and SEO elements. Ensure server-side rendering (if React), XML sitemaps, schema markup, and Core Web Vitals optimization. This can happen in parallel with development.",
         "status": "pending",
         "priority": "medium"
       }
