@@ -1,0 +1,8 @@
+CREATE TABLE brexit_locations (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL UNIQUE,
+    slug VARCHAR(100) NOT NULL UNIQUE,
+    type VARCHAR(50) DEFAULT 'city',
+    region VARCHAR(100),
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
