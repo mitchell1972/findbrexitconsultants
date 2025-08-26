@@ -3,73 +3,31 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Design comprehensive test plan for all website areas",
-        "details": "Create detailed testing framework covering: Homepage, Directory, Profiles, Authentication, Admin, Static Pages, Forms, Payment, Mobile, Performance, Security, Accessibility, SEO",
-        "status": "completed",
+        "content": "Prepare website code for Hostinger deployment with custom domain FindBrexitConsultants.co.uk",
+        "details": "1. Update all hardcoded URLs to use the custom domain. 2. Configure environment variables for production. 3. Optimize build settings for Hostinger. 4. Ensure Supabase integration works with the new domain.",
+        "status": "pending",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Execute Frontend UI/UX Testing Suite",
-        "details": "Test homepage functionality, navigation, featured consultants section, service categories, mobile responsiveness, visual elements, and user interface consistency",
-        "status": "in_progress",
+        "content": "Create comprehensive deployment guide for Hostinger",
+        "details": "1. Step-by-step Hostinger deployment instructions. 2. Domain configuration guide. 3. SSL certificate setup. 4. Environment variables configuration. 5. Database connection verification steps.",
+        "status": "pending",
         "priority": "high"
       },
       "3": {
         "id": "3",
-        "content": "Execute Directory & Search Functionality Testing",
-        "details": "Comprehensive testing of Find Consultants page: search functionality, all filter combinations, sorting options, pagination, result display, performance under various conditions",
+        "content": "Package complete website files for upload",
+        "details": "1. Create production build. 2. Include all necessary static assets. 3. Prepare .htaccess file for proper routing. 4. Package everything for easy upload to Hostinger.",
         "status": "pending",
-        "priority": "high"
+        "priority": "medium"
       },
       "4": {
         "id": "4",
-        "content": "Execute Consultant Profile & Contact Testing",
-        "details": "Test individual consultant profiles, contact forms, quote request system, profile information display, contact methods, and user interaction flows",
-        "status": "pending",
-        "priority": "high"
-      },
-      "5": {
-        "id": "5",
-        "content": "Execute Authentication & User Management Testing",
-        "details": "Test sign up, sign in, password reset, user sessions, security features, form validation, error handling, and user flow edge cases",
-        "status": "pending",
-        "priority": "high"
-      },
-      "6": {
-        "id": "6",
-        "content": "Execute Admin Dashboard & Management Testing",
-        "details": "Test admin authentication, consultant management, user management, analytics, approval workflows, and administrative functions",
+        "content": "Run comprehensive test suite on final deployment",
+        "details": "1. Execute all 42 test cases after deployment. 2. Test on the actual FindBrexitConsultants.co.uk domain. 3. Verify all functionality works correctly. 4. Generate detailed test report.",
         "status": "pending",
         "priority": "medium"
-      },
-      "7": {
-        "id": "7",
-        "content": "Execute Static Content & Information Pages Testing",
-        "details": "Test About, How it Works, Pricing, Privacy Policy, Terms, Contact, Brexit Guide, and all informational pages for content accuracy and functionality",
-        "status": "pending",
-        "priority": "medium"
-      },
-      "8": {
-        "id": "8",
-        "content": "Execute Performance, Security & Accessibility Testing",
-        "details": "Test page load speeds, security headers, XSS protection, accessibility compliance (WCAG), SEO elements, meta tags, structured data",
-        "status": "pending",
-        "priority": "medium"
-      },
-      "9": {
-        "id": "9",
-        "content": "Execute Cross-Browser & Mobile Compatibility Testing",
-        "details": "Test website functionality across different browsers, devices, screen sizes, and ensure responsive design works properly",
-        "status": "pending",
-        "priority": "medium"
-      },
-      "10": {
-        "id": "10",
-        "content": "Compile comprehensive test results and recommendations",
-        "details": "Analyze all test results, identify issues, provide recommendations, and create final comprehensive testing report with all findings",
-        "status": "pending",
-        "priority": "high"
       }
     }
   }
