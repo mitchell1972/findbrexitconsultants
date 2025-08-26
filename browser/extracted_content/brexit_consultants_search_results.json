@@ -1,0 +1,39 @@
+📄 Extracted from page: FindBrexitConsultants.co.uk - Expert Brexit Compliance & Trade Consultants
+URL: http://localhost:4173/find-consultants?query=trade+compliance&service=customs-declarations&location=london
+
+Extracted content:
+```json
+{
+  "title": "FindBrexitConsultants.co.uk - Expert Brexit Compliance & Trade Consultants",
+  "url": "http://localhost:4173/find-consultants?query=trade+compliance&service=customs-declarations&location=london",
+  "summary": "This page displays search results for Brexit consultants. Based on the applied filters for 'trade compliance', 'customs declarations' service, and 'London' location, 1 consultant was found: TRIUMPH International Trade Solutions. The search result provides details about the consultant, including their expertise, experience, response time, and contact options.",
+  "key_points": [
+    {
+      "consultants_found": "1",
+      "applied_filters": {
+        "query": "trade compliance",
+        "service": "customs-declarations",
+        "location": "london"
+      },
+      "search_result": [
+        {
+          "name": "Rebecca Bermingham",
+          "company": "TRIUMPH International Trade Solutions",
+          "cost_indication": "££",
+          "location": "Birmingham",
+          "response_time": "8h response",
+          "description": "International Trade and Compliance Manager at TRIUMPH with expertise spanning trade compliance, export controls, and international trade. Specialist in post-Brexit regulations and customs procedures for manufacturing sectors.",
+          "experience": "7 years",
+          "team_size": "10-20",
+          "free_consultation_available": true
+        }
+      ]
+    }
+  ],
+  "relevant_links": [
+    "/consultant/f73737e8-3585-464a-9642-0893d40e0269",
+    "/contact/f73737e8-3585-464a-9642-0893d40e0269"
+  ],
+  "file_name": "brexit_consultants_search_results.json"
+}
+```

@@ -1,0 +1,33 @@
+📄 Extracted from page: FindBrexitConsultants.co.uk - Expert Brexit Compliance & Trade Consultants
+URL: http://localhost:4173/find-consultants
+
+Extracted content:
+```json
+{
+  "title": "FindBrexitConsultants.co.uk - Expert Brexit Compliance & Trade Consultants",
+  "url": "http://localhost:4173/find-consultants",
+  "summary": "The 'Find Consultants' page on FindBrexitConsultants.co.uk serves as a directory to help users find expert Brexit compliance and trade consultants. It showcases a list of verified consultants, providing key details for each, along with sorting options. The page highlights the platform's overall claims of vetting consultants and assisting businesses.",
+  "key_points": [
+    "The platform boasts 500+ Verified Consultants, 1000+ Businesses Helped, and states all consultants are Vetted.",
+    "The page currently displays '6 consultants found'.",
+    "Available sorting options for consultant listings include: Most Relevant, Featured First, Highest Rated, Fastest Response, and Newest First.",
+    "Each consultant listing includes the following information: Company Name, Consultant Name, Estimated Cost (e.g., £££), Location, Response Time, a brief description of their expertise, Years of Experience, Team Size, and indicates if 'Free Consultation Available'.",
+    "**Listed Consultants:**",
+    "- **Trade & Borders Consultancy (Dr Anna Jerzewska):** £££, London, 4h response, 8 years experience, 15-25 team size, Free Consultation Available.",
+    "- **UK Government Scotland (Charles Burke):** £££, Edinburgh, 2h response, 15 years experience, 25+ team size, Free Consultation Available.",
+    "- **Wales Trade Policy Advisory (Gwern Ifans):** ££, Cardiff, 24h response, 6 years experience, 3-8 team size, Free Consultation Available.",
+    "- **TRIUMPH International Trade Solutions (Rebecca Bermingham):** ££, Birmingham, 8h response, 7 years experience, 10-20 team size, Free Consultation Available.",
+    "- **InterTradeIreland Business Solutions (Mary Meehan):** ££, Belfast, 6h response, 12 years experience, 8-15 team size, Free Consultation Available.",
+    "- **Northern Customs Solutions (Chris Ashworth):** £, Manchester, 12h response, 5 years experience, 5-10 team size."
+  ],
+  "relevant_links": [
+    "/find-consultants",
+    "/how-it-works",
+    "/pricing",
+    "/list-business",
+    "/consultant/{consultant_id}",
+    "/contact/{consultant_id}"
+  ],
+  "file_name": "find_consultants_page_extraction.json"
+}
+```

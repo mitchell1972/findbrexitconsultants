@@ -1,0 +1,81 @@
+📄 Extracted from page: FindBrexitConsultants.co.uk - Expert Brexit Compliance & Trade Consultants
+URL: http://localhost:4173/pricing
+
+Extracted content:
+```json
+{
+    "title": "FindBrexitConsultants.co.uk - Expert Brexit Compliance & Trade Consultants",
+    "url": "http://localhost:4173/pricing",
+    "summary": "This page details the membership plans offered by FindBrexitConsultants.co.uk for Brexit compliance consultants. There are three main plans: Starter, Professional, and Enterprise, each tailored to different business sizes and needs. All plans include a professional profile, varying monthly quote request limits, and support. Users can choose between monthly and annual billing, with annual payments offering a 20% saving. A 14-day free trial is available for all plans.",
+    "key_points": [
+        "Three membership plans are available: Starter, Professional, and Enterprise.",
+        "Users can opt for monthly billing or annual billing, with a 20% saving for annual payments.",
+        "All plans include a professional consultant profile and a defined monthly limit for quote requests.",
+        "A 14-day free trial is offered for all plans, with no setup fees and the ability to cancel anytime.",
+        "Payments are securely processed through Stripe, and profiles are activated instantly upon approval.",
+        "The platform offers dedicated support for all members."
+    ],
+    "pricing_plans": [
+        {
+            "name": "Starter",
+            "tagline": "Perfect for new consultants getting started",
+            "price_monthly": "£29 per month",
+            "price_annual_calculated": "£278.40 per year (20% saving on monthly equivalent)",
+            "monthly_quote_limit": "5 requests",
+            "features": [
+                "Professional consultant profile",
+                "Up to 5 quote requests per month",
+                "Email support",
+                "Basic analytics",
+                "Listed in directory",
+                "Contact form integration"
+            ],
+            "notes": null
+        },
+        {
+            "name": "Professional",
+            "tagline": "Best for established consultants",
+            "price_monthly": "£99 per month",
+            "price_annual_calculated": "£950.40 per year (20% saving on monthly equivalent)",
+            "monthly_quote_limit": "25 requests",
+            "features": [
+                "Everything in Starter",
+                "Up to 25 quote requests per month",
+                "Priority listing placement",
+                "Advanced analytics dashboard",
+                "Priority email support",
+                "Verified consultant badge",
+                "Custom profile customization",
+                "Lead management tools"
+            ],
+            "notes": "Most Popular"
+        },
+        {
+            "name": "Enterprise",
+            "tagline": "For large consultancy firms",
+            "price_monthly": "£249 per month",
+            "price_annual_calculated": "£2390.40 per year (20% saving on monthly equivalent)",
+            "monthly_quote_limit": "100 requests",
+            "features": [
+                "Everything in Professional",
+                "Up to 100 quote requests per month",
+                "Homepage featured placement",
+                "Dedicated account manager",
+                "Phone support priority",
+                "Custom integration support",
+                "White-label options",
+                "API access",
+                "Advanced reporting"
+            ],
+            "notes": null
+        }
+    ],
+    "relevant_links": [
+        "/list-business",
+        "/contact",
+        "/how-it-works",
+        "/pricing"
+    ],
+    "file_name": "findbrexitconsultants_pricing.json"
+}
+```
