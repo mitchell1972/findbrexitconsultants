@@ -1,34 +1,33 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Check, Star, Users, TrendingUp, Crown, Shield, Zap } from 'lucide-react'
+import { supabase } from '@/lib/supabase'
+import { useAuth } from '@/contexts/AuthContext'
+import toast from 'react-hot-toast'
+
+// Table names with prefix
+const PLANS_TABLE = 'fbc_plans'
+const SUBSCRIPTIONS_TABLE = 'fbc_subscriptions'
 
 const pricingPlans = [
   {
-    id: 'free',
-    name: 'Free Basic',
-    price: '£0',
-    period: 'forever',
-    description: 'Get started with basic listing features',
+    id: 'starter',
+    name: 'Starter',
+    price: '£29',
+    period: 'per month',
+    description: 'Perfect for new consultants getting started',
     icon: Users,
     color: 'border-gray-200',
     buttonStyle: 'border-2 border-[#003366] text-[#003366] hover:bg-[#003366] hover:text-white',
     popular: false,
+    monthlyLimit: 5,
     features: [
-      'Company name and location (city only)',
-      'Contact email and phone number',
-      'One service category',
-      '50-word company description',
-      'Listed after paid members',
-      'Basic profile visibility',
-      'Email support'
-    ],
-    limitations: [
-      'Limited profile information',
-      'No direct enquiry form',
-      'No website/LinkedIn links',
-      'No photos or logos',
-      'No analytics',
-      'Lower search ranking'
+      'Professional consultant profile',
+      'Up to 5 quote requests per month',
+      'Email support',
+      'Basic analytics',
+      'Listed in directory',
+      'Contact form integration'
     ]
   },
   {
@@ -36,58 +35,45 @@ const pricingPlans = [
     name: 'Professional',
     price: '£99',
     period: 'per month',
-    description: 'Perfect for established consultants',
+    description: 'Best for established consultants',
     icon: TrendingUp,
     color: 'border-[#003366]',
     buttonStyle: 'bg-[#003366] text-white hover:bg-blue-800',
     popular: true,
+    monthlyLimit: 25,
     features: [
-      'Everything in Free Basic',
-      'Full profile with unlimited description',
-      'Up to 5 service categories',
-      'Direct enquiry form on profile',
-      'Website and LinkedIn links',
-      '3 photos/logos upload',
-      'Response time guarantee badge',
-      'Basic analytics dashboard',
-      'Appear above free listings',
+      'Everything in Starter',
+      'Up to 25 quote requests per month',
+      'Priority listing placement',
+      'Advanced analytics dashboard',
       'Priority email support',
-      'Monthly leads report'
-    ],
-    limitations: [
-      'No homepage featuring',
-      'No "Verified Expert" badge',
-      'No video profile',
-      'Limited case studies (1 max)'
+      'Verified consultant badge',
+      'Custom profile customization',
+      'Lead management tools'
     ]
   },
   {
-    id: 'premium',
-    name: 'Premium Featured',
-    price: '£299',
+    id: 'enterprise',
+    name: 'Enterprise',
+    price: '£249',
     period: 'per month',
-    description: 'Maximum visibility and premium features',
+    description: 'For large consultancy firms',
     icon: Crown,
     color: 'border-[#FFD700] bg-gradient-to-br from-yellow-50 to-orange-50',
     buttonStyle: 'bg-[#FFD700] text-[#003366] hover:bg-yellow-400',
     popular: false,
+    monthlyLimit: 100,
     features: [
       'Everything in Professional',
-      'Homepage featured consultant (rotating)',
-      'Top placement in all category searches',
-      '"Verified Expert" badge',
-      'Video profile introduction',
-      'Detailed case studies (up to 5)',
-      'Priority in search results',
-      'Monthly performance report',
-      'Highlighted listing with border',
-      'Direct WhatsApp button',
+      'Up to 100 quote requests per month',
+      'Homepage featured placement',
       'Dedicated account manager',
       'Phone support priority',
-      'Custom profile URL',
-      'Advanced analytics dashboard'
-    ],
-    limitations: []
+      'Custom integration support',
+      'White-label options',
+      'API access',
+      'Advanced reporting'
+    ]
   }
 ]
 
@@ -119,8 +105,90 @@ const faqs = [
 ]
 
 export function PricingPage() {
+  const { user } = useAuth()
   const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'annual'>('monthly')
   const [openFaq, setOpenFaq] = useState<number | null>(null)
+  const [subscription, setSubscription] = useState<any>(null)
+  const [loading, setLoading] = useState<string | null>(null)
+
+  // Fetch current subscription if user is logged in
+  const fetchSubscription = async () => {
+    if (!user) return
+
+    try {
+      const { data } = await supabase
+        .from(SUBSCRIPTIONS_TABLE)
+        .select(`
+          *,
+          ${PLANS_TABLE}!price_id(
+            plan_type,
+            price,
+            monthly_limit
+          )
+        `)
+        .eq('user_id', user.id)
+        .eq('status', 'active')
+        .maybeSingle()
+
+      setSubscription(data)
+    } catch (error) {
+      console.error('Failed to fetch subscription:', error)
+    }
+  }
+
+  useEffect(() => {
+    if (user) {
+      fetchSubscription()
+    }
+
+    // Handle payment result from URL params
+    const urlParams = new URLSearchParams(window.location.search)
+    const subscriptionStatus = urlParams.get('subscription')
+
+    if (subscriptionStatus === 'success') {
+      toast.success('🎉 Subscription activated successfully!')
+      window.history.replaceState({}, document.title, window.location.pathname)
+      
+      setTimeout(() => {
+        fetchSubscription()
+      }, 2000)
+    } else if (subscriptionStatus === 'cancelled') {
+      toast.error('Subscription cancelled. You can try again anytime!')
+      window.history.replaceState({}, document.title, window.location.pathname)
+    }
+  }, [user])
+
+  const handleSubscribe = async (planType: string) => {
+    if (!user) {
+      toast.error('Please sign in to subscribe')
+      // Redirect to sign in page
+      window.location.href = '/signin'
+      return
+    }
+
+    setLoading(planType)
+
+    try {
+      const { data, error } = await supabase.functions.invoke('create-subscription', {
+        body: {
+          planType,
+          customerEmail: user.email
+        }
+      })
+
+      if (error) throw error
+
+      if (data.data?.checkoutUrl) {
+        toast.success('Redirecting to payment...')
+        window.location.href = data.data.checkoutUrl
+      }
+    } catch (error: any) {
+      console.error('Subscription error:', error)
+      toast.error(error.message || 'Failed to create subscription')
+    } finally {
+      setLoading(null)
+    }
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -206,12 +274,24 @@ export function PricingPage() {
                       )}
                     </div>
                     
-                    <Link
-                      to={`/list-business?plan=${plan.id}`}
-                      className={`w-full inline-block px-6 py-3 rounded-lg font-semibold text-center transition-colors ${plan.buttonStyle}`}
+                    <button
+                      onClick={() => handleSubscribe(plan.id)}
+                      disabled={loading === plan.id || (subscription && subscription.fbc_plans?.plan_type === plan.id)}
+                      className={`w-full px-6 py-3 rounded-lg font-semibold text-center transition-colors ${
+                        subscription && subscription.fbc_plans?.plan_type === plan.id
+                          ? 'bg-green-500 text-white cursor-not-allowed'
+                          : loading === plan.id
+                          ? 'bg-gray-400 text-white cursor-not-allowed'
+                          : plan.buttonStyle
+                      }`}
                     >
-                      {plan.id === 'free' ? 'Get Started Free' : 'Start Free Trial'}
-                    </Link>
+                      {subscription && subscription.fbc_plans?.plan_type === plan.id
+                        ? 'Current Plan'
+                        : loading === plan.id
+                        ? 'Processing...'
+                        : 'Start Free Trial'
+                      }
+                    </button>
                   </div>
                   
                   {/* Features */}
@@ -228,19 +308,13 @@ export function PricingPage() {
                       </ul>
                     </div>
                     
-                    {plan.limitations.length > 0 && (
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-3">Limitations:</h4>
-                        <ul className="space-y-2">
-                          {plan.limitations.map((limitation, index) => (
-                            <li key={index} className="flex items-start space-x-3">
-                              <div className="w-4 h-4 border-2 border-gray-300 rounded mt-1 flex-shrink-0" />
-                              <span className="text-sm text-gray-500">{limitation}</span>
-                            </li>
-                          ))}
-                        </ul>
+                    {/* Show monthly quota */}
+                    <div className="pt-4 border-t border-gray-200">
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="text-gray-600">Monthly quote limit:</span>
+                        <span className="font-semibold text-[#003366]">{plan.monthlyLimit} requests</span>
                       </div>
-                    )}
+                    </div>
                   </div>
                 </div>
               </div>

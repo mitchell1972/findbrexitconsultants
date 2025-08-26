@@ -1,28 +1,6 @@
 
-        const planConfigs = {
-  "basic": {
-    "amount": 0,
-    "name": "Free Basic",
-    "currency": "gbp",
-    "interval": "month",
-    "monthlyLimit": 20
-  },
-  "professional": {
-    "amount": 9900,
-    "name": "Professional",
-    "currency": "gbp",
-    "interval": "month", 
-    "monthlyLimit": 100
-  },
-  "premium": {
-    "amount": 29900,
-    "name": "Premium Featured",
-    "currency": "gbp",
-    "interval": "month",
-    "monthlyLimit": 500
-  }
-}
-        const tableName = "brexit_plans"
+        const planConfigs = {"starter": {"amount": 2900, "name": "Starter Plan", "currency": "gbp", "interval": "month", "monthlyLimit": 5}, "professional": {"amount": 9900, "name": "Professional Plan", "currency": "gbp", "interval": "month", "monthlyLimit": 25}, "enterprise": {"amount": 24900, "name": "Enterprise Plan", "currency": "gbp", "interval": "month", "monthlyLimit": 100}}
+        const tableName = "fbc_plans"
 
 async function createDynamicPrice(planType: string, stripeSecretKey: string) {
   const config = planConfigs[planType];

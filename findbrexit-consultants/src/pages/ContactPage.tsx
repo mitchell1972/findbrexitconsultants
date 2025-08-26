@@ -46,9 +46,10 @@ export function ContactPage() {
           name: formData.name,
           email: formData.email,
           phone: formData.phone || null,
-          subject: formData.subject || `${formData.type} enquiry`,
-          message: formData.message,
-          type: formData.type,
+          company_name: formData.subject || null, // Use subject as company name if provided
+          content: formData.message,
+          sales_preference: formData.type,
+          status: 'new',
           created_at: new Date().toISOString()
         })
 
