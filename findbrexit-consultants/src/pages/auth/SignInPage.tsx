@@ -116,7 +116,7 @@ export function SignInPage() {
 
             <div className="flex items-center justify-between">
               <div className="text-sm">
-                <Link to="#" className="text-[#003366] hover:text-blue-800">
+                <Link to="/forgot-password" className="text-[#003366] hover:text-blue-800">
                   Forgot your password?
                 </Link>
               </div>

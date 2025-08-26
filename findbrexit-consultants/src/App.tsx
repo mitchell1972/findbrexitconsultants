@@ -20,9 +20,13 @@ import { ContactPage } from './pages/ContactPage'
 import { BrexitGuidePage } from './pages/BrexitGuidePage'
 import { TermsPage } from './pages/TermsPage'
 import { PrivacyPage } from './pages/PrivacyPage'
+import { CookiePolicyPage } from './pages/CookiePolicyPage'
 import { SignInPage } from './pages/auth/SignInPage'
 import { SignUpPage } from './pages/auth/SignUpPage'
+import { ForgotPasswordPage } from './pages/auth/ForgotPasswordPage'
+import { ResetPasswordPage } from './pages/auth/ResetPasswordPage'
 import { ConsultantDashboard } from './pages/dashboard/ConsultantDashboard'
+import { AdminDashboard } from './pages/dashboard/AdminDashboard'
 import { ServiceCategoryPage } from './pages/ServiceCategoryPage'
 import { LocationPage } from './pages/LocationPage'
 import { IndustryPage } from './pages/IndustryPage'
@@ -60,13 +64,17 @@ function App() {
               <Route path="/brexit-guide" element={<BrexitGuidePage />} />
               <Route path="/terms" element={<TermsPage />} />
               <Route path="/privacy" element={<PrivacyPage />} />
+              <Route path="/cookie-policy" element={<CookiePolicyPage />} />
               
               {/* Authentication */}
               <Route path="/signin" element={<SignInPage />} />
               <Route path="/signup" element={<SignUpPage />} />
+              <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+              <Route path="/reset-password" element={<ResetPasswordPage />} />
               
               {/* Dashboard */}
               <Route path="/dashboard" element={<ConsultantDashboard />} />
+              <Route path="/admin" element={<AdminDashboard />} />
               
               {/* Contact consultant route */}
               <Route path="/contact/:consultantId" element={<ContactPage />} />
