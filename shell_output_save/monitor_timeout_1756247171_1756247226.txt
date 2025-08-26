@@ -1,0 +1,1510 @@
+
+> react_repo@0.0.0 test:e2e
+> playwright test
+
+
+Running 195 tests using 16 workers
+
+[1/195] ….ts:133:3 › Authentication Flows › should handle "Forgot Password" flow
+[2/195] …4:3 › Authentication Flows › should show password strength requirements
+[3/195] …uth.spec.ts:20:3 › Authentication Flows › should navigate to login page
+[4/195] … › should handle consultant profile with missing information gracefully
+[5/195] …:163:3 › Authentication Flows › should test login with test credentials
+[6/195] …c.ts:62:3 › Authentication Flows › should navigate to registration page
+[7/195] …file Pages › should navigate to consultant profiles from search results
+[8/195] …onsultant Profile Pages › should display consultant contact information
+[9/195] … Authentication Flows › should show validation errors for invalid login
+[10/195] …ication Flows › should show validation errors for invalid registration
+[11/195] …nsultant Profile Pages › should display consultant ratings and reviews
+[12/195] …Authentication Flows › should display login/register options in header
+[13/195] …nt Profile Pages › should display consultant location and areas served
+[14/195] …ication Flows › should show validation errors for invalid email format
+[15/195] …nsultant Profile Pages › should display consultant profile information
+[16/195] …onsultant Profile Pages › should display "Get Quote" or contact button
+  1) [chromium] › tests/auth.spec.ts:15:3 › Authentication Flows › should display login/register options in header 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+
+
+      15 |   test('should display login/register options in header', async () => {
+      16 |     // Check if login/register buttons are visible in header
+    > 17 |     await expect(page.locator('text="Sign in"').or(page.locator('text="Login"')).or(page.locator('text="Log in"')).first()).toBeVisible({ timeout: 10000 });
+         |                                                                                                                             ^
+      18 |   });
+      19 |
+      20 |   test('should navigate to login page', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:17:125
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows--de28d--register-options-in-header-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Flows--de28d--register-options-in-header-chromium/error-context.md
+
+
+[17/195] …ant Profile Pages › should allow navigation back to consultant listing
+  2) [chromium] › tests/consultant-profile.spec.ts:106:3 › Consultant Profile Pages › should display consultant location and areas served 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      109 |     await page.waitForLoadState('networkidle');
+      110 |     
+    > 111 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+          |                                                                                                                ^
+      112 |     
+      113 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+      114 |     const viewProfileButton = firstConsultant.locator('text="View Profile"').or(firstConsultant.locator('text="View Details"')).or(firstConsultant.locator('button')).first();
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:111:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-05051-t-location-and-areas-served-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-05051-t-location-and-areas-served-chromium/error-context.md
+
+
+  3) [chromium] › tests/consultant-profile.spec.ts:175:3 › Consultant Profile Pages › should display "Get Quote" or contact button 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      178 |     await page.waitForLoadState('networkidle');
+      179 |     
+    > 180 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+          |                                                                                                                ^
+      181 |     
+      182 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+      183 |     const viewProfileButton = firstConsultant.locator('text="View Profile"').or(firstConsultant.locator('text="View Details"')).or(firstConsultant.locator('button')).first();
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:180:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-60070-Get-Quote-or-contact-button-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-60070-Get-Quote-or-contact-button-chromium/error-context.md
+
+
+  4) [chromium] › tests/consultant-profile.spec.ts:15:3 › Consultant Profile Pages › should navigate to consultant profiles from search results 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      19 |     
+      20 |     // Wait for consultant cards to load
+    > 21 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+         |                                                                                                                ^
+      22 |     
+      23 |     // Click on the first consultant card or "View Profile" button
+      24 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:21:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-de0af-rofiles-from-search-results-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-de0af-rofiles-from-search-results-chromium/error-context.md
+
+
+  5) [chromium] › tests/consultant-profile.spec.ts:38:3 › Consultant Profile Pages › should display consultant profile information 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      42 |     
+      43 |     // Wait for and click on first consultant
+    > 44 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+         |                                                                                                                ^
+      45 |     
+      46 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+      47 |     const viewProfileButton = firstConsultant.locator('text="View Profile"').or(firstConsultant.locator('text="View Details"')).or(firstConsultant.locator('button')).first();
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:44:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-0b14b-sultant-profile-information-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-0b14b-sultant-profile-information-chromium/error-context.md
+
+
+  6) [chromium] › tests/consultant-profile.spec.ts:79:3 › Consultant Profile Pages › should display consultant contact information 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      82 |     await page.waitForLoadState('networkidle');
+      83 |     
+    > 84 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+         |                                                                                                                ^
+      85 |     
+      86 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+      87 |     const viewProfileButton = firstConsultant.locator('text="View Profile"').or(firstConsultant.locator('text="View Details"')).or(firstConsultant.locator('button')).first();
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:84:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-5fbc1-sultant-contact-information-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-5fbc1-sultant-contact-information-chromium/error-context.md
+
+
+  7) [chromium] › tests/consultant-profile.spec.ts:137:3 › Consultant Profile Pages › should display consultant ratings and reviews 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      140 |     await page.waitForLoadState('networkidle');
+      141 |     
+    > 142 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+          |                                                                                                                ^
+      143 |     
+      144 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+      145 |     const viewProfileButton = firstConsultant.locator('text="View Profile"').or(firstConsultant.locator('text="View Details"')).or(firstConsultant.locator('button')).first();
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:142:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-61b35-sultant-ratings-and-reviews-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-61b35-sultant-ratings-and-reviews-chromium/error-context.md
+
+
+[18/195] …ultant Profile Pages › should display responsive layout on mobile view
+[19/195] …tionality › should navigate to quote request page from main navigation
+[20/195] …c.ts:95:3 › Quote Request Functionality › should validate email format
+[21/195] …Functionality › should display quote request form with required fields
+[22/195] …te Request Functionality › should submit quote request with valid data
+[23/195] …est Functionality › should validate required fields on form submission
+  8) [chromium] › tests/consultant-profile.spec.ts:206:3 › Consultant Profile Pages › should handle consultant profile with missing information gracefully 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      231 |         await viewProfileButton.click();
+      232 |       } else {
+    > 233 |         await firstConsultant.click();
+          |                               ^
+      234 |       }
+      235 |     }
+      236 |     
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:233:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-1e4a0-sing-information-gracefully-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-1e4a0-sing-information-gracefully-chromium/error-context.md
+
+
+  9) [chromium] › tests/auth.spec.ts:163:3 › Authentication Flows › should test login with test credentials 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+
+
+      164 |     // Navigate to login
+      165 |     const loginButton = page.locator('text="Sign in"').or(page.locator('text="Login"')).or(page.locator('text="Log in"')).first();
+    > 166 |     await loginButton.click();
+          |                       ^
+      167 |     
+      168 |     // Fill with test credentials
+      169 |     const emailInput = page.locator('input[type="email"]').or(page.locator('input[placeholder*="email" i]')).first();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:166:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows--e74fd-login-with-test-credentials-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Flows--e74fd-login-with-test-credentials-chromium/error-context.md
+
+
+  10) [chromium] › tests/auth.spec.ts:30:3 › Authentication Flows › should show validation errors for invalid login 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+
+
+      31 |     // Navigate to login
+      32 |     const loginButton = page.locator('text="Sign in"').or(page.locator('text="Login"')).or(page.locator('text="Log in"')).first();
+    > 33 |     await loginButton.click();
+         |                       ^
+      34 |     
+      35 |     // Try to submit with empty fields
+      36 |     const submitButton = page.locator('button[type="submit"]').or(page.locator('button:has-text("Sign in")').or(page.locator('button:has-text("Login")'))).first();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:33:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows--f2a85-on-errors-for-invalid-login-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Flows--f2a85-on-errors-for-invalid-login-chromium/error-context.md
+
+
+  11) [chromium] › tests/auth.spec.ts:43:3 › Authentication Flows › should show validation errors for invalid email format 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+
+
+      44 |     // Navigate to login
+      45 |     const loginButton = page.locator('text="Sign in"').or(page.locator('text="Login"')).or(page.locator('text="Log in"')).first();
+    > 46 |     await loginButton.click();
+         |                       ^
+      47 |     
+      48 |     // Fill with invalid email
+      49 |     const emailInput = page.locator('input[type="email"]').or(page.locator('input[placeholder*="email" i]')).first();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:46:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows--20cf8-rs-for-invalid-email-format-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Flows--20cf8-rs-for-invalid-email-format-chromium/error-context.md
+
+
+  12) [chromium] › tests/auth.spec.ts:133:3 › Authentication Flows › should handle "Forgot Password" flow 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+
+
+      134 |     // Navigate to login
+      135 |     const loginButton = page.locator('text="Sign in"').or(page.locator('text="Login"')).or(page.locator('text="Log in"')).first();
+    > 136 |     await loginButton.click();
+          |                       ^
+      137 |     
+      138 |     // Look for forgot password link
+      139 |     const forgotPasswordLink = page.locator('text="Forgot password"').or(page.locator('text="Reset password"')).first();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:136:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows-should-handle-Forgot-Password-flow-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Flows-should-handle-Forgot-Password-flow-chromium/error-context.md
+
+
+  13) [chromium] › tests/auth.spec.ts:62:3 › Authentication Flows › should navigate to registration page 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+
+
+      69 |       // If no direct register button, click login and look for "Sign up" link
+      70 |       const loginButton = page.locator('text="Sign in"').or(page.locator('text="Login"')).or(page.locator('text="Log in"')).first();
+    > 71 |       await loginButton.click();
+         |                         ^
+      72 |       
+      73 |       const signUpLink = page.locator('text="Sign up"').or(page.locator('text="Create account"')).or(page.locator('text="Register"')).first();
+      74 |       await signUpLink.click();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:71:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows--4bedc-vigate-to-registration-page-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Flows--4bedc-vigate-to-registration-page-chromium/error-context.md
+
+
+  14) [chromium] › tests/auth.spec.ts:20:3 › Authentication Flows › should navigate to login page 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+
+
+      21 |     // Click on login/sign in button
+      22 |     const loginButton = page.locator('text="Sign in"').or(page.locator('text="Login"')).or(page.locator('text="Log in"')).first();
+    > 23 |     await loginButton.click();
+         |                       ^
+      24 |     
+      25 |     // Should navigate to login page or show login form
+      26 |     await expect(page.locator('input[type="email"]').or(page.locator('input[placeholder*="email" i]')).first()).toBeVisible({ timeout: 10000 });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:23:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows-should-navigate-to-login-page-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Flows-should-navigate-to-login-page-chromium/error-context.md
+
+
+  15) [chromium] › tests/auth.spec.ts:82:3 › Authentication Flows › should show validation errors for invalid registration 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+
+
+      88 |     } else {
+      89 |       const loginButton = page.locator('text="Sign in"').or(page.locator('text="Login"')).or(page.locator('text="Log in"')).first();
+    > 90 |       await loginButton.click();
+         |                         ^
+      91 |       
+      92 |       const signUpLink = page.locator('text="Sign up"').or(page.locator('text="Create account"')).or(page.locator('text="Register"')).first();
+      93 |       await signUpLink.click();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:90:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows--bd0b3-rs-for-invalid-registration-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Flows--bd0b3-rs-for-invalid-registration-chromium/error-context.md
+
+
+  16) [chromium] › tests/consultant-profile.spec.ts:252:3 › Consultant Profile Pages › should allow navigation back to consultant listing 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      255 |     await page.waitForLoadState('networkidle');
+      256 |     
+    > 257 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+          |                                                                                                                ^
+      258 |     
+      259 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+      260 |     const viewProfileButton = firstConsultant.locator('text="View Profile"').or(firstConsultant.locator('text="View Details"')).or(firstConsultant.locator('button')).first();
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:257:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-08432--back-to-consultant-listing-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-08432--back-to-consultant-listing-chromium/error-context.md
+
+
+  17) [chromium] › tests/auth.spec.ts:104:3 › Authentication Flows › should show password strength requirements 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+
+
+      110 |     } else {
+      111 |       const loginButton = page.locator('text="Sign in"').or(page.locator('text="Login"')).or(page.locator('text="Log in"')).first();
+    > 112 |       await loginButton.click();
+          |                         ^
+      113 |       
+      114 |       const signUpLink = page.locator('text="Sign up"').or(page.locator('text="Create account"')).or(page.locator('text="Register"')).first();
+      115 |       await signUpLink.click();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:112:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows--c6eec-sword-strength-requirements-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Flows--c6eec-sword-strength-requirements-chromium/error-context.md
+
+
+[24/195] … Submission Functionality › should submit complete review successfully
+[25/195] …te Request Functionality › should display different service categories
+  18) [chromium] › tests/quote-request.spec.ts:71:3 › Quote Request Functionality › should validate required fields on form submission 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('text="required"').or(locator('text="Please fill"').or(locator('.error'))).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('text="required"').or(locator('text="Please fill"').or(locator('.error'))).first()
+
+
+      90 |         )
+      91 |       ).first()
+    > 92 |     ).toBeVisible({ timeout: 5000 });
+         |       ^
+      93 |   });
+      94 |
+      95 |   test('should validate email format', async () => {
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:92:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/error-context.md
+
+
+[26/195] …bmission Functionality › should find and access review submission form
+[27/195] …te Request Functionality › should handle multi-step quote request form
+[28/195] … Request Functionality › should handle phone number field if available
+[29/195] …:3 › Review Submission Functionality › should require rating selection
+[30/195] …ote Request Functionality › should display responsive layout on mobile
+[31/195] …t Functionality › should display quote request for specific consultant
+[32/195] …s:168:3 › Review Submission Functionality › should require review text
+[33/195] …tionality › should display review submission form with required fields
+[34/195] …› Quote Request Functionality › should handle file upload if available
+  19) [chromium] › tests/quote-request.spec.ts:49:3 › Quote Request Functionality › should display quote request form with required fields 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('input[name="name"]').or(locator('input[placeholder*="name" i]')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('input[name="name"]').or(locator('input[placeholder*="name" i]')).first()
+
+
+      53 |     
+      54 |     // Check for essential form fields
+    > 55 |     await expect(page.locator('input[name="name"]').or(page.locator('input[placeholder*="name" i]')).first()).toBeVisible({ timeout: 10000 });
+         |                                                                                                               ^
+      56 |     await expect(page.locator('input[name="email"]').or(page.locator('input[type="email"]')).first()).toBeVisible({ timeout: 10000 });
+      57 |     await expect(page.locator('textarea').or(page.locator('input[name="message"]')).first()).toBeVisible({ timeout: 10000 });
+      58 |     
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:55:111
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-91eb7-t-form-with-required-fields-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-91eb7-t-form-with-required-fields-chromium/error-context.md
+
+
+  20) [chromium] › tests/quote-request.spec.ts:176:3 › Quote Request Functionality › should display different service categories 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      197 |     
+      198 |     // Should have Brexit-related services
+    > 199 |     expect(hasCustomsService || hasVATService || hasComplianceService || hasTradeService).toBeTruthy();
+          |                                                                                           ^
+      200 |   });
+      201 |
+      202 |   test('should handle multi-step quote request form', async () => {
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:199:91
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-68a3c-ifferent-service-categories-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-68a3c-ifferent-service-categories-chromium/error-context.md
+
+
+[35/195] …Functionality › should display review pagination if many reviews exist
+[36/195] …Submission Functionality › should handle mobile responsive review form
+[37/195] …:3 › Review Submission Functionality › should display existing reviews
+  21) [chromium] › tests/review-submission.spec.ts:236:3 › Review Submission Functionality › should submit complete review successfully 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      239 |     await page.waitForLoadState('networkidle');
+      240 |     
+    > 241 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+          |                                                                                                                ^
+      242 |     
+      243 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+      244 |     const viewProfileButton = firstConsultant.locator('text="View Profile"').or(firstConsultant.locator('text="View Details"')).or(firstConsultant.locator('button')).first();
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:241:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-82cf8-omplete-review-successfully-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-82cf8-omplete-review-successfully-chromium/error-context.md
+
+
+  22) [chromium] › tests/consultant-profile.spec.ts:293:3 › Consultant Profile Pages › should display responsive layout on mobile view 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        35 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      296 |     
+      297 |     // Navigate to consultant profile
+    > 298 |     await page.click('text="Find Consultants"');
+          |                ^
+      299 |     await page.waitForLoadState('networkidle');
+      300 |     
+      301 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:298:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-de80a-nsive-layout-on-mobile-view-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-de80a-nsive-layout-on-mobile-view-chromium/error-context.md
+
+
+[38/195] …iew Submission Functionality › should validate star rating interaction
+  23) [chromium] › tests/quote-request.spec.ts:95:3 › Quote Request Functionality › should validate email format 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('input[name="name"]').or(locator('input[placeholder*="name" i]')).first()
+
+
+      103 |     const messageInput = page.locator('textarea').or(page.locator('input[name="message"]')).first();
+      104 |     
+    > 105 |     await nameInput.fill('Test User');
+          |                     ^
+      106 |     await emailInput.fill('invalid-email');
+      107 |     await messageInput.fill('Test message');
+      108 |     
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:105:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/error-context.md
+
+
+[39/195] …ion Functionality › should handle anonymous vs registered user reviews
+  24) [chromium] › tests/quote-request.spec.ts:125:3 › Quote Request Functionality › should submit quote request with valid data 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('input[name="name"]').or(locator('input[placeholder*="name" i]')).first()
+
+
+      133 |     const messageInput = page.locator('textarea').or(page.locator('input[name="message"]')).first();
+      134 |     
+    > 135 |     await nameInput.fill('Test User');
+          |                     ^
+      136 |     await emailInput.fill('test@example.com');
+      137 |     await messageInput.fill('I need help with Brexit compliance for my import/export business.');
+      138 |     
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:135:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium/error-context.md
+
+
+[40/195] …Authentication Flows › should display login/register options in header
+[41/195] …th.spec.ts:20:3 › Authentication Flows › should navigate to login page
+[42/195] …Authentication Flows › should show validation errors for invalid login
+[43/195] …ication Flows › should show validation errors for invalid email format
+[44/195] ….ts:62:3 › Authentication Flows › should navigate to registration page
+[45/195] …ication Flows › should show validation errors for invalid registration
+  25) [chromium] › tests/review-submission.spec.ts:15:3 › Review Submission Functionality › should find and access review submission form 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      19 |     
+      20 |     // Wait for consultant cards to load
+    > 21 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+         |                                                                                                                ^
+      22 |     
+      23 |     // Click on first consultant to go to their profile
+      24 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:21:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-c1f75-cess-review-submission-form-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-c1f75-cess-review-submission-form-chromium/error-context.md
+
+
+  26) [chromium] › tests/review-submission.spec.ts:113:3 › Review Submission Functionality › should require rating selection 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      116 |     await page.waitForLoadState('networkidle');
+      117 |     
+    > 118 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+          |                                                                                                                ^
+      119 |     
+      120 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+      121 |     const viewProfileButton = firstConsultant.locator('text="View Profile"').or(firstConsultant.locator('text="View Details"')).or(firstConsultant.locator('button')).first();
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:118:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-6ba79-ld-require-rating-selection-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-6ba79-ld-require-rating-selection-chromium/error-context.md
+
+
+  27) [chromium] › tests/quote-request.spec.ts:245:3 › Quote Request Functionality › should display quote request for specific consultant 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      249 |     
+      250 |     // Wait for consultant cards to load
+    > 251 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+          |                                                                                                                ^
+      252 |     
+      253 |     // Click on "Get Quote" button from a specific consultant
+      254 |     const getQuoteButton = page.locator('text="Get Quote"').or(
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:251:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-2188c-est-for-specific-consultant-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-2188c-est-for-specific-consultant-chromium/error-context.md
+
+
+  28) [chromium] › tests/review-submission.spec.ts:52:3 › Review Submission Functionality › should display review submission form with required fields 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      55 |     await page.waitForLoadState('networkidle');
+      56 |     
+    > 57 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+         |                                                                                                                ^
+      58 |     
+      59 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+      60 |     const viewProfileButton = firstConsultant.locator('text="View Profile"').or(firstConsultant.locator('text="View Details"')).or(firstConsultant.locator('button')).first();
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:57:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-3ebdb-n-form-with-required-fields-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-3ebdb-n-form-with-required-fields-chromium/error-context.md
+
+
+  29) [chromium] › tests/review-submission.spec.ts:168:3 › Review Submission Functionality › should require review text 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      171 |     await page.waitForLoadState('networkidle');
+      172 |     
+    > 173 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+          |                                                                                                                ^
+      174 |     
+      175 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+      176 |     const viewProfileButton = firstConsultant.locator('text="View Profile"').or(firstConsultant.locator('text="View Details"')).or(firstConsultant.locator('button')).first();
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:173:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-f5d97--should-require-review-text-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-f5d97--should-require-review-text-chromium/error-context.md
+
+
+  30) [chromium] › tests/review-submission.spec.ts:490:3 › Review Submission Functionality › should display review pagination if many reviews exist 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      493 |     await page.waitForLoadState('networkidle');
+      494 |     
+    > 495 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+          |                                                                                                                ^
+      496 |     
+      497 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+      498 |     const viewProfileButton = firstConsultant.locator('text="View Profile"').or(firstConsultant.locator('text="View Details"')).or(firstConsultant.locator('button')).first();
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:495:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-7de81-ation-if-many-reviews-exist-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-7de81-ation-if-many-reviews-exist-chromium/error-context.md
+
+
+  31) [chromium] › tests/review-submission.spec.ts:335:3 › Review Submission Functionality › should display existing reviews 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      338 |     await page.waitForLoadState('networkidle');
+      339 |     
+    > 340 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+          |                                                                                                                ^
+      341 |     
+      342 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+      343 |     const viewProfileButton = firstConsultant.locator('text="View Profile"').or(firstConsultant.locator('text="View Details"')).or(firstConsultant.locator('button')).first();
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:340:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-41b44-ld-display-existing-reviews-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-41b44-ld-display-existing-reviews-chromium/error-context.md
+
+
+  32) [chromium] › tests/review-submission.spec.ts:374:3 › Review Submission Functionality › should validate star rating interaction 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      377 |     await page.waitForLoadState('networkidle');
+      378 |     
+    > 379 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+          |                                                                                                                ^
+      380 |     
+      381 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+      382 |     const viewProfileButton = firstConsultant.locator('text="View Profile"').or(firstConsultant.locator('text="View Details"')).or(firstConsultant.locator('button')).first();
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:379:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-34736-ate-star-rating-interaction-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-34736-ate-star-rating-interaction-chromium/error-context.md
+
+
+[46/195] …:3 › Authentication Flows › should show password strength requirements
+  33) [chromium] › tests/review-submission.spec.ts:436:3 › Review Submission Functionality › should handle anonymous vs registered user reviews 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      439 |     await page.waitForLoadState('networkidle');
+      440 |     
+    > 441 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+          |                                                                                                                ^
+      442 |     
+      443 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+      444 |     const viewProfileButton = firstConsultant.locator('text="View Profile"').or(firstConsultant.locator('text="View Details"')).or(firstConsultant.locator('button')).first();
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:441:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-06065--vs-registered-user-reviews-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-06065--vs-registered-user-reviews-chromium/error-context.md
+
+
+[47/195] …ts:133:3 › Authentication Flows › should handle "Forgot Password" flow
+[48/195] …163:3 › Authentication Flows › should test login with test credentials
+[49/195] …nsultant Profile Pages › should display consultant profile information
+[50/195] …ile Pages › should navigate to consultant profiles from search results
+  34) [chromium] › tests/review-submission.spec.ts:532:3 › Review Submission Functionality › should handle mobile responsive review form 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        46 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      535 |     
+      536 |     // Navigate to consultant profile and access review form
+    > 537 |     await page.click('text="Find Consultants"');
+          |                ^
+      538 |     await page.waitForLoadState('networkidle');
+      539 |     
+      540 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:537:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-3fa9a-bile-responsive-review-form-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-3fa9a-bile-responsive-review-form-chromium/error-context.md
+
+
+[51/195] …nsultant Profile Pages › should display consultant contact information
+[52/195] …nt Profile Pages › should display consultant location and areas served
+[53/195] …nsultant Profile Pages › should display consultant ratings and reviews
+[54/195] …onsultant Profile Pages › should display "Get Quote" or contact button
+  35) [firefox] › tests/auth.spec.ts:15:3 › Authentication Flows › should display login/register options in header 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+
+
+      15 |   test('should display login/register options in header', async () => {
+      16 |     // Check if login/register buttons are visible in header
+    > 17 |     await expect(page.locator('text="Sign in"').or(page.locator('text="Login"')).or(page.locator('text="Log in"')).first()).toBeVisible({ timeout: 10000 });
+         |                                                                                                                             ^
+      18 |   });
+      19 |
+      20 |   test('should navigate to login page', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:17:125
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows--de28d--register-options-in-header-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Flows--de28d--register-options-in-header-firefox/error-context.md
+
+
+[55/195] …› should handle consultant profile with missing information gracefully
+  36) [firefox] › tests/auth.spec.ts:43:3 › Authentication Flows › should show validation errors for invalid email format 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+
+
+      44 |     // Navigate to login
+      45 |     const loginButton = page.locator('text="Sign in"').or(page.locator('text="Login"')).or(page.locator('text="Log in"')).first();
+    > 46 |     await loginButton.click();
+         |                       ^
+      47 |     
+      48 |     // Fill with invalid email
+      49 |     const emailInput = page.locator('input[type="email"]').or(page.locator('input[placeholder*="email" i]')).first();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:46:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows--20cf8-rs-for-invalid-email-format-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  37) [firefox] › tests/auth.spec.ts:30:3 › Authentication Flows › should show validation errors for invalid login 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+
+
+      31 |     // Navigate to login
+      32 |     const loginButton = page.locator('text="Sign in"').or(page.locator('text="Login"')).or(page.locator('text="Log in"')).first();
+    > 33 |     await loginButton.click();
+         |                       ^
+      34 |     
+      35 |     // Try to submit with empty fields
+      36 |     const submitButton = page.locator('button[type="submit"]').or(page.locator('button:has-text("Sign in")').or(page.locator('button:has-text("Login")'))).first();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:33:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows--f2a85-on-errors-for-invalid-login-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+[56/195] …ant Profile Pages › should allow navigation back to consultant listing
+  38) [firefox] › tests/auth.spec.ts:20:3 › Authentication Flows › should navigate to login page 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+
+
+      21 |     // Click on login/sign in button
+      22 |     const loginButton = page.locator('text="Sign in"').or(page.locator('text="Login"')).or(page.locator('text="Log in"')).first();
+    > 23 |     await loginButton.click();
+         |                       ^
+      24 |     
+      25 |     // Should navigate to login page or show login form
+      26 |     await expect(page.locator('input[type="email"]').or(page.locator('input[placeholder*="email" i]')).first()).toBeVisible({ timeout: 10000 });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:23:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows-should-navigate-to-login-page-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  39) [firefox] › tests/auth.spec.ts:62:3 › Authentication Flows › should navigate to registration page 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+
+
+      69 |       // If no direct register button, click login and look for "Sign up" link
+      70 |       const loginButton = page.locator('text="Sign in"').or(page.locator('text="Login"')).or(page.locator('text="Log in"')).first();
+    > 71 |       await loginButton.click();
+         |                         ^
+      72 |       
+      73 |       const signUpLink = page.locator('text="Sign up"').or(page.locator('text="Create account"')).or(page.locator('text="Register"')).first();
+      74 |       await signUpLink.click();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:71:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows--4bedc-vigate-to-registration-page-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  40) [firefox] › tests/auth.spec.ts:82:3 › Authentication Flows › should show validation errors for invalid registration 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+
+
+      88 |     } else {
+      89 |       const loginButton = page.locator('text="Sign in"').or(page.locator('text="Login"')).or(page.locator('text="Log in"')).first();
+    > 90 |       await loginButton.click();
+         |                         ^
+      91 |       
+      92 |       const signUpLink = page.locator('text="Sign up"').or(page.locator('text="Create account"')).or(page.locator('text="Register"')).first();
+      93 |       await signUpLink.click();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:90:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows--bd0b3-rs-for-invalid-registration-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+[57/195] …ultant Profile Pages › should display responsive layout on mobile view
+  41) [firefox] › tests/auth.spec.ts:104:3 › Authentication Flows › should show password strength requirements 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+
+
+      110 |     } else {
+      111 |       const loginButton = page.locator('text="Sign in"').or(page.locator('text="Login"')).or(page.locator('text="Log in"')).first();
+    > 112 |       await loginButton.click();
+          |                         ^
+      113 |       
+      114 |       const signUpLink = page.locator('text="Sign up"').or(page.locator('text="Create account"')).or(page.locator('text="Register"')).first();
+      115 |       await signUpLink.click();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:112:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows--c6eec-sword-strength-requirements-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+[58/195] …tionality › should navigate to quote request page from main navigation
+  42) [firefox] › tests/consultant-profile.spec.ts:79:3 › Consultant Profile Pages › should display consultant contact information 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: undefined
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      82 |     await page.waitForLoadState('networkidle');
+      83 |     
+    > 84 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+         |                                                                                                                ^
+      85 |     
+      86 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+      87 |     const viewProfileButton = firstConsultant.locator('text="View Profile"').or(firstConsultant.locator('text="View Details"')).or(firstConsultant.locator('button')).first();
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:84:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-5fbc1-sultant-contact-information-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-5fbc1-sultant-contact-information-firefox/error-context.md
+
+
+  43) [firefox] › tests/auth.spec.ts:133:3 › Authentication Flows › should handle "Forgot Password" flow 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Sign in"').or(locator('text="Login"')).or(locator('text="Log in"')).first()
+
+
+      134 |     // Navigate to login
+      135 |     const loginButton = page.locator('text="Sign in"').or(page.locator('text="Login"')).or(page.locator('text="Log in"')).first();
+    > 136 |     await loginButton.click();
+          |                       ^
+      137 |     
+      138 |     // Look for forgot password link
+      139 |     const forgotPasswordLink = page.locator('text="Forgot password"').or(page.locator('text="Reset password"')).first();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:136:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows-should-handle-Forgot-Password-flow-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  44) [firefox] › tests/auth.spec.ts:163:3 › Authentication Flows › should test login with test credentials 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Flows--e74fd-login-with-test-credentials-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+[59/195] …Functionality › should display quote request form with required fields
+  45) [firefox] › tests/consultant-profile.spec.ts:15:3 › Consultant Profile Pages › should navigate to consultant profiles from search results 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:6:8
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-de0af-rofiles-from-search-results-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+[60/195] …est Functionality › should validate required fields on form submission
+[61/195] …c.ts:95:3 › Quote Request Functionality › should validate email format
+  46) [firefox] › tests/consultant-profile.spec.ts:38:3 › Consultant Profile Pages › should display consultant profile information 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - performing click action
+
+
+      38 |   test('should display consultant profile information', async () => {
+      39 |     // Navigate to Find Consultants page
+    > 40 |     await page.click('text="Find Consultants"');
+         |                ^
+      41 |     await page.waitForLoadState('networkidle');
+      42 |     
+      43 |     // Wait for and click on first consultant
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:40:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-0b14b-sultant-profile-information-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-0b14b-sultant-profile-information-firefox/error-context.md
+
+
+[62/195] …te Request Functionality › should submit quote request with valid data
+  47) [firefox] › tests/consultant-profile.spec.ts:106:3 › Consultant Profile Pages › should display consultant location and areas served 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:6:8
+
+
+  48) [firefox] › tests/consultant-profile.spec.ts:137:3 › Consultant Profile Pages › should display consultant ratings and reviews 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:6:8
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-61b35-sultant-ratings-and-reviews-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-61b35-sultant-ratings-and-reviews-firefox/error-context.md
+
+
+[63/195] …te Request Functionality › should display different service categories
+  49) [firefox] › tests/consultant-profile.spec.ts:175:3 › Consultant Profile Pages › should display "Get Quote" or contact button 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:6:8
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-60070-Get-Quote-or-contact-button-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-60070-Get-Quote-or-contact-button-firefox/error-context.md
+
+
+[64/195] …te Request Functionality › should handle multi-step quote request form
+[65/195] …t Functionality › should display quote request for specific consultant
+[66/195] …› Quote Request Functionality › should handle file upload if available
+[67/195] … Request Functionality › should handle phone number field if available
+  50) [firefox] › tests/consultant-profile.spec.ts:206:3 › Consultant Profile Pages › should handle consultant profile with missing information gracefully 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - performing click action
+
+
+      206 |   test('should handle consultant profile with missing information gracefully', async () => {
+      207 |     // Navigate to Find Consultants page
+    > 208 |     await page.click('text="Find Consultants"');
+          |                ^
+      209 |     await page.waitForLoadState('networkidle');
+      210 |     
+      211 |     // Try to find multiple consultants to test different profiles
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:208:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-1e4a0-sing-information-gracefully-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-1e4a0-sing-information-gracefully-firefox/error-context.md
+
+
+[68/195] …ote Request Functionality › should display responsive layout on mobile
+[69/195] …bmission Functionality › should find and access review submission form
+[70/195] …tionality › should display review submission form with required fields
+  51) [firefox] › tests/consultant-profile.spec.ts:252:3 › Consultant Profile Pages › should allow navigation back to consultant listing 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+    Expected: visible
+    Received: <element(s) not found>
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="consultant-card"]').or(locator('.consultant-card')).first()
+
+
+      255 |     await page.waitForLoadState('networkidle');
+      256 |     
+    > 257 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+          |                                                                                                                ^
+      258 |     
+      259 |     const firstConsultant = page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first();
+      260 |     const viewProfileButton = firstConsultant.locator('text="View Profile"').or(firstConsultant.locator('text="View Details"')).or(firstConsultant.locator('button')).first();
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:257:112
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-08432--back-to-consultant-listing-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-08432--back-to-consultant-listing-firefox/error-context.md
+
+
+[71/195] …:3 › Review Submission Functionality › should require rating selection
+  52) [firefox] › tests/consultant-profile.spec.ts:293:3 › Consultant Profile Pages › should display responsive layout on mobile view 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        3 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 500ms
+
+
+      296 |     
+      297 |     // Navigate to consultant profile
+    > 298 |     await page.click('text="Find Consultants"');
+          |                ^
+      299 |     await page.waitForLoadState('networkidle');
+      300 |     
+      301 |     await expect(page.locator('[data-testid="consultant-card"]').or(page.locator('.consultant-card')).first()).toBeVisible({ timeout: 15000 });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:298:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-de80a-nsive-layout-on-mobile-view-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  53) [firefox] › tests/quote-request.spec.ts:15:3 › Quote Request Functionality › should navigate to quote request page from main navigation 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-917a9-t-page-from-main-navigation-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-917a9-t-page-from-main-navigation-firefox/error-context.md
+
+

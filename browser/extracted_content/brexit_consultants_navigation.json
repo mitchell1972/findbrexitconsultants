@@ -1,0 +1,52 @@
+📄 Extracted from page: FindBrexitConsultants.co.uk - Expert Brexit Compliance & Trade Consultants
+URL: https://4zco4jfuq9jq.space.minimax.io/
+
+Extracted content:
+```json
+{
+  "title": "FindBrexitConsultants.co.uk - Expert Brexit Compliance & Trade Consultants",
+  "url": "https://4zco4jfuq9jq.space.minimax.io/",
+  "summary": "The page is a directory for connecting businesses with verified Brexit compliance and trade consultants in the UK. It highlights the services offered, consultant locations, client testimonials, and provides links to browse consultants and learn more about the platform's features.",
+  "key_points": [
+    "**Header Navigation Elements:** The main navigation bar includes links for the home page, finding consultants, explaining 'How It Works', pricing details, and an option for consultants to 'List Your Business'.",
+    "**Authentication Options:** No explicit 'login', 'signup', 'account', or 'member access' links were found on the page. The 'List Your Business' link is the only entry point suggesting registration or account creation, likely for consultants.",
+    "**Footer Navigation Elements (Services):** Links related to specific Brexit compliance services such as Customs Declarations, VAT/Tax Compliance, Northern Ireland Protocol, Regulatory Compliance, Import/Export Documentation, and Supply Chain Consulting.",
+    "**Footer Navigation Elements (Locations):** Links to find consultants in specific UK cities and regions including London, Manchester, Birmingham, Scotland, Wales, and Northern Ireland.",
+    "**Footer Navigation Elements (Company):** Links providing information about the company like About Us, How It Works (duplicate from header), Pricing (duplicate from header), Brexit Compliance Guide, List Your Business (duplicate from header), and Contact Us.",
+    "**Footer Navigation Elements (Industries):** Links to consultants specializing in various industries such as Food & Beverage, Manufacturing, Automotive, Pharmaceuticals, Technology, and Retail/E-commerce.",
+    "**Footer Legal Links:** Standard legal and policy links including Terms of Service, Privacy Policy, and Cookie Policy."
+  ],
+  "relevant_links": [
+    "/",
+    "/find-consultants",
+    "/how-it-works",
+    "/pricing",
+    "/list-business",
+    "/services/customs-declarations",
+    "/services/vat-tax-compliance",
+    "/services/northern-ireland-protocol",
+    "/services/regulatory-compliance",
+    "/services/import-export-documentation",
+    "/services/supply-chain-consulting",
+    "/location/london",
+    "/location/manchester",
+    "/location/birmingham",
+    "/location/scotland",
+    "/location/wales",
+    "/location/northern-ireland",
+    "/about",
+    "/brexit-guide",
+    "/contact",
+    "/industry/food-beverage",
+    "/industry/manufacturing",
+    "/industry/automotive",
+    "/industry/pharmaceuticals",
+    "/industry/technology",
+    "/industry/retail-ecommerce",
+    "/terms",
+    "/privacy",
+    "/cookies"
+  ],
+  "file_name": "brexit_consultants_navigation.json"
+}
+```

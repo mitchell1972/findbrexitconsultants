@@ -1,0 +1,214 @@
+📄 Extracted from page: FindBrexitConsultants.co.uk - Expert Brexit Compliance & Trade Consultants
+URL: https://4zco4jfuq9jq.space.minimax.io/find-consultants
+
+Extracted content:
+```json
+{
+  "title": "FindBrexitConsultants.co.uk - Expert Brexit Compliance & Trade Consultants",
+  "url": "https://4zco4jfuq9jq.space.minimax.io/find-consultants",
+  "summary": "This page displays a directory of Brexit compliance and trade consultants. It features individual consultant cards with detailed information such as their name, company, location, experience, team size, and services offered. Users can filter consultants by various sorting options. The page aims to connect businesses with vetted experts to navigate post-Brexit regulations.",
+  "key_points": [
+    "The platform lists over 500+ verified consultants and has helped 1000+ businesses.",
+    "All consultants listed are vetted for quality assurance.",
+    "The page currently shows 6 consultants, with options to sort the results.",
+    "Each consultant profile includes their name, company, location, price range, response time, experience, team size, a detailed description of their expertise, and action buttons to view their full profile or contact them.",
+    "Some consultants offer a 'Free Consultation Available' service."
+  ],
+  "search_filter_details": {
+    "section_title": "Filters",
+    "consultants_found_count": 6,
+    "sorting_options": [
+      "Most Relevant",
+      "Featured First",
+      "Highest Rated",
+      "Fastest Response",
+      "Newest First"
+    ],
+    "implied_filter_categories_from_footer": {
+      "services": [
+        "Customs Declarations",
+        "VAT/Tax Compliance",
+        "Northern Ireland Protocol",
+        "Regulatory Compliance",
+        "Import/Export Documentation",
+        "Supply Chain Consulting"
+      ],
+      "locations": [
+        "London",
+        "Manchester",
+        "Birmingham",
+        "Scotland",
+        "Wales",
+        "Northern Ireland"
+      ],
+      "industries": [
+        "Food & Beverage",
+        "Manufacturing",
+        "Automotive",
+        "Pharmaceuticals",
+        "Technology",
+        "Retail/E-commerce"
+      ]
+    }
+  },
+  "consultants": [
+    {
+      "name": "Charles Burke",
+      "company": "UK Government Scotland - International Trade Division",
+      "location": "Edinburgh",
+      "price_range": "£££",
+      "response_time": "2h response",
+      "experience": "15 years",
+      "team_size": "25+",
+      "services_description": "Head of International Trade & Business at UK Government Scotland. Expert in Brexit compliance, international trade development, and supporting Scottish businesses in global markets. Extensive experience in trade policy and regulatory frameworks.",
+      "free_consultation_available": true,
+      "action_buttons": [
+        {
+          "text": "View Profile",
+          "url": "/consultant/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6"
+        },
+        {
+          "text": "Contact",
+          "url": "/contact/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6"
+        }
+      ]
+    },
+    {
+      "name": "Dr Anna Jerzewska",
+      "company": "Trade & Borders Consultancy",
+      "location": "London",
+      "price_range": "£££",
+      "response_time": "4h response",
+      "experience": "8 years",
+      "team_size": "15-25",
+      "services_description": "Founder of Trade & Borders consultancy, offering bespoke advice and training on customs, international trade and Brexit to private and public sector clients. PhD-level expertise with extensive experience in post-Brexit trade regulations.",
+      "free_consultation_available": true,
+      "action_buttons": [
+        {
+          "text": "View Profile",
+          "url": "/consultant/b3afeec3-7859-47c2-8e51-23e97c50475b"
+        },
+        {
+          "text": "Contact",
+          "url": "/contact/b3afeec3-7859-47c2-8e51-23e97c50475b"
+        }
+      ]
+    },
+    {
+      "name": "Gwern Ifans",
+      "company": "Wales Trade Policy Advisory",
+      "location": "Cardiff",
+      "price_range": "££",
+      "response_time": "24h response",
+      "experience": "6 years",
+      "team_size": "3-8",
+      "services_description": "Senior Policy Advisor specializing in international trade policy and Brexit compliance for Welsh businesses. Extensive experience in policy analysis and development with focus on post-Brexit trade frameworks and regulatory alignment.",
+      "free_consultation_available": true,
+      "action_buttons": [
+        {
+          "text": "View Profile",
+          "url": "/consultant/25763b26-4ed5-4dc8-9088-47e6740763f9"
+        },
+        {
+          "text": "Contact",
+          "url": "/contact/25763b26-4ed5-4dc8-9088-47e6740763f9"
+        }
+      ]
+    },
+    {
+      "name": "Rebecca Bermingham",
+      "company": "TRIUMPH International Trade Solutions",
+      "location": "Birmingham",
+      "price_range": "££",
+      "response_time": "8h response",
+      "experience": "7 years",
+      "team_size": "10-20",
+      "services_description": "International Trade and Compliance Manager at TRIUMPH with expertise spanning trade compliance, export controls, and international trade. Specialist in post-Brexit regulations and customs procedures for manufacturing sectors.",
+      "free_consultation_available": true,
+      "action_buttons": [
+        {
+          "text": "View Profile",
+          "url": "/consultant/f73737e8-3585-464a-967b-0893d40e0269"
+        },
+        {
+          "text": "Contact",
+          "url": "/contact/f73737e8-3585-464a-967b-0893d40e0269"
+        }
+      ]
+    },
+    {
+      "name": "Mary Meehan",
+      "company": "InterTradeIreland Business Solutions",
+      "location": "Belfast",
+      "price_range": "££",
+      "response_time": "6h response",
+      "experience": "12 years",
+      "team_size": "8-15",
+      "services_description": "Experienced business leader with over 25 years of expertise supporting key organisations and businesses across the Island of Ireland. Specialist in cross-border trade, Brexit compliance, and North-South trade opportunities.",
+      "free_consultation_available": true,
+      "action_buttons": [
+        {
+          "text": "View Profile",
+          "url": "/consultant/31fe78b3-69e4-464c-a82f-6103749cd569"
+        },
+        {
+          "text": "Contact",
+          "url": "/contact/31fe78b3-69e4-464c-a82f-6103749cd569"
+        }
+      ]
+    },
+    {
+      "name": "Chris Ashworth",
+      "company": "Northern Customs Solutions",
+      "location": "Manchester",
+      "price_range": "£",
+      "response_time": "12h response",
+      "experience": "5 years",
+      "team_size": "5-10",
+      "services_description": "Experienced customs consultant with 30 years knowledge of customs, HMRC, international trade, logistics, shipping and freight management. Specialist in post-Brexit trade procedures and customs compliance.",
+      "free_consultation_available": false,
+      "action_buttons": [
+        {
+          "text": "View Profile",
+          "url": "/consultant/d21097d9-0ed3-47cf-b162-f4a025b60f99"
+        },
+        {
+          "text": "Contact",
+          "url": "/contact/d21097d9-0ed3-47cf-b162-f4a025b60f99"
+        }
+      ]
+    }
+  ],
+  "relevant_links": [
+    "/find-consultants",
+    "/how-it-works",
+    "/pricing",
+    "/list-business",
+    "/services/customs-declarations",
+    "/services/vat-tax-compliance",
+    "/services/northern-ireland-protocol",
+    "/services/regulatory-compliance",
+    "/services/import-export-documentation",
+    "/services/supply-chain-consulting",
+    "/location/london",
+    "/location/manchester",
+    "/location/birmingham",
+    "/location/scotland",
+    "/location/wales",
+    "/location/northern-ireland",
+    "/about",
+    "/brexit-guide",
+    "/contact",
+    "/industry/food-beverage",
+    "/industry/manufacturing",
+    "/industry/automotive",
+    "/industry/pharmaceuticals",
+    "/industry/technology",
+    "/industry/retail-ecommerce",
+    "/terms",
+    "/privacy",
+    "/cookies"
+  ],
+  "file_name": "brexit_consultants_page_data.json"
+}
+```

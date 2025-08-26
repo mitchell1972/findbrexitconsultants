@@ -1,0 +1,253 @@
+
+Running 12 tests using 12 workers
+
+[1/12] … Consultant Profile Pages › should display "Request Quote" functionality
+[2/12] …:203:3 › Consultant Profile Pages › should navigate between profile tabs
+[3/12] …ofile Pages › should navigate to consultant profiles from search results
+[4/12] … › Consultant Profile Pages › should display responsive layout on mobile
+[5/12] …nt Profile Pages › should display consultant key metrics and information
+[6/12] …Profile Pages › should display professional credentials and verification
+[7/12] …Profile Pages › should display consultant profile with tabbed navigation
+[8/12] …onsultant Profile Pages › should display contact information and methods
+[9/12] … › Consultant Profile Pages › should handle "Request Quote" button click
+[10/12] …ltant Profile Pages › should display consultant services and industries
+[11/12] …t Profile Pages › should display consultant ratings and reviews section
+[12/12] …› Consultant Profile Pages › should handle multiple consultant profiles
+  1) [chromium] › tests/consultant-profile.spec.ts:104:3 › Consultant Profile Pages › should display contact information and methods 
+
+    Error: locator.isVisible: Unexpected token "" while parsing css selector "tel:". Did you mean to CSS.escape it?
+    Call log:
+        - checking visibility of text="+44" >> internal:or="tel: >> internal:or=\"[href^=\\\"tel:\\\"]\"" >> nth=0
+
+
+      123 |         page.locator('[href^="tel:"]')
+      124 |       )
+    > 125 |     ).first().isVisible();
+          |               ^
+      126 |     
+      127 |     const hasEmail = await page.locator('text="@"').or(
+      128 |       page.locator('[href^="mailto:"]')
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:125:15
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-b5d67-act-information-and-methods-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-b5d67-act-information-and-methods-chromium/error-context.md
+
+
+  2) [chromium] › tests/consultant-profile.spec.ts:63:3 › Consultant Profile Pages › should display consultant key metrics and information 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      87 |     
+      88 |     // Should display consultant metrics
+    > 89 |     expect(hasExperience || hasTeamSize || hasResponseTime || hasPricing).toBeTruthy();
+         |                                                                           ^
+      90 |   });
+      91 |
+      92 |   test('should display "Request Quote" functionality', async () => {
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:89:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-c49d6-key-metrics-and-information-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-c49d6-key-metrics-and-information-chromium/error-context.md
+
+
+  3) [chromium] › tests/consultant-profile.spec.ts:266:3 › Consultant Profile Pages › should display professional credentials and verification 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      286 |     
+      287 |     // Should display professional credentials or verification
+    > 288 |     expect(hasCredentials || hasWebsiteVerification).toBeTruthy();
+          |                                                      ^
+      289 |   });
+      290 |
+      291 |   test('should handle multiple consultant profiles', async () => {
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:288:54
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-f614d-redentials-and-verification-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-f614d-redentials-and-verification-chromium/error-context.md
+
+
+  4) [chromium] › tests/consultant-profile.spec.ts:291:3 › Consultant Profile Pages › should handle multiple consultant profiles 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      298 |     const profileCount = await viewProfileLinks.count();
+      299 |     
+    > 300 |     expect(profileCount).toBeGreaterThan(0);
+          |                          ^
+      301 |     
+      302 |     // Test accessing different consultants
+      303 |     if (profileCount > 1) {
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:300:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium/error-context.md
+
+
+  5) [chromium] › tests/consultant-profile.spec.ts:141:3 › Consultant Profile Pages › should display consultant ratings and reviews section 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      168 |     }
+      169 |     
+    > 170 |     expect(hasRating).toBeTruthy();
+          |                       ^
+      171 |   });
+      172 |
+      173 |   test('should display consultant services and industries', async () => {
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:170:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium/error-context.md
+
+
+  6) [chromium] › tests/consultant-profile.spec.ts:203:3 › Consultant Profile Pages › should navigate between profile tabs 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      223 |       ).first().isVisible();
+      224 |       
+    > 225 |       expect(hasServicesContent).toBeTruthy();
+          |                                  ^
+      226 |     }
+      227 |     
+      228 |     // Click on Reviews tab if available
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:225:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium/error-context.md
+
+
+  7) [chromium] › tests/consultant-profile.spec.ts:173:3 › Consultant Profile Pages › should display consultant services and industries 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      198 |     ).first().isVisible();
+      199 |     
+    > 200 |     expect(hasBrexitServices).toBeTruthy();
+          |                               ^
+      201 |   });
+      202 |
+      203 |   test('should navigate between profile tabs', async () => {
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:200:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-ee56e-ant-services-and-industries-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-ee56e-ant-services-and-industries-chromium/error-context.md
+
+
+  8) [chromium] › tests/consultant-profile.spec.ts:15:3 › Consultant Profile Pages › should navigate to consultant profiles from search results 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('text="consultants found"')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('text="consultants found"')
+
+
+      19 |     
+      20 |     // Wait for consultant cards to load
+    > 21 |     await expect(page.locator('text="consultants found"')).toBeVisible({ timeout: 15000 });
+         |                                                            ^
+      22 |     
+      23 |     // Click on the first "View Profile" link
+      24 |     const viewProfileLink = page.locator('text="View Profile"').first();
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:21:60
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-de0af-rofiles-from-search-results-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-de0af-rofiles-from-search-results-chromium/error-context.md
+
+
+  9) [chromium] › tests/consultant-profile.spec.ts:324:3 › Consultant Profile Pages › should display responsive layout on mobile 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        44 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+
+
+      327 |     
+      328 |     // Navigate to consultant profile
+    > 329 |     await page.click('text="Find Consultants"');
+          |                ^
+      330 |     await page.waitForLoadState('networkidle');
+      331 |     
+      332 |     await page.click('text="View Profile"');
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:329:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium/error-context.md
+
+
+  9 failed
+    [chromium] › tests/consultant-profile.spec.ts:15:3 › Consultant Profile Pages › should navigate to consultant profiles from search results 
+    [chromium] › tests/consultant-profile.spec.ts:63:3 › Consultant Profile Pages › should display consultant key metrics and information 
+    [chromium] › tests/consultant-profile.spec.ts:104:3 › Consultant Profile Pages › should display contact information and methods 
+    [chromium] › tests/consultant-profile.spec.ts:141:3 › Consultant Profile Pages › should display consultant ratings and reviews section 
+    [chromium] › tests/consultant-profile.spec.ts:173:3 › Consultant Profile Pages › should display consultant services and industries 
+    [chromium] › tests/consultant-profile.spec.ts:203:3 › Consultant Profile Pages › should navigate between profile tabs 
+    [chromium] › tests/consultant-profile.spec.ts:266:3 › Consultant Profile Pages › should display professional credentials and verification 
+    [chromium] › tests/consultant-profile.spec.ts:291:3 › Consultant Profile Pages › should handle multiple consultant profiles 
+    [chromium] › tests/consultant-profile.spec.ts:324:3 › Consultant Profile Pages › should display responsive layout on mobile 
+  3 passed (42.3s)
+
+  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.
