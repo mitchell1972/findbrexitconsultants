@@ -47,7 +47,7 @@ export function ConsultantProfilePage() {
         .from('brexit_consultants')
         .select('*')
         .eq('id', consultantId)
-        .eq('approved_at', 'not.is.null')
+        .not('approved_at', 'is', null)
         .maybeSingle()
 
       if (consultantError) throw consultantError

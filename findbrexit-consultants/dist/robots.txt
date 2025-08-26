@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Block access to admin areas
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /signin
+Disallow: /signup
+
+# Allow access to important pages
+Allow: /find-consultants
+Allow: /consultant/*
+Allow: /request-quote
+Allow: /how-it-works
+Allow: /about
+Allow: /contact
+Allow: /pricing
+Allow: /services/*
+Allow: /location/*
+Allow: /industry/*
+
+# Sitemap location
+Sitemap: https://findbrexitconsultants.co.uk/sitemap.xml

@@ -68,6 +68,9 @@ function App() {
               {/* Dashboard */}
               <Route path="/dashboard" element={<ConsultantDashboard />} />
               
+              {/* Contact consultant route */}
+              <Route path="/contact/:consultantId" element={<ContactPage />} />
+              
               {/* Fallback */}
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
