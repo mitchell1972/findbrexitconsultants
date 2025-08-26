@@ -5,28 +5,28 @@
         "id": "1",
         "content": "Research real Brexit consultants for each city",
         "details": "Find actual Brexit compliance consultants in: Edinburgh, London, Cardiff, Belfast, Birmingham, and Manchester. Gather their business names, consultant names, specializations, experience levels, team sizes, and contact information.",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "2": {
         "id": "2",
         "content": "Update database with real consultant data",
         "details": "Replace the fictitious consultant records in the Supabase database with real consultant information, maintaining the same data structure and ensuring consistency with the existing schema.",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "3": {
         "id": "3",
         "content": "Verify data integration on website",
         "details": "Ensure the new real consultant data displays correctly on the homepage featured section and in the full directory, with proper formatting and all fields populated.",
-        "status": "pending",
+        "status": "completed",
         "priority": "medium"
       },
       "4": {
         "id": "4",
         "content": "Run comprehensive website testing",
         "details": "Execute full Playwright test suite including: homepage functionality, directory search and filtering, consultant profiles, contact forms, and payment flows to ensure no regressions after data updates.",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       }
     }

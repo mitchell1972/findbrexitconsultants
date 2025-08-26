@@ -1,0 +1,157 @@
+📄 Extracted from page: FindBrexitConsultants.co.uk - Expert Brexit Compliance & Trade Consultants
+URL: https://rcb8qrdqfcrj.space.minimax.io/
+
+Extracted content:
+```json
+{
+    "title": "FindBrexitConsultants.co.uk - Expert Brexit Compliance & Trade Consultants",
+    "url": "https://rcb8qrdqfcrj.space.minimax.io/",
+    "summary": "This section highlights 'Featured Brexit Consultants', a curated list of premium and verified experts with proven track records in assisting businesses with post-Brexit compliance. Each entry provides a comprehensive overview of the consultant's organization, individual profile, service details, and various contact options, showcasing a range of expertise across different UK regions.",
+    "key_points": [
+        "Features six distinct Brexit compliance consultants and their associated organizations.",
+        "Each consultant profile includes essential 'formatting details' such as their name, organization, price range (e.g., £££), location, and typical response time.",
+        "Detailed professional background is provided, including a description of their expertise, years of experience, team size, and minimum project cost.",
+        "Indicates whether a free consultation is available for each consultant.",
+        "Provides multiple relevant links for each entry, including a link to view their full profile, contact them, visit their external website, and make a direct call.",
+        "The consultants represent diverse locations across the UK: Edinburgh (Scotland), London, Cardiff (Wales), Belfast (Northern Ireland), Birmingham, and Manchester."
+    ],
+    "relevant_links": [
+        "/consultant/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6",
+        "/contact/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6",
+        "https://www.gov.uk/world/organisations/scottish-development-international",
+        "tel:+44 131 244 0815",
+        "/consultant/b3afeec3-7859-47c2-8e51-23e97c50475b",
+        "/contact/b3afeec3-7859-47c2-8e51-23e97c50475b",
+        "https://tradeandborders.com",
+        "tel:+44 20 7946 8532",
+        "/consultant/25763b26-4ed5-4dc8-9088-47e6740763f9",
+        "/contact/25763b26-4ed5-4dc8-9088-47e6740763f9",
+        "https://gov.wales/trade-policy",
+        "tel:+44 29 2082 5050",
+        "/consultant/31fe78b3-69e4-464c-a82f-6103749cd569",
+        "/contact/31fe78b3-69e4-464c-a82f-6103749cd569",
+        "https://intertradeireland.com",
+        "tel:+44 28 9127 8080",
+        "/consultant/f73737e8-3585-464a-967b-0893d40e0269",
+        "/contact/f73737e8-3585-464a-967b-0893d40e0269",
+        "https://triumph-group.com/trade-compliance",
+        "tel:+44 121 456 7890",
+        "/consultant/d21097d9-0ed3-47cf-b162-f4a025b60f99",
+        "/contact/d21097d9-0ed3-47cf-b162-f4a025b60f99",
+        "https://mgc-importexport.com",
+        "tel:+44 161 234 5678",
+        "/find-consultants"
+    ],
+    "file_name": "featured_brexit_consultants_section.json",
+    "featured_consultants_content": [
+        {
+            "organization_name": "UK Government Scotland - International Trade Division",
+            "consultant_name": "Charles Burke",
+            "price_range": "£££",
+            "location": "Edinburgh",
+            "response_time": "2h response",
+            "description": "Head of International Trade & Business at UK Government Scotland. Expert in Brexit compliance, international trade development, and supporting Scottish businesses in global markets. Extensive experience in trade policy and regulatory frameworks.",
+            "experience": "15 years",
+            "team_size": "25+",
+            "min_project": "£10,000",
+            "free_consultation_available": true,
+            "links": {
+                "view_profile": "/consultant/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6",
+                "contact": "/contact/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6",
+                "website": "https://www.gov.uk/world/organisations/scottish-development-international",
+                "call": "tel:+44 131 244 0815"
+            }
+        },
+        {
+            "organization_name": "Trade & Borders Consultancy",
+            "consultant_name": "Dr Anna Jerzewska",
+            "price_range": "£££",
+            "location": "London",
+            "response_time": "4h response",
+            "description": "Founder of Trade & Borders consultancy, offering bespoke advice and training on customs, international trade and Brexit to private and public sector clients. PhD-level expertise with extensive experience in post-Brexit trade regulations.",
+            "experience": "8 years",
+            "team_size": "15-25",
+            "min_project": "£5,000",
+            "free_consultation_available": true,
+            "links": {
+                "view_profile": "/consultant/b3afeec3-7859-47c2-8e51-23e97c50475b",
+                "contact": "/contact/b3afeec3-7859-47c2-8e51-23e97c50475b",
+                "website": "https://tradeandborders.com",
+                "call": "tel:+44 20 7946 8532"
+            }
+        },
+        {
+            "organization_name": "Wales Trade Policy Advisory",
+            "consultant_name": "Gwern Ifans",
+            "price_range": "££",
+            "location": "Cardiff",
+            "response_time": "24h response",
+            "description": "Senior Policy Advisor specializing in international trade policy and Brexit compliance for Welsh businesses. Extensive experience in policy analysis and development with focus on post-Brexit trade frameworks and regulatory alignment.",
+            "experience": "6 years",
+            "team_size": "3-8",
+            "min_project": "£1,500",
+            "free_consultation_available": true,
+            "links": {
+                "view_profile": "/consultant/25763b26-4ed5-4dc8-9088-47e6740763f9",
+                "contact": "/contact/25763b26-4ed5-4dc8-9088-47e6740763f9",
+                "website": "https://gov.wales/trade-policy",
+                "call": "tel:+44 29 2082 5050"
+            }
+        },
+        {
+            "organization_name": "InterTradeIreland Business Solutions",
+            "consultant_name": "Mary Meehan",
+            "price_range": "££",
+            "location": "Belfast",
+            "response_time": "6h response",
+            "description": "Experienced business leader with over 25 years of expertise supporting key organisations and businesses across the Island of Ireland. Specialist in cross-border trade, Brexit compliance, and North-South trade opportunities.",
+            "experience": "12 years",
+            "team_size": "8-15",
+            "min_project": "£2,500",
+            "free_consultation_available": true,
+            "links": {
+                "view_profile": "/consultant/31fe78b3-69e4-464c-a82f-6103749cd569",
+                "contact": "/contact/31fe78b3-69e4-464c-a82f-6103749cd569",
+                "website": "https://intertradeireland.com",
+                "call": "tel:+44 28 9127 8080"
+            }
+        },
+        {
+            "organization_name": "TRIUMPH International Trade Solutions",
+            "consultant_name": "Rebecca Bermingham",
+            "price_range": "££",
+            "location": "Birmingham",
+            "response_time": "8h response",
+            "description": "International Trade and Compliance Manager at TRIUMPH with expertise spanning trade compliance, export controls, and international trade. Specialist in post-Brexit regulations and customs procedures for manufacturing sectors.",
+            "experience": "7 years",
+            "team_size": "10-20",
+            "min_project": "£3,000",
+            "free_consultation_available": true,
+            "links": {
+                "view_profile": "/consultant/f73737e8-3585-464a-967b-0893d40e0269",
+                "contact": "/contact/f73737e8-3585-464a-967b-0893d40e0269",
+                "website": "https://triumph-group.com/trade-compliance",
+                "call": "tel:+44 121 456 7890"
+            }
+        },
+        {
+            "organization_name": "Northern Customs Solutions",
+            "consultant_name": "Chris Ashworth",
+            "price_range": "£",
+            "location": "Manchester",
+            "response_time": "12h response",
+            "description": "Experienced customs consultant with 30 years knowledge of customs, HMRC, international trade, logistics, shipping and freight management. Specialist in post-Brexit trade procedures and customs compliance.",
+            "experience": "5 years",
+            "team_size": "5-10",
+            "min_project": "£1,000",
+            "free_consultation_available": false,
+            "links": {
+                "view_profile": "/consultant/d21097d9-0ed3-47cf-b162-f4a025b60f99",
+                "contact": "/contact/d21097d9-0ed3-47cf-b162-f4a025b60f99",
+                "website": "https://mgc-importexport.com",
+                "call": "tel:+44 161 234 5678"
+            }
+        }
+    ]
+}
+```

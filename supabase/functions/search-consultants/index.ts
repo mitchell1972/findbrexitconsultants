@@ -75,14 +75,14 @@ Deno.serve(async (req) => {
 
         // CRITICAL FIX: Filter by location using city field directly
         if (locations.length > 0) {
-            // Map location slugs to actual city names
+            // Map location slugs to actual city names in the database
             const locationMap: { [key: string]: string } = {
                 'london': 'London',
                 'manchester': 'Manchester', 
                 'birmingham': 'Birmingham',
-                'scotland': 'Scotland',
-                'wales': 'Wales',
-                'northern-ireland': 'Northern Ireland',
+                'scotland': 'Edinburgh',  // Scotland maps to Edinburgh
+                'wales': 'Cardiff',       // Wales maps to Cardiff
+                'northern-ireland': 'Belfast', // Northern Ireland maps to Belfast
                 'edinburgh': 'Edinburgh',
                 'cardiff': 'Cardiff',
                 'belfast': 'Belfast'
