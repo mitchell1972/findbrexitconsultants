@@ -1,0 +1,82 @@
+
+Running 235 tests using 16 workers
+
+       1 …onsultant Profile Pages › should display "Request Quote" functionality
+       2 …stration Flows › should navigate to business listing/registration page
+       3 …& Business Registration Flows › should handle mobile responsive layout
+       4 …sultant Profile Pages › should display contact information and methods
+       5 …ofile Pages › should display consultant profile with tabbed navigation
+       6 …gistration Flows › should submit business registration with valid data
+       7 …ile Pages › should navigate to consultant profiles from search results
+       8 … Profile Pages › should display consultant key metrics and information
+       9 …stration Flows › should validate email format in business registration
+      10 …ess Registration Flows › should handle terms and conditions acceptance
+      11 …Registration Flows › should display information about listing benefits
+      12 …usiness Registration Flows › should handle business category selection
+      13 …ation Flows › should validate required fields on business registration
+      14 … Profile Pages › should display consultant ratings and reviews section
+      15 …istration Flows › should display "List Your Business" option in header
+      16 … Registration Flows › should display business registration form fields
+  ✓    2 … Flows › should navigate to business listing/registration page (10.7s)      17 …tant Profile Pages › should display consultant services and industries
+  ✓    5 …ges › should display consultant profile with tabbed navigation (11.6s)      18 …03:3 › Consultant Profile Pages › should navigate between profile tabs
+  ✘   10 …stration Flows › should handle terms and conditions acceptance (10.2s)  ✘    4 …Profile Pages › should display contact information and methods (12.3s)  ✓    1 …t Profile Pages › should display "Request Quote" functionality (14.0s)  ✘   12 … Registration Flows › should handle business category selection (9.7s)      19 … Consultant Profile Pages › should handle multiple consultant profiles
+  ✘   11 …tion Flows › should display information about listing benefits (10.2s)  ✓   16 …ration Flows › should display business registration form fields (8.8s)  ✘    8 … Pages › should display consultant key metrics and information (12.6s)      20 …lity › should display quote request form with consultant pre-populated
+  ✘   14 … Pages › should display consultant ratings and reviews section (10.6s)  ✘   15 …n Flows › should display "List Your Business" option in header (11.1s)  ✘    6 …on Flows › should submit business registration with valid data (15.6s)  ✘    9 … Flows › should validate email format in business registration (16.6s)  ✘   19 …tant Profile Pages › should handle multiple consultant profiles (5.5s)  ✘   13 …ows › should validate required fields on business registration (15.8s)  ✘   17 …ofile Pages › should display consultant services and industries (8.8s)  ✘   18 …Consultant Profile Pages › should navigate between profile tabs (8.9s)  ✘   20 …should display quote request form with consultant pre-populated (8.3s)      21 … Consultant Profile Pages › should display responsive layout on mobile
+      22 …ofile Pages › should display professional credentials and verification
+      23 … Consultant Profile Pages › should handle "Request Quote" button click
+      24 …nctionality › should navigate to quote request from consultant profile
+  ✘    7 …s › should navigate to consultant profiles from search results (26.2s)      25 …unctionality › should display quote request form with essential fields
+      26 …est Functionality › should validate required fields on form submission
+      27 …Quote Request Functionality › should display Brexit service categories
+      28 ….ts:113:3 › Quote Request Functionality › should validate email format
+  ✘    3 …ss Registration Flows › should handle mobile responsive layout (32.9s)
+      29 …te Request Functionality › should handle phone number field validation
+      30 …te Request Functionality › should handle multi-step quote request form
+      31 …te Request Functionality › should submit quote request with valid data
+      32 …est Functionality › should display company/business information fields
+      33 … Request Functionality › should handle urgent/priority request options
+      34 …ote Request Functionality › should display responsive layout on mobile
+  ✓   25 …ality › should display quote request form with essential fields (9.0s)      35 …Review Submission Functionality › should show review count information
+  ✘   22 …ges › should display professional credentials and verification (12.7s)  ✘   26 …tionality › should validate required fields on form submission (10.9s)  ✓   23 …ant Profile Pages › should handle "Request Quote" button click (13.2s)      36 …view Submission Functionality › should validate required review fields
+  ✓   24 …ity › should navigate to quote request from consultant profile (14.4s)      37 …eview Submission Functionality › should handle star rating interaction
+  ✘   27 …quest Functionality › should display Brexit service categories (10.3s)      38 …nality › should find and access reviews section on consultant profiles
+  ✓   30 …est Functionality › should handle multi-step quote request form (8.2s)      39 …n Functionality › should handle authentication requirement for reviews
+  ✘   28 …3 › Quote Request Functionality › should validate email format (11.9s)  ✓   32 …ctionality › should display company/business information fields (7.5s)      40 … Functionality › should handle review pagination if many reviews exist
+  ✓   29 …st Functionality › should handle phone number field validation (11.0s)      41 …w Submission Functionality › should display average rating calculation
+  ✓   33 …t Functionality › should handle urgent/priority request options (8.1s)      42 …ubmission Functionality › should display existing reviews with ratings
+      43 …ssion Functionality › should handle mobile responsive review interface
+  ✘   34 …uest Functionality › should display responsive layout on mobile (8.9s)  ✘   35 …ubmission Functionality › should show review count information (10.1s)  ✓   36 …bmission Functionality › should validate required review fields (9.7s)  ✓   37 …ubmission Functionality › should handle star rating interaction (9.6s)  ✘   31 …st Functionality › should submit quote request with valid data (16.7s)  ✓   40 …onality › should handle review pagination if many reviews exist (8.5s)  ✓   39 …onality › should handle authentication requirement for reviews (10.2s)      44 …tionality › should handle "Write Review" or "Add Review" functionality
+  ✘   38 … should find and access reviews section on consultant profiles (10.9s)      45 …ctionality › should display review form with rating and comment fields
+  ✘   41 …sion Functionality › should display average rating calculation (10.1s)  ✘   42 …on Functionality › should display existing reviews with ratings (9.6s)      46 …ion Functionality › should submit complete review with rating and text
+  ✘   21 …ant Profile Pages › should display responsive layout on mobile (33.3s)
+      47 …on Functionality › should display review sorting and filtering options
+      48 …istration Flows › should display "List Your Business" option in header
+      49 …stration Flows › should navigate to business listing/registration page
+      50 … Registration Flows › should display business registration form fields
+  ✓   45 …ity › should display review form with rating and comment fields (9.7s)      51 …stration Flows › should validate email format in business registration
+  ✓   44 …y › should handle "Write Review" or "Add Review" functionality (10.3s)      52 …usiness Registration Flows › should handle business category selection
+      53 …ation Flows › should validate required fields on business registration
+      54 …Registration Flows › should display information about listing benefits
+  ✓   46 …ctionality › should submit complete review with rating and text (8.8s)      55 …ess Registration Flows › should handle terms and conditions acceptance
+  ✓   47 …tionality › should display review sorting and filtering options (7.6s)      56 …gistration Flows › should submit business registration with valid data
+      57 …& Business Registration Flows › should handle mobile responsive layout
+      58 …ile Pages › should navigate to consultant profiles from search results
+      59 …ofile Pages › should display consultant profile with tabbed navigation
+      60 … Profile Pages › should display consultant key metrics and information
+  ✘   43 …nctionality › should handle mobile responsive review interface (32.8s)      61 …onsultant Profile Pages › should display "Request Quote" functionality
+      62 …sultant Profile Pages › should display contact information and methods
+      63 … Profile Pages › should display consultant ratings and reviews section
+  ✘   48 …n Flows › should display "List Your Business" option in header (36.4s)  ✘   49 … Flows › should navigate to business listing/registration page (40.1s)  ✘   52 …Registration Flows › should handle business category selection (41.0s)  ✘   50 …ation Flows › should display business registration form fields (41.7s)  ✘   51 … Flows › should validate email format in business registration (42.6s)  ✘   57 …ss Registration Flows › should handle mobile responsive layout (42.1s)  ✘   53 …ows › should validate required fields on business registration (42.5s)  ✘   55 …stration Flows › should handle terms and conditions acceptance (40.5s)  ✘   56 …on Flows › should submit business registration with valid data (41.3s)  ✘   54 …tion Flows › should display information about listing benefits (45.2s)  ✘   58 …s › should navigate to consultant profiles from search results (41.4s)  ✘   59 …ges › should display consultant profile with tabbed navigation (40.2s)  ✘   60 … Pages › should display consultant key metrics and information (41.0s)  ✘   61 …t Profile Pages › should display "Request Quote" functionality (37.8s)      64 …tant Profile Pages › should display consultant services and industries
+  ✘   62 …Profile Pages › should display contact information and methods (39.4s)      65 … Consultant Profile Pages › should handle "Request Quote" button click
+      66 …03:3 › Consultant Profile Pages › should navigate between profile tabs
+      67 … Consultant Profile Pages › should handle multiple consultant profiles
+      68 …ofile Pages › should display professional credentials and verification
+      69 …est Functionality › should validate required fields on form submission
+      70 …lity › should display quote request form with consultant pre-populated
+      71 … Consultant Profile Pages › should display responsive layout on mobile
+      72 …nctionality › should navigate to quote request from consultant profile
+      73 …unctionality › should display quote request form with essential fields
+      74 ….ts:113:3 › Quote Request Functionality › should validate email format
+      75 …Quote Request Functionality › should display Brexit service categories
+  ✘   63 … Pages › should display consultant ratings and reviews section (34.6s)      76 …te Request Functionality › should submit quote request with valid data
+      77 …te Request Functionality › should handle multi-step quote request form

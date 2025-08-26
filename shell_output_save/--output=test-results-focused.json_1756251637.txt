@@ -1,0 +1,2749 @@
+{
+  "config": {
+    "configFile": "/workspace/findbrexit-consultants/playwright.config.ts",
+    "rootDir": "/workspace/findbrexit-consultants/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 16
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/workspace/findbrexit-consultants/test-results-focused.json",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 16
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/findbrexit-consultants/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/workspace/findbrexit-consultants/test-results-focused.json",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 16
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/workspace/findbrexit-consultants/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/workspace/findbrexit-consultants/test-results-focused.json",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 16
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/workspace/findbrexit-consultants/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/workspace/findbrexit-consultants/test-results-focused.json",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 16
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "/workspace/findbrexit-consultants/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/workspace/findbrexit-consultants/test-results-focused.json",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 16
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "/workspace/findbrexit-consultants/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 16,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.spec.ts",
+      "file": "auth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication & Business Registration Flows",
+          "file": "auth.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display \"List Your Business\" option in header",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 10997,
+                      "error": {
+                        "message": "Error: expect.toBeVisible: Error: strict mode violation: locator('text=\"List Your Business\"') resolved to 2 elements:\n    1) <a href=\"/list-business\" class=\"bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors\">List Your Business</a> aka getByRole('navigation').getByRole('link', { name: 'List Your Business' })\n    2) <a href=\"/list-business\" class=\"text-blue-100 hover:text-white text-sm transition-colors\">List Your Business</a> aka getByRole('contentinfo').getByRole('link', { name: 'List Your Business' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=\"List Your Business\"')\u001b[22m\n",
+                        "stack": "Error: expect.toBeVisible: Error: strict mode violation: locator('text=\"List Your Business\"') resolved to 2 elements:\n    1) <a href=\"/list-business\" class=\"bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors\">List Your Business</a> aka getByRole('navigation').getByRole('link', { name: 'List Your Business' })\n    2) <a href=\"/list-business\" class=\"text-blue-100 hover:text-white text-sm transition-colors\">List Your Business</a> aka getByRole('contentinfo').getByRole('link', { name: 'List Your Business' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=\"List Your Business\"')\u001b[22m\n\n    at /workspace/findbrexit-consultants/tests/auth.spec.ts:17:61",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                          "column": 61,
+                          "line": 17
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 15 |\u001b[39m   test(\u001b[32m'should display \"List Your Business\" option in header'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 16 |\u001b[39m     \u001b[90m// Check if \"List Your Business\" button is visible in header\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=\"List Your Business\"'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   test(\u001b[32m'should navigate to business listing/registration page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                            "column": 61,
+                            "line": 17
+                          },
+                          "message": "Error: expect.toBeVisible: Error: strict mode violation: locator('text=\"List Your Business\"') resolved to 2 elements:\n    1) <a href=\"/list-business\" class=\"bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors\">List Your Business</a> aka getByRole('navigation').getByRole('link', { name: 'List Your Business' })\n    2) <a href=\"/list-business\" class=\"text-blue-100 hover:text-white text-sm transition-colors\">List Your Business</a> aka getByRole('contentinfo').getByRole('link', { name: 'List Your Business' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=\"List Your Business\"')\u001b[22m\n\n\n  15 |   test('should display \"List Your Business\" option in header', async () => {\n  16 |     // Check if \"List Your Business\" button is visible in header\n> 17 |     await expect(page.locator('text=\"List Your Business\"')).toBeVisible({ timeout: 10000 });\n     |                                                             ^\n  18 |   });\n  19 |\n  20 |   test('should navigate to business listing/registration page', async () => {\n    at /workspace/findbrexit-consultants/tests/auth.spec.ts:17:61"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:15.965Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                        "column": 61,
+                        "line": 17
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d748ac400d08b85935ef-9039b0b83a309f859e22",
+              "file": "auth.spec.ts",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "should navigate to business listing/registration page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 10698,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:14.667Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d748ac400d08b85935ef-603128ca3ee19c5a3e1e",
+              "file": "auth.spec.ts",
+              "line": 20,
+              "column": 3
+            },
+            {
+              "title": "should display business registration form fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 10402,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:16.671Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d748ac400d08b85935ef-51eda0b9ba06f7ed2983",
+              "file": "auth.spec.ts",
+              "line": 39,
+              "column": 3
+            },
+            {
+              "title": "should validate required fields on business registration",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 15202,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('text=\"required\"').or(locator('text=\"Please fill\"').or(locator('.error'))).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=\"required\"').or(locator('text=\"Please fill\"').or(locator('.error'))).first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('text=\"required\"').or(locator('text=\"Please fill\"').or(locator('.error'))).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=\"required\"').or(locator('text=\"Please fill\"').or(locator('.error'))).first()\u001b[22m\n\n    at /workspace/findbrexit-consultants/tests/auth.spec.ts:83:9",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                          "column": 9,
+                          "line": 83
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 81 |\u001b[39m           )\n \u001b[90m 82 |\u001b[39m         )\u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 83 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 84 |\u001b[39m     }\n \u001b[90m 85 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 86 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                            "column": 9,
+                            "line": 83
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('text=\"required\"').or(locator('text=\"Please fill\"').or(locator('.error'))).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=\"required\"').or(locator('text=\"Please fill\"').or(locator('.error'))).first()\u001b[22m\n\n\n  81 |           )\n  82 |         ).first()\n> 83 |       ).toBeVisible({ timeout: 5000 });\n     |         ^\n  84 |     }\n  85 |   });\n  86 |\n    at /workspace/findbrexit-consultants/tests/auth.spec.ts:83:9"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:17.570Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                        "column": 9,
+                        "line": 83
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d748ac400d08b85935ef-bfd9cc95acb6163e290d",
+              "file": "auth.spec.ts",
+              "line": 62,
+              "column": 3
+            },
+            {
+              "title": "should validate email format in business registration",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 17709,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('text=\"valid email\"').or(locator('text=\"Invalid email\"')).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=\"valid email\"').or(locator('text=\"Invalid email\"')).first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('text=\"valid email\"').or(locator('text=\"Invalid email\"')).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=\"valid email\"').or(locator('text=\"Invalid email\"')).first()\u001b[22m\n\n    at /workspace/findbrexit-consultants/tests/auth.spec.ts:111:11",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                          "column": 11,
+                          "line": 111
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 109 |\u001b[39m             page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=\"Invalid email\"'\u001b[39m)\n \u001b[90m 110 |\u001b[39m           )\u001b[33m.\u001b[39mfirst()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 111 |\u001b[39m         )\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 112 |\u001b[39m       }\n \u001b[90m 113 |\u001b[39m     }\n \u001b[90m 114 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                            "column": 11,
+                            "line": 111
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('text=\"valid email\"').or(locator('text=\"Invalid email\"')).first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=\"valid email\"').or(locator('text=\"Invalid email\"')).first()\u001b[22m\n\n\n  109 |             page.locator('text=\"Invalid email\"')\n  110 |           ).first()\n> 111 |         ).toBeVisible({ timeout: 5000 });\n      |           ^\n  112 |       }\n  113 |     }\n  114 |   });\n    at /workspace/findbrexit-consultants/tests/auth.spec.ts:111:11"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:15.771Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                        "column": 11,
+                        "line": 111
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d748ac400d08b85935ef-68e1dba24950deedde87",
+              "file": "auth.spec.ts",
+              "line": 87,
+              "column": 3
+            },
+            {
+              "title": "should handle business category selection",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 11092,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/auth.spec.ts:129:71",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                          "column": 71,
+                          "line": 129
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 127 |\u001b[39m     \n \u001b[90m 128 |\u001b[39m     \u001b[90m// Should have some way to categorize business services\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 129 |\u001b[39m     expect(hasServiceSelect \u001b[33m||\u001b[39m hasServiceRadio \u001b[33m||\u001b[39m hasServiceCheckbox)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 130 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 131 |\u001b[39m\n \u001b[90m 132 |\u001b[39m   test(\u001b[32m'should display information about listing benefits'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                            "column": 71,
+                            "line": 129
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  127 |     \n  128 |     // Should have some way to categorize business services\n> 129 |     expect(hasServiceSelect || hasServiceRadio || hasServiceCheckbox).toBeTruthy();\n      |                                                                       ^\n  130 |   });\n  131 |\n  132 |   test('should display information about listing benefits', async () => {\n    at /workspace/findbrexit-consultants/tests/auth.spec.ts:129:71"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:15.565Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-4cf72-business-category-selection-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-4cf72-business-category-selection-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                        "column": 71,
+                        "line": 129
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d748ac400d08b85935ef-f3c9cd097acf12f17f96",
+              "file": "auth.spec.ts",
+              "line": 116,
+              "column": 3
+            },
+            {
+              "title": "should display information about listing benefits",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "failed",
+                      "duration": 12208,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/auth.spec.ts:145:29",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                          "column": 29,
+                          "line": 145
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 143 |\u001b[39m     )\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 144 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 145 |\u001b[39m     expect(hasBenefitsInfo)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 146 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 147 |\u001b[39m\n \u001b[90m 148 |\u001b[39m   test(\u001b[32m'should handle terms and conditions acceptance'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                            "column": 29,
+                            "line": 145
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  143 |     ).first().isVisible();\n  144 |     \n> 145 |     expect(hasBenefitsInfo).toBeTruthy();\n      |                             ^\n  146 |   });\n  147 |\n  148 |   test('should handle terms and conditions acceptance', async () => {\n    at /workspace/findbrexit-consultants/tests/auth.spec.ts:145:29"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:14.471Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                        "column": 29,
+                        "line": 145
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d748ac400d08b85935ef-99ea9839570c2ad3869e",
+              "file": "auth.spec.ts",
+              "line": 132,
+              "column": 3
+            },
+            {
+              "title": "should handle terms and conditions acceptance",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "failed",
+                      "duration": 9911,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/auth.spec.ts:164:46",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                          "column": 46,
+                          "line": 164
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 162 |\u001b[39m     \n \u001b[90m 163 |\u001b[39m     \u001b[90m// Should have terms or privacy policy reference\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 164 |\u001b[39m     expect(hasTermsCheckbox \u001b[33m||\u001b[39m hasTermsLink)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 165 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 166 |\u001b[39m\n \u001b[90m 167 |\u001b[39m   test(\u001b[32m'should submit business registration with valid data'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                            "column": 46,
+                            "line": 164
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  162 |     \n  163 |     // Should have terms or privacy policy reference\n> 164 |     expect(hasTermsCheckbox || hasTermsLink).toBeTruthy();\n      |                                              ^\n  165 |   });\n  166 |\n  167 |   test('should submit business registration with valid data', async () => {\n    at /workspace/findbrexit-consultants/tests/auth.spec.ts:164:46"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:16.868Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                        "column": 46,
+                        "line": 164
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d748ac400d08b85935ef-f287b8f1a18d9d495184",
+              "file": "auth.spec.ts",
+              "line": 148,
+              "column": 3
+            },
+            {
+              "title": "should submit business registration with valid data",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 8,
+                      "status": "failed",
+                      "duration": 14404,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/auth.spec.ts:223:41",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                          "column": 41,
+                          "line": 223
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 221 |\u001b[39m       \u001b[36mconst\u001b[39m hasRedirect \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39murl()\u001b[33m.\u001b[39mincludes(\u001b[32m'success'\u001b[39m) \u001b[33m||\u001b[39m page\u001b[33m.\u001b[39murl()\u001b[33m.\u001b[39mincludes(\u001b[32m'thank-you'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 222 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 223 |\u001b[39m       expect(hasSuccess \u001b[33m||\u001b[39m hasRedirect)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 224 |\u001b[39m     }\n \u001b[90m 225 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 226 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                            "column": 41,
+                            "line": 223
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  221 |       const hasRedirect = page.url().includes('success') || page.url().includes('thank-you');\n  222 |       \n> 223 |       expect(hasSuccess || hasRedirect).toBeTruthy();\n      |                                         ^\n  224 |     }\n  225 |   });\n  226 |\n    at /workspace/findbrexit-consultants/tests/auth.spec.ts:223:41"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:17.768Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                        "column": 41,
+                        "line": 223
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d748ac400d08b85935ef-090c9c8c010c909912f7",
+              "file": "auth.spec.ts",
+              "line": 167,
+              "column": 3
+            },
+            {
+              "title": "should handle mobile responsive layout",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 9,
+                      "status": "timedOut",
+                      "duration": 33486,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/auth.spec.ts",
+                            "column": 16,
+                            "line": 231
+                          },
+                          "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=\"List Your Business\"')\u001b[22m\n\u001b[2m    - locator resolved to 2 elements. Proceeding with the first one: <a href=\"/list-business\" class=\"bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors\">List Your Business</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    34 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n  229 |     await page.setViewportSize({ width: 375, height: 667 });\n  230 |     \n> 231 |     await page.click('text=\"List Your Business\"');\n      |                ^\n  232 |     await page.waitForLoadState('networkidle');\n  233 |     \n  234 |     // Form should be responsive\n    at /workspace/findbrexit-consultants/tests/auth.spec.ts:231:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:15.571Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d748ac400d08b85935ef-88a25f08e3bbe6610ac9",
+              "file": "auth.spec.ts",
+              "line": 227,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "consultant-profile.spec.ts",
+      "file": "consultant-profile.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Consultant Profile Pages",
+          "file": "consultant-profile.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should navigate to consultant profiles from search results",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 10,
+                      "status": "failed",
+                      "duration": 25895,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('text=\"consultants found\"')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=\"consultants found\"')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('text=\"consultants found\"')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=\"consultants found\"')\u001b[22m\n\n    at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:21:60",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                          "column": 60,
+                          "line": 21
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 19 |\u001b[39m     \n \u001b[90m 20 |\u001b[39m     \u001b[90m// Wait for consultant cards to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=\"consultants found\"'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m     \n \u001b[90m 23 |\u001b[39m     \u001b[90m// Click on the first \"View Profile\" link\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mconst\u001b[39m viewProfileLink \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=\"View Profile\"'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                            "column": 60,
+                            "line": 21
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('text=\"consultants found\"')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=\"consultants found\"')\u001b[22m\n\n\n  19 |     \n  20 |     // Wait for consultant cards to load\n> 21 |     await expect(page.locator('text=\"consultants found\"')).toBeVisible({ timeout: 15000 });\n     |                                                            ^\n  22 |     \n  23 |     // Click on the first \"View Profile\" link\n  24 |     const viewProfileLink = page.locator('text=\"View Profile\"').first();\n    at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:21:60"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:16.966Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-de0af-rofiles-from-search-results-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-de0af-rofiles-from-search-results-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                        "column": 60,
+                        "line": 21
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "007029db8d9f670b0712-afee87facf7e83215570",
+              "file": "consultant-profile.spec.ts",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "should display consultant profile with tabbed navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 11,
+                      "status": "passed",
+                      "duration": 10897,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:18.969Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "007029db8d9f670b0712-5346d714e5e82acaae72",
+              "file": "consultant-profile.spec.ts",
+              "line": 37,
+              "column": 3
+            },
+            {
+              "title": "should display consultant key metrics and information",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 12,
+                      "status": "failed",
+                      "duration": 11207,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:89:75",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                          "column": 75,
+                          "line": 89
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 87 |\u001b[39m     \n \u001b[90m 88 |\u001b[39m     \u001b[90m// Should display consultant metrics\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 89 |\u001b[39m     expect(hasExperience \u001b[33m||\u001b[39m hasTeamSize \u001b[33m||\u001b[39m hasResponseTime \u001b[33m||\u001b[39m hasPricing)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 90 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 91 |\u001b[39m\n \u001b[90m 92 |\u001b[39m   test(\u001b[32m'should display \"Request Quote\" functionality'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                            "column": 75,
+                            "line": 89
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  87 |     \n  88 |     // Should display consultant metrics\n> 89 |     expect(hasExperience || hasTeamSize || hasResponseTime || hasPricing).toBeTruthy();\n     |                                                                           ^\n  90 |   });\n  91 |\n  92 |   test('should display \"Request Quote\" functionality', async () => {\n    at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:89:75"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:17.466Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-c49d6-key-metrics-and-information-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-c49d6-key-metrics-and-information-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                        "column": 75,
+                        "line": 89
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "007029db8d9f670b0712-330b2f49f5485ae3ec53",
+              "file": "consultant-profile.spec.ts",
+              "line": 63,
+              "column": 3
+            },
+            {
+              "title": "should display \"Request Quote\" functionality",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 13,
+                      "status": "passed",
+                      "duration": 12591,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:15.771Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "007029db8d9f670b0712-4728f69015c99c0ebf3d",
+              "file": "consultant-profile.spec.ts",
+              "line": 92,
+              "column": 3
+            },
+            {
+              "title": "should display contact information and methods",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 14,
+                      "status": "failed",
+                      "duration": 11402,
+                      "error": {
+                        "message": "Error: locator.isVisible: Unexpected token \"\" while parsing css selector \"tel:\". Did you mean to CSS.escape it?\nCall log:\n\u001b[2m    - checking visibility of text=\"+44\" >> internal:or=\"tel: >> internal:or=\\\"[href^=\\\\\\\"tel:\\\\\\\"]\\\"\" >> nth=0\u001b[22m\n",
+                        "stack": "Error: locator.isVisible: Unexpected token \"\" while parsing css selector \"tel:\". Did you mean to CSS.escape it?\nCall log:\n\u001b[2m    - checking visibility of text=\"+44\" >> internal:or=\"tel: >> internal:or=\\\"[href^=\\\\\\\"tel:\\\\\\\"]\\\"\" >> nth=0\u001b[22m\n\n    at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:125:15",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                          "column": 15,
+                          "line": 125
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 123 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'[href^=\"tel:\"]'\u001b[39m)\n \u001b[90m 124 |\u001b[39m       )\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 125 |\u001b[39m     )\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 126 |\u001b[39m     \n \u001b[90m 127 |\u001b[39m     \u001b[36mconst\u001b[39m hasEmail \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=\"@\"'\u001b[39m)\u001b[33m.\u001b[39mor(\n \u001b[90m 128 |\u001b[39m       page\u001b[33m.\u001b[39mlocator(\u001b[32m'[href^=\"mailto:\"]'\u001b[39m)\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                            "column": 15,
+                            "line": 125
+                          },
+                          "message": "Error: locator.isVisible: Unexpected token \"\" while parsing css selector \"tel:\". Did you mean to CSS.escape it?\nCall log:\n\u001b[2m    - checking visibility of text=\"+44\" >> internal:or=\"tel: >> internal:or=\\\"[href^=\\\\\\\"tel:\\\\\\\"]\\\"\" >> nth=0\u001b[22m\n\n\n  123 |         page.locator('[href^=\"tel:\"]')\n  124 |       )\n> 125 |     ).first().isVisible();\n      |               ^\n  126 |     \n  127 |     const hasEmail = await page.locator('text=\"@\"').or(\n  128 |       page.locator('[href^=\"mailto:\"]')\n    at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:125:15"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:15.867Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-b5d67-act-information-and-methods-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-b5d67-act-information-and-methods-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                        "column": 15,
+                        "line": 125
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "007029db8d9f670b0712-c4a7ee7dd34d6589f047",
+              "file": "consultant-profile.spec.ts",
+              "line": 104,
+              "column": 3
+            },
+            {
+              "title": "should display consultant ratings and reviews section",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 15,
+                      "status": "failed",
+                      "duration": 11705,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:170:23",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                          "column": 23,
+                          "line": 170
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 168 |\u001b[39m     }\n \u001b[90m 169 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 170 |\u001b[39m     expect(hasRating)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 171 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 172 |\u001b[39m\n \u001b[90m 173 |\u001b[39m   test(\u001b[32m'should display consultant services and industries'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                            "column": 23,
+                            "line": 170
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  168 |     }\n  169 |     \n> 170 |     expect(hasRating).toBeTruthy();\n      |                       ^\n  171 |   });\n  172 |\n  173 |   test('should display consultant services and industries', async () => {\n    at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:170:23"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:16.966Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                        "column": 23,
+                        "line": 170
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "007029db8d9f670b0712-544b06d2aeeed93f6484",
+              "file": "consultant-profile.spec.ts",
+              "line": 141,
+              "column": 3
+            },
+            {
+              "title": "should display consultant services and industries",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 7901,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:200:31",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                          "column": 31,
+                          "line": 200
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 198 |\u001b[39m     )\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 199 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 200 |\u001b[39m     expect(hasBrexitServices)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 201 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 202 |\u001b[39m\n \u001b[90m 203 |\u001b[39m   test(\u001b[32m'should navigate between profile tabs'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                            "column": 31,
+                            "line": 200
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  198 |     ).first().isVisible();\n  199 |     \n> 200 |     expect(hasBrexitServices).toBeTruthy();\n      |                               ^\n  201 |   });\n  202 |\n  203 |   test('should navigate between profile tabs', async () => {\n    at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:200:31"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:28.065Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-ee56e-ant-services-and-industries-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-ee56e-ant-services-and-industries-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                        "column": 31,
+                        "line": 200
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "007029db8d9f670b0712-ee6b6d1be81931656089",
+              "file": "consultant-profile.spec.ts",
+              "line": 173,
+              "column": 3
+            },
+            {
+              "title": "should navigate between profile tabs",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 7,
+                      "status": "failed",
+                      "duration": 15204,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:225:34",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                          "column": 34,
+                          "line": 225
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 223 |\u001b[39m       )\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 224 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 225 |\u001b[39m       expect(hasServicesContent)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 226 |\u001b[39m     }\n \u001b[90m 227 |\u001b[39m     \n \u001b[90m 228 |\u001b[39m     \u001b[90m// Click on Reviews tab if available\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                            "column": 34,
+                            "line": 225
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  223 |       ).first().isVisible();\n  224 |       \n> 225 |       expect(hasServicesContent).toBeTruthy();\n      |                                  ^\n  226 |     }\n  227 |     \n  228 |     // Click on Reviews tab if available\n    at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:225:34"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:44.270Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                        "column": 34,
+                        "line": 225
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "007029db8d9f670b0712-80b49a2804585e07317f",
+              "file": "consultant-profile.spec.ts",
+              "line": 203,
+              "column": 3
+            },
+            {
+              "title": "should handle \"Request Quote\" button click",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 13002,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:43.469Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "007029db8d9f670b0712-c1ac07b3d91b9b846fb0",
+              "file": "consultant-profile.spec.ts",
+              "line": 240,
+              "column": 3
+            },
+            {
+              "title": "should display professional credentials and verification",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 6,
+                      "status": "failed",
+                      "duration": 12793,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:288:54",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                          "column": 54,
+                          "line": 288
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 286 |\u001b[39m     \n \u001b[90m 287 |\u001b[39m     \u001b[90m// Should display professional credentials or verification\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 288 |\u001b[39m     expect(hasCredentials \u001b[33m||\u001b[39m hasWebsiteVerification)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 289 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 290 |\u001b[39m\n \u001b[90m 291 |\u001b[39m   test(\u001b[32m'should handle multiple consultant profiles'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                            "column": 54,
+                            "line": 288
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  286 |     \n  287 |     // Should display professional credentials or verification\n> 288 |     expect(hasCredentials || hasWebsiteVerification).toBeTruthy();\n      |                                                      ^\n  289 |   });\n  290 |\n  291 |   test('should handle multiple consultant profiles', async () => {\n    at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:288:54"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:43.265Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-f614d-redentials-and-verification-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-f614d-redentials-and-verification-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                        "column": 54,
+                        "line": 288
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "007029db8d9f670b0712-99d548ff4120db7a8c54",
+              "file": "consultant-profile.spec.ts",
+              "line": 266,
+              "column": 3
+            },
+            {
+              "title": "should handle multiple consultant profiles",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 6100,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:300:26",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                          "column": 26,
+                          "line": 300
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 298 |\u001b[39m     \u001b[36mconst\u001b[39m profileCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m viewProfileLinks\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\n \u001b[90m 299 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 300 |\u001b[39m     expect(profileCount)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 301 |\u001b[39m     \n \u001b[90m 302 |\u001b[39m     \u001b[90m// Test accessing different consultants\u001b[39m\n \u001b[90m 303 |\u001b[39m     \u001b[36mif\u001b[39m (profileCount \u001b[33m>\u001b[39m \u001b[35m1\u001b[39m) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                            "column": 26,
+                            "line": 300
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  298 |     const profileCount = await viewProfileLinks.count();\n  299 |     \n> 300 |     expect(profileCount).toBeGreaterThan(0);\n      |                          ^\n  301 |     \n  302 |     // Test accessing different consultants\n  303 |     if (profileCount > 1) {\n    at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:300:26"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:30.072Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                        "column": 26,
+                        "line": 300
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "007029db8d9f670b0712-0f272aca4f19627f9583",
+              "file": "consultant-profile.spec.ts",
+              "line": 291,
+              "column": 3
+            },
+            {
+              "title": "should display responsive layout on mobile",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 14,
+                      "status": "timedOut",
+                      "duration": 30127,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts",
+                            "column": 16,
+                            "line": 329
+                          },
+                          "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=\"Find Consultants\"')\u001b[22m\n\u001b[2m    - locator resolved to 2 elements. Proceeding with the first one: <a href=\"/find-consultants\" class=\"text-gray-700 hover:text-[#003366] font-medium\">Find Consultants</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    32 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n  327 |     \n  328 |     // Navigate to consultant profile\n> 329 |     await page.click('text=\"Find Consultants\"');\n      |                ^\n  330 |     await page.waitForLoadState('networkidle');\n  331 |     \n  332 |     await page.click('text=\"View Profile\"');\n    at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:329:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:45.166Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "007029db8d9f670b0712-b80ea14f9bd6016c48a8",
+              "file": "consultant-profile.spec.ts",
+              "line": 324,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "quote-request.spec.ts",
+      "file": "quote-request.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Quote Request Functionality",
+          "file": "quote-request.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should navigate to quote request from consultant profile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13002,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:44.268Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-6104b89c11dab1afd2b9",
+              "file": "quote-request.spec.ts",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "should display quote request form with consultant pre-populated",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 13,
+                      "status": "failed",
+                      "duration": 7895,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:58:31",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 31,
+                          "line": 58
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 56 |\u001b[39m     )\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 57 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m     expect(hasConsultantInfo)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 59 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m\n \u001b[90m 61 |\u001b[39m   test(\u001b[32m'should display quote request form with essential fields'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 31,
+                            "line": 58
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  56 |     ).first().isVisible();\n  57 |     \n> 58 |     expect(hasConsultantInfo).toBeTruthy();\n     |                               ^\n  59 |   });\n  60 |\n  61 |   test('should display quote request form with essential fields', async () => {\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:58:31"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:30.571Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 31,
+                        "line": 58
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-af710bd9030f1c3a9d15",
+              "file": "quote-request.spec.ts",
+              "line": 38,
+              "column": 3
+            },
+            {
+              "title": "should display quote request form with essential fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 12,
+                      "status": "passed",
+                      "duration": 9090,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:44.070Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-2bab4b2c514689be2d45",
+              "file": "quote-request.spec.ts",
+              "line": 61,
+              "column": 3
+            },
+            {
+              "title": "should validate required fields on form submission",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 15,
+                      "status": "failed",
+                      "duration": 9998,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:109:34",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 34,
+                          "line": 109
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 107 |\u001b[39m       )\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 108 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 109 |\u001b[39m       expect(hasValidationError)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 110 |\u001b[39m     }\n \u001b[90m 111 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 112 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 34,
+                            "line": 109
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  107 |       ).first().isVisible();\n  108 |       \n> 109 |       expect(hasValidationError).toBeTruthy();\n      |                                  ^\n  110 |     }\n  111 |   });\n  112 |\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:109:34"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:46.669Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 34,
+                        "line": 109
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-7589305aa29d62931bc6",
+              "file": "quote-request.spec.ts",
+              "line": 85,
+              "column": 3
+            },
+            {
+              "title": "should validate email format",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 11,
+                      "status": "failed",
+                      "duration": 6697,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:150:31",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 31,
+                          "line": 150
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 148 |\u001b[39m         )\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 149 |\u001b[39m         \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 150 |\u001b[39m         expect(hasEmailError)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 151 |\u001b[39m       }\n \u001b[90m 152 |\u001b[39m     }\n \u001b[90m 153 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 31,
+                            "line": 150
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  148 |         ).first().isVisible();\n  149 |         \n> 150 |         expect(hasEmailError).toBeTruthy();\n      |                               ^\n  151 |       }\n  152 |     }\n  153 |   });\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:150:31"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:32.771Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 31,
+                        "line": 150
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-0b02185ca3a464c7f9be",
+              "file": "quote-request.spec.ts",
+              "line": 113,
+              "column": 3
+            },
+            {
+              "title": "should display Brexit service categories",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 23,
+                      "parallelIndex": 8,
+                      "status": "failed",
+                      "duration": 9399,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:182:111",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 111,
+                          "line": 182
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 180 |\u001b[39m     \n \u001b[90m 181 |\u001b[39m     \u001b[90m// Should have Brexit-related services\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 182 |\u001b[39m     expect(hasCustomsService \u001b[33m||\u001b[39m hasVATService \u001b[33m||\u001b[39m hasComplianceService \u001b[33m||\u001b[39m hasTradeService \u001b[33m||\u001b[39m hasBrexitService)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 183 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 184 |\u001b[39m\n \u001b[90m 185 |\u001b[39m   test(\u001b[32m'should submit quote request with valid data'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 111,
+                            "line": 182
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  180 |     \n  181 |     // Should have Brexit-related services\n> 182 |     expect(hasCustomsService || hasVATService || hasComplianceService || hasTradeService || hasBrexitService).toBeTruthy();\n      |                                                                                                               ^\n  183 |   });\n  184 |\n  185 |   test('should submit quote request with valid data', async () => {\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:182:111"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:51.470Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 111,
+                        "line": 182
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-fb1645f95ab704c5c958",
+              "file": "quote-request.spec.ts",
+              "line": 155,
+              "column": 3
+            },
+            {
+              "title": "should submit quote request with valid data",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 15588,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:266:41",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 41,
+                          "line": 266
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 264 |\u001b[39m       \u001b[36mconst\u001b[39m hasRedirect \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39murl()\u001b[33m.\u001b[39mincludes(\u001b[32m'success'\u001b[39m) \u001b[33m||\u001b[39m page\u001b[33m.\u001b[39murl()\u001b[33m.\u001b[39mincludes(\u001b[32m'thank-you'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 265 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 266 |\u001b[39m       expect(hasSuccess \u001b[33m||\u001b[39m hasRedirect)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 267 |\u001b[39m     }\n \u001b[90m 268 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 269 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 41,
+                            "line": 266
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  264 |       const hasRedirect = page.url().includes('success') || page.url().includes('thank-you');\n  265 |       \n> 266 |       expect(hasSuccess || hasRedirect).toBeTruthy();\n      |                                         ^\n  267 |     }\n  268 |   });\n  269 |\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:266:41"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:51.969Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 41,
+                        "line": 266
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-0928a58c3c6553f95a02",
+              "file": "quote-request.spec.ts",
+              "line": 185,
+              "column": 3
+            },
+            {
+              "title": "should handle multi-step quote request form",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 25,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6797,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:52.573Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-d54db05962d996d0994d",
+              "file": "quote-request.spec.ts",
+              "line": 270,
+              "column": 3
+            },
+            {
+              "title": "should handle phone number field validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 27,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 11896,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:52.470Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-13c39a872ad1bb48e2ae",
+              "file": "quote-request.spec.ts",
+              "line": 316,
+              "column": 3
+            },
+            {
+              "title": "should display company/business information fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 26,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 8599,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:51.371Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-13652175b65802fa6897",
+              "file": "quote-request.spec.ts",
+              "line": 363,
+              "column": 3
+            },
+            {
+              "title": "should handle urgent/priority request options",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 28,
+                      "parallelIndex": 13,
+                      "status": "passed",
+                      "duration": 8585,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:55.267Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-ace2671b9395ac05ab8a",
+              "file": "quote-request.spec.ts",
+              "line": 385,
+              "column": 3
+            },
+            {
+              "title": "should display responsive layout on mobile",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 29,
+                      "parallelIndex": 11,
+                      "status": "failed",
+                      "duration": 9302,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[1mMatcher error\u001b[22m: \u001b[31mreceived\u001b[39m value must be a number or bigint\n\nReceived has value: \u001b[31mundefined\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[1mMatcher error\u001b[22m: \u001b[31mreceived\u001b[39m value must be a number or bigint\n\nReceived has value: \u001b[31mundefined\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:432:31",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 31,
+                          "line": 432
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 430 |\u001b[39m       \u001b[36mconst\u001b[39m firstInput \u001b[33m=\u001b[39m inputs\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n \u001b[90m 431 |\u001b[39m       \u001b[36mconst\u001b[39m inputBox \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m firstInput\u001b[33m.\u001b[39mboundingBox()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 432 |\u001b[39m       expect(inputBox\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mwidth)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(\u001b[35m375\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 433 |\u001b[39m     }\n \u001b[90m 434 |\u001b[39m     \n \u001b[90m 435 |\u001b[39m     \u001b[90m// Submit button should be accessible\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 31,
+                            "line": 432
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[1mMatcher error\u001b[22m: \u001b[31mreceived\u001b[39m value must be a number or bigint\n\nReceived has value: \u001b[31mundefined\u001b[39m\n\n  430 |       const firstInput = inputs.first();\n  431 |       const inputBox = await firstInput.boundingBox();\n> 432 |       expect(inputBox?.width).toBeLessThanOrEqual(375);\n      |                               ^\n  433 |     }\n  434 |     \n  435 |     // Submit button should be accessible\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:432:31"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:55.971Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 31,
+                        "line": 432
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-3d235ed9c001772d8d50",
+              "file": "quote-request.spec.ts",
+              "line": 410,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "review-submission.spec.ts",
+      "file": "review-submission.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Review Submission Functionality",
+          "file": "review-submission.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should find and access reviews section on consultant profiles",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 30,
+                      "parallelIndex": 10,
+                      "status": "failed",
+                      "duration": 7500,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:45:35",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/review-submission.spec.ts",
+                          "column": 35,
+                          "line": 45
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 43 |\u001b[39m       )\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m       expect(hasReviewsOnProfile)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m     }\n \u001b[90m 47 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/review-submission.spec.ts",
+                            "column": 35,
+                            "line": 45
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  43 |       ).first().isVisible();\n  44 |       \n> 45 |       expect(hasReviewsOnProfile).toBeTruthy();\n     |                                   ^\n  46 |     }\n  47 |   });\n  48 |\n    at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:45:35"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:40:03.466Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/review-submission.spec.ts",
+                        "column": 35,
+                        "line": 45
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "4aaba739cdbf1c024ece-92ce67ef36006ceea3f0",
+              "file": "review-submission.spec.ts",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "should display existing reviews with ratings",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 31,
+                      "parallelIndex": 9,
+                      "status": "failed",
+                      "duration": 4504,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:73:23",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/review-submission.spec.ts",
+                          "column": 23,
+                          "line": 73
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 71 |\u001b[39m     )\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 72 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 73 |\u001b[39m     expect(hasRating)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 74 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 75 |\u001b[39m\n \u001b[90m 76 |\u001b[39m   test(\u001b[32m'should show review count information'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/review-submission.spec.ts",
+                            "column": 23,
+                            "line": 73
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  71 |     ).first().isVisible();\n  72 |     \n> 73 |     expect(hasRating).toBeTruthy();\n     |                       ^\n  74 |   });\n  75 |\n  76 |   test('should show review count information', async () => {\n    at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:73:23"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:40:07.968Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/review-submission.spec.ts",
+                        "column": 23,
+                        "line": 73
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "4aaba739cdbf1c024ece-6c5da095ad63ad586539",
+              "file": "review-submission.spec.ts",
+              "line": 49,
+              "column": 3
+            },
+            {
+              "title": "should show review count information",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 12,
+                      "status": "failed",
+                      "duration": 10294,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:96:47",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/review-submission.spec.ts",
+                          "column": 47,
+                          "line": 96
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 94 |\u001b[39m     )\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 95 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 96 |\u001b[39m     expect(hasReviewCount \u001b[33m||\u001b[39m hasNumericCount)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 97 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 98 |\u001b[39m\n \u001b[90m 99 |\u001b[39m   test(\u001b[32m'should handle \"Write Review\" or \"Add Review\" functionality'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/review-submission.spec.ts",
+                            "column": 47,
+                            "line": 96
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  94 |     ).first().isVisible();\n  95 |     \n> 96 |     expect(hasReviewCount || hasNumericCount).toBeTruthy();\n     |                                               ^\n  97 |   });\n  98 |\n  99 |   test('should handle \"Write Review\" or \"Add Review\" functionality', async () => {\n    at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:96:47"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:55.968Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/review-submission-Review-S-67e0d-ow-review-count-information-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/review-submission-Review-S-67e0d-ow-review-count-information-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/review-submission.spec.ts",
+                        "column": 47,
+                        "line": 96
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "4aaba739cdbf1c024ece-79dbbcd84c120eef7327",
+              "file": "review-submission.spec.ts",
+              "line": 76,
+              "column": 3
+            },
+            {
+              "title": "should handle \"Write Review\" or \"Add Review\" functionality",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 7608,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:58.670Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4aaba739cdbf1c024ece-c6d833ae2bb6f4c75d15",
+              "file": "review-submission.spec.ts",
+              "line": 99,
+              "column": 3
+            },
+            {
+              "title": "should display review form with rating and comment fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 32,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 2887,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:40:11.975Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4aaba739cdbf1c024ece-b8dfaebd05df60a397f4",
+              "file": "review-submission.spec.ts",
+              "line": 147,
+              "column": 3
+            },
+            {
+              "title": "should validate required review fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14901,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:39:59.668Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4aaba739cdbf1c024ece-943633dde5c795571631",
+              "file": "review-submission.spec.ts",
+              "line": 186,
+              "column": 3
+            },
+            {
+              "title": "should handle star rating interaction",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 33,
+                      "parallelIndex": 15,
+                      "status": "passed",
+                      "duration": 2687,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:40:13.170Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4aaba739cdbf1c024ece-bc498b85ee00bd8b02cf",
+              "file": "review-submission.spec.ts",
+              "line": 226,
+              "column": 3
+            },
+            {
+              "title": "should submit complete review with rating and text",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 25,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 8002,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:40:02.365Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4aaba739cdbf1c024ece-67048be71bb131df0c07",
+              "file": "review-submission.spec.ts",
+              "line": 269,
+              "column": 3
+            },
+            {
+              "title": "should handle authentication requirement for reviews",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 26,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7300,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:40:02.670Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4aaba739cdbf1c024ece-7b08caeb80efa609c8fe",
+              "file": "review-submission.spec.ts",
+              "line": 350,
+              "column": 3
+            },
+            {
+              "title": "should display review sorting and filtering options",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 34,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 2104,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:40:14.871Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4aaba739cdbf1c024ece-a9a0afbca6f33d082420",
+              "file": "review-submission.spec.ts",
+              "line": 391,
+              "column": 3
+            },
+            {
+              "title": "should handle review pagination if many reviews exist",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 35,
+                      "parallelIndex": 8,
+                      "status": "passed",
+                      "duration": 1892,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:40:14.973Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4aaba739cdbf1c024ece-f8aead75ff1167c5b232",
+              "file": "review-submission.spec.ts",
+              "line": 427,
+              "column": 3
+            },
+            {
+              "title": "should display average rating calculation",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 28,
+                      "parallelIndex": 13,
+                      "status": "failed",
+                      "duration": 6398,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:477:48",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/review-submission.spec.ts",
+                          "column": 48,
+                          "line": 477
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 475 |\u001b[39m     \u001b[36mconst\u001b[39m hasStarDisplay \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=\"★\"'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 476 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 477 |\u001b[39m     expect(hasAverageRating \u001b[33m||\u001b[39m hasStarDisplay)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 478 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 479 |\u001b[39m\n \u001b[90m 480 |\u001b[39m   test(\u001b[32m'should handle mobile responsive review interface'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/review-submission.spec.ts",
+                            "column": 48,
+                            "line": 477
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  475 |     const hasStarDisplay = await page.locator('text=\"★\"').first().isVisible();\n  476 |     \n> 477 |     expect(hasAverageRating || hasStarDisplay).toBeTruthy();\n      |                                                ^\n  478 |   });\n  479 |\n  480 |   test('should handle mobile responsive review interface', async () => {\n    at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:477:48"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:40:06.066Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/review-submission-Review-S-09609--average-rating-calculation-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/review-submission-Review-S-09609--average-rating-calculation-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/review-submission.spec.ts",
+                        "column": 48,
+                        "line": 477
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "4aaba739cdbf1c024ece-e532a6e0ddbf94286424",
+              "file": "review-submission.spec.ts",
+              "line": 460,
+              "column": 3
+            },
+            {
+              "title": "should handle mobile responsive review interface",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 27,
+                      "parallelIndex": 4,
+                      "status": "timedOut",
+                      "duration": 30134,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/review-submission.spec.ts",
+                            "column": 16,
+                            "line": 485
+                          },
+                          "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=\"Find Consultants\"')\u001b[22m\n\u001b[2m    - locator resolved to 2 elements. Proceeding with the first one: <a href=\"/find-consultants\" class=\"text-gray-700 hover:text-[#003366] font-medium\">Find Consultants</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    49 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n  483 |     \n  484 |     // Navigate to consultant profile\n> 485 |     await page.click('text=\"Find Consultants\"');\n      |                ^\n  486 |     await page.waitForLoadState('networkidle');\n  487 |     \n  488 |     await page.click('text=\"View Profile\"');\n    at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:485:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T23:40:06.870Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/review-submission-Review-S-bb85a-responsive-review-interface-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results-focused.json/review-submission-Review-S-bb85a-responsive-review-interface-chromium/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "4aaba739cdbf1c024ece-13f093c9df73581bd969",
+              "file": "review-submission.spec.ts",
+              "line": 480,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-26T23:39:00.894Z",
+    "duration": 96393.91100000001,
+    "expected": 19,
+    "skipped": 0,
+    "unexpected": 28,
+    "flaky": 0
+  }
+}
