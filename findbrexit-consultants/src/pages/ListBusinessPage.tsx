@@ -285,7 +285,7 @@ export function ListBusinessPage() {
                     value={formData.phone}
                     onChange={(e) => updateForm('phone', e.target.value)}
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
-                    placeholder="+44 20 7946 0958"
+                    placeholder="Business contact number"
                   />
                   {errors.phone && (
                     <p className="text-red-500 text-sm mt-1">{errors.phone}</p>

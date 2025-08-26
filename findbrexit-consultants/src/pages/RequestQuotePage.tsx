@@ -313,7 +313,7 @@ export function RequestQuotePage() {
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
                     value={formData.requesterPhone}
                     onChange={(e) => updateFormData('requesterPhone', e.target.value)}
-                    placeholder="+44 20 7946 0958"
+                    placeholder="Contact number (optional)"
                   />
                 </div>
                 

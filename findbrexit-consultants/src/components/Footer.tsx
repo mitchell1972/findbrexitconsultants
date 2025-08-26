@@ -53,12 +53,8 @@ export function Footer() {
             {/* Contact info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 text-[#FFD700]" />
-                <span className="text-sm">0800 123 4567</span>
-              </div>
-              <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-[#FFD700]" />
-                <span className="text-sm">hello@findbrexitconsultants.co.uk</span>
+                <span className="text-sm">info@findbrexitconsultants.co.uk</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-[#FFD700]" />

@@ -129,22 +129,6 @@ export function ContactPage() {
                 </div>
               </div>
 
-              {/* Phone */}
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-6 h-6 text-[#003366]" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                  <p className="text-gray-600 text-sm">
-                    <a href="tel:+442079460958" className="hover:text-[#003366] transition-colors">
-                      +44 20 7946 0958
-                    </a>
-                  </p>
-                  <p className="text-gray-500 text-xs mt-1">Mon-Fri, 9am-5pm GMT</p>
-                </div>
-              </div>
-
               {/* Email */}
               <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -153,11 +137,8 @@ export function ContactPage() {
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                   <p className="text-gray-600 text-sm space-y-1">
-                    <a href="mailto:hello@findbrexitconsultants.co.uk" className="block hover:text-[#003366] transition-colors">
-                      hello@findbrexitconsultants.co.uk
-                    </a>
-                    <a href="mailto:support@findbrexitconsultants.co.uk" className="block hover:text-[#003366] transition-colors">
-                      support@findbrexitconsultants.co.uk
+                    <a href="mailto:info@findbrexitconsultants.co.uk" className="block hover:text-[#003366] transition-colors">
+                      info@findbrexitconsultants.co.uk
                     </a>
                   </p>
                 </div>
@@ -264,7 +245,7 @@ export function ContactPage() {
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
                       value={formData.phone}
                       onChange={(e) => updateForm('phone', e.target.value)}
-                      placeholder="+44 20 7946 0958"
+                      placeholder="Contact number (optional)"
                     />
                   </div>
                   
