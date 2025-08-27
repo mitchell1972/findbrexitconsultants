@@ -18,7 +18,7 @@
       "3": {
         "id": "3",
         "content": "Implement Stripe Checkout Integration",
-        "details": "Add Stripe Checkout sessions for subscription sign-ups, upgrade/downgrade functionality, and payment processing with proper success/cancel page handling.",
+        "details": "Add Stripe Checkout sessions for subscription sign-ups with 14-day free trial, upgrade/downgrade functionality, promotional pricing support, and payment processing with proper success/cancel page handling.",
         "status": "pending",
         "priority": "high"
       },
@@ -39,7 +39,7 @@
       "6": {
         "id": "6",
         "content": "Add Payment Security & User Experience Enhancements",
-        "details": "Implement proper error handling, loading states, payment confirmation messages, and security measures for PCI compliance.",
+        "details": "Implement proper error handling, loading states, payment confirmation messages, trial period messaging, and security measures for PCI compliance.",
         "status": "pending",
         "priority": "medium"
       }
