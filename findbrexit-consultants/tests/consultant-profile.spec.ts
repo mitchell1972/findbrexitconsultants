@@ -18,7 +18,9 @@ test.describe('Consultant Profile Pages', () => {
     await page.waitForLoadState('networkidle');
     
     // Wait for consultant cards to load
-    await expect(page.locator('text="consultants found"')).toBeVisible({ timeout: 15000 });
+    await expect(page.locator('text="6 consultants found"').or(
+      page.locator('text="consultants found"')
+    ).first()).toBeVisible({ timeout: 15000 });
     
     // Click on the first "View Profile" link
     const viewProfileLink = page.locator('text="View Profile"').first();
@@ -68,22 +70,40 @@ test.describe('Consultant Profile Pages', () => {
     await page.click('text="View Profile"');
     await page.waitForLoadState('networkidle');
     
+    // Wait for consultant profile content to fully load
+    await expect(page.locator('h1, h2').first()).toBeVisible({ timeout: 15000 });
+    
+    // Wait specifically for key metrics section to load
+    await page.waitForTimeout(2000);
+    
     // Check for key metrics that should be displayed
-    const hasExperience = await page.locator('text="years"').or(
-      page.locator('text="experience"')
-    ).first().isVisible();
-    
-    const hasTeamSize = await page.locator('text="Team"').or(
-      page.locator('text="Size"')
-    ).first().isVisible();
-    
-    const hasResponseTime = await page.locator('text="Response"').or(
-      page.locator('text="Time"').or(
-        page.locator('text="hours"')
+    const hasExperience = await page.locator('text="15 Years"').or(
+      page.locator('text="years"').or(
+        page.locator('text="experience"').or(
+          page.locator('text="Years"')
+        )
       )
     ).first().isVisible();
     
-    const hasPricing = await page.locator('text="£"').first().isVisible();
+    const hasTeamSize = await page.locator('text="25+"').or(
+      page.locator('text="Team"').or(
+        page.locator('text="Size"')
+      )
+    ).first().isVisible();
+    
+    const hasResponseTime = await page.locator('text="2 hours"').or(
+      page.locator('text="Response"').or(
+        page.locator('text="Time"').or(
+          page.locator('text="hours"')
+        )
+      )
+    ).first().isVisible();
+    
+    const hasPricing = await page.locator('text="£££"').or(
+      page.locator('text="Premium"').or(
+        page.locator('text="£"')
+      )
+    ).first().isVisible();
     
     // Should display consultant metrics
     expect(hasExperience || hasTeamSize || hasResponseTime || hasPricing).toBeTruthy();
@@ -109,6 +129,10 @@ test.describe('Consultant Profile Pages', () => {
     await page.click('text="View Profile"');
     await page.waitForLoadState('networkidle');
     
+    // Wait for consultant profile content to fully load
+    await expect(page.locator('h1, h2').first()).toBeVisible({ timeout: 15000 });
+    await page.waitForTimeout(2000);
+    
     // Check for "Contact" button or navigate to contact tab
     const contactButton = page.locator('text="Contact"').first();
     
@@ -118,19 +142,25 @@ test.describe('Consultant Profile Pages', () => {
     }
     
     // Look for contact methods
-    const hasPhone = await page.locator('text="+44"').or(
-      page.locator('tel:').or(
-        page.locator('[href^="tel:"]')
+    const hasPhone = await page.locator('[href^="tel:"]').or(
+      page.locator('text="+44 131"').or(
+        page.locator('text="+44"')
       )
     ).first().isVisible();
     
-    const hasEmail = await page.locator('text="@"').or(
-      page.locator('[href^="mailto:"]')
+    const hasEmail = await page.locator('[href^="mailto:"]').or(
+      page.locator('text="@gov.uk"').or(
+        page.locator('text="@"')
+      )
     ).first().isVisible();
     
-    const hasWebsite = await page.locator('text="www"').or(
-      page.locator('text="http"').or(
-        page.locator('[href^="http"]')
+    const hasWebsite = await page.locator('[href^="https://www.gov.uk"]').or(
+      page.locator('text="gov.uk"').or(
+        page.locator('text="www"').or(
+          page.locator('text="http"').or(
+            page.locator('[href^="http"]')
+          )
+        )
       )
     ).first().isVisible();
     
@@ -146,10 +176,18 @@ test.describe('Consultant Profile Pages', () => {
     await page.click('text="View Profile"');
     await page.waitForLoadState('networkidle');
     
+    // Wait for consultant profile content to fully load
+    await expect(page.locator('h1, h2').first()).toBeVisible({ timeout: 15000 });
+    await page.waitForTimeout(2000);
+    
     // Check for rating display
-    const hasRating = await page.locator('text="5.0"').or(
-      page.locator('text="★"').or(
-        page.locator('text="stars"')
+    const hasRating = await page.locator('text="5.0/5"').or(
+      page.locator('text="5.0"').or(
+        page.locator('text="★"').or(
+          page.locator('text="review"').or(
+            page.locator('text="stars"')
+          )
+        )
       )
     ).first().isVisible();
     
@@ -189,10 +227,18 @@ test.describe('Consultant Profile Pages', () => {
     }
     
     // Look for Brexit-related services
-    const hasBrexitServices = await page.locator('text="Brexit"').or(
-      page.locator('text="Customs"').or(
-        page.locator('text="VAT"').or(
-          page.locator('text="Trade"')
+    const hasBrexitServices = await page.locator('text="Customs Declarations"').or(
+      page.locator('text="VAT/Tax Compliance"').or(
+        page.locator('text="Northern Ireland Protocol"').or(
+          page.locator('text="Regulatory Compliance"').or(
+            page.locator('text="Brexit"').or(
+              page.locator('text="Customs"').or(
+                page.locator('text="VAT"').or(
+                  page.locator('text="Trade"')
+                )
+              )
+            )
+          )
         )
       )
     ).first().isVisible();

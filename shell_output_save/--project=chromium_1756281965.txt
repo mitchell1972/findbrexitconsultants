@@ -1,0 +1,150 @@
+
+Running 13 tests using 13 workers
+
+[1/13] …unctionality › should display review form with rating and comment fields
+[2/13] …ionality › should find and access reviews section on consultant profiles
+[3/13] …Review Submission Functionality › should validate required review fields
+[4/13] … Submission Functionality › should display existing reviews with ratings
+[5/13] …on Functionality › should handle review pagination if many reviews exist
+[6/13] …ssion Functionality › should submit complete review with rating and text
+[7/13] …› Review Submission Functionality › should show review count information
+[8/13] … Review Submission Functionality › should handle star rating interaction
+[9/13] …iew Submission Functionality › should display average rating calculation
+[10/13] …ission Functionality › should handle mobile responsive review interface
+[11/13] …ctionality › should handle "Write Review" or "Add Review" functionality
+[12/13] …on Functionality › should handle authentication requirement for reviews
+[13/13] …ion Functionality › should display review sorting and filtering options
+  1) [chromium] › tests/review-submission.spec.ts:460:3 › Review Submission Functionality › should display average rating calculation 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      475 |     const hasStarDisplay = await page.locator('text="★"').first().isVisible();
+      476 |     
+    > 477 |     expect(hasAverageRating || hasStarDisplay).toBeTruthy();
+          |                                                ^
+      478 |   });
+      479 |
+      480 |   test('should handle mobile responsive review interface', async () => {
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:477:48
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-09609--average-rating-calculation-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-09609--average-rating-calculation-chromium/error-context.md
+
+
+  2) [chromium] › tests/review-submission.spec.ts:49:3 › Review Submission Functionality › should display existing reviews with ratings 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      71 |     ).first().isVisible();
+      72 |     
+    > 73 |     expect(hasRating).toBeTruthy();
+         |                       ^
+      74 |   });
+      75 |
+      76 |   test('should show review count information', async () => {
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:73:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium/error-context.md
+
+
+  3) [chromium] › tests/review-submission.spec.ts:15:3 › Review Submission Functionality › should find and access reviews section on consultant profiles 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      43 |       ).first().isVisible();
+      44 |       
+    > 45 |       expect(hasReviewsOnProfile).toBeTruthy();
+         |                                   ^
+      46 |     }
+      47 |   });
+      48 |
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:45:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium/error-context.md
+
+
+  4) [chromium] › tests/review-submission.spec.ts:76:3 › Review Submission Functionality › should show review count information 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      94 |     ).first().isVisible();
+      95 |     
+    > 96 |     expect(hasReviewCount || hasNumericCount).toBeTruthy();
+         |                                               ^
+      97 |   });
+      98 |
+      99 |   test('should handle "Write Review" or "Add Review" functionality', async () => {
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:96:47
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-67e0d-ow-review-count-information-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-67e0d-ow-review-count-information-chromium/error-context.md
+
+
+  5) [chromium] › tests/review-submission.spec.ts:480:3 › Review Submission Functionality › should handle mobile responsive review interface 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        43 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+
+
+      483 |     
+      484 |     // Navigate to consultant profile
+    > 485 |     await page.click('text="Find Consultants"');
+          |                ^
+      486 |     await page.waitForLoadState('networkidle');
+      487 |     
+      488 |     await page.click('text="View Profile"');
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:485:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-bb85a-responsive-review-interface-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-bb85a-responsive-review-interface-chromium/error-context.md
+
+
+  5 failed
+    [chromium] › tests/review-submission.spec.ts:15:3 › Review Submission Functionality › should find and access reviews section on consultant profiles 
+    [chromium] › tests/review-submission.spec.ts:49:3 › Review Submission Functionality › should display existing reviews with ratings 
+    [chromium] › tests/review-submission.spec.ts:76:3 › Review Submission Functionality › should show review count information 
+    [chromium] › tests/review-submission.spec.ts:460:3 › Review Submission Functionality › should display average rating calculation 
+    [chromium] › tests/review-submission.spec.ts:480:3 › Review Submission Functionality › should handle mobile responsive review interface 
+  8 passed (44.7s)
