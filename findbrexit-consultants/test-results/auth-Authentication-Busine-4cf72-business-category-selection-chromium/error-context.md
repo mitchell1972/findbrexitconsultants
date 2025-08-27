@@ -15,7 +15,7 @@
         - generic [ref=e18] [cursor=pointer]: FB
         - generic [ref=e19] [cursor=pointer]: FindBrexitConsultants.co.uk
       - generic [ref=e21]:
-        - textbox "Search consultants by service, location, or company..." [ref=e22]
+        - textbox "Search consultants by service, location, or company..." [ref=e22]: Test Company
         - button [ref=e23] [cursor=pointer]:
           - img [ref=e24] [cursor=pointer]
       - navigation [ref=e27]:
@@ -25,7 +25,7 @@
           - /url: /how-it-works
         - link "Pricing" [ref=e30] [cursor=pointer]:
           - /url: /pricing
-        - link "List Your Business" [active] [ref=e31] [cursor=pointer]:
+        - link "List Your Business" [ref=e31] [cursor=pointer]:
           - /url: /list-business
   - main [ref=e32]:
     - generic [ref=e33]:
@@ -56,136 +56,138 @@
           - generic [ref=e78]:
             - generic [ref=e79]:
               - generic [ref=e80]: Company Name *
-              - textbox "Brexit Compliance Ltd" [ref=e81]
+              - textbox "Brexit Compliance Ltd" [ref=e81]: John Doe
             - generic [ref=e82]:
               - generic [ref=e83]: Contact Person *
-              - textbox "John Smith" [ref=e84]
+              - textbox "John Smith" [ref=e84]: john@test.com
             - generic [ref=e85]:
               - generic [ref=e86]: Email Address *
-              - textbox "john@company.com" [ref=e87]
-            - generic [ref=e88]:
-              - generic [ref=e89]: Phone Number *
-              - textbox "Business contact number" [ref=e90]
-          - generic [ref=e91]:
-            - generic [ref=e92]: Website URL
-            - textbox "https://www.yourcompany.com" [ref=e93]
-        - button "Next" [ref=e96] [cursor=pointer]:
-          - generic [ref=e97] [cursor=pointer]: Next
-          - img [ref=e98] [cursor=pointer]
-  - contentinfo [ref=e100]:
-    - generic [ref=e102]:
-      - generic [ref=e103]:
-        - generic [ref=e104]:
-          - generic [ref=e106]: FB
-          - generic [ref=e107]: FindBrexitConsultants
-        - paragraph [ref=e108]: The UK's leading directory for Brexit compliance consultants. Connect with verified experts to navigate post-Brexit regulations with confidence.
-        - generic [ref=e109]:
-          - generic [ref=e110]:
-            - img [ref=e111]
-            - generic [ref=e114]: info@findbrexitconsultants.co.uk
-          - generic [ref=e115]:
-            - img [ref=e116]
-            - generic [ref=e119]: London, United Kingdom
-        - generic [ref=e120]:
-          - link [ref=e121] [cursor=pointer]:
+              - textbox "john@company.com" [ref=e87]: "1234567890"
+              - paragraph [ref=e88]: Please enter a valid email address
+            - generic [ref=e89]:
+              - generic [ref=e90]: Phone Number *
+              - textbox "Business contact number" [ref=e91]
+              - paragraph [ref=e92]: Phone number is required
+          - generic [ref=e93]:
+            - generic [ref=e94]: Website URL
+            - textbox "https://www.yourcompany.com" [ref=e95]
+        - button "Next" [active] [ref=e98] [cursor=pointer]:
+          - generic [ref=e99] [cursor=pointer]: Next
+          - img [ref=e100] [cursor=pointer]
+  - contentinfo [ref=e102]:
+    - generic [ref=e104]:
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - generic [ref=e108]: FB
+          - generic [ref=e109]: FindBrexitConsultants
+        - paragraph [ref=e110]: The UK's leading directory for Brexit compliance consultants. Connect with verified experts to navigate post-Brexit regulations with confidence.
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - img [ref=e113]
+            - generic [ref=e116]: info@findbrexitconsultants.co.uk
+          - generic [ref=e117]:
+            - img [ref=e118]
+            - generic [ref=e121]: London, United Kingdom
+        - generic [ref=e122]:
+          - link [ref=e123] [cursor=pointer]:
             - /url: "#"
-            - img [ref=e122] [cursor=pointer]
-          - link [ref=e124] [cursor=pointer]:
+            - img [ref=e124] [cursor=pointer]
+          - link [ref=e126] [cursor=pointer]:
             - /url: "#"
-            - img [ref=e125] [cursor=pointer]
-          - link [ref=e127] [cursor=pointer]:
+            - img [ref=e127] [cursor=pointer]
+          - link [ref=e129] [cursor=pointer]:
             - /url: "#"
-            - img [ref=e128] [cursor=pointer]
-      - generic [ref=e132]:
-        - heading "Services" [level=4] [ref=e133]
-        - list [ref=e134]:
-          - listitem [ref=e135]:
-            - link "Customs Declarations" [ref=e136] [cursor=pointer]:
-              - /url: /services/customs-declarations
+            - img [ref=e130] [cursor=pointer]
+      - generic [ref=e134]:
+        - heading "Services" [level=4] [ref=e135]
+        - list [ref=e136]:
           - listitem [ref=e137]:
-            - link "VAT/Tax Compliance" [ref=e138] [cursor=pointer]:
-              - /url: /services/vat-tax-compliance
+            - link "Customs Declarations" [ref=e138] [cursor=pointer]:
+              - /url: /services/customs-declarations
           - listitem [ref=e139]:
-            - link "Northern Ireland Protocol" [ref=e140] [cursor=pointer]:
-              - /url: /services/northern-ireland-protocol
+            - link "VAT/Tax Compliance" [ref=e140] [cursor=pointer]:
+              - /url: /services/vat-tax-compliance
           - listitem [ref=e141]:
-            - link "Regulatory Compliance" [ref=e142] [cursor=pointer]:
-              - /url: /services/regulatory-compliance
+            - link "Northern Ireland Protocol" [ref=e142] [cursor=pointer]:
+              - /url: /services/northern-ireland-protocol
           - listitem [ref=e143]:
-            - link "Import/Export Documentation" [ref=e144] [cursor=pointer]:
-              - /url: /services/import-export-documentation
+            - link "Regulatory Compliance" [ref=e144] [cursor=pointer]:
+              - /url: /services/regulatory-compliance
           - listitem [ref=e145]:
-            - link "Supply Chain Consulting" [ref=e146] [cursor=pointer]:
+            - link "Import/Export Documentation" [ref=e146] [cursor=pointer]:
+              - /url: /services/import-export-documentation
+          - listitem [ref=e147]:
+            - link "Supply Chain Consulting" [ref=e148] [cursor=pointer]:
               - /url: /services/supply-chain-consulting
-      - generic [ref=e147]:
-        - heading "Locations" [level=4] [ref=e148]
-        - list [ref=e149]:
-          - listitem [ref=e150]:
-            - link "Brexit Consultants in London" [ref=e151] [cursor=pointer]:
-              - /url: /location/london
+      - generic [ref=e149]:
+        - heading "Locations" [level=4] [ref=e150]
+        - list [ref=e151]:
           - listitem [ref=e152]:
-            - link "Brexit Consultants in Manchester" [ref=e153] [cursor=pointer]:
-              - /url: /location/manchester
+            - link "Brexit Consultants in London" [ref=e153] [cursor=pointer]:
+              - /url: /location/london
           - listitem [ref=e154]:
-            - link "Brexit Consultants in Birmingham" [ref=e155] [cursor=pointer]:
-              - /url: /location/birmingham
+            - link "Brexit Consultants in Manchester" [ref=e155] [cursor=pointer]:
+              - /url: /location/manchester
           - listitem [ref=e156]:
-            - link "Brexit Consultants in Scotland" [ref=e157] [cursor=pointer]:
-              - /url: /location/scotland
+            - link "Brexit Consultants in Birmingham" [ref=e157] [cursor=pointer]:
+              - /url: /location/birmingham
           - listitem [ref=e158]:
-            - link "Brexit Consultants in Wales" [ref=e159] [cursor=pointer]:
-              - /url: /location/wales
+            - link "Brexit Consultants in Scotland" [ref=e159] [cursor=pointer]:
+              - /url: /location/scotland
           - listitem [ref=e160]:
-            - link "Brexit Consultants in Northern Ireland" [ref=e161] [cursor=pointer]:
+            - link "Brexit Consultants in Wales" [ref=e161] [cursor=pointer]:
+              - /url: /location/wales
+          - listitem [ref=e162]:
+            - link "Brexit Consultants in Northern Ireland" [ref=e163] [cursor=pointer]:
               - /url: /location/northern-ireland
-      - generic [ref=e162]:
-        - heading "Company" [level=4] [ref=e163]
-        - list [ref=e164]:
-          - listitem [ref=e165]:
-            - link "About Us" [ref=e166] [cursor=pointer]:
-              - /url: /about
+      - generic [ref=e164]:
+        - heading "Company" [level=4] [ref=e165]
+        - list [ref=e166]:
           - listitem [ref=e167]:
-            - link "How It Works" [ref=e168] [cursor=pointer]:
-              - /url: /how-it-works
+            - link "About Us" [ref=e168] [cursor=pointer]:
+              - /url: /about
           - listitem [ref=e169]:
-            - link "Pricing" [ref=e170] [cursor=pointer]:
-              - /url: /pricing
+            - link "How It Works" [ref=e170] [cursor=pointer]:
+              - /url: /how-it-works
           - listitem [ref=e171]:
-            - link "Brexit Compliance Guide" [ref=e172] [cursor=pointer]:
-              - /url: /brexit-guide
+            - link "Pricing" [ref=e172] [cursor=pointer]:
+              - /url: /pricing
           - listitem [ref=e173]:
-            - link "List Your Business" [ref=e174] [cursor=pointer]:
-              - /url: /list-business
+            - link "Brexit Compliance Guide" [ref=e174] [cursor=pointer]:
+              - /url: /brexit-guide
           - listitem [ref=e175]:
-            - link "Contact Us" [ref=e176] [cursor=pointer]:
+            - link "List Your Business" [ref=e176] [cursor=pointer]:
+              - /url: /list-business
+          - listitem [ref=e177]:
+            - link "Contact Us" [ref=e178] [cursor=pointer]:
               - /url: /contact
-        - heading "Industries" [level=4] [ref=e177]
-        - list [ref=e178]:
-          - listitem [ref=e179]:
-            - link "Food & Beverage" [ref=e180] [cursor=pointer]:
-              - /url: /industry/food-beverage
+        - heading "Industries" [level=4] [ref=e179]
+        - list [ref=e180]:
           - listitem [ref=e181]:
-            - link "Manufacturing" [ref=e182] [cursor=pointer]:
-              - /url: /industry/manufacturing
+            - link "Food & Beverage" [ref=e182] [cursor=pointer]:
+              - /url: /industry/food-beverage
           - listitem [ref=e183]:
-            - link "Automotive" [ref=e184] [cursor=pointer]:
-              - /url: /industry/automotive
+            - link "Manufacturing" [ref=e184] [cursor=pointer]:
+              - /url: /industry/manufacturing
           - listitem [ref=e185]:
-            - link "Pharmaceuticals" [ref=e186] [cursor=pointer]:
-              - /url: /industry/pharmaceuticals
+            - link "Automotive" [ref=e186] [cursor=pointer]:
+              - /url: /industry/automotive
           - listitem [ref=e187]:
-            - link "Technology" [ref=e188] [cursor=pointer]:
-              - /url: /industry/technology
+            - link "Pharmaceuticals" [ref=e188] [cursor=pointer]:
+              - /url: /industry/pharmaceuticals
           - listitem [ref=e189]:
-            - link "Retail/E-commerce" [ref=e190] [cursor=pointer]:
+            - link "Technology" [ref=e190] [cursor=pointer]:
+              - /url: /industry/technology
+          - listitem [ref=e191]:
+            - link "Retail/E-commerce" [ref=e192] [cursor=pointer]:
               - /url: /industry/retail-ecommerce
-    - generic [ref=e193]:
-      - generic [ref=e194]: © 2025 FindBrexitConsultants.co.uk. All rights reserved.
-      - generic [ref=e195]:
-        - link "Terms of Service" [ref=e196] [cursor=pointer]:
+    - generic [ref=e195]:
+      - generic [ref=e196]: © 2025 FindBrexitConsultants.co.uk. All rights reserved.
+      - generic [ref=e197]:
+        - link "Terms of Service" [ref=e198] [cursor=pointer]:
           - /url: /terms
-        - link "Privacy Policy" [ref=e197] [cursor=pointer]:
+        - link "Privacy Policy" [ref=e199] [cursor=pointer]:
           - /url: /privacy
-        - link "Cookie Policy" [ref=e198] [cursor=pointer]:
+        - link "Cookie Policy" [ref=e200] [cursor=pointer]:
           - /url: /cookies
 ```

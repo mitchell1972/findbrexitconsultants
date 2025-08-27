@@ -1,0 +1,107 @@
+
+> react_repo@0.0.0 test:e2e /workspace/findbrexit-consultants
+> playwright test tests/consultant-profile.spec.ts --project\=chromium --reporter\=list
+
+
+Running 12 tests using 12 workers
+
+      1 …nsultant Profile Pages › should display contact information and methods
+      2 …rofile Pages › should display consultant profile with tabbed navigation
+      3 …rofile Pages › should display professional credentials and verification
+      4 …file Pages › should navigate to consultant profiles from search results
+      5 …t Profile Pages › should display consultant key metrics and information
+      6 …249:3 › Consultant Profile Pages › should navigate between profile tabs
+      7 …› Consultant Profile Pages › should display responsive layout on mobile
+      8 …› Consultant Profile Pages › should handle multiple consultant profiles
+      9 …› Consultant Profile Pages › should handle "Request Quote" button click
+     10 …Consultant Profile Pages › should display "Request Quote" functionality
+     11 …t Profile Pages › should display consultant ratings and reviews section
+     12 …ltant Profile Pages › should display consultant services and industries
+  ✓   2 …ages › should display consultant profile with tabbed navigation (10.2s)  ✓   1 … Profile Pages › should display contact information and methods (11.3s)  ✘   3 …ages › should display professional credentials and verification (10.9s)  ✓  10 …nt Profile Pages › should display "Request Quote" functionality (13.7s)  ✓   4 …es › should navigate to consultant profiles from search results (15.1s)  ✓   9 …tant Profile Pages › should handle "Request Quote" button click (14.1s)  ✓  12 …ofile Pages › should display consultant services and industries (13.6s)  ✓   8 …tant Profile Pages › should handle multiple consultant profiles (15.1s)  ✓   5 …e Pages › should display consultant key metrics and information (15.5s)  ✘   6 …Consultant Profile Pages › should navigate between profile tabs (15.9s)  ✓  11 …e Pages › should display consultant ratings and reviews section (15.9s)  ✘   7 …tant Profile Pages › should display responsive layout on mobile (30.1s)
+
+  1) [chromium] › tests/consultant-profile.spec.ts:249:3 › Consultant Profile Pages › should navigate between profile tabs 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      269 |       ).first().isVisible();
+      270 |       
+    > 271 |       expect(hasServicesContent).toBeTruthy();
+          |                                  ^
+      272 |     }
+      273 |     
+      274 |     // Click on Reviews tab if available
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:271:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium/error-context.md
+
+  2) [chromium] › tests/consultant-profile.spec.ts:312:3 › Consultant Profile Pages › should display professional credentials and verification 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      332 |     
+      333 |     // Should display professional credentials or verification
+    > 334 |     expect(hasCredentials || hasWebsiteVerification).toBeTruthy();
+          |                                                      ^
+      335 |   });
+      336 |
+      337 |   test('should handle multiple consultant profiles', async () => {
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:334:54
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-f614d-redentials-and-verification-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-f614d-redentials-and-verification-chromium/error-context.md
+
+  3) [chromium] › tests/consultant-profile.spec.ts:370:3 › Consultant Profile Pages › should display responsive layout on mobile 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+        - locator resolved to 2 elements. Proceeding with the first one: <a data-matrix-name="Link" data-component-line="69" href="/find-consultants" data-component-name="Link" data-component-file="Header.tsx" data-component-path="src/components/Header.tsx" data-matrix-id="src/components/Header.tsx:69:12" class="text-gray-700 hover:text-[#003366] font-medium" data-component-content="%7B%22to%22%3A%22%2Ffind-consultants%22%2C%22className%22%3A%22text-gray-700%20hover%3Atext-%5B%23003366%5D%20font-medium%22%7D">Find Consultants</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        34 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+
+
+      373 |     
+      374 |     // Navigate to consultant profile
+    > 375 |     await page.click('text="Find Consultants"');
+          |                ^
+      376 |     await page.waitForLoadState('networkidle');
+      377 |     
+      378 |     await page.click('text="View Profile"');
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:375:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium/error-context.md
+
+  3 failed
+    [chromium] › tests/consultant-profile.spec.ts:249:3 › Consultant Profile Pages › should navigate between profile tabs 
+    [chromium] › tests/consultant-profile.spec.ts:312:3 › Consultant Profile Pages › should display professional credentials and verification 
+    [chromium] › tests/consultant-profile.spec.ts:370:3 › Consultant Profile Pages › should display responsive layout on mobile 
+  9 passed (42.6s)
+ ELIFECYCLE  Command failed with exit code 1.

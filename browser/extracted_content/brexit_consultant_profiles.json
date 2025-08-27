@@ -1,0 +1,28 @@
+📄 Extracted from page: FindBrexitConsultants.co.uk - Expert Brexit Compliance & Trade Consultants
+URL: http://localhost:3000/find-consultants
+
+Extracted content:
+```json
+{
+  "title": "FindBrexitConsultants.co.uk - Expert Brexit Compliance & Trade Consultants",
+  "url": "http://localhost:3000/find-consultants",
+  "summary": "This page lists 6 expert Brexit compliance and trade consultants. Each listing provides the consultant's name, their company, location, and a brief description of their services and expertise in post-Brexit regulations and international trade.",
+  "key_points": [
+    "Charles Burke, associated with UK Government Scotland - International Trade Division, is located in Edinburgh. He is an expert in Brexit compliance, international trade development, and supporting Scottish businesses in global markets, with extensive experience in trade policy and regulatory frameworks.",
+    "Dr Anna Jerzewska, founder of Trade & Borders Consultancy, is based in London. She offers bespoke advice and training on customs, international trade, and Brexit to private and public sector clients, possessing PhD-level expertise in post-Brexit trade regulations.",
+    "Gwern Ifans, a Senior Policy Advisor at Wales Trade Policy Advisory, is located in Cardiff. He specializes in international trade policy and Brexit compliance for Welsh businesses, focusing on post-Brexit trade frameworks and regulatory alignment.",
+    "Rebecca Bermingham, International Trade and Compliance Manager at TRIUMPH International Trade Solutions, is based in Birmingham. Her expertise spans trade compliance, export controls, and international trade, with a specialization in post-Brexit regulations and customs procedures for manufacturing sectors.",
+    "Mary Meehan, associated with InterTradeIreland Business Solutions, is located in Belfast. She is an experienced business leader specializing in cross-border trade, Brexit compliance, and North-South trade opportunities across the Island of Ireland.",
+    "Chris Ashworth, a consultant at Northern Customs Solutions, is based in Manchester. He is an experienced customs consultant with 30 years of knowledge in customs, HMRC, international trade, logistics, shipping, and freight management, specializing in post-Brexit trade procedures and customs compliance."
+  ],
+  "relevant_links": [
+    "http://localhost:3000/consultant/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6",
+    "http://localhost:3000/consultant/b3afeec3-7859-47c2-8e51-23e97c50475b",
+    "http://localhost:3000/consultant/25763b26-4ed5-4dc8-9088-47e6740763f9",
+    "http://localhost:3000/consultant/f73737e8-3585-464a-967b-0893d40e0269",
+    "http://localhost:3000/consultant/31fe78b3-69e4-464c-a82f-6103749cd569",
+    "http://localhost:3000/consultant/d21097d9-0ed3-47cf-b162-f4a025b60f99"
+  ],
+  "file_name": "brexit_consultant_profiles.json"
+}
+```
