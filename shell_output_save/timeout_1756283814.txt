@@ -1,0 +1,164 @@
+
+> react_repo@0.0.0 test:e2e /workspace/findbrexit-consultants
+> playwright test tests/auth.spec.ts --grep 'should validate required fields on business registration'
+
+
+Running 5 tests using 5 workers
+
+[1/5] …stration Flows › should validate required fields on business registration
+[2/5] …stration Flows › should validate required fields on business registration
+[3/5] …stration Flows › should validate required fields on business registration
+[4/5] …stration Flows › should validate required fields on business registration
+[5/5] …stration Flows › should validate required fields on business registration
+  1) [chromium] › tests/auth.spec.ts:62:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+       95 |       ).first().isVisible({ timeout: 5000 });
+       96 |       
+    >  97 |       expect(validationErrorVisible).toBeTruthy();
+          |                                      ^
+       98 |     }
+       99 |   });
+      100 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:97:38
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium/error-context.md
+
+
+  2) [webkit] › tests/auth.spec.ts:62:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+       95 |       ).first().isVisible({ timeout: 5000 });
+       96 |       
+    >  97 |       expect(validationErrorVisible).toBeTruthy();
+          |                                      ^
+       98 |     }
+       99 |   });
+      100 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:97:38
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-webkit/error-context.md
+
+
+  3) [firefox] › tests/auth.spec.ts:62:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+       95 |       ).first().isVisible({ timeout: 5000 });
+       96 |       
+    >  97 |       expect(validationErrorVisible).toBeTruthy();
+          |                                      ^
+       98 |     }
+       99 |   });
+      100 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:97:38
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-firefox/error-context.md
+
+
+  4) [Mobile Chrome] › tests/auth.spec.ts:62:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="List Your Business"')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/list-business" data-matrix-name="Link" data-component-line="78" data-component-name="Link" data-component-file="Header.tsx" data-testid="list-business-header-btn" data-component-path="src/components/Header.tsx" data-matrix-id="src/components/Header.tsx:78:12" class="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors" data-component-content="%7B%22to%22%3A%22%2Flist-business%22%2C%22className%22%3A%22bg-%5B%23FFD700%5D%20text-%5B%23003366…>List Your Business</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        36 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+
+
+      61 |
+      62 |   test('should validate required fields on business registration', async () => {
+    > 63 |     await page.click('text="List Your Business"');
+         |                ^
+      64 |     await page.waitForLoadState('networkidle');
+      65 |     
+      66 |     // Wait for form to load completely
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:63:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-Mobile-Chrome/error-context.md
+
+
+  5) [Mobile Safari] › tests/auth.spec.ts:62:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="List Your Business"')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/list-business" data-matrix-name="Link" data-component-line="78" data-component-name="Link" data-component-file="Header.tsx" data-testid="list-business-header-btn" data-component-path="src/components/Header.tsx" data-matrix-id="src/components/Header.tsx:78:12" class="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors" data-component-content="%7B%22to%22%3A%22%2Flist-business%22%2C%22className%22%3A%22bg-%5B%23FFD700%5D%20text-%5B%23003366…>List Your Business</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        25 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+
+
+      61 |
+      62 |   test('should validate required fields on business registration', async () => {
+    > 63 |     await page.click('text="List Your Business"');
+         |                ^
+      64 |     await page.waitForLoadState('networkidle');
+      65 |     
+      66 |     // Wait for form to load completely
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:63:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-Mobile-Safari/error-context.md
+
+
+  5 failed
+    [chromium] › tests/auth.spec.ts:62:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+    [firefox] › tests/auth.spec.ts:62:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+    [webkit] › tests/auth.spec.ts:62:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+    [Mobile Chrome] › tests/auth.spec.ts:62:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+    [Mobile Safari] › tests/auth.spec.ts:62:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.

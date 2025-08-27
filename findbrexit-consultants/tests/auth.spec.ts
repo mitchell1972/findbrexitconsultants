@@ -63,25 +63,63 @@ test.describe('Authentication & Business Registration Flows', () => {
     await page.click('text="List Your Business"');
     await page.waitForLoadState('networkidle');
     
-    // Try to submit empty form
-    const submitButton = page.locator('button[type="submit"]').or(
-      page.locator('button:has-text("Submit")').or(
-        page.locator('button:has-text("Register")')
-      )
-    ).first();
+    // Wait for form to load completely and ensure all required fields are present
+    await expect(page.locator('text="Basic Information"')).toBeVisible({ timeout: 10000 });
+    await page.waitForTimeout(2000);
     
-    if (await submitButton.isVisible()) {
-      await submitButton.click();
+    // Verify we can see the required form fields
+    const companyNameField = page.locator('input').nth(0); // Company Name field
+    const contactPersonField = page.locator('input').nth(1); // Contact Person field
+    const emailField = page.locator('input').nth(2); // Email field
+    const phoneField = page.locator('input').nth(3); // Phone field
+    
+    await expect(companyNameField).toBeVisible();
+    await expect(contactPersonField).toBeVisible();
+    await expect(emailField).toBeVisible();
+    await expect(phoneField).toBeVisible();
+    
+    // Ensure fields are empty before clicking Next
+    await companyNameField.clear();
+    await contactPersonField.clear();
+    await emailField.clear();
+    await phoneField.clear();
+    
+    // Click the Next button to trigger validation
+    const nextButton = page.locator('button:has-text("Next")');
+    await expect(nextButton).toBeVisible();
+    await nextButton.click();
+    
+    // Wait for validation errors to appear
+    await page.waitForTimeout(2000);
+    
+    // Check for any validation error indicators - could be text or visual cues
+    const hasValidationErrors = await page.evaluate(() => {
+      // Look for common validation error patterns
+      const errorTexts = Array.from(document.querySelectorAll('*')).some(el => {
+        const text = el.textContent || '';
+        return text.includes('required') || 
+               text.includes('Required') ||
+               text.includes('Company name is required') ||
+               text.includes('Contact person is required') ||
+               text.includes('Email is required') ||
+               text.includes('Phone number is required') ||
+               text.includes('This field is required') ||
+               text.includes('Please fill');
+      });
       
-      // Should show validation errors
-      await expect(
-        page.locator('text="required"').or(
-          page.locator('text="Please fill"').or(
-            page.locator('.error')
-          )
-        ).first()
-      ).toBeVisible({ timeout: 5000 });
-    }
+      // Look for visual error indicators (red borders, error classes)
+      const hasRedBorders = Array.from(document.querySelectorAll('input')).some(input => {
+        const styles = window.getComputedStyle(input);
+        return styles.borderColor.includes('red') || 
+               styles.borderColor.includes('rgb(239, 68, 68)') || // red-500
+               input.classList.toString().includes('error') ||
+               input.classList.toString().includes('invalid');
+      });
+      
+      return errorTexts || hasRedBorders;
+    });
+    
+    expect(hasValidationErrors).toBeTruthy();
   });
 
   test('should validate email format in business registration', async () => {

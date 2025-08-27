@@ -1,0 +1,163 @@
+
+> react_repo@0.0.0 test:e2e /workspace/findbrexit-consultants
+> playwright test tests/quote-request.spec.ts --project\=chromium
+
+
+Running 12 tests using 12 workers
+
+[1/12] …nality › should display quote request form with consultant pre-populated
+[2/12] …uote Request Functionality › should submit quote request with valid data
+[3/12] …› Quote Request Functionality › should display Brexit service categories
+[4/12] …quest Functionality › should validate required fields on form submission
+[5/12] …ec.ts:113:3 › Quote Request Functionality › should validate email format
+[6/12] …Quote Request Functionality › should display responsive layout on mobile
+[7/12] … Functionality › should display quote request form with essential fields
+[8/12] …quest Functionality › should display company/business information fields
+[9/12] …Functionality › should navigate to quote request from consultant profile
+[10/12] …ote Request Functionality › should handle phone number field validation
+[11/12] …e Request Functionality › should handle urgent/priority request options
+[12/12] …ote Request Functionality › should handle multi-step quote request form
+  1) [chromium] › tests/quote-request.spec.ts:38:3 › Quote Request Functionality › should display quote request form with consultant pre-populated 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      56 |     ).first().isVisible();
+      57 |     
+    > 58 |     expect(hasConsultantInfo).toBeTruthy();
+         |                               ^
+      59 |   });
+      60 |
+      61 |   test('should display quote request form with essential fields', async () => {
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:58:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium/error-context.md
+
+
+  2) [chromium] › tests/quote-request.spec.ts:155:3 › Quote Request Functionality › should display Brexit service categories 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      180 |     
+      181 |     // Should have Brexit-related services
+    > 182 |     expect(hasCustomsService || hasVATService || hasComplianceService || hasTradeService || hasBrexitService).toBeTruthy();
+          |                                                                                                               ^
+      183 |   });
+      184 |
+      185 |   test('should submit quote request with valid data', async () => {
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:182:111
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium/error-context.md
+
+
+  3) [chromium] › tests/quote-request.spec.ts:85:3 › Quote Request Functionality › should validate required fields on form submission 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      107 |       ).first().isVisible();
+      108 |       
+    > 109 |       expect(hasValidationError).toBeTruthy();
+          |                                  ^
+      110 |     }
+      111 |   });
+      112 |
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:109:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/error-context.md
+
+
+  4) [chromium] › tests/quote-request.spec.ts:113:3 › Quote Request Functionality › should validate email format 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      148 |         ).first().isVisible();
+      149 |         
+    > 150 |         expect(hasEmailError).toBeTruthy();
+          |                               ^
+      151 |       }
+      152 |     }
+      153 |   });
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:150:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/error-context.md
+
+
+  5) [chromium] › tests/quote-request.spec.ts:410:3 › Quote Request Functionality › should display responsive layout on mobile 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Matcher error: received value must be a number or bigint
+
+    Received has value: undefined
+
+      430 |       const firstInput = inputs.first();
+      431 |       const inputBox = await firstInput.boundingBox();
+    > 432 |       expect(inputBox?.width).toBeLessThanOrEqual(375);
+          |                               ^
+      433 |     }
+      434 |     
+      435 |     // Submit button should be accessible
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:432:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium/error-context.md
+
+
+  6) [chromium] › tests/quote-request.spec.ts:185:3 › Quote Request Functionality › should submit quote request with valid data 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      264 |       const hasRedirect = page.url().includes('success') || page.url().includes('thank-you');
+      265 |       
+    > 266 |       expect(hasSuccess || hasRedirect).toBeTruthy();
+          |                                         ^
+      267 |     }
+      268 |   });
+      269 |
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:266:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium/error-context.md
+
+
+  6 failed
+    [chromium] › tests/quote-request.spec.ts:38:3 › Quote Request Functionality › should display quote request form with consultant pre-populated 
+    [chromium] › tests/quote-request.spec.ts:85:3 › Quote Request Functionality › should validate required fields on form submission 
+    [chromium] › tests/quote-request.spec.ts:113:3 › Quote Request Functionality › should validate email format 
+    [chromium] › tests/quote-request.spec.ts:155:3 › Quote Request Functionality › should display Brexit service categories 
+    [chromium] › tests/quote-request.spec.ts:185:3 › Quote Request Functionality › should submit quote request with valid data 
+    [chromium] › tests/quote-request.spec.ts:410:3 › Quote Request Functionality › should display responsive layout on mobile 
+  6 passed (28.5s)
+
+  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.

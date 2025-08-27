@@ -1,0 +1,23 @@
+📄 Extracted from page: 404: NOT_FOUND
+URL: https://findbrexit-consultants.vercel.app/
+
+Extracted content:
+```json
+{
+    "title": "404: NOT_FOUND",
+    "url": "https://findbrexit-consultants.vercel.app/",
+    "summary": "This page displays a '404 Not Found' error, indicating that the requested web deployment could not be located. It provides a specific error code, a unique identifier for the deployment, and a link to Vercel's documentation for troubleshooting this type of platform error.",
+    "key_points": [
+        "HTTP Status: 404 Not Found",
+        "Error Message: NOT_FOUND",
+        "Specific Error Code: DEPLOYMENT_NOT_FOUND",
+        "Deployment ID: iad1::bpgmd-1756283191438-c0577645b9ef",
+        "Contextual Message: This deployment cannot be found.",
+        "Guidance: For more information and troubleshooting, see our documentation."
+    ],
+    "relevant_links": [
+        "https://vercel.com/docs/errors/platform-error-codes#deployment_not_found"
+    ],
+    "file_name": "404_not_found_error_page.json"
+}
+```
