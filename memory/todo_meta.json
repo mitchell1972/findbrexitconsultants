@@ -3,30 +3,44 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Analyze current failing tests on Mobile Chrome and Desktop Chrome",
-        "details": "Run targeted test analysis to identify specific failing tests and their root causes. Focus on the remaining 17% failures in Mobile Chrome and 40% failures in Desktop Chrome.",
-        "status": "completed",
+        "content": "Integrate Stripe Payment System for FindBrexit Consultants Platform",
+        "details": "Add complete Stripe payment processing for subscription plans (Starter £29/month, Professional £99/month) including payment forms, subscription management, webhooks, and billing portal access.",
+        "status": "pending",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Fix Mobile Chrome remaining failures (achieve 100% pass rate)",
-        "details": "Target ALL remaining failing tests on Mobile Chrome to achieve perfect 100% pass rate",
-        "status": "completed",
+        "content": "Setup Stripe Products and Pricing in Stripe Dashboard",
+        "details": "Create corresponding products and recurring price objects in Stripe for all subscription tiers: Starter (£29/month), Professional (£99/month), and any other plans found in the application.",
+        "status": "pending",
         "priority": "high"
       },
       "3": {
         "id": "3",
-        "content": "Fix Desktop Chrome remaining failures (achieve 100% pass rate)",
-        "details": "Target ALL remaining failing tests on Desktop Chrome to achieve perfect 100% pass rate",
-        "status": "completed",
+        "content": "Implement Stripe Checkout Integration",
+        "details": "Add Stripe Checkout sessions for subscription sign-ups, upgrade/downgrade functionality, and payment processing with proper success/cancel page handling.",
+        "status": "pending",
         "priority": "high"
       },
       "4": {
         "id": "4",
-        "content": "Validate final test suite performance",
-        "details": "Run comprehensive test suite to verify improved pass rates and ensure no regressions",
-        "status": "completed",
+        "content": "Build Subscription Management Features",
+        "details": "Create customer portal access, billing history, payment method management, plan changes, and subscription cancellation functionality.",
+        "status": "pending",
+        "priority": "high"
+      },
+      "5": {
+        "id": "5",
+        "content": "Implement Stripe Webhooks Handler",
+        "details": "Set up Supabase Edge Functions to handle Stripe webhooks for subscription events (created, updated, cancelled, payment succeeded/failed) to keep local database in sync.",
+        "status": "pending",
+        "priority": "high"
+      },
+      "6": {
+        "id": "6",
+        "content": "Add Payment Security & User Experience Enhancements",
+        "details": "Implement proper error handling, loading states, payment confirmation messages, and security measures for PCI compliance.",
+        "status": "pending",
         "priority": "medium"
       }
     }
