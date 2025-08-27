@@ -1,0 +1,64 @@
+
+Running 12 tests using 12 workers
+
+      1 …249:3 › Consultant Profile Pages › should navigate between profile tabs
+      2 …file Pages › should navigate to consultant profiles from search results
+      3 …t Profile Pages › should display consultant key metrics and information
+      4 …nsultant Profile Pages › should display contact information and methods
+      5 …ltant Profile Pages › should display consultant services and industries
+      6 …› Consultant Profile Pages › should display responsive layout on mobile
+      7 …rofile Pages › should display consultant profile with tabbed navigation
+      8 …› Consultant Profile Pages › should handle "Request Quote" button click
+      9 …Consultant Profile Pages › should display "Request Quote" functionality
+     10 …› Consultant Profile Pages › should handle multiple consultant profiles
+     11 …t Profile Pages › should display consultant ratings and reviews section
+     12 …rofile Pages › should display professional credentials and verification
+  ✓   2 …ges › should navigate to consultant profiles from search results (9.7s)  ✓   9 …ant Profile Pages › should display "Request Quote" functionality (8.1s)  ✘   6 …ltant Profile Pages › should display responsive layout on mobile (8.2s)  ✘  10 …ltant Profile Pages › should handle multiple consultant profiles (8.0s)  ✓   3 …e Pages › should display consultant key metrics and information (10.9s)  ✓   5 …rofile Pages › should display consultant services and industries (9.3s)  ✓   7 …Pages › should display consultant profile with tabbed navigation (9.2s)  ✓   8 …ltant Profile Pages › should handle "Request Quote" button click (9.3s)  ✓   4 … Profile Pages › should display contact information and methods (10.7s)  ✓  11 …le Pages › should display consultant ratings and reviews section (9.6s)  ✓  12 …ages › should display professional credentials and verification (11.2s)  ✓   1 …Consultant Profile Pages › should navigate between profile tabs (14.2s)
+
+  1) [chromium] › tests/consultant-profile.spec.ts:364:3 › Consultant Profile Pages › should handle multiple consultant profiles 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      371 |     const profileCount = await viewProfileLinks.count();
+      372 |     
+    > 373 |     expect(profileCount).toBeGreaterThan(0);
+          |                          ^
+      374 |     
+      375 |     // Test accessing different consultants
+      376 |     if (profileCount > 1) {
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:373:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium/error-context.md
+
+  2) [chromium] › tests/consultant-profile.spec.ts:397:3 › Consultant Profile Pages › should display responsive layout on mobile 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      444 |       ).first().isVisible();
+      445 |       
+    > 446 |       expect(hasResponsiveLayout).toBeTruthy();
+          |                                   ^
+      447 |       expect(hasMobileElements).toBeTruthy();
+      448 |     }
+      449 |     
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:446:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium/error-context.md
+
+  2 failed
+    [chromium] › tests/consultant-profile.spec.ts:364:3 › Consultant Profile Pages › should handle multiple consultant profiles 
+    [chromium] › tests/consultant-profile.spec.ts:397:3 › Consultant Profile Pages › should display responsive layout on mobile 
+  10 passed (25.7s)

@@ -1,0 +1,326 @@
+
+> react_repo@0.0.0 test:e2e /workspace/findbrexit-consultants
+> playwright test
+
+
+Running 235 tests using 16 workers
+
+[1/235] …rofile Pages › should display consultant profile with tabbed navigation
+[2/235] …Consultant Profile Pages › should display "Request Quote" functionality
+[3/235] …istration Flows › should validate email format in business registration
+[4/235] …nsultant Profile Pages › should display contact information and methods
+[5/235] …file Pages › should navigate to consultant profiles from search results
+[6/235] … & Business Registration Flows › should handle mobile responsive layout
+[7/235] …Business Registration Flows › should handle business category selection
+[8/235] … Registration Flows › should display information about listing benefits
+[9/235] …t Profile Pages › should display consultant key metrics and information
+[10/235] … Profile Pages › should display consultant ratings and reviews section
+[11/235] …istration Flows › should display "List Your Business" option in header
+[12/235] …stration Flows › should navigate to business listing/registration page
+[13/235] …ess Registration Flows › should handle terms and conditions acceptance
+[14/235] …gistration Flows › should submit business registration with valid data
+[15/235] …ation Flows › should validate required fields on business registration
+[16/235] … Registration Flows › should display business registration form fields
+[17/235] …tant Profile Pages › should display consultant services and industries
+[18/235] …49:3 › Consultant Profile Pages › should navigate between profile tabs
+  1) [chromium] › tests/auth.spec.ts:342:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+
+    Error: expect.toBeVisible: Error: strict mode violation: locator('text="List Your Business"') resolved to 2 elements:
+        1) <a href="/list-business" data-testid="list-business-header-btn" class="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">List Your Business</a> aka getByTestId('list-business-header-btn')
+        2) <a href="/list-business" class="text-blue-100 hover:text-white text-sm transition-colors">List Your Business</a> aka getByRole('link', { name: 'List Your Business' })
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('text="List Your Business"')
+
+
+      349 |     
+      350 |     // "List Your Business" button should be accessible on mobile
+    > 351 |     await expect(page.locator('text="List Your Business"')).toBeVisible({ timeout: 15000 });
+          |                                                             ^
+      352 |     
+      353 |     // Navigate to registration page in mobile view
+      354 |     await page.click('text="List Your Business"');
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:351:61
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium/error-context.md
+
+
+[19/235] … Consultant Profile Pages › should handle multiple consultant profiles
+[20/235] …ofile Pages › should display professional credentials and verification
+[21/235] … Consultant Profile Pages › should display responsive layout on mobile
+[22/235] …nctionality › should navigate to quote request from consultant profile
+  2) [chromium] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    Error: expect.toBeVisible: Error: strict mode violation: locator('text="List Your Business"').or(locator('a[href*="list"]').or(locator('button:has-text("List Your Business")'))) resolved to 2 elements:
+        1) <a href="/list-business" data-testid="list-business-header-btn" class="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">List Your Business</a> aka getByTestId('list-business-header-btn')
+        2) <a href="/list-business" class="text-blue-100 hover:text-white text-sm transition-colors">List Your Business</a> aka getByRole('contentinfo').getByRole('link', { name: 'List Your Business' })
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('text="List Your Business"').or(locator('a[href*="list"]').or(locator('button:has-text("List Your Business")')))
+
+
+      28 |         )
+      29 |       )
+    > 30 |     ).toBeVisible({ timeout: 10000 });
+         |       ^
+      31 |   });
+      32 |
+      33 |   test('should navigate to business listing/registration page', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:30:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium/error-context.md
+
+
+[23/235] …unctionality › should display quote request form with essential fields
+[24/235] …est Functionality › should validate required fields on form submission
+[25/235] ….ts:207:3 › Quote Request Functionality › should validate email format
+[26/235] …Quote Request Functionality › should display Brexit service categories
+[27/235] …te Request Functionality › should submit quote request with valid data
+  3) [chromium] › tests/auth.spec.ts:196:3 › Authentication & Business Registration Flows › should handle business category selection 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      229 |     const hasProgressIndicator = await page.locator('text="2", text="3", text="4"').first().isVisible();
+      230 |     
+    > 231 |     expect(hasServiceSelect || hasServiceRadio || hasServiceCheckbox || hasServiceDropdown || hasProgressIndicator).toBeTruthy();
+          |                                                                                                                     ^
+      232 |   });
+      233 |
+      234 |   test('should display information about listing benefits', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:231:117
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-4cf72-business-category-selection-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-4cf72-business-category-selection-chromium/error-context.md
+
+
+  4) [chromium] › tests/consultant-profile.spec.ts:364:3 › Consultant Profile Pages › should handle multiple consultant profiles 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      371 |     const profileCount = await viewProfileLinks.count();
+      372 |     
+    > 373 |     expect(profileCount).toBeGreaterThan(0);
+          |                          ^
+      374 |     
+      375 |     // Test accessing different consultants
+      376 |     if (profileCount > 1) {
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:373:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium/error-context.md
+
+
+[28/235] …est Functionality › should display company/business information fields
+[29/235] … Request Functionality › should handle urgent/priority request options
+  5) [chromium] › tests/consultant-profile.spec.ts:397:3 › Consultant Profile Pages › should display responsive layout on mobile 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      444 |       ).first().isVisible();
+      445 |       
+    > 446 |       expect(hasResponsiveLayout).toBeTruthy();
+          |                                   ^
+      447 |       expect(hasMobileElements).toBeTruthy();
+      448 |     }
+      449 |     
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:446:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium/error-context.md
+
+
+[30/235] …ote Request Functionality › should display responsive layout on mobile
+  6) [chromium] › tests/auth.spec.ts:294:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      337 |     });
+      338 |     
+    > 339 |     expect(hasProgressed).toBeTruthy();
+          |                           ^
+      340 |   });
+      341 |
+      342 |   test('should handle mobile responsive layout', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:339:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium/error-context.md
+
+
+[31/235] …Review Submission Functionality › should show review count information
+[32/235] …ctionality › should display review form with rating and comment fields
+[33/235] …tionality › should handle "Write Review" or "Add Review" functionality
+[34/235] …view Submission Functionality › should validate required review fields
+[35/235] … Consultant Profile Pages › should handle "Request Quote" button click
+[36/235] …eview Submission Functionality › should handle star rating interaction
+[37/235] …ion Functionality › should submit complete review with rating and text
+  7) [chromium] › tests/quote-request.spec.ts:553:3 › Quote Request Functionality › should display responsive layout on mobile 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Matcher error: received value must be a number or bigint
+
+    Received has value: undefined
+
+      573 |       const firstInput = inputs.first();
+      574 |       const inputBox = await firstInput.boundingBox();
+    > 575 |       expect(inputBox?.width).toBeLessThanOrEqual(375);
+          |                               ^
+      576 |     }
+      577 |     
+      578 |     // Submit button should be accessible
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:575:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium/error-context.md
+
+
+[38/235] …on Functionality › should display review sorting and filtering options
+  8) [chromium] › tests/quote-request.spec.ts:136:3 › Quote Request Functionality › should validate required fields on form submission 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      192 |       });
+      193 |       
+    > 194 |       expect(hasValidationErrors).toBeTruthy();
+          |                                   ^
+      195 |     } else {
+      196 |       // If no submit button found, at least verify the form loaded
+      197 |       const hasFormElements = await page.locator('input').or(
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:194:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/error-context.md
+
+
+[39/235] …lity › should display quote request form with consultant pre-populated
+  9) [chromium] › tests/quote-request.spec.ts:207:3 › Quote Request Functionality › should validate email format 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      265 |         });
+      266 |         
+    > 267 |         expect(hasEmailValidationError).toBeTruthy();
+          |                                         ^
+      268 |       } else {
+      269 |         // If no submit button, just verify email field exists
+      270 |         expect(await emailInput.isVisible()).toBeTruthy();
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:267:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/error-context.md
+
+
+[40/235] …ssion Functionality › should handle mobile responsive review interface
+[41/235] …te Request Functionality › should handle multi-step quote request form
+[42/235] …te Request Functionality › should handle phone number field validation
+[43/235] …ubmission Functionality › should display existing reviews with ratings
+[44/235] …nality › should find and access reviews section on consultant profiles
+  10) [chromium] › tests/review-submission.spec.ts:569:3 › Review Submission Functionality › should handle mobile responsive review interface 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      615 |       ).first().isVisible();
+      616 |       
+    > 617 |       expect(hasResponsiveLayout && hasMobileContent).toBeTruthy();
+          |                                                       ^
+      618 |     }
+      619 |     
+      620 |     // Final mobile responsiveness check
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:617:55
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-bb85a-responsive-review-interface-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-bb85a-responsive-review-interface-chromium/error-context.md
+
+
+[45/235] …n Functionality › should handle authentication requirement for reviews
+[46/235] … Functionality › should handle review pagination if many reviews exist
+[47/235] …w Submission Functionality › should display average rating calculation
+[48/235] … Registration Flows › should display business registration form fields
+[49/235] …stration Flows › should navigate to business listing/registration page
+[50/235] …istration Flows › should display "List Your Business" option in header
+[51/235] …stration Flows › should validate email format in business registration
+[52/235] …usiness Registration Flows › should handle business category selection
+[53/235] …ation Flows › should validate required fields on business registration
+[54/235] …Registration Flows › should display information about listing benefits
+[55/235] …ess Registration Flows › should handle terms and conditions acceptance
+[56/235] …gistration Flows › should submit business registration with valid data
+  11) [chromium] › tests/review-submission.spec.ts:543:3 › Review Submission Functionality › should display average rating calculation 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      564 |     
+      565 |     // Should display some form of rating, quality indicator, or consultant metrics
+    > 566 |     expect(hasRatingDisplay).toBeTruthy();
+          |                              ^
+      567 |   });
+      568 |
+      569 |   test('should handle mobile responsive review interface', async () => {
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:566:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-09609--average-rating-calculation-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-09609--average-rating-calculation-chromium/error-context.md
+
+
+[57/235] …& Business Registration Flows › should handle mobile responsive layout
+[58/235] …ile Pages › should navigate to consultant profiles from search results
+[59/235] …ofile Pages › should display consultant profile with tabbed navigation
+[60/235] … Profile Pages › should display consultant key metrics and information
+[61/235] …onsultant Profile Pages › should display "Request Quote" functionality
+[62/235] …sultant Profile Pages › should display contact information and methods
+[63/235] … Profile Pages › should display consultant ratings and reviews section
+[64/235] …tant Profile Pages › should display consultant services and industries

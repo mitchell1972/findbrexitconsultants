@@ -1,0 +1,64 @@
+
+Running 13 tests using 13 workers
+
+      1 …Review Submission Functionality › should handle star rating interaction
+      2 …eview Submission Functionality › should validate required review fields
+      3 …ctionality › should handle "Write Review" or "Add Review" functionality
+      4 …ion Functionality › should display review sorting and filtering options
+      5 …onality › should find and access reviews section on consultant profiles
+      6 … Review Submission Functionality › should show review count information
+      7 …sion Functionality › should submit complete review with rating and text
+      8 …on Functionality › should handle authentication requirement for reviews
+      9 …n Functionality › should handle review pagination if many reviews exist
+     10 …Submission Functionality › should display existing reviews with ratings
+     11 …ew Submission Functionality › should display average rating calculation
+     12 …ission Functionality › should handle mobile responsive review interface
+     13 …nctionality › should display review form with rating and comment fields
+  ✓   7 …nctionality › should submit complete review with rating and text (9.4s)  ✓   1 …ubmission Functionality › should handle star rating interaction (10.8s)  ✓   9 …ionality › should handle review pagination if many reviews exist (8.6s)  ✓   4 …tionality › should display review sorting and filtering options (10.6s)  ✓   8 …tionality › should handle authentication requirement for reviews (9.0s)  ✓   3 …ty › should handle "Write Review" or "Add Review" functionality (10.8s)  ✓   2 …bmission Functionality › should validate required review fields (10.9s)  ✓  13 …lity › should display review form with rating and comment fields (8.4s)  ✘  12 …Functionality › should handle mobile responsive review interface (8.9s)  ✓   6 …Submission Functionality › should show review count information (12.3s)  ✘  11 …ssion Functionality › should display average rating calculation (12.3s)  ✓   5 …› should find and access reviews section on consultant profiles (14.9s)  ✓  10 …on Functionality › should display existing reviews with ratings (15.3s)
+
+  1) [chromium] › tests/review-submission.spec.ts:543:3 › Review Submission Functionality › should display average rating calculation 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      564 |     
+      565 |     // Should display some form of rating, quality indicator, or consultant metrics
+    > 566 |     expect(hasRatingDisplay).toBeTruthy();
+          |                              ^
+      567 |   });
+      568 |
+      569 |   test('should handle mobile responsive review interface', async () => {
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:566:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-09609--average-rating-calculation-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-09609--average-rating-calculation-chromium/error-context.md
+
+  2) [chromium] › tests/review-submission.spec.ts:569:3 › Review Submission Functionality › should handle mobile responsive review interface 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      615 |       ).first().isVisible();
+      616 |       
+    > 617 |       expect(hasResponsiveLayout && hasMobileContent).toBeTruthy();
+          |                                                       ^
+      618 |     }
+      619 |     
+      620 |     // Final mobile responsiveness check
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:617:55
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-bb85a-responsive-review-interface-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-bb85a-responsive-review-interface-chromium/error-context.md
+
+  2 failed
+    [chromium] › tests/review-submission.spec.ts:543:3 › Review Submission Functionality › should display average rating calculation 
+    [chromium] › tests/review-submission.spec.ts:569:3 › Review Submission Functionality › should handle mobile responsive review interface 
+  11 passed (30.0s)

@@ -1,0 +1,93 @@
+
+Running 10 tests using 10 workers
+
+      1 …istration Flows › should navigate to business listing/registration page
+      2 …istration Flows › should validate email format in business registration
+      3 …gistration Flows › should display "List Your Business" option in header
+      4 …ness Registration Flows › should handle terms and conditions acceptance
+      5 …Business Registration Flows › should handle business category selection
+      6 …ration Flows › should validate required fields on business registration
+      7 …s Registration Flows › should display business registration form fields
+      8 …egistration Flows › should submit business registration with valid data
+      9 … & Business Registration Flows › should handle mobile responsive layout
+     10 … Registration Flows › should display information about listing benefits
+  ✓   1 …on Flows › should navigate to business listing/registration page (6.2s)  ✓   7 …tration Flows › should display business registration form fields (5.1s)  ✓   3 …ion Flows › should display "List Your Business" option in header (6.3s)  ✓   4 …gistration Flows › should handle terms and conditions acceptance (6.7s)  ✓  10 …ration Flows › should display information about listing benefits (5.5s)  ✓   2 …on Flows › should validate email format in business registration (9.7s)  ✓   6 …Flows › should validate required fields on business registration (9.2s)  ✘   5 … Registration Flows › should handle business category selection (10.3s)  ✘   8 …tion Flows › should submit business registration with valid data (9.5s)  ✘   9 …ess Registration Flows › should handle mobile responsive layout (20.3s)
+
+  1) [chromium] › tests/auth.spec.ts:190:3 › Authentication & Business Registration Flows › should handle business category selection 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      223 |     const hasProgressIndicator = await page.locator('text="2", text="3", text="4"').first().isVisible();
+      224 |     
+    > 225 |     expect(hasServiceSelect || hasServiceRadio || hasServiceCheckbox || hasServiceDropdown || hasProgressIndicator).toBeTruthy();
+          |                                                                                                                     ^
+      226 |   });
+      227 |
+      228 |   test('should display information about listing benefits', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:225:117
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-4cf72-business-category-selection-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-4cf72-business-category-selection-chromium/error-context.md
+
+  2) [chromium] › tests/auth.spec.ts:288:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      331 |     });
+      332 |     
+    > 333 |     expect(hasProgressed).toBeTruthy();
+          |                           ^
+      334 |   });
+      335 |
+      336 |   test('should handle mobile responsive layout', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:333:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium/error-context.md
+
+  3) [chromium] › tests/auth.spec.ts:336:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByTestId('list-business-header-btn')
+    Expected: visible
+    Received: hidden
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for getByTestId('list-business-header-btn')
+        18 × locator resolved to <a href="/list-business" data-testid="list-business-header-btn" class="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">List Your Business</a>
+           - unexpected value "hidden"
+
+
+      343 |     
+      344 |     // "List Your Business" button should be accessible on mobile
+    > 345 |     await expect(page.getByTestId('list-business-header-btn')).toBeVisible({ timeout: 15000 });
+          |                                                                ^
+      346 |     
+      347 |     // Navigate to registration page in mobile view
+      348 |     await page.click('[data-testid="list-business-header-btn"]');
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:345:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium/error-context.md
+
+  3 failed
+    [chromium] › tests/auth.spec.ts:190:3 › Authentication & Business Registration Flows › should handle business category selection 
+    [chromium] › tests/auth.spec.ts:288:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+    [chromium] › tests/auth.spec.ts:336:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+  7 passed (31.5s)

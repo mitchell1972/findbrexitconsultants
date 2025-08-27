@@ -1,0 +1,72 @@
+minimax       57  0.0  0.0 929368 75620 ?        Sl   11:57   0:00 npm exec @modelcontextprotocol/server-google-maps
+minimax       69  0.0  0.0 11135740 60832 ?      Sl   11:57   0:00 node /usr/local/bin/mcp-server-google-maps
+minimax     5067  0.0  0.0      0     0 ?        Z    15:57   0:02 [node] <defunct>
+minimax    13129  0.0  0.0      0     0 ?        Z    15:59   0:01 [node] <defunct>
+minimax    13189  0.0  0.0      0     0 ?        Z    15:59   0:01 [node] <defunct>
+minimax    13195  0.0  0.0      0     0 ?        Z    15:59   0:01 [node] <defunct>
+minimax    13298  0.0  0.0      0     0 ?        Z    15:59   0:01 [node] <defunct>
+minimax    13316  0.0  0.0      0     0 ?        Z    15:59   0:01 [node] <defunct>
+minimax    13320  0.0  0.0      0     0 ?        Z    15:59   0:01 [node] <defunct>
+minimax    13341  0.0  0.0      0     0 ?        Z    15:59   0:01 [node] <defunct>
+minimax    13375  0.0  0.0      0     0 ?        Z    15:59   0:00 [node] <defunct>
+minimax    13376  0.0  0.0      0     0 ?        Z    15:59   0:01 [node] <defunct>
+minimax    13379  0.0  0.0      0     0 ?        Z    15:59   0:00 [node] <defunct>
+minimax    13502  0.0  0.0      0     0 ?        Z    16:00   0:00 [node] <defunct>
+minimax    13538  0.0  0.0      0     0 ?        Z    16:00   0:00 [node] <defunct>
+minimax    13557  0.0  0.0      0     0 ?        Z    16:00   0:00 [node] <defunct>
+minimax    13579  0.0  0.0      0     0 ?        Z    16:00   0:00 [node] <defunct>
+minimax    13584  0.0  0.0      0     0 ?        Z    16:00   0:00 [node] <defunct>
+minimax    13920  0.0  0.0      0     0 ?        Z    16:00   0:00 [node] <defunct>
+minimax    14159  0.0  0.0      0     0 ?        Z    16:00   0:02 [node] <defunct>
+minimax    19281  0.0  0.0      0     0 ?        Z    16:01   0:01 [node] <defunct>
+minimax    22003  0.0  0.0      0     0 ?        Z    16:02   0:01 [node] <defunct>
+minimax    22062  0.0  0.0      0     0 ?        Z    16:02   0:01 [node] <defunct>
+minimax    22077  0.0  0.0      0     0 ?        Z    16:02   0:01 [node] <defunct>
+minimax    22081  0.0  0.0      0     0 ?        Z    16:02   0:01 [node] <defunct>
+minimax    22098  0.0  0.0      0     0 ?        Z    16:02   0:01 [node] <defunct>
+minimax    22113  0.0  0.0      0     0 ?        Z    16:02   0:01 [node] <defunct>
+minimax    22125  0.0  0.0      0     0 ?        Z    16:02   0:01 [node] <defunct>
+minimax    22146  0.0  0.0      0     0 ?        Z    16:02   0:01 [node] <defunct>
+minimax    22158  0.0  0.0      0     0 ?        Z    16:02   0:01 [node] <defunct>
+minimax    22160  0.0  0.0      0     0 ?        Z    16:02   0:01 [node] <defunct>
+minimax    22190  0.0  0.0      0     0 ?        Z    16:02   0:01 [node] <defunct>
+minimax    22225  0.0  0.0      0     0 ?        Z    16:03   0:01 [node] <defunct>
+minimax    22229  0.0  0.0      0     0 ?        Z    16:03   0:00 [node] <defunct>
+minimax    22360  0.0  0.0      0     0 ?        Z    16:03   0:01 [node] <defunct>
+minimax    23018  0.0  0.0      0     0 ?        Z    16:03   0:00 [node] <defunct>
+root       28044  0.0  0.0 1123640 86540 ?       Sl   16:08   0:01 /app/.venv/lib/python3.12/site-packages/playwright/driver/node /app/.venv/lib/python3.12/site-packages/playwright/driver/package/cli.js run-driver
+root       28365  0.0  0.0 1254664 86416 ?       Sl   16:08   0:01 /app/.venv/lib/python3.12/site-packages/playwright/driver/node /app/.venv/lib/python3.12/site-packages/playwright/driver/package/cli.js run-driver
+root       28380  0.0  0.0 1192020 91452 ?       Sl   16:08   0:02 /app/.venv/lib/python3.12/site-packages/playwright/driver/node /app/.venv/lib/python3.12/site-packages/playwright/driver/package/cli.js run-driver
+root       28433  0.0  0.0 1254928 86696 ?       Sl   16:09   0:01 /app/.venv/lib/python3.12/site-packages/playwright/driver/node /app/.venv/lib/python3.12/site-packages/playwright/driver/package/cli.js run-driver
+root       33477  0.0  0.0 1254408 86400 ?       Sl   16:26   0:01 /app/.venv/lib/python3.12/site-packages/playwright/driver/node /app/.venv/lib/python3.12/site-packages/playwright/driver/package/cli.js run-driver
+root       33488  0.0  0.0 1193608 92744 ?       Sl   16:26   0:01 /app/.venv/lib/python3.12/site-packages/playwright/driver/node /app/.venv/lib/python3.12/site-packages/playwright/driver/package/cli.js run-driver
+root       33521  0.0  0.0 1254648 87428 ?       Sl   16:26   0:01 /app/.venv/lib/python3.12/site-packages/playwright/driver/node /app/.venv/lib/python3.12/site-packages/playwright/driver/package/cli.js run-driver
+minimax    33680  0.0  0.0      0     0 ?        Z    16:31   0:02 [node] <defunct>
+minimax    35490  0.0  0.0      0     0 ?        Z    16:31   0:01 [node] <defunct>
+minimax    35757  0.0  0.0      0     0 ?        Z    16:31   0:01 [node] <defunct>
+minimax    35809  0.0  0.0      0     0 ?        Z    16:31   0:01 [node] <defunct>
+minimax    35830  0.0  0.0      0     0 ?        Z    16:31   0:01 [node] <defunct>
+minimax    36952  0.0  0.0      0     0 ?        Z    16:32   0:01 [node] <defunct>
+minimax    37935  0.0  0.0      0     0 ?        Z    16:32   0:01 [node] <defunct>
+minimax    38028  0.0  0.0      0     0 ?        Z    16:32   0:01 [node] <defunct>
+minimax    38062  0.0  0.0      0     0 ?        Z    16:32   0:01 [node] <defunct>
+minimax    38097  0.0  0.0      0     0 ?        Z    16:32   0:01 [node] <defunct>
+minimax    38105  0.0  0.0      0     0 ?        Z    16:32   0:01 [node] <defunct>
+minimax    38122  0.0  0.0      0     0 ?        Z    16:32   0:01 [node] <defunct>
+minimax    38536  0.0  0.0      0     0 ?        Z    16:33   0:00 [node] <defunct>
+minimax    38887  0.0  0.0      0     0 ?        Z    16:33   0:00 [node] <defunct>
+minimax    38952  0.0  0.0      0     0 ?        Z    16:33   0:00 [node] <defunct>
+minimax    39063  0.0  0.0      0     0 ?        Z    16:33   0:00 [node] <defunct>
+minimax    39076  0.0  0.0      0     0 ?        Z    16:33   0:00 [node] <defunct>
+root       39287  0.0  0.0   2576   920 ?        Ss   16:34   0:00 /bin/sh -c cd /workspace/findbrexit-consultants && pnpm dev
+root       39288  0.0  0.0 821828 95696 ?        Sl   16:34   0:00 node /usr/local/bin/pnpm dev
+root       39299  0.0  0.0   2576   932 ?        S    16:34   0:00 sh -c yes | pnpm install && vite
+root       39313  0.7  0.1 22245620 173156 ?     Sl   16:34   0:23 node /workspace/findbrexit-consultants/node_modules/.bin/../vite/bin/vite.js
+root       39329  0.0  0.0 1242300 16460 ?       Sl   16:34   0:01 /workspace/findbrexit-consultants/node_modules/.pnpm/@esbuild+linux-x64@0.25.2/node_modules/@esbuild/linux-x64/bin/esbuild --service=0.25.2 --ping
+minimax    39359  0.0  0.0      0     0 ?        Z    16:34   0:01 [node] <defunct>
+minimax    40391  0.0  0.0      0     0 ?        Z    16:38   0:01 [node] <defunct>
+minimax    41428  0.0  0.0      0     0 ?        Z    16:40   0:01 [node] <defunct>
+minimax    42660  0.0  0.0      0     0 ?        Z    16:42   0:01 [node] <defunct>
+minimax    43875  0.0  0.0      0     0 ?        Z    16:44   0:01 [node] <defunct>
+minimax    45205  0.0  0.0      0     0 ?        Z    16:46   0:01 [node] <defunct>
+minimax    49789  0.0  0.0      0     0 ?        Z    16:50   0:01 [node] <defunct>
