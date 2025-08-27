@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Check, Star, Users, TrendingUp, Crown, Shield, Zap } from 'lucide-react'
+import { Check, Star, Users, TrendingUp, Crown, Shield, Zap, CreditCard, Clock, CheckCircle, AlertCircle } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
 import { useAuth } from '@/contexts/AuthContext'
 import toast from 'react-hot-toast'
@@ -79,28 +79,28 @@ const pricingPlans = [
 
 const faqs = [
   {
-    question: 'How does the free plan work?',
-    answer: 'The free plan includes basic listing features that allow you to get started immediately. Your profile will include essential contact information and a brief description, but will appear after paid listings in search results.'
+    question: 'How does the 14-day free trial work?',
+    answer: 'Start with any paid plan and get full access for 14 days completely free. No payment required upfront. If you decide to continue after the trial, your subscription begins automatically. Cancel anytime during the trial with no charges.'
   },
   {
     question: 'Can I upgrade or downgrade my plan at any time?',
-    answer: 'Yes, you can change your plan at any time. Upgrades take effect immediately, while downgrades take effect at the end of your current billing period.'
+    answer: 'Yes, you can change your plan at any time through your billing portal. Upgrades take effect immediately with prorated billing. Downgrades take effect at the end of your current billing period.'
   },
   {
     question: 'What payment methods do you accept?',
-    answer: 'We accept all major credit and debit cards (Visa, MasterCard, American Express) processed securely through Stripe. All payments are in GBP.'
+    answer: 'We accept all major credit and debit cards (Visa, MasterCard, American Express) processed securely through Stripe. All payments are in GBP. We also support digital wallets like Apple Pay and Google Pay.'
   },
   {
-    question: 'Is there a setup fee?',
-    answer: 'No, there are no setup fees or hidden costs. You only pay the monthly subscription fee for your chosen plan.'
+    question: 'Is there a setup fee or cancellation fee?',
+    answer: 'No, there are no setup fees, cancellation fees, or hidden costs. You only pay the monthly subscription fee for your chosen plan during active months.'
   },
   {
-    question: 'How do I get verified as an expert?',
-    answer: 'Premium members can apply for "Verified Expert" status by submitting relevant certifications, client testimonials, and proof of experience. Our team reviews applications within 5-7 business days.'
+    question: 'How do I manage my subscription and billing?',
+    answer: 'Access your secure billing portal anytime to update payment methods, download invoices, change plans, or cancel your subscription. You\'ll receive email notifications for all billing activities.'
   },
   {
-    question: 'Can I cancel anytime?',
-    answer: 'Yes, you can cancel your subscription at any time. Your profile will remain active until the end of your current billing period, then revert to the free plan.'
+    question: 'What happens if I cancel my subscription?',
+    answer: 'Your subscription remains active until the end of your current billing period. After cancellation, you can still access basic features but with limited functionality. You can reactivate anytime without losing your profile data.'
   }
 ]
 
@@ -110,6 +110,7 @@ export function PricingPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
   const [subscription, setSubscription] = useState<any>(null)
   const [loading, setLoading] = useState<string | null>(null)
+  const [portalLoading, setPortalLoading] = useState(false)
 
   // Fetch current subscription if user is logged in
   const fetchSubscription = async () => {
@@ -160,9 +161,9 @@ export function PricingPage() {
 
   const handleSubscribe = async (planType: string) => {
     if (!user) {
-      toast.error('Please sign in to subscribe')
+      toast.error('Please sign in to start your free trial')
       // Redirect to sign in page
-      window.location.href = '/signin'
+      window.location.href = '/auth/signin'
       return
     }
 
@@ -179,14 +180,44 @@ export function PricingPage() {
       if (error) throw error
 
       if (data.data?.checkoutUrl) {
-        toast.success('Redirecting to payment...')
+        toast.success('Redirecting to secure checkout...')
         window.location.href = data.data.checkoutUrl
+      } else {
+        throw new Error('No checkout URL received')
       }
     } catch (error: any) {
       console.error('Subscription error:', error)
-      toast.error(error.message || 'Failed to create subscription')
+      toast.error(error.message || 'Failed to create checkout session. Please try again.')
     } finally {
       setLoading(null)
+    }
+  }
+
+  const handleManageBilling = async () => {
+    if (!user || !subscription) return
+
+    setPortalLoading(true)
+
+    try {
+      const { data, error } = await supabase.functions.invoke('customer-portal', {
+        body: {
+          userEmail: user.email
+        }
+      })
+
+      if (error) throw error
+
+      if (data.data?.portalUrl) {
+        toast.success('Redirecting to billing portal...')
+        window.location.href = data.data.portalUrl
+      } else {
+        throw new Error('No portal URL received')
+      }
+    } catch (error: any) {
+      console.error('Portal error:', error)
+      toast.error(error.message || 'Failed to access billing portal. Please try again.')
+    } finally {
+      setPortalLoading(false)
     }
   }
 
@@ -199,10 +230,16 @@ export function PricingPage() {
             <h1 className="text-4xl md:text-5xl font-bold text-[#003366] mb-6">
               Choose Your Membership Plan
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-2">
               Join the UK's leading directory of Brexit compliance consultants. 
               Get more leads, build credibility, and grow your business.
             </p>
+            <div className="flex items-center justify-center space-x-2 mb-8">
+              <CheckCircle className="w-5 h-5 text-green-500" />
+              <p className="text-lg font-semibold text-green-700">
+                14-day free trial on all plans • No payment required upfront
+              </p>
+            </div>
             
             {/* Billing toggle */}
             <div className="flex items-center justify-center space-x-4 mb-12">
@@ -272,26 +309,49 @@ export function PricingPage() {
                           Save £{plan.id === 'professional' ? '240' : '720'}/year
                         </div>
                       )}
+                      <div className="flex items-center justify-center space-x-1 mt-2">
+                        <Clock className="w-4 h-4 text-blue-500" />
+                        <span className="text-sm text-blue-600 font-medium">
+                          14-day free trial
+                        </span>
+                      </div>
                     </div>
                     
-                    <button
-                      onClick={() => handleSubscribe(plan.id)}
-                      disabled={loading === plan.id || (subscription && subscription.fbc_plans?.plan_type === plan.id)}
-                      className={`w-full px-6 py-3 rounded-lg font-semibold text-center transition-colors ${
-                        subscription && subscription.fbc_plans?.plan_type === plan.id
-                          ? 'bg-green-500 text-white cursor-not-allowed'
-                          : loading === plan.id
-                          ? 'bg-gray-400 text-white cursor-not-allowed'
-                          : plan.buttonStyle
-                      }`}
-                    >
-                      {subscription && subscription.fbc_plans?.plan_type === plan.id
-                        ? 'Current Plan'
-                        : loading === plan.id
-                        ? 'Processing...'
-                        : 'Start Free Trial'
-                      }
-                    </button>
+                    {subscription && subscription.fbc_plans?.plan_type === plan.id ? (
+                      <div className="space-y-3">
+                        <div className="w-full px-6 py-3 rounded-lg bg-green-50 border-2 border-green-200 text-green-800 text-center font-semibold">
+                          <CheckCircle className="w-5 h-5 inline mr-2" />
+                          Current Plan
+                        </div>
+                        <button
+                          onClick={handleManageBilling}
+                          disabled={portalLoading}
+                          className="w-full px-6 py-3 rounded-lg border-2 border-[#003366] text-[#003366] hover:bg-[#003366] hover:text-white transition-colors font-semibold"
+                        >
+                          <CreditCard className="w-5 h-5 inline mr-2" />
+                          {portalLoading ? 'Loading...' : 'Manage Billing'}
+                        </button>
+                      </div>
+                    ) : (
+                      <button
+                        onClick={() => handleSubscribe(plan.id)}
+                        disabled={loading === plan.id}
+                        className={`w-full px-6 py-3 rounded-lg font-semibold text-center transition-colors ${
+                          loading === plan.id
+                            ? 'bg-gray-400 text-white cursor-not-allowed'
+                            : plan.buttonStyle
+                        }`}
+                      >
+                        {loading === plan.id ? (
+                          <div className="flex items-center justify-center space-x-2">
+                            <div className="animate-spin rounded-full h-4 w-4 border-2 border-white border-t-transparent"></div>
+                            <span>Starting Trial...</span>
+                          </div>
+                        ) : (
+                          'Start 14-Day Free Trial'
+                        )}
+                      </button>
+                    )}
                   </div>
                   
                   {/* Features */}
@@ -324,21 +384,26 @@ export function PricingPage() {
         
         {/* Trust indicators */}
         <div className="text-center mt-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div className="text-center">
               <Shield className="w-8 h-8 text-[#003366] mx-auto mb-3" />
-              <h3 className="font-semibold text-gray-900 mb-2">Secure Payments</h3>
-              <p className="text-sm text-gray-600">All payments processed securely through Stripe</p>
+              <h3 className="font-semibold text-gray-900 mb-2">PCI Compliant</h3>
+              <p className="text-sm text-gray-600">Bank-level security through Stripe's encrypted payment processing</p>
+            </div>
+            <div className="text-center">
+              <CheckCircle className="w-8 h-8 text-[#003366] mx-auto mb-3" />
+              <h3 className="font-semibold text-gray-900 mb-2">14-Day Free Trial</h3>
+              <p className="text-sm text-gray-600">Try any plan risk-free with no payment required upfront</p>
             </div>
             <div className="text-center">
               <Zap className="w-8 h-8 text-[#003366] mx-auto mb-3" />
               <h3 className="font-semibold text-gray-900 mb-2">Instant Activation</h3>
-              <p className="text-sm text-gray-600">Your profile goes live immediately after approval</p>
+              <p className="text-sm text-gray-600">Your enhanced profile goes live immediately after approval</p>
             </div>
             <div className="text-center">
-              <Users className="w-8 h-8 text-[#003366] mx-auto mb-3" />
-              <h3 className="font-semibold text-gray-900 mb-2">Expert Support</h3>
-              <p className="text-sm text-gray-600">Get help from our dedicated support team</p>
+              <CreditCard className="w-8 h-8 text-[#003366] mx-auto mb-3" />
+              <h3 className="font-semibold text-gray-900 mb-2">Flexible Billing</h3>
+              <p className="text-sm text-gray-600">Change plans, pause, or cancel anytime through secure portal</p>
             </div>
           </div>
         </div>
@@ -386,16 +451,16 @@ export function PricingPage() {
       {/* CTA Section */}
       <div className="bg-[#003366] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Grow Your Brexit Consulting Business?</h2>
+          <h2 className="text-3xl font-bold mb-4">Ready to Start Your Free Trial?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            Join hundreds of successful consultants already using our platform to connect with new clients
+            Join hundreds of successful consultants already growing their Brexit consulting business with our platform
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <Link
-              to="/list-business"
+              to="/auth/signin"
               className="bg-[#FFD700] text-[#003366] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-400 transition-colors"
             >
-              Start Your Free Trial
+              Start Your 14-Day Free Trial
             </Link>
             <Link
               to="/contact"
@@ -405,7 +470,7 @@ export function PricingPage() {
             </Link>
           </div>
           <p className="text-sm text-blue-200 mt-4">
-            14-day free trial • No setup fees • Cancel anytime
+            No payment required • Full access for 14 days • Cancel anytime • No setup fees
           </p>
         </div>
       </div>

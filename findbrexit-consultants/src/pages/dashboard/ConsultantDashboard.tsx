@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../../contexts/AuthContext'
-import { BarChart3, Users, MessageSquare, Settings, Eye, TrendingUp, LogOut } from 'lucide-react'
+import { BarChart3, Users, MessageSquare, Settings, Eye, TrendingUp, LogOut, CreditCard } from 'lucide-react'
+import { SubscriptionManager } from '../../components/SubscriptionManager'
 import toast from 'react-hot-toast'
 
 export function ConsultantDashboard() {
@@ -57,7 +58,11 @@ export function ConsultantDashboard() {
       </div>
 
       {/* Dashboard Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+        {/* Subscription Section */}
+        <SubscriptionManager />
+        
+        {/* Main Dashboard */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-8 text-center">
           <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-6">
             <BarChart3 className="w-8 h-8 text-[#003366]" />
@@ -97,16 +102,22 @@ export function ConsultantDashboard() {
               <p className="text-sm text-gray-600">Update your business information</p>
             </div>
             <div className="border border-gray-200 rounded-lg p-4">
-              <BarChart3 className="w-8 h-8 text-[#003366] mx-auto mb-3" />
-              <h3 className="font-semibold text-[#003366] mb-2">Reporting</h3>
-              <p className="text-sm text-gray-600">Detailed business performance reports</p>
+              <CreditCard className="w-8 h-8 text-[#003366] mx-auto mb-3" />
+              <h3 className="font-semibold text-[#003366] mb-2">Billing & Plans</h3>
+              <p className="text-sm text-gray-600">Manage subscriptions and billing</p>
             </div>
           </div>
           
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <Link
-              to="/find-consultants"
+              to="/pricing"
               className="bg-[#003366] text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-800 transition-colors"
+            >
+              View Plans
+            </Link>
+            <Link
+              to="/find-consultants"
+              className="border-2 border-[#003366] text-[#003366] px-8 py-4 rounded-lg font-semibold hover:bg-[#003366] hover:text-white transition-colors"
             >
               Browse Directory
             </Link>

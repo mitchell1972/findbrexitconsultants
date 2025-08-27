@@ -30,6 +30,8 @@ import { AdminDashboard } from './pages/dashboard/AdminDashboard'
 import { ServiceCategoryPage } from './pages/ServiceCategoryPage'
 import { LocationPage } from './pages/LocationPage'
 import { IndustryPage } from './pages/IndustryPage'
+import { PaymentSuccessPage } from './pages/PaymentSuccessPage'
+import { PaymentCancelPage } from './pages/PaymentCancelPage'
 
 function App() {
   return (
@@ -69,8 +71,14 @@ function App() {
               {/* Authentication */}
               <Route path="/signin" element={<SignInPage />} />
               <Route path="/signup" element={<SignUpPage />} />
+              <Route path="/auth/signin" element={<SignInPage />} />
+              <Route path="/auth/signup" element={<SignUpPage />} />
               <Route path="/forgot-password" element={<ForgotPasswordPage />} />
               <Route path="/reset-password" element={<ResetPasswordPage />} />
+              
+              {/* Payment Flow */}
+              <Route path="/payment/success" element={<PaymentSuccessPage />} />
+              <Route path="/payment/cancel" element={<PaymentCancelPage />} />
               
               {/* Dashboard */}
               <Route path="/dashboard" element={<ConsultantDashboard />} />
