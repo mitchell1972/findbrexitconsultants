@@ -1,0 +1,260 @@
+
+Running 5 tests using 5 workers
+
+     1 …mission Functionality › should handle mobile responsive review interface
+     2 …mission Functionality › should handle mobile responsive review interface
+     3 …mission Functionality › should handle mobile responsive review interface
+     4 …mission Functionality › should handle mobile responsive review interface
+     5 …mission Functionality › should handle mobile responsive review interface
+  ✘  1 …Functionality › should handle mobile responsive review interface (30.1s)  ✘  2 …Functionality › should handle mobile responsive review interface (30.4s)  ✘  3 …Functionality › should handle mobile responsive review interface (30.8s)  ✘  5 …Functionality › should handle mobile responsive review interface (30.8s)  ✘  4 …Functionality › should handle mobile responsive review interface (30.2s)
+
+  1) [chromium] › tests/review-submission.spec.ts:590:3 › Review Submission Functionality › should handle mobile responsive review interface 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+        - locator resolved to 3 elements. Proceeding with the first one: <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        48 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+
+
+      27 |       
+      28 |       // Then click Find Consultants in mobile menu
+    > 29 |       await page.click('text="Find Consultants"');
+         |                  ^
+      30 |     } else {
+      31 |       // Desktop navigation - direct click on navigation link
+      32 |       await page.click('text="Find Consultants"');
+        at navigateToFindConsultants (/workspace/findbrexit-consultants/tests/review-submission.spec.ts:29:18)
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:596:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-bb85a-responsive-review-interface-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-bb85a-responsive-review-interface-chromium/error-context.md
+
+  2) [firefox] › tests/review-submission.spec.ts:590:3 › Review Submission Functionality › should handle mobile responsive review interface 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+        - locator resolved to 3 elements. Proceeding with the first one: <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        39 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      27 |       
+      28 |       // Then click Find Consultants in mobile menu
+    > 29 |       await page.click('text="Find Consultants"');
+         |                  ^
+      30 |     } else {
+      31 |       // Desktop navigation - direct click on navigation link
+      32 |       await page.click('text="Find Consultants"');
+        at navigateToFindConsultants (/workspace/findbrexit-consultants/tests/review-submission.spec.ts:29:18)
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:596:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-bb85a-responsive-review-interface-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-bb85a-responsive-review-interface-firefox/error-context.md
+
+  3) [webkit] › tests/review-submission.spec.ts:590:3 › Review Submission Functionality › should handle mobile responsive review interface 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+        - locator resolved to 3 elements. Proceeding with the first one: <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        38 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      27 |       
+      28 |       // Then click Find Consultants in mobile menu
+    > 29 |       await page.click('text="Find Consultants"');
+         |                  ^
+      30 |     } else {
+      31 |       // Desktop navigation - direct click on navigation link
+      32 |       await page.click('text="Find Consultants"');
+        at navigateToFindConsultants (/workspace/findbrexit-consultants/tests/review-submission.spec.ts:29:18)
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:596:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-bb85a-responsive-review-interface-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-bb85a-responsive-review-interface-webkit/error-context.md
+
+  4) [Mobile Chrome] › tests/review-submission.spec.ts:590:3 › Review Submission Functionality › should handle mobile responsive review interface 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('[data-testid="mobile-menu-button"]')
+        - locator resolved to <button aria-label="Toggle mobile menu" data-testid="mobile-menu-button" class="md:hidden p-2 text-gray-700 hover:text-[#003366]">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 100ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      12 × retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+
+
+      22 |       const mobileMenuButton = page.locator('[data-testid="mobile-menu-button"]');
+      23 |       if (await mobileMenuButton.isVisible()) {
+    > 24 |         await mobileMenuButton.click();
+         |                                ^
+      25 |         await page.waitForTimeout(500);
+      26 |       }
+      27 |       
+        at navigateToFindConsultants (/workspace/findbrexit-consultants/tests/review-submission.spec.ts:24:32)
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:596:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-bb85a-responsive-review-interface-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-bb85a-responsive-review-interface-Mobile-Chrome/error-context.md
+
+  5) [Mobile Safari] › tests/review-submission.spec.ts:590:3 › Review Submission Functionality › should handle mobile responsive review interface 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+        - locator resolved to 3 elements. Proceeding with the first one: <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        38 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+
+
+      27 |       
+      28 |       // Then click Find Consultants in mobile menu
+    > 29 |       await page.click('text="Find Consultants"');
+         |                  ^
+      30 |     } else {
+      31 |       // Desktop navigation - direct click on navigation link
+      32 |       await page.click('text="Find Consultants"');
+        at navigateToFindConsultants (/workspace/findbrexit-consultants/tests/review-submission.spec.ts:29:18)
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:596:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-bb85a-responsive-review-interface-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-bb85a-responsive-review-interface-Mobile-Safari/error-context.md
+
+  5 failed
+    [chromium] › tests/review-submission.spec.ts:590:3 › Review Submission Functionality › should handle mobile responsive review interface 
+    [firefox] › tests/review-submission.spec.ts:590:3 › Review Submission Functionality › should handle mobile responsive review interface 
+    [webkit] › tests/review-submission.spec.ts:590:3 › Review Submission Functionality › should handle mobile responsive review interface 
+    [Mobile Chrome] › tests/review-submission.spec.ts:590:3 › Review Submission Functionality › should handle mobile responsive review interface 
+    [Mobile Safari] › tests/review-submission.spec.ts:590:3 › Review Submission Functionality › should handle mobile responsive review interface 

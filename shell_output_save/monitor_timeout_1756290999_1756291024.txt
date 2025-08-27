@@ -1,0 +1,47 @@
+
+Running 60 tests using 16 workers
+
+      1 …ality › should display quote request form with consultant pre-populated
+      2 …ality › should display quote request form with consultant pre-populated
+      3 …uest Functionality › should display company/business information fields
+      4 …unctionality › should navigate to quote request from consultant profile
+      5 …uest Functionality › should validate required fields on form submission
+      6 …c.ts:223:3 › Quote Request Functionality › should validate email format
+      7 …ote Request Functionality › should submit quote request with valid data
+      8 …ote Request Functionality › should handle multi-step quote request form
+      9 …uest Functionality › should validate required fields on form submission
+     10 …unctionality › should navigate to quote request from consultant profile
+     11 …ote Request Functionality › should handle phone number field validation
+     12 …Functionality › should display quote request form with essential fields
+     13 … Quote Request Functionality › should display Brexit service categories
+     14 …e Request Functionality › should handle urgent/priority request options
+     15 …Functionality › should display quote request form with essential fields
+     16 …uote Request Functionality › should display responsive layout on mobile
+  ✓   3 …nctionality › should display company/business information fields (8.7s)  ✓   8 …uest Functionality › should handle multi-step quote request form (7.1s)  ✓  14 …st Functionality › should handle urgent/priority request options (7.0s)  ✓  12 …nality › should display quote request form with essential fields (7.7s)  ✓   7 …uest Functionality › should submit quote request with valid data (9.5s)  ✓  11 …uest Functionality › should handle phone number field validation (9.5s)  ✘  16 …quest Functionality › should display responsive layout on mobile (8.2s)  ✓  13 …equest Functionality › should display Brexit service categories (11.1s)  ✘   9 …ctionality › should validate required fields on form submission (13.3s)  ✘   6 …:3 › Quote Request Functionality › should validate email format (14.0s)  ✓   1 …should display quote request form with consultant pre-populated (20.4s)     17 …c.ts:223:3 › Quote Request Functionality › should validate email format
+     18 … Quote Request Functionality › should display Brexit service categories
+     19 …ote Request Functionality › should submit quote request with valid data
+     20 …ote Request Functionality › should handle multi-step quote request form
+     21 …ote Request Functionality › should handle phone number field validation
+     22 …uest Functionality › should display company/business information fields
+     23 …e Request Functionality › should handle urgent/priority request options
+     24 …unctionality › should navigate to quote request from consultant profile
+  ✘   4 …lity › should navigate to quote request from consultant profile (31.6s)     25 …uote Request Functionality › should display responsive layout on mobile
+     26 …ality › should display quote request form with consultant pre-populated
+     27 …Functionality › should display quote request form with essential fields
+     28 …uest Functionality › should validate required fields on form submission
+  ✘  10 …lity › should navigate to quote request from consultant profile (35.5s)  ✘   5 …ctionality › should validate required fields on form submission (34.9s)
+  ✘   2 …should display quote request form with consultant pre-populated (35.1s)
+  ✘  15 …ality › should display quote request form with essential fields (34.2s)  ✓  27 …ality › should display quote request form with essential fields (24.0s)     29 …ote Request Functionality › should handle phone number field validation
+  ✘  26 …should display quote request form with consultant pre-populated (38.9s)     30 …c.ts:223:3 › Quote Request Functionality › should validate email format
+     31 … Quote Request Functionality › should display Brexit service categories
+     32 …ote Request Functionality › should submit quote request with valid data
+     33 …ote Request Functionality › should handle multi-step quote request form
+  ✘  17 …:3 › Quote Request Functionality › should validate email format (38.3s)  ✘  21 …est Functionality › should handle phone number field validation (38.5s)  ✘  20 …est Functionality › should handle multi-step quote request form (37.8s)  ✘  19 …est Functionality › should submit quote request with valid data (41.7s)  ✘  28 …ctionality › should validate required fields on form submission (36.8s)  ✘  22 …ctionality › should display company/business information fields (38.3s)  ✘  18 …equest Functionality › should display Brexit service categories (41.9s)  ✘  25 …uest Functionality › should display responsive layout on mobile (42.5s)  ✘  24 …lity › should navigate to quote request from consultant profile (37.6s)  ✘  23 …t Functionality › should handle urgent/priority request options (42.1s)     34 …uest Functionality › should display company/business information fields
+     35 …e Request Functionality › should handle urgent/priority request options
+  ✓  33 …est Functionality › should handle multi-step quote request form (23.4s)  ✓  32 …est Functionality › should submit quote request with valid data (27.5s)  ✓  31 …equest Functionality › should display Brexit service categories (29.1s)     36 …uote Request Functionality › should display responsive layout on mobile
+     37 …Functionality › should display quote request form with essential fields
+     38 …ality › should display quote request form with consultant pre-populated
+     39 …unctionality › should navigate to quote request from consultant profile
+     40 … Quote Request Functionality › should display Brexit service categories
+     41 …ote Request Functionality › should submit quote request with valid data
+     42 …uest Functionality › should validate required fields on form submission

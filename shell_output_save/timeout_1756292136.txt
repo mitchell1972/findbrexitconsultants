@@ -1,0 +1,38 @@
+
+Running 50 tests using 16 workers
+
+      1 …gistration Flows › should display "List Your Business" option in header
+      2 …egistration Flows › should submit business registration with valid data
+      3 …ration Flows › should validate required fields on business registration
+      4 …Business Registration Flows › should handle business category selection
+      5 …istration Flows › should validate email format in business registration
+      6 …s Registration Flows › should display business registration form fields
+      7 …ness Registration Flows › should handle terms and conditions acceptance
+      8 …Business Registration Flows › should handle business category selection
+      9 …istration Flows › should navigate to business listing/registration page
+     10 … & Business Registration Flows › should handle mobile responsive layout
+     11 …s Registration Flows › should display business registration form fields
+     12 …ration Flows › should validate required fields on business registration
+     13 …gistration Flows › should display "List Your Business" option in header
+     14 …istration Flows › should validate email format in business registration
+     15 … Registration Flows › should display information about listing benefits
+     16 …istration Flows › should navigate to business listing/registration page
+  ✓   1 …on Flows › should display "List Your Business" option in header (10.0s)  ✓   6 …tration Flows › should display business registration form fields (9.1s)  ✓   7 …gistration Flows › should handle terms and conditions acceptance (9.3s)  ✓  12 …Flows › should validate required fields on business registration (8.8s)  ✓   9 …on Flows › should navigate to business listing/registration page (9.7s)  ✓  15 …ration Flows › should display information about listing benefits (8.3s)  ✘  10 …ess Registration Flows › should handle mobile responsive layout (10.1s)  ✓   5 …n Flows › should validate email format in business registration (12.8s)  ✓   4 … Registration Flows › should handle business category selection (14.8s)  ✘   2 …ion Flows › should submit business registration with valid data (16.6s)     17 … Registration Flows › should display information about listing benefits
+     18 …ness Registration Flows › should handle terms and conditions acceptance
+     19 …gistration Flows › should display "List Your Business" option in header
+     20 …egistration Flows › should submit business registration with valid data
+     21 …istration Flows › should navigate to business listing/registration page
+     22 … & Business Registration Flows › should handle mobile responsive layout
+     23 …ration Flows › should validate required fields on business registration
+     24 …s Registration Flows › should display business registration form fields
+     25 …istration Flows › should validate email format in business registration
+     26 …Business Registration Flows › should handle business category selection
+  ✓  19 …on Flows › should display "List Your Business" option in header (22.4s)     27 … Registration Flows › should display information about listing benefits
+  ✘   3 …lows › should validate required fields on business registration (36.4s)
+  ✘  14 …n Flows › should validate email format in business registration (36.1s)  ✘   8 … Registration Flows › should handle business category selection (36.8s)  ✘  11 …ration Flows › should display business registration form fields (36.4s)  ✘  13 …on Flows › should display "List Your Business" option in header (39.3s)  ✘  16 …n Flows › should navigate to business listing/registration page (41.5s)  ✘  21 …n Flows › should navigate to business listing/registration page (36.1s)  ✘  23 …lows › should validate required fields on business registration (36.7s)  ✘  24 …ration Flows › should display business registration form fields (36.9s)     28 …ness Registration Flows › should handle terms and conditions acceptance
+  ✘  25 …n Flows › should validate email format in business registration (37.3s)     29 …egistration Flows › should submit business registration with valid data
+  ✘  26 … Registration Flows › should handle business category selection (37.4s)     30 … & Business Registration Flows › should handle mobile responsive layout
+     31 …gistration Flows › should display "List Your Business" option in header
+     32 …istration Flows › should navigate to business listing/registration page
+     33 …s Registration Flows › should display business registration form fields
+  ✘  17 …ation Flows › should display information about listing benefits (40.5s)     34 …ration Flows › should validate required fields on business registration

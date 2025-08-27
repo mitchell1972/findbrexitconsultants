@@ -51,64 +51,64 @@
             - generic [ref=e55]:
               - generic [ref=e56]:
                 - generic [ref=e57]:
-                  - heading "UK Government Scotland - International Trade Division" [level=3] [ref=e58]
+                  - heading "Trade & Borders Consultancy" [level=3] [ref=e58]
                   - img [ref=e59]
                   - img [ref=e62]
-                - paragraph [ref=e64]: Charles Burke
+                - paragraph [ref=e64]: Dr Anna Jerzewska
               - generic [ref=e66]: £££
             - generic [ref=e67]:
               - generic [ref=e68]:
                 - generic [ref=e69]:
                   - img [ref=e70]
-                  - generic [ref=e73]: Edinburgh
+                  - generic [ref=e73]: London
                 - generic [ref=e74]:
                   - img [ref=e75]
-                  - generic [ref=e78]: 2h response
-              - paragraph [ref=e79]: Head of International Trade & Business at UK Government Scotland. Expert in Brexit compliance, international trade development, and supporting Scottish businesses in global markets. Extensive experience in trade policy and regulatory frameworks.
+                  - generic [ref=e78]: 4h response
+              - paragraph [ref=e79]: Founder of Trade & Borders consultancy, offering bespoke advice and training on customs, international trade and Brexit to private and public sector clients. PhD-level expertise with extensive experience in post-Brexit trade regulations.
               - generic [ref=e80]:
                 - generic [ref=e81]:
                   - generic [ref=e82]: "Experience:"
-                  - generic [ref=e83]: 15 years
+                  - generic [ref=e83]: 8 years
                 - generic [ref=e84]:
                   - generic [ref=e85]: "Team size:"
-                  - generic [ref=e86]: 25+
+                  - generic [ref=e86]: 15-25
               - generic [ref=e87]: Free Consultation Available
             - generic [ref=e89]:
               - link "View Profile" [ref=e90] [cursor=pointer]:
-                - /url: /consultant/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6
+                - /url: /consultant/b3afeec3-7859-47c2-8e51-23e97c50475b
               - link "Contact" [ref=e91] [cursor=pointer]:
-                - /url: /contact/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6
+                - /url: /contact/b3afeec3-7859-47c2-8e51-23e97c50475b
           - generic [ref=e92]:
             - generic [ref=e94]:
               - generic [ref=e95]:
                 - generic [ref=e96]:
-                  - heading "Trade & Borders Consultancy" [level=3] [ref=e97]
+                  - heading "UK Government Scotland - International Trade Division" [level=3] [ref=e97]
                   - img [ref=e98]
                   - img [ref=e101]
-                - paragraph [ref=e103]: Dr Anna Jerzewska
+                - paragraph [ref=e103]: Charles Burke
               - generic [ref=e105]: £££
             - generic [ref=e106]:
               - generic [ref=e107]:
                 - generic [ref=e108]:
                   - img [ref=e109]
-                  - generic [ref=e112]: London
+                  - generic [ref=e112]: Edinburgh
                 - generic [ref=e113]:
                   - img [ref=e114]
-                  - generic [ref=e117]: 4h response
-              - paragraph [ref=e118]: Founder of Trade & Borders consultancy, offering bespoke advice and training on customs, international trade and Brexit to private and public sector clients. PhD-level expertise with extensive experience in post-Brexit trade regulations.
+                  - generic [ref=e117]: 2h response
+              - paragraph [ref=e118]: Head of International Trade & Business at UK Government Scotland. Expert in Brexit compliance, international trade development, and supporting Scottish businesses in global markets. Extensive experience in trade policy and regulatory frameworks.
               - generic [ref=e119]:
                 - generic [ref=e120]:
                   - generic [ref=e121]: "Experience:"
-                  - generic [ref=e122]: 8 years
+                  - generic [ref=e122]: 15 years
                 - generic [ref=e123]:
                   - generic [ref=e124]: "Team size:"
-                  - generic [ref=e125]: 15-25
+                  - generic [ref=e125]: 25+
               - generic [ref=e126]: Free Consultation Available
             - generic [ref=e128]:
               - link "View Profile" [ref=e129] [cursor=pointer]:
-                - /url: /consultant/b3afeec3-7859-47c2-8e51-23e97c50475b
+                - /url: /consultant/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6
               - link "Contact" [ref=e130] [cursor=pointer]:
-                - /url: /contact/b3afeec3-7859-47c2-8e51-23e97c50475b
+                - /url: /contact/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6
           - generic [ref=e131]:
             - generic [ref=e133]:
               - generic [ref=e134]:

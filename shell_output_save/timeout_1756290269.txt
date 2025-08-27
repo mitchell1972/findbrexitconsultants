@@ -1,0 +1,82 @@
+
+> react_repo@0.0.0 test:e2e /workspace/findbrexit-consultants
+> playwright test tests/auth.spec.ts '--grep=should display.*List Your Business.*option in header' --timeout\=60000
+
+
+Running 5 tests using 5 workers
+
+[1/5] …Registration Flows › should display "List Your Business" option in header
+[2/5] …Registration Flows › should display "List Your Business" option in header
+[3/5] …Registration Flows › should display "List Your Business" option in header
+[4/5] …Registration Flows › should display "List Your Business" option in header
+[5/5] …Registration Flows › should display "List Your Business" option in header
+  1) [Mobile Chrome] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="list-business-header-btn"], a:has-text("List Your Business"), button:has-text("List Your Business")').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('[data-testid="list-business-header-btn"], a:has-text("List Your Business"), button:has-text("List Your Business")').first()
+        13 × locator resolved to <a href="/list-business" data-testid="list-business-header-btn" class="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">List Your Business</a>
+           - unexpected value "hidden"
+
+
+      40 |       // Check for List Your Business option (in mobile menu or as mobile button)
+      41 |       const listBusinessOption = page.locator('[data-testid="list-business-header-btn"], a:has-text("List Your Business"), button:has-text("List Your Business")').first();
+    > 42 |       await expect(listBusinessOption).toBeVisible({ timeout: 10000 });
+         |                                        ^
+      43 |     }
+      44 |   });
+      45 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:42:40
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-Mobile-Chrome/error-context.md
+
+
+  2) [Mobile Safari] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="list-business-header-btn"], a:has-text("List Your Business"), button:has-text("List Your Business")').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('[data-testid="list-business-header-btn"], a:has-text("List Your Business"), button:has-text("List Your Business")').first()
+        13 × locator resolved to <a href="/list-business" data-testid="list-business-header-btn" class="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">List Your Business</a>
+           - unexpected value "hidden"
+
+
+      40 |       // Check for List Your Business option (in mobile menu or as mobile button)
+      41 |       const listBusinessOption = page.locator('[data-testid="list-business-header-btn"], a:has-text("List Your Business"), button:has-text("List Your Business")').first();
+    > 42 |       await expect(listBusinessOption).toBeVisible({ timeout: 10000 });
+         |                                        ^
+      43 |     }
+      44 |   });
+      45 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:42:40
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-Mobile-Safari/error-context.md
+
+
+  2 failed
+    [Mobile Chrome] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+    [Mobile Safari] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+  3 passed (21.5s)
+
+  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.

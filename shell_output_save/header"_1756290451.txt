@@ -1,0 +1,100 @@
+
+> react_repo@0.0.0 test:e2e /workspace/findbrexit-consultants
+> playwright test tests/auth.spec.ts '--grep=should display.*List Your Business.*option in header'
+
+
+Running 5 tests using 5 workers
+
+[1/5] …Registration Flows › should display "List Your Business" option in header
+[2/5] …Registration Flows › should display "List Your Business" option in header
+[3/5] …Registration Flows › should display "List Your Business" option in header
+[4/5] …Registration Flows › should display "List Your Business" option in header
+[5/5] …Registration Flows › should display "List Your Business" option in header
+  1) [Mobile Chrome] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for getByTestId('mobile-menu-button')
+        - locator resolved to <button aria-label="Toggle mobile menu" data-testid="mobile-menu-button" class="md:hidden p-2 text-gray-700 hover:text-[#003366]">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 100ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      11 × retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+
+
+      33 |       // Click mobile menu button
+      34 |       await expect(page.getByTestId('mobile-menu-button')).toBeVisible({ timeout: 10000 });
+    > 35 |       await page.getByTestId('mobile-menu-button').click();
+         |                                                    ^
+      36 |       await page.waitForTimeout(500);
+      37 |       
+      38 |       // Check for mobile List Your Business button
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:35:52
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-Mobile-Chrome/error-context.md
+
+
+  1 failed
+    [Mobile Chrome] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+  4 passed (35.5s)
+
+  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.

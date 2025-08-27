@@ -1,0 +1,250 @@
+
+Running 5 tests using 5 workers
+
+     1 …› should navigate to quote request on mobile using responsive navigation
+     2 …› should navigate to quote request on mobile using responsive navigation
+     3 …› should navigate to quote request on mobile using responsive navigation
+     4 …› should navigate to quote request on mobile using responsive navigation
+     5 …› should navigate to quote request on mobile using responsive navigation
+  ✘  3 … navigate to quote request on mobile using responsive navigation (30.5s)  ✘  1 … navigate to quote request on mobile using responsive navigation (31.1s)  ✘  2 … navigate to quote request on mobile using responsive navigation (31.1s)  ✘  5 … navigate to quote request on mobile using responsive navigation (31.3s)  ✘  4 … navigate to quote request on mobile using responsive navigation (30.2s)
+
+  1) [chromium] › tests/quote-request.spec.ts:577:3 › Quote Request Functionality › should navigate to quote request on mobile using responsive navigation 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('nav a[href="/find-consultants"]')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        45 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      30 |       
+      31 |       // Click the mobile navigation link specifically in the nav element
+    > 32 |       await page.click(`nav a[href="/find-consultants"]`);
+         |                  ^
+      33 |     } else {
+      34 |       // Desktop: Click desktop navigation link directly using specific nav selector
+      35 |       await page.click(`nav a[href="/find-consultants"]`);
+        at navigateResponsively (/workspace/findbrexit-consultants/tests/quote-request.spec.ts:32:18)
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:584:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-768ae-using-responsive-navigation-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-768ae-using-responsive-navigation-chromium/error-context.md
+
+  2) [firefox] › tests/quote-request.spec.ts:577:3 › Quote Request Functionality › should navigate to quote request on mobile using responsive navigation 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('nav a[href="/find-consultants"]')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        39 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+
+
+      30 |       
+      31 |       // Click the mobile navigation link specifically in the nav element
+    > 32 |       await page.click(`nav a[href="/find-consultants"]`);
+         |                  ^
+      33 |     } else {
+      34 |       // Desktop: Click desktop navigation link directly using specific nav selector
+      35 |       await page.click(`nav a[href="/find-consultants"]`);
+        at navigateResponsively (/workspace/findbrexit-consultants/tests/quote-request.spec.ts:32:18)
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:584:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-768ae-using-responsive-navigation-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-768ae-using-responsive-navigation-firefox/error-context.md
+
+  3) [webkit] › tests/quote-request.spec.ts:577:3 › Quote Request Functionality › should navigate to quote request on mobile using responsive navigation 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('nav a[href="/find-consultants"]')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        35 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      30 |       
+      31 |       // Click the mobile navigation link specifically in the nav element
+    > 32 |       await page.click(`nav a[href="/find-consultants"]`);
+         |                  ^
+      33 |     } else {
+      34 |       // Desktop: Click desktop navigation link directly using specific nav selector
+      35 |       await page.click(`nav a[href="/find-consultants"]`);
+        at navigateResponsively (/workspace/findbrexit-consultants/tests/quote-request.spec.ts:32:18)
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:584:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-768ae-using-responsive-navigation-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-768ae-using-responsive-navigation-webkit/error-context.md
+
+  4) [Mobile Chrome] › tests/quote-request.spec.ts:577:3 › Quote Request Functionality › should navigate to quote request on mobile using responsive navigation 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('[data-testid="mobile-menu-button"]')
+        - locator resolved to <button aria-label="Toggle mobile menu" data-testid="mobile-menu-button" class="md:hidden p-2 text-gray-700 hover:text-[#003366]">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 100ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      12 × retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+
+
+      25 |       const mobileMenuButton = page.locator('[data-testid="mobile-menu-button"]');
+      26 |       if (await mobileMenuButton.isVisible()) {
+    > 27 |         await mobileMenuButton.click();
+         |                                ^
+      28 |         await page.waitForTimeout(1000); // Wait for mobile menu to open
+      29 |       }
+      30 |       
+        at navigateResponsively (/workspace/findbrexit-consultants/tests/quote-request.spec.ts:27:32)
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:584:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-768ae-using-responsive-navigation-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-768ae-using-responsive-navigation-Mobile-Chrome/error-context.md
+
+  5) [Mobile Safari] › tests/quote-request.spec.ts:577:3 › Quote Request Functionality › should navigate to quote request on mobile using responsive navigation 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('nav a[href="/find-consultants"]')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        36 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+
+
+      30 |       
+      31 |       // Click the mobile navigation link specifically in the nav element
+    > 32 |       await page.click(`nav a[href="/find-consultants"]`);
+         |                  ^
+      33 |     } else {
+      34 |       // Desktop: Click desktop navigation link directly using specific nav selector
+      35 |       await page.click(`nav a[href="/find-consultants"]`);
+        at navigateResponsively (/workspace/findbrexit-consultants/tests/quote-request.spec.ts:32:18)
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:584:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-768ae-using-responsive-navigation-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-768ae-using-responsive-navigation-Mobile-Safari/error-context.md
+
+  5 failed
+    [chromium] › tests/quote-request.spec.ts:577:3 › Quote Request Functionality › should navigate to quote request on mobile using responsive navigation 
+    [firefox] › tests/quote-request.spec.ts:577:3 › Quote Request Functionality › should navigate to quote request on mobile using responsive navigation 
+    [webkit] › tests/quote-request.spec.ts:577:3 › Quote Request Functionality › should navigate to quote request on mobile using responsive navigation 
+    [Mobile Chrome] › tests/quote-request.spec.ts:577:3 › Quote Request Functionality › should navigate to quote request on mobile using responsive navigation 
+    [Mobile Safari] › tests/quote-request.spec.ts:577:3 › Quote Request Functionality › should navigate to quote request on mobile using responsive navigation 

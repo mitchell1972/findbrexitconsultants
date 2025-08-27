@@ -1,0 +1,72 @@
+
+Running 10 tests using 10 workers
+
+      1 …istration Flows › should validate email format in business registration
+      2 …egistration Flows › should submit business registration with valid data
+      3 …egistration Flows › should submit business registration with valid data
+      4 …istration Flows › should validate email format in business registration
+      5 …egistration Flows › should submit business registration with valid data
+      6 …egistration Flows › should submit business registration with valid data
+      7 …istration Flows › should validate email format in business registration
+      8 …istration Flows › should validate email format in business registration
+      9 …egistration Flows › should submit business registration with valid data
+     10 …istration Flows › should validate email format in business registration
+  ✘   5 …ion Flows › should submit business registration with valid data (15.7s)  ✘  10 …n Flows › should validate email format in business registration (17.1s)Testing stopped early after 2 maximum allowed failures.
+  ✘   2 …ion Flows › should submit business registration with valid data (21.5s)  ✘   3 …ion Flows › should submit business registration with valid data (23.1s)  ✘   7 …n Flows › should validate email format in business registration (23.4s)  ✘   9 …ion Flows › should submit business registration with valid data (23.0s)  ✘   8 …n Flows › should validate email format in business registration (21.4s)  ✘   1 …n Flows › should validate email format in business registration (22.8s)  ✘   6 …tion Flows › should submit business registration with valid data (8.9s)  ✘   4 …n Flows › should validate email format in business registration (18.9s)
+
+  1) [chromium] › tests/auth.spec.ts:127:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      216 |     });
+      217 |     
+    > 218 |     expect(hasEmailValidationError).toBeTruthy();
+          |                                     ^
+      219 |   });
+      220 |
+      221 |   test('should handle business category selection', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:218:37
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium/error-context.md
+
+  2) [chromium] › tests/auth.spec.ts:438:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+
+    Error: locator.isVisible: Unexpected token "=" while parsing css selector "input[name="city"], input[placeholder*="City" i], text="Location", text="Step 2"". Did you mean to CSS.escape it?
+    Call log:
+        - checking visibility of input[name="city"], input[placeholder*="City" i], text="Location", text="Step 2" >> nth=0
+
+
+      495 |     
+      496 |     // Also check if any step 2 elements appeared
+    > 497 |     const hasStep2Elements = await page.locator('input[name="city"], input[placeholder*="City" i], text="Location", text="Step 2"').first().isVisible({ timeout: 5000 });
+          |                                                                                                                                             ^
+      498 |     
+      499 |     // Check if form accepts data without validation errors
+      500 |     const hasNoValidationErrors = await page.evaluate(() => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:497:141
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium/error-context.md
+
+  2 failed
+    [chromium] › tests/auth.spec.ts:127:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+    [chromium] › tests/auth.spec.ts:438:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+  8 interrupted
+    [firefox] › tests/auth.spec.ts:127:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+    [firefox] › tests/auth.spec.ts:438:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+    [webkit] › tests/auth.spec.ts:127:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+    [webkit] › tests/auth.spec.ts:438:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+    [Mobile Chrome] › tests/auth.spec.ts:127:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+    [Mobile Chrome] › tests/auth.spec.ts:438:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+    [Mobile Safari] › tests/auth.spec.ts:127:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+    [Mobile Safari] › tests/auth.spec.ts:438:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+  1 error was not a part of any test, see above for details

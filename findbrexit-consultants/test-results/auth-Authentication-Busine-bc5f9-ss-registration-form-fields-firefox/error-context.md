@@ -1,0 +1,663 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: 500+ Verified Consultants
+        - generic [ref=e9]: •
+        - generic [ref=e10]: 1000+ Businesses Helped
+        - generic [ref=e11]: •
+        - generic [ref=e12]: All Consultants Vetted
+      - generic [ref=e14]:
+        - link "FB FindBrexitConsultants.co.uk" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e18] [cursor=pointer]: FB
+          - generic [ref=e19] [cursor=pointer]: FindBrexitConsultants.co.uk
+        - generic [ref=e21]:
+          - textbox "Search consultants by service, location, or company..." [ref=e22]
+          - button [ref=e23] [cursor=pointer]:
+            - img [ref=e24] [cursor=pointer]
+        - navigation [ref=e27]:
+          - link "Find Consultants" [ref=e28] [cursor=pointer]:
+            - /url: /find-consultants
+          - link "How It Works" [ref=e29] [cursor=pointer]:
+            - /url: /how-it-works
+          - link "Pricing" [ref=e30] [cursor=pointer]:
+            - /url: /pricing
+          - link "List Your Business" [ref=e31] [cursor=pointer]:
+            - /url: /list-business
+    - main [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e36]:
+          - heading "Find Verified Brexit Compliance Consultants in the UK" [level=1] [ref=e37]:
+            - text: Find Verified Brexit
+            - generic [ref=e38]: Compliance Consultants
+            - generic [ref=e39]: in the UK
+          - paragraph [ref=e40]: Connect with certified customs agents, trade specialists, and Brexit experts. Get professional guidance to navigate post-Brexit compliance with confidence.
+          - generic [ref=e42]:
+            - generic [ref=e43]:
+              - generic [ref=e44]:
+                - generic [ref=e45]: Service Type
+                - combobox [ref=e46]:
+                  - option "All Services" [selected]
+                  - option "Customs Declarations"
+                  - option "VAT/Tax Compliance"
+                  - option "Northern Ireland Protocol"
+                  - option "Regulatory Compliance"
+                  - option "Import/Export Documentation"
+                  - option "Supply Chain Consulting"
+              - generic [ref=e47]:
+                - generic [ref=e48]: Location
+                - combobox [ref=e49]:
+                  - option "All Locations" [selected]
+                  - option "London"
+                  - option "Manchester"
+                  - option "Birmingham"
+                  - option "Scotland"
+                  - option "Wales"
+                  - option "Northern Ireland"
+              - generic [ref=e50]:
+                - generic [ref=e51]: Keywords
+                - textbox "Company name, industry..." [ref=e52]
+            - generic [ref=e53]:
+              - button "Find Consultants" [ref=e54] [cursor=pointer]:
+                - img [ref=e55] [cursor=pointer]
+                - generic [ref=e58] [cursor=pointer]: Find Consultants
+              - link "Request Quote" [ref=e59] [cursor=pointer]:
+                - /url: /request-quote
+                - img [ref=e60] [cursor=pointer]
+                - generic [ref=e63] [cursor=pointer]: Request Quote
+          - generic [ref=e64]:
+            - generic [ref=e65]:
+              - img [ref=e67]
+              - heading "500+" [level=3] [ref=e69]
+              - paragraph [ref=e70]: Verified Consultants
+            - generic [ref=e71]:
+              - img [ref=e73]
+              - heading "1000+" [level=3] [ref=e78]
+              - paragraph [ref=e79]: Businesses Helped
+            - generic [ref=e80]:
+              - img [ref=e82]
+              - heading "100%" [level=3] [ref=e85]
+              - paragraph [ref=e86]: All Consultants Vetted
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - heading "Brexit Compliance Services" [level=2] [ref=e90]
+            - paragraph [ref=e91]: Find specialized consultants for every aspect of post-Brexit compliance. Our verified experts cover all major service categories.
+          - generic [ref=e92]:
+            - link "Customs Declarations Expert guidance on customs documentation and procedures 50+ consultants View all →" [ref=e93] [cursor=pointer]:
+              - /url: /services/customs-declarations
+              - generic [ref=e94] [cursor=pointer]:
+                - img [ref=e97] [cursor=pointer]
+                - generic [ref=e103] [cursor=pointer]:
+                  - heading "Customs Declarations" [level=3] [ref=e104] [cursor=pointer]
+                  - paragraph [ref=e105] [cursor=pointer]: Expert guidance on customs documentation and procedures
+              - generic [ref=e107] [cursor=pointer]:
+                - generic [ref=e108] [cursor=pointer]: 50+ consultants
+                - generic [ref=e109] [cursor=pointer]: View all →
+            - link "VAT/Tax Compliance VAT registration, tax compliance, and reporting services 50+ consultants View all →" [ref=e110] [cursor=pointer]:
+              - /url: /services/vat-tax-compliance
+              - generic [ref=e111] [cursor=pointer]:
+                - img [ref=e114] [cursor=pointer]
+                - generic [ref=e125] [cursor=pointer]:
+                  - heading "VAT/Tax Compliance" [level=3] [ref=e126] [cursor=pointer]
+                  - paragraph [ref=e127] [cursor=pointer]: VAT registration, tax compliance, and reporting services
+              - generic [ref=e129] [cursor=pointer]:
+                - generic [ref=e130] [cursor=pointer]: 50+ consultants
+                - generic [ref=e131] [cursor=pointer]: View all →
+            - link "Northern Ireland Protocol Specialized advice on NI Protocol requirements 50+ consultants View all →" [ref=e132] [cursor=pointer]:
+              - /url: /services/northern-ireland-protocol
+              - generic [ref=e133] [cursor=pointer]:
+                - img [ref=e136] [cursor=pointer]
+                - generic [ref=e139] [cursor=pointer]:
+                  - heading "Northern Ireland Protocol" [level=3] [ref=e140] [cursor=pointer]
+                  - paragraph [ref=e141] [cursor=pointer]: Specialized advice on NI Protocol requirements
+              - generic [ref=e143] [cursor=pointer]:
+                - generic [ref=e144] [cursor=pointer]: 50+ consultants
+                - generic [ref=e145] [cursor=pointer]: View all →
+            - link "Regulatory Compliance Ensure compliance with new regulatory frameworks 50+ consultants View all →" [ref=e146] [cursor=pointer]:
+              - /url: /services/regulatory-compliance
+              - generic [ref=e147] [cursor=pointer]:
+                - img [ref=e150] [cursor=pointer]
+                - generic [ref=e152] [cursor=pointer]:
+                  - heading "Regulatory Compliance" [level=3] [ref=e153] [cursor=pointer]
+                  - paragraph [ref=e154] [cursor=pointer]: Ensure compliance with new regulatory frameworks
+              - generic [ref=e156] [cursor=pointer]:
+                - generic [ref=e157] [cursor=pointer]: 50+ consultants
+                - generic [ref=e158] [cursor=pointer]: View all →
+            - link "Import/Export Documentation Comprehensive documentation services for trade 50+ consultants View all →" [ref=e159] [cursor=pointer]:
+              - /url: /services/import-export-documentation
+              - generic [ref=e160] [cursor=pointer]:
+                - img [ref=e163] [cursor=pointer]
+                - generic [ref=e170] [cursor=pointer]:
+                  - heading "Import/Export Documentation" [level=3] [ref=e171] [cursor=pointer]
+                  - paragraph [ref=e172] [cursor=pointer]: Comprehensive documentation services for trade
+              - generic [ref=e174] [cursor=pointer]:
+                - generic [ref=e175] [cursor=pointer]: 50+ consultants
+                - generic [ref=e176] [cursor=pointer]: View all →
+            - link "Supply Chain Consulting Strategic supply chain optimization services 50+ consultants View all →" [ref=e177] [cursor=pointer]:
+              - /url: /services/supply-chain-consulting
+              - generic [ref=e178] [cursor=pointer]:
+                - img [ref=e181] [cursor=pointer]
+                - generic [ref=e187] [cursor=pointer]:
+                  - heading "Supply Chain Consulting" [level=3] [ref=e188] [cursor=pointer]
+                  - paragraph [ref=e189] [cursor=pointer]: Strategic supply chain optimization services
+              - generic [ref=e191] [cursor=pointer]:
+                - generic [ref=e192] [cursor=pointer]: 50+ consultants
+                - generic [ref=e193] [cursor=pointer]: View all →
+          - link "Browse All Consultants" [ref=e195] [cursor=pointer]:
+            - /url: /find-consultants
+            - text: Browse All Consultants
+            - img [ref=e196] [cursor=pointer]
+        - generic [ref=e199]:
+          - generic [ref=e200]:
+            - heading "Featured Brexit Consultants" [level=2] [ref=e201]
+            - paragraph [ref=e202]: Premium verified consultants with proven track records. These experts have helped hundreds of businesses navigate Brexit compliance.
+          - generic [ref=e203]:
+            - generic [ref=e204]:
+              - generic [ref=e206]:
+                - generic [ref=e207]:
+                  - generic [ref=e208]:
+                    - heading "Trade & Borders Consultancy" [level=3] [ref=e209]
+                    - img [ref=e210]
+                    - img [ref=e213]
+                  - paragraph [ref=e215]: Dr Anna Jerzewska
+                - generic [ref=e217]: £££
+              - generic [ref=e218]:
+                - generic [ref=e219]:
+                  - generic [ref=e220]:
+                    - img [ref=e221]
+                    - generic [ref=e224]: London
+                  - generic [ref=e225]:
+                    - img [ref=e226]
+                    - generic [ref=e229]: 4h response
+                - paragraph [ref=e230]: Founder of Trade & Borders consultancy, offering bespoke advice and training on customs, international trade and Brexit to private and public sector clients. PhD-level expertise with extensive experience in post-Brexit trade regulations.
+                - generic [ref=e231]:
+                  - generic [ref=e232]:
+                    - generic [ref=e233]: "Experience:"
+                    - generic [ref=e234]: 8 years
+                  - generic [ref=e235]:
+                    - generic [ref=e236]: "Team size:"
+                    - generic [ref=e237]: 15-25
+                  - generic [ref=e238]:
+                    - generic [ref=e239]: "Min. project:"
+                    - generic [ref=e240]: £5,000
+                - generic [ref=e241]: Free Consultation Available
+              - generic [ref=e242]:
+                - generic [ref=e243]:
+                  - link "View Profile" [ref=e244] [cursor=pointer]:
+                    - /url: /consultant/b3afeec3-7859-47c2-8e51-23e97c50475b
+                  - link "Contact" [ref=e245] [cursor=pointer]:
+                    - /url: /contact/b3afeec3-7859-47c2-8e51-23e97c50475b
+                - generic [ref=e246]:
+                  - link "Website" [ref=e247] [cursor=pointer]:
+                    - /url: https://tradeandborders.com
+                    - img [ref=e248] [cursor=pointer]
+                    - generic [ref=e252] [cursor=pointer]: Website
+                  - link "Call" [ref=e253] [cursor=pointer]:
+                    - /url: tel:+44 20 7946 8532
+                    - img [ref=e254] [cursor=pointer]
+                    - generic [ref=e256] [cursor=pointer]: Call
+            - generic [ref=e257]:
+              - generic [ref=e259]:
+                - generic [ref=e260]:
+                  - generic [ref=e261]:
+                    - heading "UK Government Scotland - International Trade Division" [level=3] [ref=e262]
+                    - img [ref=e263]
+                    - img [ref=e266]
+                  - paragraph [ref=e268]: Charles Burke
+                - generic [ref=e270]: £££
+              - generic [ref=e271]:
+                - generic [ref=e272]:
+                  - generic [ref=e273]:
+                    - img [ref=e274]
+                    - generic [ref=e277]: Edinburgh
+                  - generic [ref=e278]:
+                    - img [ref=e279]
+                    - generic [ref=e282]: 2h response
+                - paragraph [ref=e283]: Head of International Trade & Business at UK Government Scotland. Expert in Brexit compliance, international trade development, and supporting Scottish businesses in global markets. Extensive experience in trade policy and regulatory frameworks.
+                - generic [ref=e284]:
+                  - generic [ref=e285]:
+                    - generic [ref=e286]: "Experience:"
+                    - generic [ref=e287]: 15 years
+                  - generic [ref=e288]:
+                    - generic [ref=e289]: "Team size:"
+                    - generic [ref=e290]: 25+
+                  - generic [ref=e291]:
+                    - generic [ref=e292]: "Min. project:"
+                    - generic [ref=e293]: £10,000
+                - generic [ref=e294]: Free Consultation Available
+              - generic [ref=e295]:
+                - generic [ref=e296]:
+                  - link "View Profile" [ref=e297] [cursor=pointer]:
+                    - /url: /consultant/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6
+                  - link "Contact" [ref=e298] [cursor=pointer]:
+                    - /url: /contact/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6
+                - generic [ref=e299]:
+                  - link "Website" [ref=e300] [cursor=pointer]:
+                    - /url: https://www.gov.uk/world/organisations/scottish-development-international
+                    - img [ref=e301] [cursor=pointer]
+                    - generic [ref=e305] [cursor=pointer]: Website
+                  - link "Call" [ref=e306] [cursor=pointer]:
+                    - /url: tel:+44 131 244 0815
+                    - img [ref=e307] [cursor=pointer]
+                    - generic [ref=e309] [cursor=pointer]: Call
+            - generic [ref=e310]:
+              - generic [ref=e312]:
+                - generic [ref=e313]:
+                  - generic [ref=e314]:
+                    - heading "Wales Trade Policy Advisory" [level=3] [ref=e315]
+                    - img [ref=e316]
+                  - paragraph [ref=e319]: Gwern Ifans
+                - generic [ref=e321]: ££
+              - generic [ref=e322]:
+                - generic [ref=e323]:
+                  - generic [ref=e324]:
+                    - img [ref=e325]
+                    - generic [ref=e328]: Cardiff
+                  - generic [ref=e329]:
+                    - img [ref=e330]
+                    - generic [ref=e333]: 24h response
+                - paragraph [ref=e334]: Senior Policy Advisor specializing in international trade policy and Brexit compliance for Welsh businesses. Extensive experience in policy analysis and development with focus on post-Brexit trade frameworks and regulatory alignment.
+                - generic [ref=e335]:
+                  - generic [ref=e336]:
+                    - generic [ref=e337]: "Experience:"
+                    - generic [ref=e338]: 6 years
+                  - generic [ref=e339]:
+                    - generic [ref=e340]: "Team size:"
+                    - generic [ref=e341]: 3-8
+                  - generic [ref=e342]:
+                    - generic [ref=e343]: "Min. project:"
+                    - generic [ref=e344]: £1,500
+                - generic [ref=e345]: Free Consultation Available
+              - generic [ref=e346]:
+                - generic [ref=e347]:
+                  - link "View Profile" [ref=e348] [cursor=pointer]:
+                    - /url: /consultant/25763b26-4ed5-4dc8-9088-47e6740763f9
+                  - link "Contact" [ref=e349] [cursor=pointer]:
+                    - /url: /contact/25763b26-4ed5-4dc8-9088-47e6740763f9
+                - generic [ref=e350]:
+                  - link "Website" [ref=e351] [cursor=pointer]:
+                    - /url: https://gov.wales/trade-policy
+                    - img [ref=e352] [cursor=pointer]
+                    - generic [ref=e356] [cursor=pointer]: Website
+                  - link "Call" [ref=e357] [cursor=pointer]:
+                    - /url: tel:+44 29 2082 5050
+                    - img [ref=e358] [cursor=pointer]
+                    - generic [ref=e360] [cursor=pointer]: Call
+            - generic [ref=e361]:
+              - generic [ref=e363]:
+                - generic [ref=e364]:
+                  - generic [ref=e365]:
+                    - heading "TRIUMPH International Trade Solutions" [level=3] [ref=e366]
+                    - img [ref=e367]
+                  - paragraph [ref=e370]: Rebecca Bermingham
+                - generic [ref=e372]: ££
+              - generic [ref=e373]:
+                - generic [ref=e374]:
+                  - generic [ref=e375]:
+                    - img [ref=e376]
+                    - generic [ref=e379]: Birmingham
+                  - generic [ref=e380]:
+                    - img [ref=e381]
+                    - generic [ref=e384]: 8h response
+                - paragraph [ref=e385]: International Trade and Compliance Manager at TRIUMPH with expertise spanning trade compliance, export controls, and international trade. Specialist in post-Brexit regulations and customs procedures for manufacturing sectors.
+                - generic [ref=e386]:
+                  - generic [ref=e387]:
+                    - generic [ref=e388]: "Experience:"
+                    - generic [ref=e389]: 7 years
+                  - generic [ref=e390]:
+                    - generic [ref=e391]: "Team size:"
+                    - generic [ref=e392]: 10-20
+                  - generic [ref=e393]:
+                    - generic [ref=e394]: "Min. project:"
+                    - generic [ref=e395]: £3,000
+                - generic [ref=e396]: Free Consultation Available
+              - generic [ref=e397]:
+                - generic [ref=e398]:
+                  - link "View Profile" [ref=e399] [cursor=pointer]:
+                    - /url: /consultant/f73737e8-3585-464a-967b-0893d40e0269
+                  - link "Contact" [ref=e400] [cursor=pointer]:
+                    - /url: /contact/f73737e8-3585-464a-967b-0893d40e0269
+                - generic [ref=e401]:
+                  - link "Website" [ref=e402] [cursor=pointer]:
+                    - /url: https://triumph-group.com/trade-compliance
+                    - img [ref=e403] [cursor=pointer]
+                    - generic [ref=e407] [cursor=pointer]: Website
+                  - link "Call" [ref=e408] [cursor=pointer]:
+                    - /url: tel:+44 121 456 7890
+                    - img [ref=e409] [cursor=pointer]
+                    - generic [ref=e411] [cursor=pointer]: Call
+            - generic [ref=e412]:
+              - generic [ref=e414]:
+                - generic [ref=e415]:
+                  - generic [ref=e416]:
+                    - heading "InterTradeIreland Business Solutions" [level=3] [ref=e417]
+                    - img [ref=e418]
+                  - paragraph [ref=e421]: Mary Meehan
+                - generic [ref=e423]: ££
+              - generic [ref=e424]:
+                - generic [ref=e425]:
+                  - generic [ref=e426]:
+                    - img [ref=e427]
+                    - generic [ref=e430]: Belfast
+                  - generic [ref=e431]:
+                    - img [ref=e432]
+                    - generic [ref=e435]: 6h response
+                - paragraph [ref=e436]: Experienced business leader with over 25 years of expertise supporting key organisations and businesses across the Island of Ireland. Specialist in cross-border trade, Brexit compliance, and North-South trade opportunities.
+                - generic [ref=e437]:
+                  - generic [ref=e438]:
+                    - generic [ref=e439]: "Experience:"
+                    - generic [ref=e440]: 12 years
+                  - generic [ref=e441]:
+                    - generic [ref=e442]: "Team size:"
+                    - generic [ref=e443]: 8-15
+                  - generic [ref=e444]:
+                    - generic [ref=e445]: "Min. project:"
+                    - generic [ref=e446]: £2,500
+                - generic [ref=e447]: Free Consultation Available
+              - generic [ref=e448]:
+                - generic [ref=e449]:
+                  - link "View Profile" [ref=e450] [cursor=pointer]:
+                    - /url: /consultant/31fe78b3-69e4-464c-a82f-6103749cd569
+                  - link "Contact" [ref=e451] [cursor=pointer]:
+                    - /url: /contact/31fe78b3-69e4-464c-a82f-6103749cd569
+                - generic [ref=e452]:
+                  - link "Website" [ref=e453] [cursor=pointer]:
+                    - /url: https://intertradeireland.com
+                    - img [ref=e454] [cursor=pointer]
+                    - generic [ref=e458] [cursor=pointer]: Website
+                  - link "Call" [ref=e459] [cursor=pointer]:
+                    - /url: tel:+44 28 9127 8080
+                    - img [ref=e460] [cursor=pointer]
+                    - generic [ref=e462] [cursor=pointer]: Call
+            - generic [ref=e463]:
+              - generic [ref=e465]:
+                - generic [ref=e466]:
+                  - generic [ref=e467]:
+                    - heading "Northern Customs Solutions" [level=3] [ref=e468]
+                    - img [ref=e469]
+                  - paragraph [ref=e472]: Chris Ashworth
+                - generic [ref=e474]: £
+              - generic [ref=e475]:
+                - generic [ref=e476]:
+                  - generic [ref=e477]:
+                    - img [ref=e478]
+                    - generic [ref=e481]: Manchester
+                  - generic [ref=e482]:
+                    - img [ref=e483]
+                    - generic [ref=e486]: 12h response
+                - paragraph [ref=e487]: Experienced customs consultant with 30 years knowledge of customs, HMRC, international trade, logistics, shipping and freight management. Specialist in post-Brexit trade procedures and customs compliance.
+                - generic [ref=e488]:
+                  - generic [ref=e489]:
+                    - generic [ref=e490]: "Experience:"
+                    - generic [ref=e491]: 5 years
+                  - generic [ref=e492]:
+                    - generic [ref=e493]: "Team size:"
+                    - generic [ref=e494]: 5-10
+                  - generic [ref=e495]:
+                    - generic [ref=e496]: "Min. project:"
+                    - generic [ref=e497]: £1,000
+              - generic [ref=e498]:
+                - generic [ref=e499]:
+                  - link "View Profile" [ref=e500] [cursor=pointer]:
+                    - /url: /consultant/d21097d9-0ed3-47cf-b162-f4a025b60f99
+                  - link "Contact" [ref=e501] [cursor=pointer]:
+                    - /url: /contact/d21097d9-0ed3-47cf-b162-f4a025b60f99
+                - generic [ref=e502]:
+                  - link "Website" [ref=e503] [cursor=pointer]:
+                    - /url: https://mgc-importexport.com
+                    - img [ref=e504] [cursor=pointer]
+                    - generic [ref=e508] [cursor=pointer]: Website
+                  - link "Call" [ref=e509] [cursor=pointer]:
+                    - /url: tel:+44 161 234 5678
+                    - img [ref=e510] [cursor=pointer]
+                    - generic [ref=e512] [cursor=pointer]: Call
+          - link "View All Consultants" [ref=e514] [cursor=pointer]:
+            - /url: /find-consultants
+            - text: View All Consultants
+            - img [ref=e515] [cursor=pointer]
+        - generic [ref=e518]:
+          - generic [ref=e519]:
+            - heading "What Our Clients Say" [level=2] [ref=e520]
+            - paragraph [ref=e521]: Real reviews from businesses that found success with our Brexit compliance consultants. Join hundreds of satisfied clients who've navigated post-Brexit regulations with expert help.
+          - generic [ref=e523]:
+            - generic [ref=e524]:
+              - generic [ref=e525]:
+                - img [ref=e526]
+                - generic [ref=e529]:
+                  - img [ref=e530]
+                  - img [ref=e532]
+                  - img [ref=e534]
+                  - img [ref=e536]
+                  - img [ref=e538]
+              - blockquote [ref=e540]: "\"Exceptional service from Brexit Compliance Experts. They guided us through complex VAT compliance issues and saved us significant costs. Highly professional team.\""
+              - generic [ref=e541]:
+                - generic [ref=e542]:
+                  - generic [ref=e543]:
+                    - paragraph [ref=e544]: Mark Thompson
+                    - paragraph [ref=e545]: TechFlow Solutions Ltd
+                  - generic [ref=e546]:
+                    - paragraph [ref=e547]: Trade & Borders Consultancy
+                    - paragraph [ref=e548]: VAT Compliance
+                - generic [ref=e550]: "Project: £25,000+"
+            - generic [ref=e551]:
+              - generic [ref=e552]:
+                - img [ref=e553]
+                - generic [ref=e556]:
+                  - img [ref=e557]
+                  - img [ref=e559]
+                  - img [ref=e561]
+                  - img [ref=e563]
+                  - img [ref=e565]
+              - blockquote [ref=e567]: "\"Northern Trade Solutions made our cross-border operations seamless. Their expertise in the NI Protocol is unmatched. Couldn't recommend them more highly.\""
+              - generic [ref=e568]:
+                - generic [ref=e569]:
+                  - generic [ref=e570]:
+                    - paragraph [ref=e571]: Siobhan Murphy
+                    - paragraph [ref=e572]: Celtic Foods International
+                  - generic [ref=e573]:
+                    - paragraph [ref=e574]: InterTradeIreland Business Solutions
+                    - paragraph [ref=e575]: Northern Ireland Protocol
+                - generic [ref=e577]: "Project: £10,000-£25,000"
+            - generic [ref=e578]:
+              - generic [ref=e579]:
+                - img [ref=e580]
+                - generic [ref=e583]:
+                  - img [ref=e584]
+                  - img [ref=e586]
+                  - img [ref=e588]
+                  - img [ref=e590]
+                  - img [ref=e592]
+              - blockquote [ref=e594]: "\"Great value for money. Manchester Customs Advisors helped us set up our import processes efficiently. Very responsive and knowledgeable team.\""
+              - generic [ref=e595]:
+                - generic [ref=e596]:
+                  - generic [ref=e597]:
+                    - paragraph [ref=e598]: Robert Davies
+                    - paragraph [ref=e599]: Artisan Craft Co
+                  - generic [ref=e600]:
+                    - paragraph [ref=e601]: Northern Customs Solutions
+                    - paragraph [ref=e602]: Import Documentation
+                - generic [ref=e604]: "Project: £2,500-£10,000"
+            - generic [ref=e605]:
+              - generic [ref=e606]:
+                - img [ref=e607]
+                - generic [ref=e610]:
+                  - img [ref=e611]
+                  - img [ref=e613]
+                  - img [ref=e615]
+                  - img [ref=e617]
+                  - img [ref=e619]
+              - blockquote [ref=e621]: "\"Outstanding strategic advice from Global Trade Consultancy. They restructured our entire supply chain for post-Brexit efficiency. Worth every penny.\""
+              - generic [ref=e622]:
+                - generic [ref=e623]:
+                  - generic [ref=e624]:
+                    - paragraph [ref=e625]: Jennifer Stewart
+                    - paragraph [ref=e626]: Global Manufacturing Ltd
+                  - generic [ref=e627]:
+                    - paragraph [ref=e628]: UK Government Scotland - International Trade Division
+                    - paragraph [ref=e629]: Supply Chain Consulting
+                - generic [ref=e631]: "Project: £50,000+"
+            - generic [ref=e632]:
+              - generic [ref=e633]:
+                - img [ref=e634]
+                - generic [ref=e637]:
+                  - img [ref=e638]
+                  - img [ref=e640]
+                  - img [ref=e642]
+                  - img [ref=e644]
+                  - img [ref=e646]
+              - blockquote [ref=e648]: "\"Wales Brexit Solutions understood our sector needs perfectly. Their regulatory compliance guidance was spot-on and delivered on time.\""
+              - generic [ref=e649]:
+                - generic [ref=e650]:
+                  - generic [ref=e651]:
+                    - paragraph [ref=e652]: Gareth Williams
+                    - paragraph [ref=e653]: Automotive Parts Wales
+                  - generic [ref=e654]:
+                    - paragraph [ref=e655]: Wales Trade Policy Advisory
+                    - paragraph [ref=e656]: Regulatory Compliance
+                - generic [ref=e658]: "Project: £5,000-£10,000"
+            - generic [ref=e659]:
+              - generic [ref=e660]:
+                - img [ref=e661]
+                - generic [ref=e664]:
+                  - img [ref=e665]
+                  - img [ref=e667]
+                  - img [ref=e669]
+                  - img [ref=e671]
+                  - img [ref=e673]
+              - blockquote [ref=e675]: "\"Birmingham Trade Hub's pharmaceutical compliance expertise is exceptional. They navigated complex regulatory changes with ease. Highly recommended.\""
+              - generic [ref=e676]:
+                - generic [ref=e677]:
+                  - generic [ref=e678]:
+                    - paragraph [ref=e679]: Dr. Priya Sharma
+                    - paragraph [ref=e680]: MedTech Innovations
+                  - generic [ref=e681]:
+                    - paragraph [ref=e682]: TRIUMPH International Trade Solutions
+                    - paragraph [ref=e683]: Regulatory Compliance
+                - generic [ref=e685]: "Project: £15,000-£25,000"
+          - button "View All Reviews→" [ref=e687] [cursor=pointer]:
+            - text: View All Reviews
+            - generic [ref=e688] [cursor=pointer]: →
+    - contentinfo [ref=e689]:
+      - generic [ref=e691]:
+        - generic [ref=e692]:
+          - generic [ref=e693]:
+            - generic [ref=e695]: FB
+            - generic [ref=e696]: FindBrexitConsultants
+          - paragraph [ref=e697]: The UK's leading directory for Brexit compliance consultants. Connect with verified experts to navigate post-Brexit regulations with confidence.
+          - generic [ref=e698]:
+            - generic [ref=e699]:
+              - img [ref=e700]
+              - generic [ref=e703]: info@findbrexitconsultants.co.uk
+            - generic [ref=e704]:
+              - img [ref=e705]
+              - generic [ref=e708]: London, United Kingdom
+          - generic [ref=e709]:
+            - link [ref=e710] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e711] [cursor=pointer]
+            - link [ref=e713] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e714] [cursor=pointer]
+            - link [ref=e716] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e717] [cursor=pointer]
+        - generic [ref=e721]:
+          - heading "Services" [level=4] [ref=e722]
+          - list [ref=e723]:
+            - listitem [ref=e724]:
+              - link "Customs Declarations" [ref=e725] [cursor=pointer]:
+                - /url: /services/customs-declarations
+            - listitem [ref=e726]:
+              - link "VAT/Tax Compliance" [ref=e727] [cursor=pointer]:
+                - /url: /services/vat-tax-compliance
+            - listitem [ref=e728]:
+              - link "Northern Ireland Protocol" [ref=e729] [cursor=pointer]:
+                - /url: /services/northern-ireland-protocol
+            - listitem [ref=e730]:
+              - link "Regulatory Compliance" [ref=e731] [cursor=pointer]:
+                - /url: /services/regulatory-compliance
+            - listitem [ref=e732]:
+              - link "Import/Export Documentation" [ref=e733] [cursor=pointer]:
+                - /url: /services/import-export-documentation
+            - listitem [ref=e734]:
+              - link "Supply Chain Consulting" [ref=e735] [cursor=pointer]:
+                - /url: /services/supply-chain-consulting
+        - generic [ref=e736]:
+          - heading "Locations" [level=4] [ref=e737]
+          - list [ref=e738]:
+            - listitem [ref=e739]:
+              - link "Brexit Consultants in London" [ref=e740] [cursor=pointer]:
+                - /url: /location/london
+            - listitem [ref=e741]:
+              - link "Brexit Consultants in Manchester" [ref=e742] [cursor=pointer]:
+                - /url: /location/manchester
+            - listitem [ref=e743]:
+              - link "Brexit Consultants in Birmingham" [ref=e744] [cursor=pointer]:
+                - /url: /location/birmingham
+            - listitem [ref=e745]:
+              - link "Brexit Consultants in Scotland" [ref=e746] [cursor=pointer]:
+                - /url: /location/scotland
+            - listitem [ref=e747]:
+              - link "Brexit Consultants in Wales" [ref=e748] [cursor=pointer]:
+                - /url: /location/wales
+            - listitem [ref=e749]:
+              - link "Brexit Consultants in Northern Ireland" [ref=e750] [cursor=pointer]:
+                - /url: /location/northern-ireland
+        - generic [ref=e751]:
+          - heading "Company" [level=4] [ref=e752]
+          - list [ref=e753]:
+            - listitem [ref=e754]:
+              - link "About Us" [ref=e755] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e756]:
+              - link "How It Works" [ref=e757] [cursor=pointer]:
+                - /url: /how-it-works
+            - listitem [ref=e758]:
+              - link "Pricing" [ref=e759] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e760]:
+              - link "Brexit Compliance Guide" [ref=e761] [cursor=pointer]:
+                - /url: /brexit-guide
+            - listitem [ref=e762]:
+              - link "List Your Business" [ref=e763] [cursor=pointer]:
+                - /url: /list-business
+            - listitem [ref=e764]:
+              - link "Contact Us" [ref=e765] [cursor=pointer]:
+                - /url: /contact
+          - heading "Industries" [level=4] [ref=e766]
+          - list [ref=e767]:
+            - listitem [ref=e768]:
+              - link "Food & Beverage" [ref=e769] [cursor=pointer]:
+                - /url: /industry/food-beverage
+            - listitem [ref=e770]:
+              - link "Manufacturing" [ref=e771] [cursor=pointer]:
+                - /url: /industry/manufacturing
+            - listitem [ref=e772]:
+              - link "Automotive" [ref=e773] [cursor=pointer]:
+                - /url: /industry/automotive
+            - listitem [ref=e774]:
+              - link "Pharmaceuticals" [ref=e775] [cursor=pointer]:
+                - /url: /industry/pharmaceuticals
+            - listitem [ref=e776]:
+              - link "Technology" [ref=e777] [cursor=pointer]:
+                - /url: /industry/technology
+            - listitem [ref=e778]:
+              - link "Retail/E-commerce" [ref=e779] [cursor=pointer]:
+                - /url: /industry/retail-ecommerce
+      - generic [ref=e782]:
+        - generic [ref=e783]: © 2025 FindBrexitConsultants.co.uk. All rights reserved.
+        - generic [ref=e784]:
+          - link "Terms of Service" [ref=e785] [cursor=pointer]:
+            - /url: /terms
+          - link "Privacy Policy" [ref=e786] [cursor=pointer]:
+            - /url: /privacy
+          - link "Cookie Policy" [ref=e787] [cursor=pointer]:
+            - /url: /cookies
+  - generic [ref=e788] [cursor=pointer]:
+    - generic [ref=e791] [cursor=pointer]: Created by MiniMax Agent
+    - generic [ref=e792] [cursor=pointer]: ×
+```

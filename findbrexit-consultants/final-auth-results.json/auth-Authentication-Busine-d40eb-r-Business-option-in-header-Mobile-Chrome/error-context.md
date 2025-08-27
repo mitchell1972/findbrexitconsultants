@@ -144,88 +144,88 @@
               - generic [ref=e174]:
                 - generic [ref=e175]:
                   - generic [ref=e176]:
-                    - heading "UK Government Scotland - International Trade Division" [level=3] [ref=e177]
+                    - heading "Trade & Borders Consultancy" [level=3] [ref=e177]
                     - img [ref=e178]
                     - img [ref=e181]
-                  - paragraph [ref=e183]: Charles Burke
+                  - paragraph [ref=e183]: Dr Anna Jerzewska
                 - generic [ref=e185]: £££
               - generic [ref=e186]:
                 - generic [ref=e187]:
                   - generic [ref=e188]:
                     - img [ref=e189]
-                    - generic [ref=e192]: Edinburgh
+                    - generic [ref=e192]: London
                   - generic [ref=e193]:
                     - img [ref=e194]
-                    - generic [ref=e197]: 2h response
-                - paragraph [ref=e198]: Head of International Trade & Business at UK Government Scotland. Expert in Brexit compliance, international trade development, and supporting Scottish businesses in global markets. Extensive experience in trade policy and regulatory frameworks.
+                    - generic [ref=e197]: 4h response
+                - paragraph [ref=e198]: Founder of Trade & Borders consultancy, offering bespoke advice and training on customs, international trade and Brexit to private and public sector clients. PhD-level expertise with extensive experience in post-Brexit trade regulations.
                 - generic [ref=e199]:
                   - generic [ref=e200]:
                     - generic [ref=e201]: "Experience:"
-                    - generic [ref=e202]: 15 years
+                    - generic [ref=e202]: 8 years
                   - generic [ref=e203]:
                     - generic [ref=e204]: "Team size:"
-                    - generic [ref=e205]: 25+
+                    - generic [ref=e205]: 15-25
                   - generic [ref=e206]:
                     - generic [ref=e207]: "Min. project:"
-                    - generic [ref=e208]: £10,000
+                    - generic [ref=e208]: £5,000
                 - generic [ref=e209]: Free Consultation Available
               - generic [ref=e210]:
                 - generic [ref=e211]:
                   - link "View Profile" [ref=e212] [cursor=pointer]:
-                    - /url: /consultant/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6
+                    - /url: /consultant/b3afeec3-7859-47c2-8e51-23e97c50475b
                   - link "Contact" [ref=e213] [cursor=pointer]:
-                    - /url: /contact/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6
+                    - /url: /contact/b3afeec3-7859-47c2-8e51-23e97c50475b
                 - generic [ref=e214]:
                   - link "Website" [ref=e215] [cursor=pointer]:
-                    - /url: https://www.gov.uk/world/organisations/scottish-development-international
+                    - /url: https://tradeandborders.com
                     - img [ref=e216] [cursor=pointer]
                     - generic [ref=e220] [cursor=pointer]: Website
                   - link "Call" [ref=e221] [cursor=pointer]:
-                    - /url: tel:+44 131 244 0815
+                    - /url: tel:+44 20 7946 8532
                     - img [ref=e222] [cursor=pointer]
                     - generic [ref=e224] [cursor=pointer]: Call
             - generic [ref=e225]:
               - generic [ref=e227]:
                 - generic [ref=e228]:
                   - generic [ref=e229]:
-                    - heading "Trade & Borders Consultancy" [level=3] [ref=e230]
+                    - heading "UK Government Scotland - International Trade Division" [level=3] [ref=e230]
                     - img [ref=e231]
                     - img [ref=e234]
-                  - paragraph [ref=e236]: Dr Anna Jerzewska
+                  - paragraph [ref=e236]: Charles Burke
                 - generic [ref=e238]: £££
               - generic [ref=e239]:
                 - generic [ref=e240]:
                   - generic [ref=e241]:
                     - img [ref=e242]
-                    - generic [ref=e245]: London
+                    - generic [ref=e245]: Edinburgh
                   - generic [ref=e246]:
                     - img [ref=e247]
-                    - generic [ref=e250]: 4h response
-                - paragraph [ref=e251]: Founder of Trade & Borders consultancy, offering bespoke advice and training on customs, international trade and Brexit to private and public sector clients. PhD-level expertise with extensive experience in post-Brexit trade regulations.
+                    - generic [ref=e250]: 2h response
+                - paragraph [ref=e251]: Head of International Trade & Business at UK Government Scotland. Expert in Brexit compliance, international trade development, and supporting Scottish businesses in global markets. Extensive experience in trade policy and regulatory frameworks.
                 - generic [ref=e252]:
                   - generic [ref=e253]:
                     - generic [ref=e254]: "Experience:"
-                    - generic [ref=e255]: 8 years
+                    - generic [ref=e255]: 15 years
                   - generic [ref=e256]:
                     - generic [ref=e257]: "Team size:"
-                    - generic [ref=e258]: 15-25
+                    - generic [ref=e258]: 25+
                   - generic [ref=e259]:
                     - generic [ref=e260]: "Min. project:"
-                    - generic [ref=e261]: £5,000
+                    - generic [ref=e261]: £10,000
                 - generic [ref=e262]: Free Consultation Available
               - generic [ref=e263]:
                 - generic [ref=e264]:
                   - link "View Profile" [ref=e265] [cursor=pointer]:
-                    - /url: /consultant/b3afeec3-7859-47c2-8e51-23e97c50475b
+                    - /url: /consultant/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6
                   - link "Contact" [ref=e266] [cursor=pointer]:
-                    - /url: /contact/b3afeec3-7859-47c2-8e51-23e97c50475b
+                    - /url: /contact/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6
                 - generic [ref=e267]:
                   - link "Website" [ref=e268] [cursor=pointer]:
-                    - /url: https://tradeandborders.com
+                    - /url: https://www.gov.uk/world/organisations/scottish-development-international
                     - img [ref=e269] [cursor=pointer]
                     - generic [ref=e273] [cursor=pointer]: Website
                   - link "Call" [ref=e274] [cursor=pointer]:
-                    - /url: tel:+44 20 7946 8532
+                    - /url: tel:+44 131 244 0815
                     - img [ref=e275] [cursor=pointer]
                     - generic [ref=e277] [cursor=pointer]: Call
             - generic [ref=e278]:
