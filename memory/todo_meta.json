@@ -3,30 +3,44 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Prepare website code for Hostinger deployment with custom domain FindBrexitConsultants.co.uk",
-        "details": "1. Update all hardcoded URLs to use the custom domain. 2. Configure environment variables for production. 3. Optimize build settings for Hostinger. 4. Ensure Supabase integration works with the new domain.",
-        "status": "completed",
+        "content": "Fix mobile responsiveness issues causing test timeouts",
+        "details": "1. Debug mobile viewport crashes and timeouts. 2. Fix mobile navigation visibility and functionality. 3. Ensure mobile layouts work properly across all pages. 4. Test mobile user journeys manually and with automation.",
+        "status": "pending",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Create comprehensive deployment guide for Hostinger",
-        "details": "1. Step-by-step Hostinger deployment instructions. 2. Domain configuration guide. 3. SSL certificate setup. 4. Environment variables configuration. 5. Database connection verification steps.",
-        "status": "completed",
+        "content": "Implement business registration form validation",
+        "details": "1. Add required field validation for business registration. 2. Implement email format validation. 3. Add terms and conditions checkbox. 4. Create business category selection. 5. Add success/error confirmation messages. 6. Test complete registration flow.",
+        "status": "pending",
         "priority": "high"
       },
       "3": {
         "id": "3",
-        "content": "Package complete website files for upload",
-        "details": "1. Create production build. 2. Include all necessary static assets. 3. Prepare .htaccess file for proper routing. 4. Package everything for easy upload to Hostinger.",
-        "status": "completed",
-        "priority": "medium"
+        "content": "Complete consultant profile functionality",
+        "details": "1. Add missing contact information display. 2. Implement ratings and reviews sections. 3. Add key consultant metrics (experience, pricing). 4. Fix tab navigation on profile pages. 5. Ensure all profile data displays correctly.",
+        "status": "pending",
+        "priority": "high"
       },
       "4": {
         "id": "4",
-        "content": "Run comprehensive test suite on final deployment",
-        "details": "1. Execute all 42 test cases after deployment. 2. Test on the actual FindBrexitConsultants.co.uk domain. 3. Verify all functionality works correctly. 4. Generate detailed test report.",
-        "status": "completed",
+        "content": "Fix review submission system issues",
+        "details": "1. Complete review form validation. 2. Fix rating system interaction issues. 3. Implement review submission confirmations. 4. Add review display and sorting functionality. 5. Test complete review workflow.",
+        "status": "pending",
+        "priority": "medium"
+      },
+      "5": {
+        "id": "5",
+        "content": "Improve test reliability and selectors",
+        "details": "1. Add data-testid attributes for reliable test targeting. 2. Fix fragile text-based selectors. 3. Improve test stability and reduce flakiness. 4. Update test configurations for better reliability.",
+        "status": "pending",
+        "priority": "medium"
+      },
+      "6": {
+        "id": "6",
+        "content": "Re-run comprehensive test suite to validate fixes",
+        "details": "1. Execute all 47 tests after implementing fixes. 2. Verify pass rate improvement from 40.4% to 90%+. 3. Generate final test report. 4. Confirm all critical functionality works correctly.",
+        "status": "pending",
         "priority": "medium"
       }
     }
