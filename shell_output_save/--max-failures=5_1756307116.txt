@@ -1,0 +1,226 @@
+
+Running 48 tests using 16 workers
+
+[1/48] …ofile Pages › should navigate to consultant profiles from search results
+[2/48] …gistration Flows › should navigate to business listing/registration page
+[3/48] …Profile Pages › should display consultant profile with tabbed navigation
+[4/48] …onsultant Profile Pages › should display contact information and methods
+[5/48] …tration Flows › should validate required fields on business registration
+[6/48] …s Registration Flows › should display information about listing benefits
+[7/48] …iness Registration Flows › should handle terms and conditions acceptance
+[8/48] …egistration Flows › should display "List Your Business" option in header
+[9/48] … Consultant Profile Pages › should display "Request Quote" functionality
+[10/48] …t Profile Pages › should display consultant ratings and reviews section
+[11/48] … & Business Registration Flows › should handle mobile responsive layout
+[12/48] …s Registration Flows › should display business registration form fields
+[13/48] …Business Registration Flows › should handle business category selection
+[14/48] …istration Flows › should validate email format in business registration
+[15/48] …egistration Flows › should submit business registration with valid data
+[16/48] …t Profile Pages › should display consultant key metrics and information
+[17/48] …ltant Profile Pages › should display consultant services and industries
+  1) [firefox] › tests/consultant-profile.spec.ts:93:3 › Consultant Profile Pages › should display consultant key metrics and information 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="View Profile"')
+        - locator resolved to 6 elements. Proceeding with the first one: <a data-testid="view-profile-btn" href="/consultant/b3afeec3-7859-47c2-8e51-23e97c50475b" class="flex-1 bg-[#003366] text-white px-4 py-2 rounded-lg text-sm font-medium text-center hover:bg-blue-800 transition-colors">View Profile</a>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - performing click action
+
+
+       95 |     await navigateToFindConsultants();
+       96 |     
+    >  97 |     await page.click('text="View Profile"');
+          |                ^
+       98 |     await page.waitForLoadState('networkidle');
+       99 |     
+      100 |     // Wait for consultant profile content to fully load
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:97:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-c49d6-key-metrics-and-information-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-c49d6-key-metrics-and-information-firefox/error-context.md
+
+
+  2) [firefox] › tests/consultant-profile.spec.ts:45:3 › Consultant Profile Pages › should navigate to consultant profiles from search results 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:6:8
+
+
+  3) [firefox] › tests/consultant-profile.spec.ts:68:3 › Consultant Profile Pages › should display consultant profile with tabbed navigation 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:6:8
+
+    Error Context: test-results/consultant-profile-Consult-5bfc5-file-with-tabbed-navigation-firefox/error-context.md
+
+
+  4) [firefox] › tests/auth.spec.ts:350:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for getByTestId('list-business-header-btn')
+        - locator resolved to <a href="/list-business" data-testid="list-business-header-btn" class="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">List Your Business</a>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - performing click action
+
+
+      355 |     if (viewport && viewport.width >= 768) {
+      356 |       await expect(page.getByTestId('list-business-header-btn')).toBeVisible({ timeout: 10000 });
+    > 357 |       await page.getByTestId('list-business-header-btn').click();
+          |                                                          ^
+      358 |     } else {
+      359 |       await expect(page.getByTestId('mobile-menu-button')).toBeVisible({ timeout: 10000 });
+      360 |       await page.getByTestId('mobile-menu-button').click();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:357:58
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  5) [firefox] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+
+Testing stopped early after 5 maximum allowed failures.
+
+  6) [firefox] › tests/auth.spec.ts:214:3 › Authentication & Business Registration Flows › should display information about listing benefits 
+
+    Test was interrupted.
+
+
+  7) [firefox] › tests/auth.spec.ts:103:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Test was interrupted.
+
+
+  8) [firefox] › tests/auth.spec.ts:168:3 › Authentication & Business Registration Flows › should handle business category selection 
+
+    Test was interrupted.
+
+    Error Context: test-results/auth-Authentication-Busine-4cf72-business-category-selection-firefox/error-context.md
+
+
+  9) [firefox] › tests/auth.spec.ts:75:3 › Authentication & Business Registration Flows › should display business registration form fields 
+
+    Test was interrupted.
+
+    Error Context: test-results/auth-Authentication-Busine-bc5f9-ss-registration-form-fields-firefox/error-context.md
+
+
+  10) [firefox] › tests/consultant-profile.spec.ts:196:3 › Consultant Profile Pages › should display consultant ratings and reviews section 
+
+    Test was interrupted.
+
+    Error Context: test-results/consultant-profile-Consult-a82ec-ratings-and-reviews-section-firefox/error-context.md
+
+
+  11) [firefox] › tests/consultant-profile.spec.ts:139:3 › Consultant Profile Pages › should display "Request Quote" functionality 
+
+    Test was interrupted.
+
+    Error Context: test-results/consultant-profile-Consult-7d0eb-Request-Quote-functionality-firefox/error-context.md
+
+
+  12) [firefox] › tests/auth.spec.ts:400:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+
+    Test was interrupted.
+
+
+  13) [firefox] › tests/consultant-profile.spec.ts:150:3 › Consultant Profile Pages › should display contact information and methods 
+
+    Test was interrupted.
+
+    Error Context: test-results/consultant-profile-Consult-b5d67-act-information-and-methods-firefox/error-context.md
+
+
+  14) [firefox] › tests/auth.spec.ts:127:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+
+    Test was interrupted.
+
+    Error Context: test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-firefox/error-context.md
+
+
+  15) [firefox] › tests/auth.spec.ts:269:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance 
+
+    Test was interrupted.
+
+    Error Context: test-results/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-firefox/error-context.md
+
+
+  16) [firefox] › tests/consultant-profile.spec.ts:235:3 › Consultant Profile Pages › should display consultant services and industries 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-ee56e-ant-services-and-industries-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-ee56e-ant-services-and-industries-firefox/error-context.md
+
+
+  5 failed
+    [firefox] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+    [firefox] › tests/auth.spec.ts:350:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+    [firefox] › tests/consultant-profile.spec.ts:45:3 › Consultant Profile Pages › should navigate to consultant profiles from search results 
+    [firefox] › tests/consultant-profile.spec.ts:68:3 › Consultant Profile Pages › should display consultant profile with tabbed navigation 
+    [firefox] › tests/consultant-profile.spec.ts:93:3 › Consultant Profile Pages › should display consultant key metrics and information 
+  11 interrupted
+    [firefox] › tests/auth.spec.ts:75:3 › Authentication & Business Registration Flows › should display business registration form fields 
+    [firefox] › tests/auth.spec.ts:103:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+    [firefox] › tests/auth.spec.ts:127:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+    [firefox] › tests/auth.spec.ts:168:3 › Authentication & Business Registration Flows › should handle business category selection 
+    [firefox] › tests/auth.spec.ts:214:3 › Authentication & Business Registration Flows › should display information about listing benefits 
+    [firefox] › tests/auth.spec.ts:269:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance 
+    [firefox] › tests/auth.spec.ts:400:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+    [firefox] › tests/consultant-profile.spec.ts:139:3 › Consultant Profile Pages › should display "Request Quote" functionality 
+    [firefox] › tests/consultant-profile.spec.ts:150:3 › Consultant Profile Pages › should display contact information and methods 
+    [firefox] › tests/consultant-profile.spec.ts:196:3 › Consultant Profile Pages › should display consultant ratings and reviews section 
+    [firefox] › tests/consultant-profile.spec.ts:235:3 › Consultant Profile Pages › should display consultant services and industries 
+  31 did not run
+  1 passed (1.5m)
+  1 error was not a part of any test, see above for details
+
+  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.

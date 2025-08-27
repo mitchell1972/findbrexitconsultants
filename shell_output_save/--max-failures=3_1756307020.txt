@@ -1,0 +1,450 @@
+
+Running 48 tests using 16 workers
+
+[1/48] … Business Registration Flows › should handle business category selection
+[2/48] …gistration Flows › should navigate to business listing/registration page
+[3/48] …ofile Pages › should navigate to consultant profiles from search results
+[4/48] … Consultant Profile Pages › should display "Request Quote" functionality
+[5/48] …s Registration Flows › should display information about listing benefits
+[6/48] …Registration Flows › should submit business registration with valid data
+[7/48] …n & Business Registration Flows › should handle mobile responsive layout
+[8/48] …onsultant Profile Pages › should display contact information and methods
+[9/48] …gistration Flows › should validate email format in business registration
+[10/48] …gistration Flows › should display "List Your Business" option in header
+[11/48] …rofile Pages › should display consultant profile with tabbed navigation
+[12/48] …ration Flows › should validate required fields on business registration
+[13/48] …s Registration Flows › should display business registration form fields
+[14/48] …t Profile Pages › should display consultant key metrics and information
+[15/48] …ness Registration Flows › should handle terms and conditions acceptance
+[16/48] …t Profile Pages › should display consultant ratings and reviews section
+  1) [Mobile Chrome] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    TimeoutError: locator.click: Timeout 5000ms exceeded.
+    Call log:
+      - waiting for getByTestId('mobile-menu-button')
+        - locator resolved to <button aria-label="Toggle mobile menu" data-testid="mobile-menu-button" class="md:hidden p-2 text-gray-700 hover:text-[#003366]">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 100ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+
+
+      33 |       
+      34 |       // Click mobile menu button with retry logic
+    > 35 |       await mobileMenuBtn.click({ timeout: 5000 });
+         |                           ^
+      36 |       
+      37 |       // Wait for mobile menu to appear with explicit wait
+      38 |       await page.waitForTimeout(1000);
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:35:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-Mobile-Chrome/error-context.md
+
+
+[17/48] …ltant Profile Pages › should display consultant services and industries
+  2) [Mobile Chrome] › tests/auth.spec.ts:45:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for getByTestId('mobile-menu-button')
+        - locator resolved to <button aria-label="Toggle mobile menu" data-testid="mobile-menu-button" class="md:hidden p-2 text-gray-700 hover:text-[#003366]">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 100ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      9 × retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+        - retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+        - retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+        - retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      54 |     } else {
+      55 |       await expect(page.getByTestId('mobile-menu-button')).toBeVisible({ timeout: 10000 });
+    > 56 |       await page.getByTestId('mobile-menu-button').click();
+         |                                                    ^
+      57 |       await page.waitForTimeout(1000);
+      58 |       await expect(page.getByTestId('list-business-mobile-btn')).toBeVisible({ timeout: 10000 });
+      59 |       await page.getByTestId('list-business-mobile-btn').click();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:56:52
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-200fd-s-listing-registration-page-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-200fd-s-listing-registration-page-Mobile-Chrome/error-context.md
+
+
+  3) [Mobile Chrome] › tests/auth.spec.ts:168:3 › Authentication & Business Registration Flows › should handle business category selection 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for getByTestId('mobile-menu-button')
+        - locator resolved to <button aria-label="Toggle mobile menu" data-testid="mobile-menu-button" class="md:hidden p-2 text-gray-700 hover:text-[#003366]">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 100ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      9 × retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+        - retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+        - retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+        - retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+
+
+      176 |     } else {
+      177 |       await expect(page.getByTestId('mobile-menu-button')).toBeVisible({ timeout: 10000 });
+    > 178 |       await page.getByTestId('mobile-menu-button').click();
+          |                                                    ^
+      179 |       await page.waitForTimeout(500);
+      180 |       await expect(page.getByTestId('list-business-mobile-btn')).toBeVisible({ timeout: 5000 });
+      181 |       await page.getByTestId('list-business-mobile-btn').click();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:178:52
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-4cf72-business-category-selection-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-4cf72-business-category-selection-Mobile-Chrome/error-context.md
+
+
+Testing stopped early after 3 maximum allowed failures.
+
+  4) [Mobile Chrome] › tests/auth.spec.ts:400:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-Mobile-Chrome/error-context.md
+
+
+  5) [Mobile Chrome] › tests/auth.spec.ts:350:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-Mobile-Chrome/error-context.md
+
+
+Internal error: step id not found: fixture@37
+
+  6) [Mobile Chrome] › tests/consultant-profile.spec.ts:139:3 › Consultant Profile Pages › should display "Request Quote" functionality 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-7d0eb-Request-Quote-functionality-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  7) [Mobile Chrome] › tests/auth.spec.ts:214:3 › Authentication & Business Registration Flows › should display information about listing benefits 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-Mobile-Chrome/error-context.md
+
+
+  8) [Mobile Chrome] › tests/consultant-profile.spec.ts:150:3 › Consultant Profile Pages › should display contact information and methods 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-b5d67-act-information-and-methods-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-b5d67-act-information-and-methods-Mobile-Chrome/error-context.md
+
+
+  9) [Mobile Chrome] › tests/consultant-profile.spec.ts:45:3 › Consultant Profile Pages › should navigate to consultant profiles from search results 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-de0af-rofiles-from-search-results-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-de0af-rofiles-from-search-results-Mobile-Chrome/error-context.md
+
+
+  10) [Mobile Chrome] › tests/consultant-profile.spec.ts:93:3 › Consultant Profile Pages › should display consultant key metrics and information 
+
+    Test was interrupted.
+
+    Error Context: test-results/consultant-profile-Consult-c49d6-key-metrics-and-information-Mobile-Chrome/error-context.md
+
+
+  11) [Mobile Chrome] › tests/consultant-profile.spec.ts:68:3 › Consultant Profile Pages › should display consultant profile with tabbed navigation 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-5bfc5-file-with-tabbed-navigation-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-5bfc5-file-with-tabbed-navigation-Mobile-Chrome/error-context.md
+
+
+Internal error: step id not found: fixture@37
+
+Internal error: step id not found: fixture@38
+
+  12) [Mobile Chrome] › tests/auth.spec.ts:75:3 › Authentication & Business Registration Flows › should display business registration form fields 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-bc5f9-ss-registration-form-fields-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-bc5f9-ss-registration-form-fields-Mobile-Chrome/error-context.md
+
+
+Internal error: step id not found: fixture@37
+
+  13) [Mobile Chrome] › tests/auth.spec.ts:127:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-Mobile-Chrome/error-context.md
+
+
+  14) [Mobile Chrome] › tests/consultant-profile.spec.ts:196:3 › Consultant Profile Pages › should display consultant ratings and reviews section 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-a82ec-ratings-and-reviews-section-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  15) [Mobile Chrome] › tests/auth.spec.ts:269:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  16) [Mobile Chrome] › tests/auth.spec.ts:103:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-Mobile-Chrome/error-context.md
+
+
+  17) [Mobile Chrome] › tests/consultant-profile.spec.ts:235:3 › Consultant Profile Pages › should display consultant services and industries 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-ee56e-ant-services-and-industries-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+[18/48] …272:3 › Consultant Profile Pages › should navigate between profile tabs
+  18) [Mobile Chrome] › tests/consultant-profile.spec.ts:272:3 › Consultant Profile Pages › should navigate between profile tabs 
+
+    Test was interrupted.
+
+
+  3 failed
+    [Mobile Chrome] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+    [Mobile Chrome] › tests/auth.spec.ts:45:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+    [Mobile Chrome] › tests/auth.spec.ts:168:3 › Authentication & Business Registration Flows › should handle business category selection 
+  15 interrupted
+    [Mobile Chrome] › tests/auth.spec.ts:75:3 › Authentication & Business Registration Flows › should display business registration form fields 
+    [Mobile Chrome] › tests/auth.spec.ts:103:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+    [Mobile Chrome] › tests/auth.spec.ts:127:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+    [Mobile Chrome] › tests/auth.spec.ts:214:3 › Authentication & Business Registration Flows › should display information about listing benefits 
+    [Mobile Chrome] › tests/auth.spec.ts:269:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance 
+    [Mobile Chrome] › tests/auth.spec.ts:350:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+    [Mobile Chrome] › tests/auth.spec.ts:400:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+    [Mobile Chrome] › tests/consultant-profile.spec.ts:45:3 › Consultant Profile Pages › should navigate to consultant profiles from search results 
+    [Mobile Chrome] › tests/consultant-profile.spec.ts:68:3 › Consultant Profile Pages › should display consultant profile with tabbed navigation 
+    [Mobile Chrome] › tests/consultant-profile.spec.ts:93:3 › Consultant Profile Pages › should display consultant key metrics and information 
+    [Mobile Chrome] › tests/consultant-profile.spec.ts:139:3 › Consultant Profile Pages › should display "Request Quote" functionality 
+    [Mobile Chrome] › tests/consultant-profile.spec.ts:150:3 › Consultant Profile Pages › should display contact information and methods 
+    [Mobile Chrome] › tests/consultant-profile.spec.ts:196:3 › Consultant Profile Pages › should display consultant ratings and reviews section 
+    [Mobile Chrome] › tests/consultant-profile.spec.ts:235:3 › Consultant Profile Pages › should display consultant services and industries 
+    [Mobile Chrome] › tests/consultant-profile.spec.ts:272:3 › Consultant Profile Pages › should navigate between profile tabs 
+  30 did not run
+  1 error was not a part of any test, see above for details
+
+  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.

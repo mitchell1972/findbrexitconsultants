@@ -1,0 +1,164 @@
+
+> react_repo@0.0.0 test:e2e /workspace/findbrexit-consultants
+> playwright test
+
+
+Running 240 tests using 16 workers
+
+[1/240] …gistration Flows › should display "List Your Business" option in header
+[2/240] …Business Registration Flows › should handle business category selection
+[3/240] …istration Flows › should navigate to business listing/registration page
+[4/240] … & Business Registration Flows › should handle mobile responsive layout
+[5/240] … Registration Flows › should display information about listing benefits
+[6/240] …ration Flows › should validate required fields on business registration
+[7/240] …s Registration Flows › should display business registration form fields
+[8/240] …egistration Flows › should submit business registration with valid data
+[9/240] …rofile Pages › should display consultant profile with tabbed navigation
+[10/240] …onsultant Profile Pages › should display "Request Quote" functionality
+[11/240] …stration Flows › should validate email format in business registration
+[12/240] … Profile Pages › should display consultant ratings and reviews section
+[13/240] …ile Pages › should navigate to consultant profiles from search results
+[14/240] …sultant Profile Pages › should display contact information and methods
+[15/240] …ess Registration Flows › should handle terms and conditions acceptance
+[16/240] … Profile Pages › should display consultant key metrics and information
+[17/240] …tant Profile Pages › should display consultant services and industries
+[18/240] …72:3 › Consultant Profile Pages › should navigate between profile tabs
+[19/240] …ofile Pages › should display professional credentials and verification
+[20/240] … Consultant Profile Pages › should handle "Request Quote" button click
+[21/240] … Consultant Profile Pages › should display responsive layout on mobile
+[22/240] … Consultant Profile Pages › should handle multiple consultant profiles
+[23/240] …unctionality › should display quote request form with essential fields
+[24/240] …lity › should display quote request form with consultant pre-populated
+[25/240] …nctionality › should navigate to quote request from consultant profile
+[26/240] …est Functionality › should validate required fields on form submission
+[27/240] ….ts:230:3 › Quote Request Functionality › should validate email format
+[28/240] …Quote Request Functionality › should display Brexit service categories
+[29/240] …te Request Functionality › should handle multi-step quote request form
+[30/240] …te Request Functionality › should submit quote request with valid data
+[31/240] …te Request Functionality › should handle phone number field validation
+[32/240] …est Functionality › should display company/business information fields
+[33/240] … Request Functionality › should handle urgent/priority request options
+[34/240] …should navigate to quote request on mobile using responsive navigation
+[35/240] …ote Request Functionality › should display responsive layout on mobile
+[36/240] …nality › should find and access reviews section on consultant profiles
+[37/240] …ubmission Functionality › should display existing reviews with ratings
+[38/240] …Review Submission Functionality › should show review count information
+[39/240] …ctionality › should display review form with rating and comment fields
+[40/240] …tionality › should handle "Write Review" or "Add Review" functionality
+[41/240] …ion Functionality › should submit complete review with rating and text
+[42/240] …view Submission Functionality › should validate required review fields
+[43/240] …eview Submission Functionality › should handle star rating interaction
+[44/240] …n Functionality › should handle authentication requirement for reviews
+[45/240] …on Functionality › should display review sorting and filtering options
+  1) [chromium] › tests/quote-request.spec.ts:230:3 › Quote Request Functionality › should validate email format 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      288 |         });
+      289 |         
+    > 290 |         expect(hasEmailValidationError).toBeTruthy();
+          |                                         ^
+      291 |       } else {
+      292 |         // If no submit button, just verify email field exists
+      293 |         expect(await emailInput.isVisible()).toBeTruthy();
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:290:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/error-context.md
+
+
+  2) [chromium] › tests/quote-request.spec.ts:159:3 › Quote Request Functionality › should validate required fields on form submission 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      215 |       });
+      216 |       
+    > 217 |       expect(hasValidationErrors).toBeTruthy();
+          |                                   ^
+      218 |     } else {
+      219 |       // If no submit button found, at least verify the form loaded
+      220 |       const hasFormElements = await page.locator('input').or(
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:217:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/error-context.md
+
+
+…s:384:3 › Consultant Profile Pages › should handle multiple consultant profiles
+Successfully found and tested 6 consultant profiles
+
+  3) [chromium] › tests/quote-request.spec.ts:592:3 › Quote Request Functionality › should display responsive layout on mobile 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Matcher error: received value must be a number or bigint
+
+    Received has value: undefined
+
+      612 |       const firstInput = inputs.first();
+      613 |       const inputBox = await firstInput.boundingBox();
+    > 614 |       expect(inputBox?.width).toBeLessThanOrEqual(375);
+          |                               ^
+      615 |     }
+      616 |     
+      617 |     // Submit button should be accessible
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:614:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium/error-context.md
+
+
+[46/240] …ssion Functionality › should handle mobile responsive review interface
+[47/240] …w Submission Functionality › should display average rating calculation
+[48/240] … Functionality › should handle review pagination if many reviews exist
+[49/240] …stration Flows › should navigate to business listing/registration page
+[50/240] …istration Flows › should display "List Your Business" option in header
+[51/240] … Registration Flows › should display business registration form fields
+[52/240] …ation Flows › should validate required fields on business registration
+[53/240] …Registration Flows › should display information about listing benefits
+[54/240] …usiness Registration Flows › should handle business category selection
+[55/240] …stration Flows › should validate email format in business registration
+[56/240] …gistration Flows › should submit business registration with valid data
+[57/240] …ess Registration Flows › should handle terms and conditions acceptance
+[58/240] …ile Pages › should navigate to consultant profiles from search results
+[59/240] …& Business Registration Flows › should handle mobile responsive layout
+[60/240] …ofile Pages › should display consultant profile with tabbed navigation
+[61/240] … Profile Pages › should display consultant key metrics and information
+[62/240] …onsultant Profile Pages › should display "Request Quote" functionality
+  4) [chromium] › tests/review-submission.spec.ts:570:3 › Review Submission Functionality › should display average rating calculation 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      591 |     
+      592 |     // Should display some form of rating, quality indicator, or consultant metrics
+    > 593 |     expect(hasRatingDisplay).toBeTruthy();
+          |                              ^
+      594 |   });
+      595 |
+      596 |   test('should handle mobile responsive review interface', async () => {
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:593:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-09609--average-rating-calculation-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-09609--average-rating-calculation-chromium/error-context.md
+
+
+[63/240] …sultant Profile Pages › should display contact information and methods
+[64/240] … Profile Pages › should display consultant ratings and reviews section

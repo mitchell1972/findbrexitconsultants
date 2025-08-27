@@ -1,0 +1,683 @@
+
+Running 50 tests using 16 workers
+
+[1/50] …gistration Flows › should validate email format in business registration
+[2/50] …iness Registration Flows › should handle terms and conditions acceptance
+[3/50] …s Registration Flows › should display information about listing benefits
+[4/50] …egistration Flows › should display "List Your Business" option in header
+[5/50] …gistration Flows › should navigate to business listing/registration page
+[6/50] …ss Registration Flows › should display business registration form fields
+[7/50] …gistration Flows › should navigate to business listing/registration page
+[8/50] … Business Registration Flows › should handle business category selection
+[9/50] … Business Registration Flows › should handle business category selection
+[10/50] …gistration Flows › should display "List Your Business" option in header
+[11/50] …s Registration Flows › should display business registration form fields
+[12/50] …ration Flows › should validate required fields on business registration
+[13/50] …istration Flows › should validate email format in business registration
+[14/50] …egistration Flows › should submit business registration with valid data
+[15/50] …ration Flows › should validate required fields on business registration
+[16/50] … & Business Registration Flows › should handle mobile responsive layout
+  1) [chromium] › tests/auth.spec.ts:214:3 › Authentication & Business Registration Flows › should display information about listing benefits 
+
+    Test timeout of 10000ms exceeded.
+
+    Error: locator.isVisible: Target page, context or browser has been closed
+
+      262 |         )
+      263 |       )
+    > 264 |     ).first().isVisible({ timeout: 5000 });
+          |               ^
+      265 |     
+      266 |     expect(hasBenefitsInfo || hasBenefitElements).toBeTruthy();
+      267 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:264:15
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium/error-context.md
+
+
+  2) [chromium] › tests/auth.spec.ts:127:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+
+    Test timeout of 10000ms exceeded.
+
+    Error: page.waitForTimeout: Target page, context or browser has been closed
+
+      154 |     const nextButton = page.locator('button:has-text("Next")').first();
+      155 |     await nextButton.click();
+    > 156 |     await page.waitForTimeout(1000);
+          |                ^
+      157 |     
+      158 |     // Check for validation - simplified approach
+      159 |     const validationFound = await page.evaluate(() => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:156:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium/error-context.md
+
+
+  3) [chromium] › tests/auth.spec.ts:269:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance 
+
+    Test timeout of 10000ms exceeded.
+
+    Error: locator.fill: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('input').first()
+
+
+      293 |     
+      294 |     if (inputCount >= 4) {
+    > 295 |       await inputs.nth(0).fill('Test Company');
+          |                           ^
+      296 |       await inputs.nth(1).fill('John Doe');
+      297 |       await inputs.nth(2).fill('john@test.com');
+      298 |       await inputs.nth(3).fill('1234567890');
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:295:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium/error-context.md
+
+
+  4) [chromium] › tests/auth.spec.ts:45:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+
+    Test timeout of 10000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-200fd-s-listing-registration-page-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-200fd-s-listing-registration-page-chromium/error-context.md
+
+
+  5) [chromium] › tests/auth.spec.ts:168:3 › Authentication & Business Registration Flows › should handle business category selection 
+
+    Test timeout of 10000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-4cf72-business-category-selection-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-4cf72-business-category-selection-chromium/error-context.md
+
+
+  6) [chromium] › tests/auth.spec.ts:350:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+
+    Test timeout of 10000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium/error-context.md
+
+
+  7) [chromium] › tests/auth.spec.ts:400:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+
+    Test timeout of 10000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for getByTestId('list-business-mobile-btn')
+
+
+      411 |       const listBusinessMobileBtn = page.getByTestId('list-business-mobile-btn');
+      412 |       if (await listBusinessMobileBtn.isVisible()) {
+    > 413 |         await listBusinessMobileBtn.click();
+          |                                     ^
+      414 |       } else {
+      415 |         // Fallback: direct navigation
+      416 |         await page.goto('/list-business', { waitUntil: 'networkidle' });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:413:37
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium/error-context.md
+
+
+[17/50] …egistration Flows › should submit business registration with valid data
+[18/50] … Registration Flows › should display information about listing benefits
+[19/50] …istration Flows › should navigate to business listing/registration page
+[20/50] … & Business Registration Flows › should handle mobile responsive layout
+[21/50] …gistration Flows › should display "List Your Business" option in header
+[22/50] …ness Registration Flows › should handle terms and conditions acceptance
+[23/50] …ration Flows › should validate required fields on business registration
+[24/50] …s Registration Flows › should display business registration form fields
+  8) [firefox] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    Test timeout of 10000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:12:16
+
+    Error: browser.newPage: Test ended.
+
+       5 |
+       6 |   test.beforeEach(async ({ browser }) => {
+    >  7 |     page = await browser.newPage();
+         |                          ^
+       8 |     await page.goto('/');
+       9 |   });
+      10 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:7:26
+
+
+[25/50] …istration Flows › should validate email format in business registration
+[26/50] …Business Registration Flows › should handle business category selection
+  9) [firefox] › tests/auth.spec.ts:45:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+
+    Test timeout of 10000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:12:16
+
+    Error: browser.newPage: Test ended.
+
+       5 |
+       6 |   test.beforeEach(async ({ browser }) => {
+    >  7 |     page = await browser.newPage();
+         |                          ^
+       8 |     await page.goto('/');
+       9 |   });
+      10 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:7:26
+
+
+  10) [firefox] › tests/auth.spec.ts:168:3 › Authentication & Business Registration Flows › should handle business category selection 
+
+    Test timeout of 10000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:12:16
+
+    Error: browser.newPage: Test ended.
+
+       5 |
+       6 |   test.beforeEach(async ({ browser }) => {
+    >  7 |     page = await browser.newPage();
+         |                          ^
+       8 |     await page.goto('/');
+       9 |   });
+      10 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:7:26
+
+
+  11) [firefox] › tests/auth.spec.ts:103:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Test timeout of 10000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:12:16
+
+    Error: browser.newPage: Test ended.
+
+       5 |
+       6 |   test.beforeEach(async ({ browser }) => {
+    >  7 |     page = await browser.newPage();
+         |                          ^
+       8 |     await page.goto('/');
+       9 |   });
+      10 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:7:26
+
+
+  12) [firefox] › tests/auth.spec.ts:127:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+
+    Test timeout of 10000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:12:16
+
+    Error: browser.newPage: Test ended.
+
+       5 |
+       6 |   test.beforeEach(async ({ browser }) => {
+    >  7 |     page = await browser.newPage();
+         |                          ^
+       8 |     await page.goto('/');
+       9 |   });
+      10 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:7:26
+
+
+  13) [firefox] › tests/auth.spec.ts:75:3 › Authentication & Business Registration Flows › should display business registration form fields 
+
+    Test timeout of 10000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:12:16
+
+    Error: browser.newPage: Test ended.
+
+       5 |
+       6 |   test.beforeEach(async ({ browser }) => {
+    >  7 |     page = await browser.newPage();
+         |                          ^
+       8 |     await page.goto('/');
+       9 |   });
+      10 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:7:26
+
+
+[27/50] … Registration Flows › should display information about listing benefits
+[28/50] …ness Registration Flows › should handle terms and conditions acceptance
+[29/50] …egistration Flows › should submit business registration with valid data
+[30/50] … & Business Registration Flows › should handle mobile responsive layout
+  14) [firefox] › tests/auth.spec.ts:350:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+
+    Test timeout of 10000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:12:16
+
+    Error: browser.newPage: Test ended.
+
+       5 |
+       6 |   test.beforeEach(async ({ browser }) => {
+    >  7 |     page = await browser.newPage();
+         |                          ^
+       8 |     await page.goto('/');
+       9 |   });
+      10 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:7:26
+
+
+[31/50] …gistration Flows › should display "List Your Business" option in header
+[32/50] …istration Flows › should navigate to business listing/registration page
+  15) [firefox] › tests/auth.spec.ts:400:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+
+    Test timeout of 10000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:12:16
+
+    Error: browser.newPage: Test ended.
+
+       5 |
+       6 |   test.beforeEach(async ({ browser }) => {
+    >  7 |     page = await browser.newPage();
+         |                          ^
+       8 |     await page.goto('/');
+       9 |   });
+      10 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:7:26
+
+
+  16) [firefox] › tests/auth.spec.ts:269:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance 
+
+    Test timeout of 10000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:12:16
+
+    Error: page.goto: Test ended.
+    Call log:
+      - navigating to "https://d8kvny808s66.space.minimax.io/", waiting until "load"
+
+
+       6 |   test.beforeEach(async ({ browser }) => {
+       7 |     page = await browser.newPage();
+    >  8 |     await page.goto('/');
+         |                ^
+       9 |   });
+      10 |
+      11 |   test.afterEach(async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:8:16
+
+
+  17) [firefox] › tests/auth.spec.ts:214:3 › Authentication & Business Registration Flows › should display information about listing benefits 
+
+    Test timeout of 10000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:12:16
+
+    Error: browser.newPage: Test ended.
+
+       5 |
+       6 |   test.beforeEach(async ({ browser }) => {
+    >  7 |     page = await browser.newPage();
+         |                          ^
+       8 |     await page.goto('/');
+       9 |   });
+      10 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:7:26
+
+
+[33/50] …s Registration Flows › should display business registration form fields
+  18) [webkit] › tests/auth.spec.ts:75:3 › Authentication & Business Registration Flows › should display business registration form fields 
+
+    Test timeout of 10000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for getByTestId('list-business-header-btn')
+        - locator resolved to <a href="/list-business" data-testid="list-business-header-btn" class="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">List Your Business</a>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+
+
+      78 |     if (viewport && viewport.width >= 768) {
+      79 |       await expect(page.getByTestId('list-business-header-btn')).toBeVisible({ timeout: 10000 });
+    > 80 |       await page.getByTestId('list-business-header-btn').click();
+         |                                                          ^
+      81 |     } else {
+      82 |       await expect(page.getByTestId('mobile-menu-button')).toBeVisible({ timeout: 10000 });
+      83 |       await page.getByTestId('mobile-menu-button').click();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:80:58
+
+    Error Context: test-results/auth-Authentication-Busine-bc5f9-ss-registration-form-fields-webkit/error-context.md
+
+
+  19) [Mobile Chrome] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    Test timeout of 10000ms exceeded.
+
+    TimeoutError: locator.click: Timeout 5000ms exceeded.
+    Call log:
+      - waiting for getByTestId('mobile-menu-button')
+        - locator resolved to <button aria-label="Toggle mobile menu" data-testid="mobile-menu-button" class="md:hidden p-2 text-gray-700 hover:text-[#003366]">…</button>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      - retrying click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+
+
+      33 |       
+      34 |       // Click mobile menu button with retry logic
+    > 35 |       await mobileMenuBtn.click({ timeout: 5000 });
+         |                           ^
+      36 |       
+      37 |       // Wait for mobile menu to appear with explicit wait
+      38 |       await page.waitForTimeout(1000);
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:35:27
+
+    Error Context: test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-Mobile-Chrome/error-context.md
+
+
+  20) [webkit] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    Test timeout of 10000ms exceeded.
+
+    Test timeout of 10000ms exceeded.
+
+    Error Context: test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-webkit/error-context.md
+
+
+  21) [Mobile Chrome] › tests/auth.spec.ts:45:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+
+    Test timeout of 10000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for getByTestId('mobile-menu-button')
+        - locator resolved to <button aria-label="Toggle mobile menu" data-testid="mobile-menu-button" class="md:hidden p-2 text-gray-700 hover:text-[#003366]">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 100ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+
+
+      54 |     } else {
+      55 |       await expect(page.getByTestId('mobile-menu-button')).toBeVisible({ timeout: 10000 });
+    > 56 |       await page.getByTestId('mobile-menu-button').click();
+         |                                                    ^
+      57 |       await page.waitForTimeout(1000);
+      58 |       await expect(page.getByTestId('list-business-mobile-btn')).toBeVisible({ timeout: 10000 });
+      59 |       await page.getByTestId('list-business-mobile-btn').click();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:56:52
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-200fd-s-listing-registration-page-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-200fd-s-listing-registration-page-Mobile-Chrome/error-context.md
+
+
+  22) [webkit] › tests/auth.spec.ts:45:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+
+    Test timeout of 10000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    Test timeout of 10000ms exceeded.
+
+    Error Context: test-results/auth-Authentication-Busine-200fd-s-listing-registration-page-webkit/error-context.md
+
+
+  23) [webkit] › tests/auth.spec.ts:127:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+
+    Test timeout of 10000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    Test timeout of 10000ms exceeded.
+
+    Error Context: test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-webkit/error-context.md
+
+

@@ -1,0 +1,762 @@
+
+> react_repo@0.0.0 test:e2e /workspace/findbrexit-consultants
+> playwright test
+
+
+Running 240 tests using 16 workers
+
+[1/240] …gistration Flows › should display "List Your Business" option in header
+[2/240] …Business Registration Flows › should handle business category selection
+[3/240] …istration Flows › should navigate to business listing/registration page
+[4/240] … & Business Registration Flows › should handle mobile responsive layout
+[5/240] … Registration Flows › should display information about listing benefits
+[6/240] …ration Flows › should validate required fields on business registration
+[7/240] …s Registration Flows › should display business registration form fields
+[8/240] …egistration Flows › should submit business registration with valid data
+[9/240] …rofile Pages › should display consultant profile with tabbed navigation
+[10/240] …onsultant Profile Pages › should display "Request Quote" functionality
+[11/240] …stration Flows › should validate email format in business registration
+[12/240] … Profile Pages › should display consultant ratings and reviews section
+[13/240] …ile Pages › should navigate to consultant profiles from search results
+[14/240] …sultant Profile Pages › should display contact information and methods
+[15/240] …ess Registration Flows › should handle terms and conditions acceptance
+[16/240] … Profile Pages › should display consultant key metrics and information
+[17/240] …tant Profile Pages › should display consultant services and industries
+[18/240] …72:3 › Consultant Profile Pages › should navigate between profile tabs
+[19/240] …ofile Pages › should display professional credentials and verification
+[20/240] … Consultant Profile Pages › should handle "Request Quote" button click
+[21/240] … Consultant Profile Pages › should display responsive layout on mobile
+[22/240] … Consultant Profile Pages › should handle multiple consultant profiles
+[23/240] …unctionality › should display quote request form with essential fields
+[24/240] …lity › should display quote request form with consultant pre-populated
+[25/240] …nctionality › should navigate to quote request from consultant profile
+[26/240] …est Functionality › should validate required fields on form submission
+[27/240] ….ts:230:3 › Quote Request Functionality › should validate email format
+[28/240] …Quote Request Functionality › should display Brexit service categories
+[29/240] …te Request Functionality › should handle multi-step quote request form
+[30/240] …te Request Functionality › should submit quote request with valid data
+[31/240] …te Request Functionality › should handle phone number field validation
+[32/240] …est Functionality › should display company/business information fields
+[33/240] … Request Functionality › should handle urgent/priority request options
+[34/240] …should navigate to quote request on mobile using responsive navigation
+[35/240] …ote Request Functionality › should display responsive layout on mobile
+[36/240] …nality › should find and access reviews section on consultant profiles
+[37/240] …ubmission Functionality › should display existing reviews with ratings
+[38/240] …Review Submission Functionality › should show review count information
+[39/240] …ctionality › should display review form with rating and comment fields
+[40/240] …tionality › should handle "Write Review" or "Add Review" functionality
+[41/240] …ion Functionality › should submit complete review with rating and text
+[42/240] …view Submission Functionality › should validate required review fields
+[43/240] …eview Submission Functionality › should handle star rating interaction
+[44/240] …n Functionality › should handle authentication requirement for reviews
+[45/240] …on Functionality › should display review sorting and filtering options
+  1) [chromium] › tests/quote-request.spec.ts:230:3 › Quote Request Functionality › should validate email format 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      288 |         });
+      289 |         
+    > 290 |         expect(hasEmailValidationError).toBeTruthy();
+          |                                         ^
+      291 |       } else {
+      292 |         // If no submit button, just verify email field exists
+      293 |         expect(await emailInput.isVisible()).toBeTruthy();
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:290:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/error-context.md
+
+
+  2) [chromium] › tests/quote-request.spec.ts:159:3 › Quote Request Functionality › should validate required fields on form submission 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      215 |       });
+      216 |       
+    > 217 |       expect(hasValidationErrors).toBeTruthy();
+          |                                   ^
+      218 |     } else {
+      219 |       // If no submit button found, at least verify the form loaded
+      220 |       const hasFormElements = await page.locator('input').or(
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:217:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/error-context.md
+
+
+…s:384:3 › Consultant Profile Pages › should handle multiple consultant profiles
+Successfully found and tested 6 consultant profiles
+
+  3) [chromium] › tests/quote-request.spec.ts:592:3 › Quote Request Functionality › should display responsive layout on mobile 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Matcher error: received value must be a number or bigint
+
+    Received has value: undefined
+
+      612 |       const firstInput = inputs.first();
+      613 |       const inputBox = await firstInput.boundingBox();
+    > 614 |       expect(inputBox?.width).toBeLessThanOrEqual(375);
+          |                               ^
+      615 |     }
+      616 |     
+      617 |     // Submit button should be accessible
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:614:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium/error-context.md
+
+
+[46/240] …ssion Functionality › should handle mobile responsive review interface
+[47/240] …w Submission Functionality › should display average rating calculation
+[48/240] … Functionality › should handle review pagination if many reviews exist
+[49/240] …stration Flows › should navigate to business listing/registration page
+[50/240] …istration Flows › should display "List Your Business" option in header
+[51/240] … Registration Flows › should display business registration form fields
+[52/240] …ation Flows › should validate required fields on business registration
+[53/240] …Registration Flows › should display information about listing benefits
+[54/240] …usiness Registration Flows › should handle business category selection
+[55/240] …stration Flows › should validate email format in business registration
+[56/240] …gistration Flows › should submit business registration with valid data
+[57/240] …ess Registration Flows › should handle terms and conditions acceptance
+[58/240] …ile Pages › should navigate to consultant profiles from search results
+[59/240] …& Business Registration Flows › should handle mobile responsive layout
+[60/240] …ofile Pages › should display consultant profile with tabbed navigation
+[61/240] … Profile Pages › should display consultant key metrics and information
+[62/240] …onsultant Profile Pages › should display "Request Quote" functionality
+  4) [chromium] › tests/review-submission.spec.ts:570:3 › Review Submission Functionality › should display average rating calculation 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      591 |     
+      592 |     // Should display some form of rating, quality indicator, or consultant metrics
+    > 593 |     expect(hasRatingDisplay).toBeTruthy();
+          |                              ^
+      594 |   });
+      595 |
+      596 |   test('should handle mobile responsive review interface', async () => {
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:593:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-09609--average-rating-calculation-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-09609--average-rating-calculation-chromium/error-context.md
+
+
+[63/240] …sultant Profile Pages › should display contact information and methods
+[64/240] … Profile Pages › should display consultant ratings and reviews section
+  5) [firefox] › tests/auth.spec.ts:103:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForTimeout: Target page, context or browser has been closed
+
+      116 |     
+      117 |     await page.waitForLoadState('networkidle');
+    > 118 |     await page.waitForTimeout(2000);
+          |                ^
+      119 |     
+      120 |     // Wait for form to load completely and look for form fields or form sections
+      121 |     const hasFormFields = await page.locator('input, textarea, select, form').first().isVisible();
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:118:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-firefox/error-context.md
+
+
+  6) [firefox] › tests/auth.spec.ts:45:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-200fd-s-listing-registration-page-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-200fd-s-listing-registration-page-firefox/error-context.md
+
+
+  7) [firefox] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  8) [firefox] › tests/auth.spec.ts:168:3 › Authentication & Business Registration Flows › should handle business category selection 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    Error Context: test-results/auth-Authentication-Busine-4cf72-business-category-selection-firefox/error-context.md
+
+
+  9) [firefox] › tests/auth.spec.ts:214:3 › Authentication & Business Registration Flows › should display information about listing benefits 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    Error Context: test-results/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-firefox/error-context.md
+
+
+  10) [firefox] › tests/consultant-profile.spec.ts:45:3 › Consultant Profile Pages › should navigate to consultant profiles from search results 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:6:8
+
+    Error: page.goto: Target page, context or browser has been closed
+    Call log:
+      - navigating to "https://d8kvny808s66.space.minimax.io/", waiting until "load"
+
+
+       6 |   test.beforeEach(async ({ browser }) => {
+       7 |     page = await browser.newPage();
+    >  8 |     await page.goto('/');
+         |                ^
+       9 |   });
+      10 |
+      11 |   test.afterEach(async () => {
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:8:16
+
+    Error Context: test-results/consultant-profile-Consult-de0af-rofiles-from-search-results-firefox/error-context.md
+
+
+  11) [firefox] › tests/auth.spec.ts:75:3 › Authentication & Business Registration Flows › should display business registration form fields 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-bc5f9-ss-registration-form-fields-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  12) [firefox] › tests/auth.spec.ts:350:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    Error Context: test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-firefox/error-context.md
+
+
+  13) [firefox] › tests/auth.spec.ts:127:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+
+  14) [firefox] › tests/auth.spec.ts:269:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    Error Context: test-results/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-firefox/error-context.md
+
+
+  15) [firefox] › tests/consultant-profile.spec.ts:139:3 › Consultant Profile Pages › should display "Request Quote" functionality 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:6:8
+
+    Error Context: test-results/consultant-profile-Consult-7d0eb-Request-Quote-functionality-firefox/error-context.md
+
+
+  16) [firefox] › tests/consultant-profile.spec.ts:68:3 › Consultant Profile Pages › should display consultant profile with tabbed navigation 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:6:8
+
+    Error Context: test-results/consultant-profile-Consult-5bfc5-file-with-tabbed-navigation-firefox/error-context.md
+
+
+  17) [firefox] › tests/auth.spec.ts:400:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    Error Context: test-results/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-firefox/error-context.md
+
+
+  18) [firefox] › tests/consultant-profile.spec.ts:93:3 › Consultant Profile Pages › should display consultant key metrics and information 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:6:8
+
+    Error Context: test-results/consultant-profile-Consult-c49d6-key-metrics-and-information-firefox/error-context.md
+
+
+  19) [firefox] › tests/consultant-profile.spec.ts:150:3 › Consultant Profile Pages › should display contact information and methods 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:6:8
+
+    Error Context: test-results/consultant-profile-Consult-b5d67-act-information-and-methods-firefox/error-context.md
+
+
+[65/240] …72:3 › Consultant Profile Pages › should navigate between profile tabs
+[66/240] …tant Profile Pages › should display consultant services and industries
+[67/240] … Consultant Profile Pages › should handle "Request Quote" button click
+[68/240] … Consultant Profile Pages › should display responsive layout on mobile
+[69/240] …ofile Pages › should display professional credentials and verification
+[70/240] …lity › should display quote request form with consultant pre-populated
+[71/240] ….ts:230:3 › Quote Request Functionality › should validate email format
+[72/240] …nctionality › should navigate to quote request from consultant profile
+[73/240] … Consultant Profile Pages › should handle multiple consultant profiles
+[74/240] …Quote Request Functionality › should display Brexit service categories
+[75/240] …unctionality › should display quote request form with essential fields
+[76/240] …est Functionality › should validate required fields on form submission
+[77/240] …te Request Functionality › should submit quote request with valid data
+[78/240] …te Request Functionality › should handle multi-step quote request form
+[79/240] …te Request Functionality › should handle phone number field validation
+  20) [firefox] › tests/consultant-profile.spec.ts:196:3 › Consultant Profile Pages › should display consultant ratings and reviews section 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="View Profile"')
+
+
+      198 |     await navigateToFindConsultants();
+      199 |     
+    > 200 |     await page.click('text="View Profile"');
+          |                ^
+      201 |     await page.waitForLoadState('networkidle');
+      202 |     
+      203 |     // Wait for consultant profile content to fully load
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:200:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-a82ec-ratings-and-reviews-section-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-a82ec-ratings-and-reviews-section-firefox/error-context.md
+
+
+[80/240] …est Functionality › should display company/business information fields
+  21) [firefox] › tests/consultant-profile.spec.ts:272:3 › Consultant Profile Pages › should navigate between profile tabs 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="View Profile"').first()
+        - locator resolved to <a data-testid="view-profile-btn" href="/consultant/b3afeec3-7859-47c2-8e51-23e97c50475b" class="flex-1 bg-[#003366] text-white px-4 py-2 rounded-lg text-sm font-medium text-center hover:bg-blue-800 transition-colors">View Profile</a>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - performing click action
+
+
+      291 |       const viewProfileBtn = page.locator('text="View Profile"').first();
+      292 |       if (await viewProfileBtn.isVisible()) {
+    > 293 |         await viewProfileBtn.click();
+          |                              ^
+      294 |       } else {
+      295 |         await consultantCard.click();
+      296 |       }
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:293:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-343ec-vigate-between-profile-tabs-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-343ec-vigate-between-profile-tabs-firefox/error-context.md
+
+
+  22) [firefox] › tests/consultant-profile.spec.ts:384:3 › Consultant Profile Pages › should handle multiple consultant profiles 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('nav').locator('text="Find Consultants"')
+        - locator resolved to <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - performing click action
+
+
+      37 |     } else {
+      38 |       // Desktop: Click Find Consultants link directly
+    > 39 |       await page.click('nav >> text="Find Consultants"');
+         |                  ^
+      40 |     }
+      41 |     
+      42 |     await page.waitForLoadState('networkidle');
+        at navigateToFindConsultants (/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:39:18)
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:386:11
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-952cf-ultiple-consultant-profiles-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  23) [firefox] › tests/consultant-profile.spec.ts:235:3 › Consultant Profile Pages › should display consultant services and industries 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('nav').locator('text="Find Consultants"')
+        - locator resolved to <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+
+
+      37 |     } else {
+      38 |       // Desktop: Click Find Consultants link directly
+    > 39 |       await page.click('nav >> text="Find Consultants"');
+         |                  ^
+      40 |     }
+      41 |     
+      42 |     await page.waitForLoadState('networkidle');
+        at navigateToFindConsultants (/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:39:18)
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:237:11
+
+
+  24) [firefox] › tests/quote-request.spec.ts:374:3 › Quote Request Functionality › should submit quote request with valid data 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     
+      9 |     // Set default viewport size (desktop) for most tests
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8
+
+    Error: page.goto: Target page, context or browser has been closed
+    Call log:
+      - navigating to "https://d8kvny808s66.space.minimax.io/", waiting until "load"
+
+
+       9 |     // Set default viewport size (desktop) for most tests
+      10 |     await page.setViewportSize({ width: 1280, height: 720 });
+    > 11 |     await page.goto('/');
+         |                ^
+      12 |   });
+      13 |
+      14 |   test.afterEach(async () => {
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:11:16
+
+    Error Context: test-results/quote-request-Quote-Reques-aba92-ote-request-with-valid-data-firefox/error-context.md
+
+
+  25) [firefox] › tests/quote-request.spec.ts:159:3 › Quote Request Functionality › should validate required fields on form submission 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     
+      9 |     // Set default viewport size (desktop) for most tests
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  26) [firefox] › tests/consultant-profile.spec.ts:327:3 › Consultant Profile Pages › should handle "Request Quote" button click 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:6:8
+
+
+  27) [firefox] › tests/consultant-profile.spec.ts:352:3 › Consultant Profile Pages › should display professional credentials and verification 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:6:8
+
+    Error Context: test-results/consultant-profile-Consult-f614d-redentials-and-verification-firefox/error-context.md
+
+
+  28) [firefox] › tests/consultant-profile.spec.ts:416:3 › Consultant Profile Pages › should display responsive layout on mobile 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:6:8
+
+
+  29) [firefox] › tests/quote-request.spec.ts:61:3 › Quote Request Functionality › should display quote request form with consultant pre-populated 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     
+      9 |     // Set default viewport size (desktop) for most tests
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8
+
+    Error Context: test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-firefox/error-context.md
+
+
+  30) [firefox] › tests/quote-request.spec.ts:482:3 › Quote Request Functionality › should handle phone number field validation 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     
+      9 |     // Set default viewport size (desktop) for most tests
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8
+
+    Error: page.goto: Target page, context or browser has been closed
+    Call log:
+      - navigating to "https://d8kvny808s66.space.minimax.io/", waiting until "load"
+
+
+       9 |     // Set default viewport size (desktop) for most tests
+      10 |     await page.setViewportSize({ width: 1280, height: 720 });
+    > 11 |     await page.goto('/');
+         |                ^
+      12 |   });
+      13 |
+      14 |   test.afterEach(async () => {
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:11:16
+
+
+  31) [firefox] › tests/quote-request.spec.ts:305:3 › Quote Request Functionality › should display Brexit service categories 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     
+      9 |     // Set default viewport size (desktop) for most tests
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8
+
+    Error Context: test-results/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-firefox/error-context.md
+
+
+  32) [firefox] › tests/quote-request.spec.ts:436:3 › Quote Request Functionality › should handle multi-step quote request form 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     
+      9 |     // Set default viewport size (desktop) for most tests
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8
+
+    Error Context: test-results/quote-request-Quote-Reques-6dced-lti-step-quote-request-form-firefox/error-context.md
+
+
+  33) [firefox] › tests/quote-request.spec.ts:230:3 › Quote Request Functionality › should validate email format 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     
+      9 |     // Set default viewport size (desktop) for most tests
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8
+
+    Error Context: test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-firefox/error-context.md
+
+
+  34) [firefox] › tests/quote-request.spec.ts:135:3 › Quote Request Functionality › should display quote request form with essential fields 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     
+      9 |     // Set default viewport size (desktop) for most tests
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8
+
+    Error Context: test-results/quote-request-Quote-Reques-4a16a--form-with-essential-fields-firefox/error-context.md
+
+
+  35) [firefox] › tests/quote-request.spec.ts:38:3 › Quote Request Functionality › should navigate to quote request from consultant profile 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     
+      9 |     // Set default viewport size (desktop) for most tests
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8
+
+    Error Context: test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-firefox/error-context.md
+
+
+[81/240] … Request Functionality › should handle urgent/priority request options
+[82/240] …should navigate to quote request on mobile using responsive navigation
+[83/240] …ote Request Functionality › should display responsive layout on mobile
+[84/240] …ubmission Functionality › should display existing reviews with ratings

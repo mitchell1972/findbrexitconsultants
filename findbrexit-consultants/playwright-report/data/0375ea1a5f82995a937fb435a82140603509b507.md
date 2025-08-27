@@ -1,0 +1,265 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: 500+ Verified Consultants
+        - generic [ref=e9]: •
+        - generic [ref=e10]: 1000+ Businesses Helped
+        - generic [ref=e11]: •
+        - generic [ref=e12]: All Consultants Vetted
+      - generic [ref=e14]:
+        - link "FB FindBrexitConsultants.co.uk" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e18] [cursor=pointer]: FB
+          - generic [ref=e19] [cursor=pointer]: FindBrexitConsultants.co.uk
+        - generic [ref=e21]:
+          - textbox "Search consultants by service, location, or company..." [ref=e22]
+          - button [ref=e23] [cursor=pointer]:
+            - img [ref=e24] [cursor=pointer]
+        - navigation [ref=e27]:
+          - link "Find Consultants" [ref=e28] [cursor=pointer]:
+            - /url: /find-consultants
+          - link "How It Works" [ref=e29] [cursor=pointer]:
+            - /url: /how-it-works
+          - link "Pricing" [ref=e30] [cursor=pointer]:
+            - /url: /pricing
+          - link "List Your Business" [ref=e31] [cursor=pointer]:
+            - /url: /list-business
+    - main [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]:
+              - heading "Trade & Borders Consultancy" [level=1] [ref=e39]
+              - generic [ref=e40]:
+                - generic [ref=e41]:
+                  - img [ref=e42]
+                  - generic [ref=e45]: Verified
+                - generic [ref=e46]:
+                  - img [ref=e47]
+                  - generic [ref=e49]: Featured
+            - generic [ref=e50]:
+              - generic [ref=e51]:
+                - img [ref=e52]
+                - generic [ref=e57]: Dr Anna Jerzewska
+              - generic [ref=e58]:
+                - img [ref=e59]
+                - generic [ref=e62]: London
+                - generic [ref=e63]: ", E14 5AB"
+              - generic [ref=e64]:
+                - img [ref=e65]
+                - generic [ref=e68]: 1 views
+            - generic [ref=e69]:
+              - generic [ref=e70]:
+                - generic [ref=e71]:
+                  - img [ref=e72]
+                  - img [ref=e74]
+                  - img [ref=e76]
+                  - img [ref=e78]
+                  - img [ref=e80]
+                - generic [ref=e82]: "5.0"
+                - generic [ref=e83]: /5
+              - generic [ref=e84]: (1 review)
+            - generic [ref=e85]:
+              - generic [ref=e86]:
+                - generic [ref=e87]: "8"
+                - generic [ref=e88]: Years Experience
+              - generic [ref=e89]:
+                - generic [ref=e90]: 15-25
+                - generic [ref=e91]: Team Size
+              - generic [ref=e92]:
+                - generic [ref=e93]: 4h
+                - generic [ref=e94]: Response Time
+              - generic [ref=e95]:
+                - generic [ref=e96]: £££
+                - generic [ref=e97]: Premium
+          - generic [ref=e99]:
+            - link "Contact Consultant" [ref=e100] [cursor=pointer]:
+              - /url: /contact/b3afeec3-7859-47c2-8e51-23e97c50475b
+            - link "Request Quote" [ref=e101] [cursor=pointer]:
+              - /url: /request-quote?consultant=b3afeec3-7859-47c2-8e51-23e97c50475b
+            - generic [ref=e102]: Free Consultation Available
+        - navigation [ref=e105]:
+          - button "Overview" [ref=e106] [cursor=pointer]
+          - button "Services & Industries" [ref=e107] [cursor=pointer]
+          - button "Reviews (1)" [ref=e108] [cursor=pointer]
+          - button "Contact Information" [ref=e109] [cursor=pointer]
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - generic [ref=e113]:
+              - heading "About Trade & Borders Consultancy" [level=3] [ref=e114]
+              - paragraph [ref=e115]: Founder of Trade & Borders consultancy, offering bespoke advice and training on customs, international trade and Brexit to private and public sector clients. PhD-level expertise with extensive experience in post-Brexit trade regulations.
+              - generic [ref=e117]:
+                - img [ref=e118]
+                - generic [ref=e123]: Member since August 2025
+            - generic [ref=e124]:
+              - heading "Professional Credentials" [level=3] [ref=e125]
+              - generic [ref=e126]:
+                - generic [ref=e127]:
+                  - generic [ref=e128]: Business Experience
+                  - generic [ref=e129]: 8 years
+                - generic [ref=e130]:
+                  - generic [ref=e131]: Team Size
+                  - generic [ref=e132]: 15-25
+                - generic [ref=e133]:
+                  - generic [ref=e134]: Response Time
+                  - generic [ref=e135]: 4 hours
+                - generic [ref=e136]:
+                  - generic [ref=e137]: Verification Status
+                  - generic [ref=e138]:
+                    - img [ref=e139]
+                    - generic [ref=e142]: Government Verified
+            - generic [ref=e143]:
+              - heading "Project Information" [level=3] [ref=e144]
+              - generic [ref=e145]:
+                - generic [ref=e146]:
+                  - generic [ref=e147]: Minimum Project Size
+                  - generic [ref=e148]: £5,000
+                - generic [ref=e149]:
+                  - generic [ref=e150]: Typical Project Duration
+                  - generic [ref=e151]: 2-4 weeks
+          - generic [ref=e152]:
+            - generic [ref=e153]:
+              - heading "Contact Methods" [level=3] [ref=e154]
+              - generic [ref=e155]:
+                - link "+44 20 7946 8532" [ref=e156] [cursor=pointer]:
+                  - /url: tel:+44 20 7946 8532
+                  - img [ref=e157] [cursor=pointer]
+                  - generic [ref=e159] [cursor=pointer]: +44 20 7946 8532
+                - link "anna@tradeandborders.com" [ref=e160] [cursor=pointer]:
+                  - /url: mailto:anna@tradeandborders.com
+                  - img [ref=e161] [cursor=pointer]
+                  - generic [ref=e164] [cursor=pointer]: anna@tradeandborders.com
+                - link "Visit Website" [ref=e165] [cursor=pointer]:
+                  - /url: https://tradeandborders.com
+                  - img [ref=e166] [cursor=pointer]
+                  - generic [ref=e170] [cursor=pointer]: Visit Website
+                  - img [ref=e171] [cursor=pointer]
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - img [ref=e177]
+                - heading "Response Guarantee" [level=3] [ref=e180]
+              - paragraph [ref=e181]: This consultant typically responds within 4 hours during business days.
+    - contentinfo [ref=e182]:
+      - generic [ref=e184]:
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - generic [ref=e188]: FB
+            - generic [ref=e189]: FindBrexitConsultants
+          - paragraph [ref=e190]: The UK's leading directory for Brexit compliance consultants. Connect with verified experts to navigate post-Brexit regulations with confidence.
+          - generic [ref=e191]:
+            - generic [ref=e192]:
+              - img [ref=e193]
+              - generic [ref=e196]: info@findbrexitconsultants.co.uk
+            - generic [ref=e197]:
+              - img [ref=e198]
+              - generic [ref=e201]: London, United Kingdom
+          - generic [ref=e202]:
+            - link [ref=e203] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e204] [cursor=pointer]
+            - link [ref=e206] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e207] [cursor=pointer]
+            - link [ref=e209] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e210] [cursor=pointer]
+        - generic [ref=e214]:
+          - heading "Services" [level=4] [ref=e215]
+          - list [ref=e216]:
+            - listitem [ref=e217]:
+              - link "Customs Declarations" [ref=e218] [cursor=pointer]:
+                - /url: /services/customs-declarations
+            - listitem [ref=e219]:
+              - link "VAT/Tax Compliance" [ref=e220] [cursor=pointer]:
+                - /url: /services/vat-tax-compliance
+            - listitem [ref=e221]:
+              - link "Northern Ireland Protocol" [ref=e222] [cursor=pointer]:
+                - /url: /services/northern-ireland-protocol
+            - listitem [ref=e223]:
+              - link "Regulatory Compliance" [ref=e224] [cursor=pointer]:
+                - /url: /services/regulatory-compliance
+            - listitem [ref=e225]:
+              - link "Import/Export Documentation" [ref=e226] [cursor=pointer]:
+                - /url: /services/import-export-documentation
+            - listitem [ref=e227]:
+              - link "Supply Chain Consulting" [ref=e228] [cursor=pointer]:
+                - /url: /services/supply-chain-consulting
+        - generic [ref=e229]:
+          - heading "Locations" [level=4] [ref=e230]
+          - list [ref=e231]:
+            - listitem [ref=e232]:
+              - link "Brexit Consultants in London" [ref=e233] [cursor=pointer]:
+                - /url: /location/london
+            - listitem [ref=e234]:
+              - link "Brexit Consultants in Manchester" [ref=e235] [cursor=pointer]:
+                - /url: /location/manchester
+            - listitem [ref=e236]:
+              - link "Brexit Consultants in Birmingham" [ref=e237] [cursor=pointer]:
+                - /url: /location/birmingham
+            - listitem [ref=e238]:
+              - link "Brexit Consultants in Scotland" [ref=e239] [cursor=pointer]:
+                - /url: /location/scotland
+            - listitem [ref=e240]:
+              - link "Brexit Consultants in Wales" [ref=e241] [cursor=pointer]:
+                - /url: /location/wales
+            - listitem [ref=e242]:
+              - link "Brexit Consultants in Northern Ireland" [ref=e243] [cursor=pointer]:
+                - /url: /location/northern-ireland
+        - generic [ref=e244]:
+          - heading "Company" [level=4] [ref=e245]
+          - list [ref=e246]:
+            - listitem [ref=e247]:
+              - link "About Us" [ref=e248] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e249]:
+              - link "How It Works" [ref=e250] [cursor=pointer]:
+                - /url: /how-it-works
+            - listitem [ref=e251]:
+              - link "Pricing" [ref=e252] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e253]:
+              - link "Brexit Compliance Guide" [ref=e254] [cursor=pointer]:
+                - /url: /brexit-guide
+            - listitem [ref=e255]:
+              - link "List Your Business" [ref=e256] [cursor=pointer]:
+                - /url: /list-business
+            - listitem [ref=e257]:
+              - link "Contact Us" [ref=e258] [cursor=pointer]:
+                - /url: /contact
+          - heading "Industries" [level=4] [ref=e259]
+          - list [ref=e260]:
+            - listitem [ref=e261]:
+              - link "Food & Beverage" [ref=e262] [cursor=pointer]:
+                - /url: /industry/food-beverage
+            - listitem [ref=e263]:
+              - link "Manufacturing" [ref=e264] [cursor=pointer]:
+                - /url: /industry/manufacturing
+            - listitem [ref=e265]:
+              - link "Automotive" [ref=e266] [cursor=pointer]:
+                - /url: /industry/automotive
+            - listitem [ref=e267]:
+              - link "Pharmaceuticals" [ref=e268] [cursor=pointer]:
+                - /url: /industry/pharmaceuticals
+            - listitem [ref=e269]:
+              - link "Technology" [ref=e270] [cursor=pointer]:
+                - /url: /industry/technology
+            - listitem [ref=e271]:
+              - link "Retail/E-commerce" [ref=e272] [cursor=pointer]:
+                - /url: /industry/retail-ecommerce
+      - generic [ref=e275]:
+        - generic [ref=e276]: © 2025 FindBrexitConsultants.co.uk. All rights reserved.
+        - generic [ref=e277]:
+          - link "Terms of Service" [ref=e278] [cursor=pointer]:
+            - /url: /terms
+          - link "Privacy Policy" [ref=e279] [cursor=pointer]:
+            - /url: /privacy
+          - link "Cookie Policy" [ref=e280] [cursor=pointer]:
+            - /url: /cookies
+  - generic [ref=e281] [cursor=pointer]:
+    - generic [ref=e284] [cursor=pointer]: Created by MiniMax Agent
+    - generic [ref=e285] [cursor=pointer]: ×
+```

@@ -1,0 +1,257 @@
+
+Running 48 tests using 16 workers
+
+[1/48] …s Registration Flows › should display information about listing benefits
+[2/48] …nt Profile Pages › should display consultant key metrics and information
+[3/48] …ofile Pages › should navigate to consultant profiles from search results
+[4/48] …n & Business Registration Flows › should handle mobile responsive layout
+[5/48] …ss Registration Flows › should display business registration form fields
+[6/48] …tration Flows › should validate required fields on business registration
+[7/48] …egistration Flows › should display "List Your Business" option in header
+[8/48] …gistration Flows › should navigate to business listing/registration page
+[9/48] … Consultant Profile Pages › should display "Request Quote" functionality
+[10/48] …Business Registration Flows › should handle business category selection
+[11/48] …ness Registration Flows › should handle terms and conditions acceptance
+[12/48] …t Profile Pages › should display consultant ratings and reviews section
+[13/48] …rofile Pages › should display consultant profile with tabbed navigation
+[14/48] …egistration Flows › should submit business registration with valid data
+[15/48] …istration Flows › should validate email format in business registration
+[16/48] …nsultant Profile Pages › should display contact information and methods
+[17/48] …ltant Profile Pages › should display consultant services and industries
+[18/48] …272:3 › Consultant Profile Pages › should navigate between profile tabs
+[19/48] …› Consultant Profile Pages › should handle "Request Quote" button click
+[20/48] …rofile Pages › should display professional credentials and verification
+[21/48] …› Consultant Profile Pages › should handle multiple consultant profiles
+[22/48] …› Consultant Profile Pages › should display responsive layout on mobile
+[23/48] …unctionality › should navigate to quote request from consultant profile
+[24/48] …ality › should display quote request form with consultant pre-populated
+[25/48] …uest Functionality › should validate required fields on form submission
+[26/48] …c.ts:230:3 › Quote Request Functionality › should validate email format
+[27/48] …Functionality › should display quote request form with essential fields
+[28/48] … Quote Request Functionality › should display Brexit service categories
+[29/48] …ote Request Functionality › should submit quote request with valid data
+[30/48] …ote Request Functionality › should handle multi-step quote request form
+[31/48] …ote Request Functionality › should handle phone number field validation
+[32/48] …uest Functionality › should display company/business information fields
+[33/48] …e Request Functionality › should handle urgent/priority request options
+[34/48] … should navigate to quote request on mobile using responsive navigation
+[35/48] …uote Request Functionality › should display responsive layout on mobile
+[36/48] …onality › should find and access reviews section on consultant profiles
+[37/48] …Submission Functionality › should display existing reviews with ratings
+[38/48] … Review Submission Functionality › should show review count information
+[39/48] …ctionality › should handle "Write Review" or "Add Review" functionality
+…s:384:3 › Consultant Profile Pages › should handle multiple consultant profiles
+Successfully found and tested 6 consultant profiles
+
+[40/48] …nctionality › should display review form with rating and comment fields
+[41/48] …Review Submission Functionality › should handle star rating interaction
+[42/48] …eview Submission Functionality › should validate required review fields
+[43/48] …sion Functionality › should submit complete review with rating and text
+  1) [chromium] › tests/consultant-profile.spec.ts:416:3 › Consultant Profile Pages › should display responsive layout on mobile 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      436 |     
+      437 |     // Main test: responsive navigation worked
+    > 438 |     expect(hasConsultants).toBeTruthy();
+          |                            ^
+      439 |   });
+      440 | });
+      441 |
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:438:28
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium/error-context.md
+
+
+[44/48] …on Functionality › should handle authentication requirement for reviews
+[45/48] …n Functionality › should handle review pagination if many reviews exist
+  2) [chromium] › tests/quote-request.spec.ts:230:3 › Quote Request Functionality › should validate email format 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      288 |         });
+      289 |         
+    > 290 |         expect(hasEmailValidationError).toBeTruthy();
+          |                                         ^
+      291 |       } else {
+      292 |         // If no submit button, just verify email field exists
+      293 |         expect(await emailInput.isVisible()).toBeTruthy();
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:290:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/error-context.md
+
+
+  3) [chromium] › tests/quote-request.spec.ts:159:3 › Quote Request Functionality › should validate required fields on form submission 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      215 |       });
+      216 |       
+    > 217 |       expect(hasValidationErrors).toBeTruthy();
+          |                                   ^
+      218 |     } else {
+      219 |       // If no submit button found, at least verify the form loaded
+      220 |       const hasFormElements = await page.locator('input').or(
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:217:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/error-context.md
+
+
+Testing stopped early after 3 maximum allowed failures.
+
+  4) [chromium] › tests/quote-request.spec.ts:592:3 › Quote Request Functionality › should display responsive layout on mobile 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium/error-context.md
+
+
+  5) [chromium] › tests/review-submission.spec.ts:537:3 › Review Submission Functionality › should handle review pagination if many reviews exist 
+
+    Test was interrupted.
+
+
+  6) [chromium] › tests/review-submission.spec.ts:42:3 › Review Submission Functionality › should find and access reviews section on consultant profiles 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  7) [chromium] › tests/quote-request.spec.ts:61:3 › Quote Request Functionality › should display quote request form with consultant pre-populated 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  8) [chromium] › tests/quote-request.spec.ts:38:3 › Quote Request Functionality › should navigate to quote request from consultant profile 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  9) [chromium] › tests/review-submission.spec.ts:172:3 › Review Submission Functionality › should show review count information 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-67e0d-ow-review-count-information-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  10) [chromium] › tests/review-submission.spec.ts:460:3 › Review Submission Functionality › should handle authentication requirement for reviews 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-81439-ion-requirement-for-reviews-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  11) [chromium] › tests/review-submission.spec.ts:209:3 › Review Submission Functionality › should handle "Write Review" or "Add Review" functionality 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-937f8-or-Add-Review-functionality-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  12) [chromium] › tests/review-submission.spec.ts:113:3 › Review Submission Functionality › should display existing reviews with ratings 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  13) [chromium] › tests/review-submission.spec.ts:257:3 › Review Submission Functionality › should display review form with rating and comment fields 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-63667-h-rating-and-comment-fields-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  14) [chromium] › tests/review-submission.spec.ts:379:3 › Review Submission Functionality › should submit complete review with rating and text 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-61547-review-with-rating-and-text-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  15) [chromium] › tests/review-submission.spec.ts:296:3 › Review Submission Functionality › should validate required review fields 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-75df3-date-required-review-fields-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  16) [chromium] › tests/review-submission.spec.ts:336:3 › Review Submission Functionality › should handle star rating interaction 
+
+    Test was interrupted.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-761ba-dle-star-rating-interaction-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  3 failed
+    [chromium] › tests/consultant-profile.spec.ts:416:3 › Consultant Profile Pages › should display responsive layout on mobile 
+    [chromium] › tests/quote-request.spec.ts:159:3 › Quote Request Functionality › should validate required fields on form submission 
+    [chromium] › tests/quote-request.spec.ts:230:3 › Quote Request Functionality › should validate email format 
+  13 interrupted
+    [chromium] › tests/quote-request.spec.ts:38:3 › Quote Request Functionality › should navigate to quote request from consultant profile 
+    [chromium] › tests/quote-request.spec.ts:61:3 › Quote Request Functionality › should display quote request form with consultant pre-populated 
+    [chromium] › tests/quote-request.spec.ts:592:3 › Quote Request Functionality › should display responsive layout on mobile 
+    [chromium] › tests/review-submission.spec.ts:42:3 › Review Submission Functionality › should find and access reviews section on consultant profiles 
+    [chromium] › tests/review-submission.spec.ts:113:3 › Review Submission Functionality › should display existing reviews with ratings 
+    [chromium] › tests/review-submission.spec.ts:172:3 › Review Submission Functionality › should show review count information 
+    [chromium] › tests/review-submission.spec.ts:209:3 › Review Submission Functionality › should handle "Write Review" or "Add Review" functionality 
+    [chromium] › tests/review-submission.spec.ts:257:3 › Review Submission Functionality › should display review form with rating and comment fields 
+    [chromium] › tests/review-submission.spec.ts:296:3 › Review Submission Functionality › should validate required review fields 
+    [chromium] › tests/review-submission.spec.ts:336:3 › Review Submission Functionality › should handle star rating interaction 
+    [chromium] › tests/review-submission.spec.ts:379:3 › Review Submission Functionality › should submit complete review with rating and text 
+    [chromium] › tests/review-submission.spec.ts:460:3 › Review Submission Functionality › should handle authentication requirement for reviews 
+    [chromium] › tests/review-submission.spec.ts:537:3 › Review Submission Functionality › should handle review pagination if many reviews exist 
+  3 did not run
+  29 passed (52.8s)
+  1 error was not a part of any test, see above for details
+
+  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.
