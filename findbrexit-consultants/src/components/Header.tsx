@@ -78,6 +78,7 @@ export function Header({ onSearchSubmit }: HeaderProps) {
             <Link 
               to="/list-business" 
               className="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors"
+              data-testid="list-business-header-btn"
             >
               List Your Business
             </Link>
@@ -87,6 +88,8 @@ export function Header({ onSearchSubmit }: HeaderProps) {
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden p-2 text-gray-700 hover:text-[#003366]"
+            data-testid="mobile-menu-button"
+            aria-label="Toggle mobile menu"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -142,6 +145,7 @@ export function Header({ onSearchSubmit }: HeaderProps) {
               to="/list-business" 
               className="block bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors text-center"
               onClick={() => setIsMenuOpen(false)}
+              data-testid="list-business-mobile-btn"
             >
               List Your Business
             </Link>

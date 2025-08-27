@@ -30,6 +30,7 @@ interface RegistrationForm {
   typical_project_duration: string
   response_time_hours: number
   free_consultation: boolean
+  termsAccepted: boolean
 }
 
 const initialForm: RegistrationForm = {
@@ -49,7 +50,8 @@ const initialForm: RegistrationForm = {
   minimum_project_size: '',
   typical_project_duration: '',
   response_time_hours: 24,
-  free_consultation: false
+  free_consultation: false,
+  termsAccepted: false
 }
 
 const serviceOptions = [
@@ -83,6 +85,7 @@ export function ListBusinessPage() {
   const [formData, setFormData] = useState<RegistrationForm>(initialForm)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [errors, setErrors] = useState<Record<string, string>>({})
+  const [showSuccess, setShowSuccess] = useState(false)
   
   const plans = {
     starter: { name: 'Starter', price: '£29', color: 'border-gray-200' },
@@ -111,23 +114,46 @@ export function ListBusinessPage() {
     
     switch (step) {
       case 1:
-        if (!formData.company_name) newErrors.company_name = 'Company name is required'
-        if (!formData.contact_person) newErrors.contact_person = 'Contact person is required'
-        if (!formData.email) newErrors.email = 'Email is required'
-        if (!formData.phone) newErrors.phone = 'Phone is required'
+        if (!formData.company_name?.trim()) {
+          newErrors.company_name = 'Company name is required'
+        }
+        if (!formData.contact_person?.trim()) {
+          newErrors.contact_person = 'Contact person is required'
+        }
+        if (!formData.email?.trim()) {
+          newErrors.email = 'Email is required'
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+          newErrors.email = 'Please enter a valid email address'
+        }
+        if (!formData.phone?.trim()) {
+          newErrors.phone = 'Phone number is required'
+        }
         break
       case 2:
-        if (!formData.city) newErrors.city = 'City is required'
+        if (!formData.city?.trim()) {
+          newErrors.city = 'City is required'
+        }
         break
       case 3:
-        if (!formData.years_in_business) newErrors.years_in_business = 'Years in business is required'
-        if (!formData.team_size) newErrors.team_size = 'Team size is required'
-        if (!formData.description || formData.description.length < 50) {
+        if (!formData.years_in_business || formData.years_in_business <= 0) {
+          newErrors.years_in_business = 'Years in business is required'
+        }
+        if (!formData.team_size?.trim()) {
+          newErrors.team_size = 'Team size is required'
+        }
+        if (!formData.description?.trim()) {
+          newErrors.description = 'Company description is required'
+        } else if (formData.description.length < 50) {
           newErrors.description = 'Description must be at least 50 characters'
         }
         break
       case 4:
-        if (formData.services.length === 0) newErrors.services = 'Select at least one service'
+        if (formData.services.length === 0) {
+          newErrors.services = 'Please select at least one service'
+        }
+        if (!formData.termsAccepted) {
+          newErrors.terms = 'You must accept the terms and conditions'
+        }
         break
     }
     
@@ -171,8 +197,13 @@ export function ListBusinessPage() {
       
       if (error) throw error
       
+      setShowSuccess(true)
       toast.success('Registration submitted successfully! We will review your application.')
-      navigate('/dashboard')
+      
+      // Reset form after successful submission
+      setTimeout(() => {
+        navigate('/dashboard')
+      }, 3000)
       
     } catch (error: any) {
       console.error('Registration error:', error)
@@ -180,6 +211,37 @@ export function ListBusinessPage() {
     } finally {
       setIsSubmitting(false)
     }
+  }
+
+  // Success page
+  if (showSuccess) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="bg-white rounded-xl shadow-lg p-8 max-w-md w-full mx-4 text-center">
+          <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <CheckCircle className="w-8 h-8 text-green-500" />
+          </div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Registration Successful!</h2>
+          <p className="text-gray-600 mb-6">
+            Thank you for your submission. We'll review your application and contact you within 24-48 hours.
+          </p>
+          <div className="space-y-3">
+            <Link 
+              to="/dashboard"
+              className="block w-full bg-[#003366] text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-800 transition-colors"
+            >
+              Go to Dashboard
+            </Link>
+            <Link 
+              to="/"
+              className="block w-full border border-gray-300 text-gray-700 py-3 px-6 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
+            >
+              Return Home
+            </Link>
+          </div>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -194,6 +256,31 @@ export function ListBusinessPage() {
             <p className="text-xl text-gray-600 mb-8">
               Join the UK's leading directory of Brexit compliance consultants
             </p>
+            
+            {/* Benefits Section */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-green-50 p-4 rounded-lg">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Users className="w-6 h-6 text-green-600" />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Reach More Clients</h3>
+                <p className="text-sm text-gray-600">Connect with businesses seeking Brexit expertise</p>
+              </div>
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Star className="w-6 h-6 text-blue-600" />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Build Your Reputation</h3>
+                <p className="text-sm text-gray-600">Showcase reviews and build trust with potential clients</p>
+              </div>
+              <div className="bg-yellow-50 p-4 rounded-lg">
+                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <CheckCircle className="w-6 h-6 text-yellow-600" />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Verified Listings</h3>
+                <p className="text-sm text-gray-600">Get verified status to stand out from competitors</p>
+              </div>
+            </div>
             
             {/* Step indicator */}
             <div className="flex items-center justify-center space-x-4 mb-8">
@@ -238,6 +325,8 @@ export function ListBusinessPage() {
                     onChange={(e) => updateForm('company_name', e.target.value)}
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
                     placeholder="Brexit Compliance Ltd"
+                    data-testid="company-name-input"
+                    required
                   />
                   {errors.company_name && (
                     <p className="text-red-500 text-sm mt-1">{errors.company_name}</p>
@@ -254,6 +343,8 @@ export function ListBusinessPage() {
                     onChange={(e) => updateForm('contact_person', e.target.value)}
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
                     placeholder="John Smith"
+                    data-testid="contact-person-input"
+                    required
                   />
                   {errors.contact_person && (
                     <p className="text-red-500 text-sm mt-1">{errors.contact_person}</p>
@@ -270,6 +361,8 @@ export function ListBusinessPage() {
                     onChange={(e) => updateForm('email', e.target.value)}
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
                     placeholder="john@company.com"
+                    data-testid="email-input"
+                    required
                   />
                   {errors.email && (
                     <p className="text-red-500 text-sm mt-1">{errors.email}</p>
@@ -286,6 +379,8 @@ export function ListBusinessPage() {
                     onChange={(e) => updateForm('phone', e.target.value)}
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
                     placeholder="Business contact number"
+                    data-testid="phone-input"
+                    required
                   />
                   {errors.phone && (
                     <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
@@ -303,6 +398,7 @@ export function ListBusinessPage() {
                   onChange={(e) => updateForm('website_url', e.target.value)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
                   placeholder="https://www.yourcompany.com"
+                  data-testid="website-input"
                 />
               </div>
             </div>
@@ -324,6 +420,8 @@ export function ListBusinessPage() {
                     onChange={(e) => updateForm('city', e.target.value)}
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
                     placeholder="London"
+                    data-testid="city-input"
+                    required
                   />
                   {errors.city && (
                     <p className="text-red-500 text-sm mt-1">{errors.city}</p>
@@ -340,6 +438,7 @@ export function ListBusinessPage() {
                     onChange={(e) => updateForm('postcode', e.target.value)}
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
                     placeholder="SW1A 1AA"
+                    data-testid="postcode-input"
                   />
                 </div>
               </div>
@@ -363,6 +462,8 @@ export function ListBusinessPage() {
                     onChange={(e) => updateForm('years_in_business', parseInt(e.target.value) || 0)}
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
                     placeholder="5"
+                    data-testid="years-in-business-input"
+                    required
                   />
                   {errors.years_in_business && (
                     <p className="text-red-500 text-sm mt-1">{errors.years_in_business}</p>
@@ -377,6 +478,8 @@ export function ListBusinessPage() {
                     value={formData.team_size}
                     onChange={(e) => updateForm('team_size', e.target.value)}
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
+                    data-testid="team-size-select"
+                    required
                   >
                     <option value="">Select team size</option>
                     <option value="1">1 person</option>
@@ -401,6 +504,8 @@ export function ListBusinessPage() {
                   onChange={(e) => updateForm('description', e.target.value)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
                   placeholder="Describe your company, expertise, and what makes you unique..."
+                  data-testid="description-textarea"
+                  required
                 />
                 <div className="flex justify-between text-sm mt-1">
                   <span className={formData.description.length < 50 ? 'text-red-500' : 'text-green-500'}>
@@ -424,7 +529,7 @@ export function ListBusinessPage() {
                 <label className="block text-sm font-medium text-gray-700 mb-3">
                   Services Offered * (select all that apply)
                 </label>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3" data-testid="service-category">
                   {serviceOptions.map((service) => (
                     <label key={service} className="flex items-center">
                       <input
@@ -462,76 +567,25 @@ export function ListBusinessPage() {
                 </div>
               </div>
               
-              {/* Pricing and other details */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Pricing Level
-                  </label>
-                  <select
-                    value={formData.pricing_level}
-                    onChange={(e) => updateForm('pricing_level', parseInt(e.target.value))}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
-                  >
-                    <option value={1}>£ - Budget friendly</option>
-                    <option value={2}>££ - Mid-range</option>
-                    <option value={3}>£££ - Premium</option>
-                  </select>
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Response Time (hours)
-                  </label>
-                  <input
-                    type="number"
-                    min="1"
-                    max="168"
-                    value={formData.response_time_hours}
-                    onChange={(e) => updateForm('response_time_hours', parseInt(e.target.value) || 24)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
-                  />
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Minimum Project Size
-                  </label>
-                  <input
-                    type="text"
-                    value={formData.minimum_project_size}
-                    onChange={(e) => updateForm('minimum_project_size', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
-                    placeholder="£5,000 or No minimum"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Typical Project Duration
-                  </label>
-                  <input
-                    type="text"
-                    value={formData.typical_project_duration}
-                    onChange={(e) => updateForm('typical_project_duration', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
-                    placeholder="2-4 weeks or Varies"
-                  />
-                </div>
-              </div>
-              
-              <div>
-                <label className="flex items-center">
+              {/* Terms and conditions */}
+              <div className="bg-gray-50 p-4 rounded-lg">
+                <label className="flex items-start space-x-3">
                   <input
                     type="checkbox"
-                    checked={formData.free_consultation}
-                    onChange={(e) => updateForm('free_consultation', e.target.checked)}
-                    className="rounded border-gray-300 text-[#003366] focus:ring-[#003366]"
+                    checked={formData.termsAccepted}
+                    onChange={(e) => updateForm('termsAccepted', e.target.checked)}
+                    className="mt-1 rounded border-gray-300 text-[#003366] focus:ring-[#003366]"
+                    data-testid="terms-checkbox"
+                    required
                   />
-                  <span className="ml-2 text-sm text-gray-700">I offer free initial consultations</span>
+                  <div className="text-sm text-gray-700">
+                    <p>I agree to the <Link to="/terms" className="text-[#003366] hover:underline" target="_blank">Terms and Conditions</Link> and <Link to="/privacy" className="text-[#003366] hover:underline" target="_blank">Privacy Policy</Link></p>
+                    <p className="text-gray-500 mt-1">By submitting this form, I consent to being listed in the FindBrexitConsultants directory.</p>
+                  </div>
                 </label>
+                {errors.terms && (
+                  <p className="text-red-500 text-sm mt-2">{errors.terms}</p>
+                )}
               </div>
             </div>
           )}
@@ -541,39 +595,39 @@ export function ListBusinessPage() {
             <div>
               {currentStep > 1 && (
                 <button
+                  type="button"
                   onClick={handlePrevious}
-                  className="flex items-center space-x-2 px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors"
+                  className="flex items-center space-x-2 px-6 py-3 text-[#003366] border border-[#003366] rounded-lg hover:bg-gray-50 transition-colors"
+                  data-testid="previous-btn"
                 >
                   <ArrowLeft className="w-4 h-4" />
                   <span>Previous</span>
                 </button>
               )}
             </div>
-            
-            <div className="text-center">
-              <span className="text-sm text-gray-500">
-                Step {currentStep} of 4
-              </span>
-            </div>
-            
+
             <div>
               {currentStep < 4 ? (
                 <button
+                  type="button"
                   onClick={handleNext}
                   className="flex items-center space-x-2 px-6 py-3 bg-[#003366] text-white rounded-lg hover:bg-blue-800 transition-colors"
+                  data-testid="next-btn"
                 >
                   <span>Next</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
               ) : (
                 <button
+                  type="submit"
                   onClick={handleSubmit}
                   disabled={isSubmitting}
-                  className="flex items-center space-x-2 px-8 py-3 bg-[#003366] text-white rounded-lg hover:bg-blue-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                  className="flex items-center space-x-2 px-6 py-3 bg-[#003366] text-white rounded-lg hover:bg-blue-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  data-testid="submit-btn"
                 >
                   {isSubmitting ? (
                     <>
-                      <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                      <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
                       <span>Submitting...</span>
                     </>
                   ) : (

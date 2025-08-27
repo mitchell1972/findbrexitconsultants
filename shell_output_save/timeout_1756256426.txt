@@ -1,0 +1,160 @@
+
+Running 5 tests using 5 workers
+
+[1/5] …w Submission Functionality › should display existing reviews with ratings
+[2/5] …w Submission Functionality › should display existing reviews with ratings
+[3/5] …w Submission Functionality › should display existing reviews with ratings
+[4/5] …w Submission Functionality › should display existing reviews with ratings
+[5/5] …w Submission Functionality › should display existing reviews with ratings
+  1) [chromium] › tests/review-submission.spec.ts:49:3 › Review Submission Functionality › should display existing reviews with ratings 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      71 |     ).first().isVisible();
+      72 |     
+    > 73 |     expect(hasRating).toBeTruthy();
+         |                       ^
+      74 |   });
+      75 |
+      76 |   test('should show review count information', async () => {
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:73:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium/error-context.md
+
+
+  2) [webkit] › tests/review-submission.spec.ts:49:3 › Review Submission Functionality › should display existing reviews with ratings 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      71 |     ).first().isVisible();
+      72 |     
+    > 73 |     expect(hasRating).toBeTruthy();
+         |                       ^
+      74 |   });
+      75 |
+      76 |   test('should show review count information', async () => {
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:73:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-webkit/error-context.md
+
+
+  3) [firefox] › tests/review-submission.spec.ts:49:3 › Review Submission Functionality › should display existing reviews with ratings 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      71 |     ).first().isVisible();
+      72 |     
+    > 73 |     expect(hasRating).toBeTruthy();
+         |                       ^
+      74 |   });
+      75 |
+      76 |   test('should show review count information', async () => {
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:73:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-firefox/error-context.md
+
+
+  4) [Mobile Safari] › tests/review-submission.spec.ts:49:3 › Review Submission Functionality › should display existing reviews with ratings 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        39 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+
+
+      49 |   test('should display existing reviews with ratings', async () => {
+      50 |     // Navigate to consultant profile
+    > 51 |     await page.click('text="Find Consultants"');
+         |                ^
+      52 |     await page.waitForLoadState('networkidle');
+      53 |     
+      54 |     await page.click('text="View Profile"');
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:51:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-Mobile-Safari/error-context.md
+
+
+  5) [Mobile Chrome] › tests/review-submission.spec.ts:49:3 › Review Submission Functionality › should display existing reviews with ratings 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/find-consultants" class="text-gray-700 hover:text-[#003366] font-medium">Find Consultants</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        52 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+
+
+      49 |   test('should display existing reviews with ratings', async () => {
+      50 |     // Navigate to consultant profile
+    > 51 |     await page.click('text="Find Consultants"');
+         |                ^
+      52 |     await page.waitForLoadState('networkidle');
+      53 |     
+      54 |     await page.click('text="View Profile"');
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:51:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-Mobile-Chrome/error-context.md
+
+
+  5 failed
+    [chromium] › tests/review-submission.spec.ts:49:3 › Review Submission Functionality › should display existing reviews with ratings 
+    [firefox] › tests/review-submission.spec.ts:49:3 › Review Submission Functionality › should display existing reviews with ratings 
+    [webkit] › tests/review-submission.spec.ts:49:3 › Review Submission Functionality › should display existing reviews with ratings 
+    [Mobile Chrome] › tests/review-submission.spec.ts:49:3 › Review Submission Functionality › should display existing reviews with ratings 
+    [Mobile Safari] › tests/review-submission.spec.ts:49:3 › Review Submission Functionality › should display existing reviews with ratings 
+
+  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.

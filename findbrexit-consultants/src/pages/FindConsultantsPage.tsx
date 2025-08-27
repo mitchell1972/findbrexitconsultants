@@ -321,7 +321,7 @@ export function FindConsultantsPage() {
 
           {/* Results summary */}
           <div className="flex items-center justify-between">
-            <p className="text-gray-600">
+            <p className="text-gray-600" data-testid="search-results-count">
               {loading ? 'Searching...' : `${totalResults} consultants found`}
               {usingClientSideFiltering && !loading && (
                 <span className="ml-2 inline-flex items-center px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">
@@ -576,6 +576,7 @@ export function FindConsultantsPage() {
                         <Link
                           to={`/consultant/${consultant.id}`}
                           className="flex-1 bg-[#003366] text-white px-4 py-2 rounded-lg text-sm font-medium text-center hover:bg-blue-800 transition-colors"
+                          data-testid="view-profile-btn"
                         >
                           View Profile
                         </Link>

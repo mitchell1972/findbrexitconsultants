@@ -1,0 +1,86 @@
+
+Running 65 tests using 16 workers
+
+[1/65] [chromium] › tests/review-submission.spec.ts:99:3 › Review Submission Functionality › should handle "Write Review" or "Add Review" functionality
+[2/65] [firefox] › tests/review-submission.spec.ts:15:3 › Review Submission Functionality › should find and access reviews section on consultant profiles
+[3/65] [chromium] › tests/review-submission.spec.ts:186:3 › Review Submission Functionality › should validate required review fields
+[4/65] [chromium] › tests/review-submission.spec.ts:226:3 › Review Submission Functionality › should handle star rating interaction
+[5/65] [chromium] › tests/review-submission.spec.ts:49:3 › Review Submission Functionality › should display existing reviews with ratings
+[6/65] [chromium] › tests/review-submission.spec.ts:427:3 › Review Submission Functionality › should handle review pagination if many reviews exist
+[7/65] [chromium] › tests/review-submission.spec.ts:147:3 › Review Submission Functionality › should display review form with rating and comment fields
+[8/65] [chromium] › tests/review-submission.spec.ts:15:3 › Review Submission Functionality › should find and access reviews section on consultant profiles
+[9/65] [chromium] › tests/review-submission.spec.ts:391:3 › Review Submission Functionality › should display review sorting and filtering options
+[10/65] [chromium] › tests/review-submission.spec.ts:460:3 › Review Submission Functionality › should display average rating calculation
+[11/65] [firefox] › tests/review-submission.spec.ts:76:3 › Review Submission Functionality › should show review count information
+[12/65] [chromium] › tests/review-submission.spec.ts:269:3 › Review Submission Functionality › should submit complete review with rating and text
+[13/65] [chromium] › tests/review-submission.spec.ts:76:3 › Review Submission Functionality › should show review count information
+[14/65] [chromium] › tests/review-submission.spec.ts:480:3 › Review Submission Functionality › should handle mobile responsive review interface
+[15/65] [firefox] › tests/review-submission.spec.ts:49:3 › Review Submission Functionality › should display existing reviews with ratings
+[16/65] [chromium] › tests/review-submission.spec.ts:350:3 › Review Submission Functionality › should handle authentication requirement for reviews
+  1) [chromium] › tests/review-submission.spec.ts:49:3 › Review Submission Functionality › should display existing reviews with ratings 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      71 |     ).first().isVisible();
+      72 |     
+    > 73 |     expect(hasRating).toBeTruthy();
+         |                       ^
+      74 |   });
+      75 |
+      76 |   test('should show review count information', async () => {
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:73:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium/error-context.md
+
+
+  2) [chromium] › tests/review-submission.spec.ts:15:3 › Review Submission Functionality › should find and access reviews section on consultant profiles 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      43 |       ).first().isVisible();
+      44 |       
+    > 45 |       expect(hasReviewsOnProfile).toBeTruthy();
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:963:11)
+    at Socket._write (node:net:975:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at LineReporter.onTestEnd (/workspace/findbrexit-consultants/node_modules/.pnpm/playwright@1.55.0/node_modules/playwright/lib/reporters/line.js:81:28)
+    at /workspace/findbrexit-consultants/node_modules/.pnpm/playwright@1.55.0/node_modules/playwright/lib/reporters/multiplexer.js:53:38
+    at wrap (/workspace/findbrexit-consultants/node_modules/.pnpm/playwright@1.55.0/node_modules/playwright/lib/reporters/multiplexer.js:96:5)
+    at Multiplexer.onTestEnd (/workspace/findbrexit-consultants/node_modules/.pnpm/playwright@1.55.0/node_modules/playwright/lib/reporters/multiplexer.js:53:7)
+    at InternalReporter.onTestEnd (/workspace/findbrexit-consultants/node_modules/.pnpm/playwright@1.55.0/node_modules/playwright/lib/reporters/internalReporter.js:70:31)
+    at JobDispatcher._reportTestEnd (/workspace/findbrexit-consultants/node_modules/.pnpm/playwright@1.55.0/node_modules/playwright/lib/runner/dispatcher.js:487:31)
+    at JobDispatcher._onTestEnd (/workspace/findbrexit-consultants/node_modules/.pnpm/playwright@1.55.0/node_modules/playwright/lib/runner/dispatcher.js:259:10)
+    at WorkerHost.emit (node:events:517:28)
+    at ChildProcess.<anonymous> (/workspace/findbrexit-consultants/node_modules/.pnpm/playwright@1.55.0/node_modules/playwright/lib/runner/processHost.js:93:16)
+    at ChildProcess.emit (node:events:517:28)
+    at emit (node:internal/child_process:944:14)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+Emitted 'error' event on Socket instance at:
+    at Socket.onerror (node:internal/streams/readable:828:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+
+Node.js v18.19.0

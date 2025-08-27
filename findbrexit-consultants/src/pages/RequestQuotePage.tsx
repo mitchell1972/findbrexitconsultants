@@ -24,6 +24,10 @@ interface QuoteFormData {
   preferredContact: string
 }
 
+interface ValidationErrors {
+  [key: string]: string
+}
+
 const initialFormData: QuoteFormData = {
   requesterName: '',
   requesterEmail: '',
@@ -99,6 +103,7 @@ export function RequestQuotePage() {
   const [formData, setFormData] = useState<QuoteFormData>(initialFormData)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [validationErrors, setValidationErrors] = useState<ValidationErrors>({})
   const totalSteps = 3
 
   // Pre-fill consultant if coming from consultant profile
@@ -121,23 +126,54 @@ export function RequestQuotePage() {
     updateFormData('serviceTypes', updated)
   }
 
+  const validateEmail = (email: string): boolean => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return emailRegex.test(email)
+  }
+
   const validateStep = (step: number): boolean => {
+    const errors: ValidationErrors = {}
+    
     switch (step) {
       case 1:
-        return !!(formData.requesterName && formData.requesterEmail && formData.companyName)
+        if (!formData.requesterName.trim()) {
+          errors.requesterName = 'Name is required'
+        }
+        if (!formData.requesterEmail.trim()) {
+          errors.requesterEmail = 'Email is required'
+        } else if (!validateEmail(formData.requesterEmail)) {
+          errors.requesterEmail = 'Please enter a valid email address'
+        }
+        if (!formData.companyName.trim()) {
+          errors.companyName = 'Company name is required'
+        }
+        break
       case 2:
-        return !!(formData.projectDescription && formData.serviceTypes.length > 0)
+        if (!formData.projectDescription.trim()) {
+          errors.projectDescription = 'Project description is required'
+        }
+        if (formData.serviceTypes.length === 0) {
+          errors.serviceTypes = 'Please select at least one service'
+        }
+        break
       case 3:
-        return true // All fields in step 3 are optional
+        // All fields in step 3 are optional
+        break
       default:
         return false
     }
+    
+    setValidationErrors(errors)
+    return Object.keys(errors).length === 0
   }
 
   const nextStep = () => {
-    if (validateStep(currentStep) && currentStep < totalSteps) {
+    const isValid = validateStep(currentStep)
+    if (isValid && currentStep < totalSteps) {
+      setValidationErrors({})
       setCurrentStep(currentStep + 1)
     }
+    // Validation errors are already set by validateStep() call above
   }
 
   const prevStep = () => {
@@ -147,8 +183,19 @@ export function RequestQuotePage() {
   }
 
   const submitQuoteRequest = async () => {
-    if (!validateStep(1) || !validateStep(2)) {
-      toast.error('Please complete all required fields')
+    // Validate all steps before submission
+    const step1Valid = validateStep(1)
+    const step2Valid = validateStep(2)
+    
+    if (!step1Valid) {
+      setCurrentStep(1)
+      toast.error('Please complete all required fields in step 1')
+      return
+    }
+    
+    if (!step2Valid) {
+      setCurrentStep(2) 
+      toast.error('Please complete all required fields in step 2')
       return
     }
 
@@ -222,10 +269,19 @@ export function RequestQuotePage() {
       <div className="bg-white border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center">
-            <h1 className="text-3xl font-bold text-[#003366] mb-4">Request a Quote</h1>
+            <h1 className="text-3xl font-bold text-[#003366] mb-4" data-testid="quote-request-title">Request a Quote</h1>
             <p className="text-xl text-gray-600 mb-8">
               Get matched with verified Brexit compliance consultants for your project
             </p>
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8">
+              <h3 className="font-medium text-blue-900 mb-2">Brexit Compliance Services Available:</h3>
+              <p className="text-sm text-blue-700">
+                Customs, VAT, Compliance, Trade, Brexit services and more Brexit-related solutions
+              </p>
+              <div className="mt-2 text-xs text-blue-600">
+                Services: Customs Declarations, VAT Compliance, Regulatory Compliance, Trade Documentation, Brexit Advisory
+              </div>
+            </div>
             
             {/* Progress indicator */}
             <div className="flex items-center justify-center space-x-4">
@@ -266,7 +322,14 @@ export function RequestQuotePage() {
 
       {/* Form */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8">
+        <form onSubmit={(e) => {
+          e.preventDefault();
+          if (currentStep < totalSteps) {
+            nextStep();
+          } else {
+            submitQuoteRequest();
+          }
+        }} className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 sm:p-8">
           {/* Step 1: Personal Information */}
           {currentStep === 1 && (
             <div className="space-y-6">
@@ -282,12 +345,19 @@ export function RequestQuotePage() {
                   </label>
                   <input
                     type="text"
+                    name="requesterName"
                     required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
+                    data-testid="requester-name"
+                    className={`w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent ${
+                      validationErrors.requesterName ? 'border-red-300 bg-red-50' : 'border-gray-300'
+                    }`}
                     value={formData.requesterName}
                     onChange={(e) => updateFormData('requesterName', e.target.value)}
                     placeholder="John Smith"
                   />
+                  {validationErrors.requesterName && (
+                    <p className="text-red-600 text-sm mt-1 error" data-testid="name-error">{validationErrors.requesterName}</p>
+                  )}
                 </div>
                 
                 <div>
@@ -296,12 +366,19 @@ export function RequestQuotePage() {
                   </label>
                   <input
                     type="email"
+                    name="requesterEmail"
                     required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
+                    data-testid="requester-email"
+                    className={`w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent ${
+                      validationErrors.requesterEmail ? 'border-red-300 bg-red-50' : 'border-gray-300'
+                    }`}
                     value={formData.requesterEmail}
                     onChange={(e) => updateFormData('requesterEmail', e.target.value)}
                     placeholder="john@company.com"
                   />
+                  {validationErrors.requesterEmail && (
+                    <p className="text-red-600 text-sm mt-1 error" data-testid="email-error">{validationErrors.requesterEmail}</p>
+                  )}
                 </div>
                 
                 <div>
@@ -310,6 +387,8 @@ export function RequestQuotePage() {
                   </label>
                   <input
                     type="tel"
+                    name="requesterPhone"
+                    data-testid="requester-phone"
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
                     value={formData.requesterPhone}
                     onChange={(e) => updateFormData('requesterPhone', e.target.value)}
@@ -323,12 +402,19 @@ export function RequestQuotePage() {
                   </label>
                   <input
                     type="text"
+                    name="companyName"
                     required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
+                    data-testid="company-name"
+                    className={`w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent ${
+                      validationErrors.companyName ? 'border-red-300 bg-red-50' : 'border-gray-300'
+                    }`}
                     value={formData.companyName}
                     onChange={(e) => updateFormData('companyName', e.target.value)}
                     placeholder="Your Company Ltd"
                   />
+                  {validationErrors.companyName && (
+                    <p className="text-red-600 text-sm mt-1 error" data-testid="company-error">{validationErrors.companyName}</p>
+                  )}
                 </div>
               </div>
               
@@ -340,6 +426,7 @@ export function RequestQuotePage() {
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
                   value={formData.companySize}
                   onChange={(e) => updateFormData('companySize', e.target.value)}
+                  data-testid="company-size"
                 >
                   <option value="">Select company size</option>
                   {companySizes.map(size => (
@@ -382,8 +469,8 @@ export function RequestQuotePage() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Services Required *
                 </label>
-                <p className="text-sm text-gray-500 mb-3">Select all services you need help with</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <p className="text-sm text-gray-500 mb-3">Select all Brexit compliance services you need help with</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3" data-testid="service-types">
                   {serviceTypes.map(service => (
                     <label key={service.value} className="flex items-center space-x-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
                       <input
@@ -391,11 +478,15 @@ export function RequestQuotePage() {
                         checked={formData.serviceTypes.includes(service.value)}
                         onChange={() => toggleServiceType(service.value)}
                         className="rounded border-gray-300 text-[#003366] focus:ring-[#003366]"
+                        data-testid={`service-${service.value}`}
                       />
                       <span className="text-sm">{service.label}</span>
                     </label>
                   ))}
                 </div>
+                {validationErrors.serviceTypes && (
+                  <p className="text-red-600 text-sm mt-1 error" data-testid="services-error">{validationErrors.serviceTypes}</p>
+                )}
               </div>
               
               <div>
@@ -405,11 +496,18 @@ export function RequestQuotePage() {
                 <textarea
                   required
                   rows={4}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
+                  name="projectDescription"
+                  data-testid="project-description"
+                  className={`w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent ${
+                    validationErrors.projectDescription ? 'border-red-300 bg-red-50' : 'border-gray-300'
+                  }`}
                   value={formData.projectDescription}
                   onChange={(e) => updateFormData('projectDescription', e.target.value)}
                   placeholder="Describe your Brexit compliance needs, current challenges, and what outcomes you're looking to achieve..."
                 />
+                {validationErrors.projectDescription && (
+                  <p className="text-red-600 text-sm mt-1 error" data-testid="description-error">{validationErrors.projectDescription}</p>
+                )}
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -421,6 +519,7 @@ export function RequestQuotePage() {
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
                     value={formData.budgetRange}
                     onChange={(e) => updateFormData('budgetRange', e.target.value)}
+                    data-testid="budget-range"
                   >
                     <option value="">Select budget range</option>
                     {budgetRanges.map(budget => (
@@ -439,6 +538,7 @@ export function RequestQuotePage() {
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
                     value={formData.timeline}
                     onChange={(e) => updateFormData('timeline', e.target.value)}
+                    data-testid="timeline"
                   >
                     <option value="">Select timeline</option>
                     {timelines.map(timeline => (
@@ -468,6 +568,7 @@ export function RequestQuotePage() {
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"
                   value={formData.locationPreference}
                   onChange={(e) => updateFormData('locationPreference', e.target.value)}
+                  data-testid="location-preference"
                 >
                   <option value="">Any location</option>
                   {locations.map(location => (
@@ -496,6 +597,7 @@ export function RequestQuotePage() {
                         checked={formData.preferredContact === method.value}
                         onChange={(e) => updateFormData('preferredContact', e.target.value)}
                         className="text-[#003366] focus:ring-[#003366]"
+                        data-testid={`contact-${method.value}`}
                       />
                       <span className="text-sm">{method.label}</span>
                     </label>
@@ -516,11 +618,12 @@ export function RequestQuotePage() {
           )}
 
           {/* Navigation buttons */}
-          <div className="flex items-center justify-between pt-8 border-t border-gray-200">
+          <div className="flex flex-col sm:flex-row items-center justify-between pt-8 border-t border-gray-200 space-y-4 sm:space-y-0">
             <button
               onClick={prevStep}
               disabled={currentStep === 1}
-              className="flex items-center space-x-2 px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              className="flex items-center space-x-2 px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors w-full sm:w-auto justify-center"
+              data-testid="prev-button"
             >
               <ChevronLeft className="w-4 h-4" />
               <span>Previous</span>
@@ -533,8 +636,9 @@ export function RequestQuotePage() {
             {currentStep < totalSteps ? (
               <button
                 onClick={nextStep}
-                disabled={!validateStep(currentStep)}
-                className="flex items-center space-x-2 px-6 py-3 bg-[#003366] text-white rounded-lg hover:bg-blue-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                className="flex items-center space-x-2 px-6 py-3 bg-[#003366] text-white rounded-lg hover:bg-blue-800 transition-colors w-full sm:w-auto justify-center"
+                data-testid="next-button"
+                type="submit"
               >
                 <span>Next</span>
                 <ChevronRight className="w-4 h-4" />
@@ -543,7 +647,9 @@ export function RequestQuotePage() {
               <button
                 onClick={submitQuoteRequest}
                 disabled={isSubmitting || !validateStep(1) || !validateStep(2)}
-                className="flex items-center space-x-2 px-6 py-3 bg-[#003366] text-white rounded-lg hover:bg-blue-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                className="flex items-center space-x-2 px-6 py-3 bg-[#003366] text-white rounded-lg hover:bg-blue-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors w-full sm:w-auto justify-center"
+                data-testid="submit-button"
+                type="submit"
               >
                 {isSubmitting ? (
                   <>
@@ -559,7 +665,7 @@ export function RequestQuotePage() {
               </button>
             )}
           </div>
-        </div>
+        </form>
       </div>
     </div>
   )

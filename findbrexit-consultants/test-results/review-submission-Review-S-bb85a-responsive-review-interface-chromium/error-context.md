@@ -10,7 +10,7 @@
           - /url: /
           - generic [ref=e14] [cursor=pointer]: FB
           - generic [ref=e15] [cursor=pointer]: FindBrexitConsultants.co.uk
-        - button [ref=e16] [cursor=pointer]:
+        - button "Toggle mobile menu" [ref=e16] [cursor=pointer]:
           - img [ref=e17] [cursor=pointer]
     - main [ref=e18]:
       - generic [ref=e19]:

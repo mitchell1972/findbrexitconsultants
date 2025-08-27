@@ -1,0 +1,521 @@
+
+Running 50 tests using 16 workers
+
+[1/50] …egistration Flows › should display "List Your Business" option in header
+[2/50] …n & Business Registration Flows › should handle mobile responsive layout
+[3/50] …Registration Flows › should submit business registration with valid data
+[4/50] …ss Registration Flows › should display business registration form fields
+[5/50] …gistration Flows › should validate email format in business registration
+[6/50] … Business Registration Flows › should handle business category selection
+[7/50] …s Registration Flows › should display information about listing benefits
+[8/50] … Business Registration Flows › should handle business category selection
+[9/50] …gistration Flows › should navigate to business listing/registration page
+[10/50] …ration Flows › should validate required fields on business registration
+[11/50] …ration Flows › should validate required fields on business registration
+[12/50] …istration Flows › should navigate to business listing/registration page
+[13/50] …s Registration Flows › should display business registration form fields
+[14/50] …istration Flows › should validate email format in business registration
+[15/50] …gistration Flows › should display "List Your Business" option in header
+[16/50] …ness Registration Flows › should handle terms and conditions acceptance
+  1) [chromium] › tests/auth.spec.ts:116:3 › Authentication & Business Registration Flows › should handle business category selection 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      127 |     
+      128 |     // Should have some way to categorize business services
+    > 129 |     expect(hasServiceSelect || hasServiceRadio || hasServiceCheckbox).toBeTruthy();
+          |                                                                       ^
+      130 |   });
+      131 |
+      132 |   test('should display information about listing benefits', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:129:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-4cf72-business-category-selection-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-4cf72-business-category-selection-chromium/error-context.md
+
+
+  2) [chromium] › tests/auth.spec.ts:132:3 › Authentication & Business Registration Flows › should display information about listing benefits 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      143 |     ).first().isVisible();
+      144 |     
+    > 145 |     expect(hasBenefitsInfo).toBeTruthy();
+          |                             ^
+      146 |   });
+      147 |
+      148 |   test('should handle terms and conditions acceptance', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:145:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium/error-context.md
+
+
+  3) [chromium] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    Error: expect.toBeVisible: Error: strict mode violation: locator('text="List Your Business"') resolved to 2 elements:
+        1) <a href="/list-business" data-testid="list-business-header-btn" class="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">List Your Business</a> aka getByTestId('list-business-header-btn')
+        2) <a href="/list-business" class="text-blue-100 hover:text-white text-sm transition-colors">List Your Business</a> aka getByRole('contentinfo').getByRole('link', { name: 'List Your Business' })
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('text="List Your Business"')
+
+
+      15 |   test('should display "List Your Business" option in header', async () => {
+      16 |     // Check if "List Your Business" button is visible in header
+    > 17 |     await expect(page.locator('text="List Your Business"')).toBeVisible({ timeout: 10000 });
+         |                                                             ^
+      18 |   });
+      19 |
+      20 |   test('should navigate to business listing/registration page', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:17:61
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium/error-context.md
+
+
+  4) [chromium] › tests/auth.spec.ts:148:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      162 |     
+      163 |     // Should have terms or privacy policy reference
+    > 164 |     expect(hasTermsCheckbox || hasTermsLink).toBeTruthy();
+          |                                              ^
+      165 |   });
+      166 |
+      167 |   test('should submit business registration with valid data', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:164:46
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium/error-context.md
+
+
+  5) [chromium] › tests/auth.spec.ts:167:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      221 |       const hasRedirect = page.url().includes('success') || page.url().includes('thank-you');
+      222 |       
+    > 223 |       expect(hasSuccess || hasRedirect).toBeTruthy();
+          |                                         ^
+      224 |     }
+      225 |   });
+      226 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:223:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium/error-context.md
+
+
+  6) [chromium] › tests/auth.spec.ts:62:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('text="required"').or(locator('text="Please fill"').or(locator('.error'))).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('text="required"').or(locator('text="Please fill"').or(locator('.error'))).first()
+
+
+      81 |           )
+      82 |         ).first()
+    > 83 |       ).toBeVisible({ timeout: 5000 });
+         |         ^
+      84 |     }
+      85 |   });
+      86 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:83:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium/error-context.md
+
+
+  7) [chromium] › tests/auth.spec.ts:87:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('text="valid email"').or(locator('text="Invalid email"')).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('text="valid email"').or(locator('text="Invalid email"')).first()
+
+
+      109 |             page.locator('text="Invalid email"')
+      110 |           ).first()
+    > 111 |         ).toBeVisible({ timeout: 5000 });
+          |           ^
+      112 |       }
+      113 |     }
+      114 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:111:11
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium/error-context.md
+
+
+[17/50] …ness Registration Flows › should handle terms and conditions acceptance
+[18/50] … & Business Registration Flows › should handle mobile responsive layout
+[19/50] …egistration Flows › should submit business registration with valid data
+[20/50] …gistration Flows › should display "List Your Business" option in header
+[21/50] … Registration Flows › should display information about listing benefits
+[22/50] …istration Flows › should navigate to business listing/registration page
+[23/50] …s Registration Flows › should display business registration form fields
+[24/50] …istration Flows › should validate email format in business registration
+[25/50] …ration Flows › should validate required fields on business registration
+  8) [chromium] › tests/auth.spec.ts:227:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="List Your Business"')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/list-business" data-testid="list-business-header-btn" class="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">List Your Business</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        35 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      229 |     await page.setViewportSize({ width: 375, height: 667 });
+      230 |     
+    > 231 |     await page.click('text="List Your Business"');
+          |                ^
+      232 |     await page.waitForLoadState('networkidle');
+      233 |     
+      234 |     // Form should be responsive
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:231:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium/error-context.md
+
+
+[26/50] …Business Registration Flows › should handle business category selection
+  9) [firefox] › tests/auth.spec.ts:87:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('button[type="submit"]').or(locator('button:has-text("Submit")')).first()
+        - locator resolved to <button type="submit" class="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 text-gray-400 hover:text-[#003366]">…</button>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+
+
+      102 |       
+      103 |       if (await submitButton.isVisible()) {
+    > 104 |         await submitButton.click();
+          |                            ^
+      105 |         
+      106 |         // Should show email validation error
+      107 |         await expect(
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:104:28
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-firefox/error-context.md
+
+
+  10) [firefox] › tests/auth.spec.ts:116:3 › Authentication & Business Registration Flows › should handle business category selection 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      127 |     
+      128 |     // Should have some way to categorize business services
+    > 129 |     expect(hasServiceSelect || hasServiceRadio || hasServiceCheckbox).toBeTruthy();
+          |                                                                       ^
+      130 |   });
+      131 |
+      132 |   test('should display information about listing benefits', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:129:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-4cf72-business-category-selection-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-4cf72-business-category-selection-firefox/error-context.md
+
+
+  11) [firefox] › tests/auth.spec.ts:20:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-200fd-s-listing-registration-page-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-200fd-s-listing-registration-page-firefox/error-context.md
+
+
+  12) [firefox] › tests/auth.spec.ts:39:3 › Authentication & Business Registration Flows › should display business registration form fields 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-bc5f9-ss-registration-form-fields-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-bc5f9-ss-registration-form-fields-firefox/error-context.md
+
+
+  13) [firefox] › tests/auth.spec.ts:62:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+
+      72 |     
+      73 |     if (await submitButton.isVisible()) {
+    > 74 |       await submitButton.click();
+         |                          ^
+      75 |       
+      76 |       // Should show validation errors
+      77 |       await expect(
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:74:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-firefox/error-context.md
+
+
+  14) [firefox] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect.toBeVisible: Error: strict mode violation: locator('text="List Your Business"') resolved to 2 elements:
+        1) <a href="/list-business" data-testid="list-business-header-btn" class="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">List Your Business</a> aka getByTestId('list-business-header-btn')
+        2) <a href="/list-business" class="text-blue-100 hover:text-white text-sm transition-colors">List Your Business</a> aka getByRole('contentinfo').getByRole('link', { name: 'List Your Business' })
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('text="List Your Business"')
+
+
+      15 |   test('should display "List Your Business" option in header', async () => {
+      16 |     // Check if "List Your Business" button is visible in header
+    > 17 |     await expect(page.locator('text="List Your Business"')).toBeVisible({ timeout: 10000 });
+         |                                                             ^
+      18 |   });
+      19 |
+      20 |   test('should navigate to business listing/registration page', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:17:61
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+  15) [webkit] › tests/auth.spec.ts:39:3 › Authentication & Business Registration Flows › should display business registration form fields 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="List Your Business"')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/list-business" data-testid="list-business-header-btn" class="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">List Your Business</a>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+
+
+      38 |
+      39 |   test('should display business registration form fields', async () => {
+    > 40 |     await page.click('text="List Your Business"');
+         |                ^
+      41 |     await page.waitForLoadState('networkidle');
+      42 |     
+      43 |     // Check for common business registration fields
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:40:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-bc5f9-ss-registration-form-fields-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-bc5f9-ss-registration-form-fields-webkit/error-context.md
+
+
+  16) [webkit] › tests/auth.spec.ts:62:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="List Your Business"')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/list-business" data-testid="list-business-header-btn" class="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">List Your Business</a>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+
+
+      61 |
+      62 |   test('should validate required fields on business registration', async () => {
+    > 63 |     await page.click('text="List Your Business"');
+         |                ^
+      64 |     await page.waitForLoadState('networkidle');
+      65 |     
+      66 |     // Try to submit empty form
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:63:16
+
+    Error Context: test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-webkit/error-context.md
+
+
+[27/50] … Registration Flows › should display information about listing benefits
+  17) [webkit] › tests/auth.spec.ts:87:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="List Your Business"')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/list-business" data-testid="list-business-header-btn" class="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">List Your Business</a>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+
+
+      86 |
+      87 |   test('should validate email format in business registration', async () => {
+    > 88 |     await page.click('text="List Your Business"');
+         |                ^
+      89 |     await page.waitForLoadState('networkidle');
+      90 |     
+      91 |     // Fill with invalid email
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:88:16
+
+    Error Context: test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-webkit/error-context.md
+
+
+[28/50] … & Business Registration Flows › should handle mobile responsive layout
+[29/50] …ness Registration Flows › should handle terms and conditions acceptance
+[30/50] …egistration Flows › should submit business registration with valid data
+[31/50] …gistration Flows › should display "List Your Business" option in header
+  18) [webkit] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    Error: expect.toBeVisible: Error: strict mode violation: locator('text="List Your Business"') resolved to 2 elements:
+        1) <a href="/list-business" data-testid="list-business-header-btn" class="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">List Your Business</a> aka getByTestId('list-business-header-btn')
+        2) <a href="/list-business" class="text-blue-100 hover:text-white text-sm transition-colors">List Your Business</a> aka getByRole('contentinfo').getByRole('link', { name: 'List Your Business' })
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('text="List Your Business"')
+
+
+      15 |   test('should display "List Your Business" option in header', async () => {
+      16 |     // Check if "List Your Business" button is visible in header
+    > 17 |     await expect(page.locator('text="List Your Business"')).toBeVisible({ timeout: 10000 });
+         |                                                             ^
+      18 |   });
+      19 |
+      20 |   test('should navigate to business listing/registration page', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:17:61
+
+    Error Context: test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-webkit/error-context.md
+
+
+[32/50] …istration Flows › should navigate to business listing/registration page
+  19) [firefox] › tests/auth.spec.ts:167:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+
+[33/50] …s Registration Flows › should display business registration form fields
+  20) [firefox] › tests/auth.spec.ts:148:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="List Your Business"')
+        - locator resolved to 2 elements. Proceeding with the first one: <a href="/list-business" data-testid="list-business-header-btn" class="bg-[#FFD700] text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">List Your Business</a>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - performing click action
+
+
+      147 |
+      148 |   test('should handle terms and conditions acceptance', async () => {
+    > 149 |     await page.click('text="List Your Business"');
+          |                ^
+      150 |     await page.waitForLoadState('networkidle');
+      151 |     
+      152 |     // Look for terms and conditions checkbox or link
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:149:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+

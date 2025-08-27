@@ -1,0 +1,359 @@
+
+Running 60 tests using 16 workers
+
+[1/60] …nality › should display quote request form with consultant pre-populated
+[2/60] …uote Request Functionality › should handle multi-step quote request form
+[3/60] …quest Functionality › should validate required fields on form submission
+[4/60] …ec.ts:113:3 › Quote Request Functionality › should validate email format
+[5/60] …nality › should display quote request form with consultant pre-populated
+[6/60] …te Request Functionality › should handle urgent/priority request options
+[7/60] …Functionality › should navigate to quote request from consultant profile
+[8/60] …uote Request Functionality › should submit quote request with valid data
+[9/60] …quest Functionality › should display company/business information fields
+[10/60] …ote Request Functionality › should handle phone number field validation
+[11/60] …unctionality › should navigate to quote request from consultant profile
+[12/60] …uest Functionality › should validate required fields on form submission
+[13/60] …Functionality › should display quote request form with essential fields
+[14/60] …Functionality › should display quote request form with essential fields
+[15/60] …uote Request Functionality › should display responsive layout on mobile
+[16/60] … Quote Request Functionality › should display Brexit service categories
+  1) [chromium] › tests/quote-request.spec.ts:61:3 › Quote Request Functionality › should display quote request form with essential fields 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      80 |     
+      81 |     // Should have basic contact and message fields
+    > 82 |     expect(hasNameField || hasEmailField || hasMessageField).toBeTruthy();
+         |                                                              ^
+      83 |   });
+      84 |
+      85 |   test('should validate required fields on form submission', async () => {
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:82:62
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-4a16a--form-with-essential-fields-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-4a16a--form-with-essential-fields-chromium/error-context.md
+
+
+  2) [chromium] › tests/quote-request.spec.ts:363:3 › Quote Request Functionality › should display company/business information fields 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      380 |     
+      381 |     // Should have business context fields
+    > 382 |     expect(hasCompanyField || hasBusinessField || hasIndustryField).toBeTruthy();
+          |                                                                     ^
+      383 |   });
+      384 |
+      385 |   test('should handle urgent/priority request options', async () => {
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:382:69
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-ae978-business-information-fields-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-ae978-business-information-fields-chromium/error-context.md
+
+
+[17/60] …c.ts:113:3 › Quote Request Functionality › should validate email format
+[18/60] … Quote Request Functionality › should display Brexit service categories
+[19/60] …ote Request Functionality › should submit quote request with valid data
+[20/60] …ote Request Functionality › should handle multi-step quote request form
+  3) [chromium] › tests/quote-request.spec.ts:155:3 › Quote Request Functionality › should display Brexit service categories 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      180 |     
+      181 |     // Should have Brexit-related services
+    > 182 |     expect(hasCustomsService || hasVATService || hasComplianceService || hasTradeService || hasBrexitService).toBeTruthy();
+          |                                                                                                               ^
+      183 |   });
+      184 |
+      185 |   test('should submit quote request with valid data', async () => {
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:182:111
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium/error-context.md
+
+
+[21/60] …e Request Functionality › should handle urgent/priority request options
+[22/60] …ote Request Functionality › should handle phone number field validation
+[23/60] …uest Functionality › should display company/business information fields
+[24/60] …uote Request Functionality › should display responsive layout on mobile
+  4) [chromium] › tests/quote-request.spec.ts:38:3 › Quote Request Functionality › should display quote request form with consultant pre-populated 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+
+
+      38 |   test('should display quote request form with consultant pre-populated', async () => {
+      39 |     // Navigate to quote request via consultant profile
+    > 40 |     await page.click('text="Find Consultants"');
+         |                ^
+      41 |     await page.waitForLoadState('networkidle');
+      42 |     
+      43 |     await page.click('text="View Profile"');
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:40:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium/error-context.md
+
+
+  5) [chromium] › tests/quote-request.spec.ts:15:3 › Quote Request Functionality › should navigate to quote request from consultant profile 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+
+
+      15 |   test('should navigate to quote request from consultant profile', async () => {
+      16 |     // Navigate via consultant profile (most common path)
+    > 17 |     await page.click('text="Find Consultants"');
+         |                ^
+      18 |     await page.waitForLoadState('networkidle');
+      19 |     
+      20 |     await page.click('text="View Profile"');
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:17:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-chromium/error-context.md
+
+
+[25/60] …unctionality › should navigate to quote request from consultant profile
+[26/60] …ality › should display quote request form with consultant pre-populated
+[27/60] …uest Functionality › should validate required fields on form submission
+[28/60] …Functionality › should display quote request form with essential fields
+  6) [firefox] › tests/quote-request.spec.ts:15:3 › Quote Request Functionality › should navigate to quote request from consultant profile 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+
+
+      15 |   test('should navigate to quote request from consultant profile', async () => {
+      16 |     // Navigate via consultant profile (most common path)
+    > 17 |     await page.click('text="Find Consultants"');
+         |                ^
+      18 |     await page.waitForLoadState('networkidle');
+      19 |     
+      20 |     await page.click('text="View Profile"');
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:17:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-firefox/error-context.md
+
+
+  7) [firefox] › tests/quote-request.spec.ts:38:3 › Quote Request Functionality › should display quote request form with consultant pre-populated 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+
+
+      38 |   test('should display quote request form with consultant pre-populated', async () => {
+      39 |     // Navigate to quote request via consultant profile
+    > 40 |     await page.click('text="Find Consultants"');
+         |                ^
+      41 |     await page.waitForLoadState('networkidle');
+      42 |     
+      43 |     await page.click('text="View Profile"');
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:40:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-firefox/error-context.md
+
+
+  8) [firefox] › tests/quote-request.spec.ts:61:3 › Quote Request Functionality › should display quote request form with essential fields 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForLoadState: Target page, context or browser has been closed
+
+      62 |     // Navigate to quote request page
+      63 |     await page.goto('/request-quote');
+    > 64 |     await page.waitForLoadState('networkidle');
+         |                ^
+      65 |     
+      66 |     // Check for essential form fields
+      67 |     const hasNameField = await page.locator('input[name*="name"]').or(
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:64:16
+
+    Error Context: test-results/quote-request-Quote-Reques-4a16a--form-with-essential-fields-firefox/error-context.md
+
+
+  9) [firefox] › tests/quote-request.spec.ts:85:3 › Quote Request Functionality › should validate required fields on form submission 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForLoadState: Target page, context or browser has been closed
+
+      86 |     // Navigate to quote request page
+      87 |     await page.goto('/request-quote');
+    > 88 |     await page.waitForLoadState('networkidle');
+         |                ^
+      89 |     
+      90 |     // Try to submit empty form
+      91 |     const submitButton = page.locator('button[type="submit"]').or(
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:88:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-firefox/error-context.md
+
+
+  10) [webkit] › tests/quote-request.spec.ts:15:3 › Quote Request Functionality › should navigate to quote request from consultant profile 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Find Consultants"')
+
+
+      15 |   test('should navigate to quote request from consultant profile', async () => {
+      16 |     // Navigate via consultant profile (most common path)
+    > 17 |     await page.click('text="Find Consultants"');
+         |                ^
+      18 |     await page.waitForLoadState('networkidle');
+      19 |     
+      20 |     await page.click('text="View Profile"');
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:17:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-webkit/error-context.md
+
+
+  11) [firefox] › tests/quote-request.spec.ts:113:3 › Quote Request Functionality › should validate email format 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8
+
+    Error Context: test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-firefox/error-context.md
+
+
+  12) [firefox] › tests/quote-request.spec.ts:155:3 › Quote Request Functionality › should display Brexit service categories 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8
+
+    Error Context: test-results/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-firefox/error-context.md
+
+
+  13) [firefox] › tests/quote-request.spec.ts:270:3 › Quote Request Functionality › should handle multi-step quote request form 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8
+
+    Error: page.goto: Target page, context or browser has been closed
+    Call log:
+      - navigating to "https://findbrexitconsultants.co.uk/", waiting until "load"
+
+
+       6 |   test.beforeEach(async ({ browser }) => {
+       7 |     page = await browser.newPage();
+    >  8 |     await page.goto('/');
+         |                ^
+       9 |   });
+      10 |
+      11 |   test.afterEach(async () => {
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:8:16
+
+    Error Context: test-results/quote-request-Quote-Reques-6dced-lti-step-quote-request-form-firefox/error-context.md
+
+
+  14) [firefox] › tests/quote-request.spec.ts:185:3 › Quote Request Functionality › should submit quote request with valid data 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8
+
+    Error Context: test-results/quote-request-Quote-Reques-aba92-ote-request-with-valid-data-firefox/error-context.md
+
+
+  15) [firefox] › tests/quote-request.spec.ts:316:3 › Quote Request Functionality › should handle phone number field validation 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8
+
+    Error Context: test-results/quote-request-Quote-Reques-ef8c7-one-number-field-validation-firefox/error-context.md
+
+
+[29/60] …c.ts:113:3 › Quote Request Functionality › should validate email format
+[30/60] … Quote Request Functionality › should display Brexit service categories
+[31/60] …ote Request Functionality › should submit quote request with valid data
