@@ -1,0 +1,89 @@
+
+Running 13 tests using 13 workers
+
+[1/13] …ec.ts:230:3 › Quote Request Functionality › should validate email format
+[2/13] … Functionality › should display quote request form with essential fields
+[3/13] …te Request Functionality › should handle urgent/priority request options
+[4/13] …› Quote Request Functionality › should display Brexit service categories
+[5/13] …uote Request Functionality › should submit quote request with valid data
+[6/13] …quest Functionality › should display company/business information fields
+[7/13] …nality › should display quote request form with consultant pre-populated
+[8/13] …Quote Request Functionality › should display responsive layout on mobile
+[9/13] …uote Request Functionality › should handle multi-step quote request form
+[10/13] … should navigate to quote request on mobile using responsive navigation
+[11/13] …unctionality › should navigate to quote request from consultant profile
+[12/13] …uest Functionality › should validate required fields on form submission
+[13/13] …ote Request Functionality › should handle phone number field validation
+  1) [Mobile Chrome] › tests/quote-request.spec.ts:592:3 › Quote Request Functionality › should display responsive layout on mobile 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Matcher error: received value must be a number or bigint
+
+    Received has value: undefined
+
+      612 |       const firstInput = inputs.first();
+      613 |       const inputBox = await firstInput.boundingBox();
+    > 614 |       expect(inputBox?.width).toBeLessThanOrEqual(375);
+          |                               ^
+      615 |     }
+      616 |     
+      617 |     // Submit button should be accessible
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:614:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-Mobile-Chrome/error-context.md
+
+
+  2) [Mobile Chrome] › tests/quote-request.spec.ts:230:3 › Quote Request Functionality › should validate email format 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      288 |         });
+      289 |         
+    > 290 |         expect(hasEmailValidationError).toBeTruthy();
+          |                                         ^
+      291 |       } else {
+      292 |         // If no submit button, just verify email field exists
+      293 |         expect(await emailInput.isVisible()).toBeTruthy();
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:290:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-Mobile-Chrome/error-context.md
+
+
+  3) [Mobile Chrome] › tests/quote-request.spec.ts:159:3 › Quote Request Functionality › should validate required fields on form submission 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      215 |       });
+      216 |       
+    > 217 |       expect(hasValidationErrors).toBeTruthy();
+          |                                   ^
+      218 |     } else {
+      219 |       // If no submit button found, at least verify the form loaded
+      220 |       const hasFormElements = await page.locator('input').or(
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:217:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-Mobile-Chrome/error-context.md
+
+
+  3 failed
+    [Mobile Chrome] › tests/quote-request.spec.ts:159:3 › Quote Request Functionality › should validate required fields on form submission 
+    [Mobile Chrome] › tests/quote-request.spec.ts:230:3 › Quote Request Functionality › should validate email format 
+    [Mobile Chrome] › tests/quote-request.spec.ts:592:3 › Quote Request Functionality › should display responsive layout on mobile 
+  10 passed (29.2s)

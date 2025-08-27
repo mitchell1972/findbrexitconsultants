@@ -1,0 +1,133 @@
+
+Running 12 tests using 12 workers
+
+[1/12] …ultant Profile Pages › should display consultant services and industries
+[2/12] …Profile Pages › should display professional credentials and verification
+[3/12] …nt Profile Pages › should display consultant ratings and reviews section
+[4/12] …:275:3 › Consultant Profile Pages › should navigate between profile tabs
+[5/12] …nt Profile Pages › should display consultant key metrics and information
+[6/12] … › Consultant Profile Pages › should handle multiple consultant profiles
+[7/12] … › Consultant Profile Pages › should display responsive layout on mobile
+[8/12] …Profile Pages › should display consultant profile with tabbed navigation
+[9/12] …onsultant Profile Pages › should display contact information and methods
+[10/12] …file Pages › should navigate to consultant profiles from search results
+[11/12] …› Consultant Profile Pages › should handle "Request Quote" button click
+[12/12] …Consultant Profile Pages › should display "Request Quote" functionality
+  1) [Mobile Chrome] › tests/consultant-profile.spec.ts:330:3 › Consultant Profile Pages › should handle "Request Quote" button click 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      350 |     ).first().isVisible();
+      351 |     
+    > 352 |     expect(hasQuoteForm).toBeTruthy();
+          |                          ^
+      353 |   });
+      354 |
+      355 |   test('should display professional credentials and verification', async () => {
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:352:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-c677f--Request-Quote-button-click-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-c677f--Request-Quote-button-click-Mobile-Chrome/error-context.md
+
+
+…s:387:3 › Consultant Profile Pages › should handle multiple consultant profiles
+Successfully found and tested 6 consultant profiles
+
+  2) [Mobile Chrome] › tests/consultant-profile.spec.ts:238:3 › Consultant Profile Pages › should display consultant services and industries 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Services"').or(locator('text="Industries"')).first()
+        - locator resolved to <h4 class="font-semibold text-lg mb-4 text-[#FFD700]">Services</h4>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">…</div> intercepts pointer events
+      - retrying click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <div id="minimax-floating-ball">…</div> intercepts pointer events
+      - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">…</div> intercepts pointer events
+        - retrying click action
+          - waiting 100ms
+        9 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">…</div> intercepts pointer events
+        - retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div id="minimax-floating-ball">…</div> intercepts pointer events
+        - retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">…</div> intercepts pointer events
+        - retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">…</div> intercepts pointer events
+        - retrying click action
+          - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">…</div> intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <div id="minimax-floating-ball">…</div> intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+
+
+      249 |     
+      250 |     if (await servicesTab.isVisible()) {
+    > 251 |       await servicesTab.click();
+          |                         ^
+      252 |       await page.waitForTimeout(1000);
+      253 |     }
+      254 |     
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:251:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-ee56e-ant-services-and-industries-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-ee56e-ant-services-and-industries-Mobile-Chrome/error-context.md
+
+
+  2 failed
+    [Mobile Chrome] › tests/consultant-profile.spec.ts:238:3 › Consultant Profile Pages › should display consultant services and industries 
+    [Mobile Chrome] › tests/consultant-profile.spec.ts:330:3 › Consultant Profile Pages › should handle "Request Quote" button click 
+  10 passed (42.6s)

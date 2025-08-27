@@ -1,0 +1,272 @@
+
+Running 10 tests using 10 workers
+
+[1/10] …iness Registration Flows › should handle terms and conditions acceptance
+[2/10] …gistration Flows › should validate email format in business registration
+[3/10] …ss Registration Flows › should display business registration form fields
+[4/10] …egistration Flows › should display "List Your Business" option in header
+[5/10] …tration Flows › should validate required fields on business registration
+[6/10] …n & Business Registration Flows › should handle mobile responsive layout
+[7/10] …gistration Flows › should navigate to business listing/registration page
+[8/10] … Business Registration Flows › should handle business category selection
+[9/10] …Registration Flows › should submit business registration with valid data
+[10/10] … Registration Flows › should display information about listing benefits
+  1) [Mobile Chrome] › tests/auth.spec.ts:106:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      126 |     
+      127 |     // Basic validation - at least we should see some form elements
+    > 128 |     expect(hasFormFields).toBeTruthy();
+          |                           ^
+      129 |   });
+      130 |
+      131 |   test('should validate email format in business registration', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:128:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-Mobile-Chrome/error-context.md
+
+
+  2) [Mobile Chrome] › tests/auth.spec.ts:46:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      72 |     const hasForm = await page.locator('form, input[type="email"], input[name="name"]').first().isVisible();
+      73 |     
+    > 74 |     expect(hasForm).toBeTruthy();
+         |                     ^
+      75 |   });
+      76 |
+      77 |   test('should display business registration form fields', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:74:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-200fd-s-listing-registration-page-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-200fd-s-listing-registration-page-Mobile-Chrome/error-context.md
+
+
+  3) [Mobile Chrome] › tests/auth.spec.ts:131:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+
+    TimeoutError: page.waitForSelector: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('input') to be visible
+        25 × locator resolved to 6 elements. Proceeding with the first one: <input value="" type="text" placeholder="Search consultants by service, location, or company..." class="w-full pl-4 pr-12 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"/>
+
+
+      147 |     
+      148 |     await page.waitForLoadState('networkidle');
+    > 149 |     await page.waitForSelector('input', { timeout: 10000 });
+          |                ^
+      150 |     
+      151 |     // Fill form with invalid email - use simple nth selectors
+      152 |     const inputs = page.locator('input');
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:149:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-Mobile-Chrome/error-context.md
+
+
+  4) [Mobile Chrome] › tests/auth.spec.ts:173:3 › Authentication & Business Registration Flows › should handle business category selection 
+
+    TimeoutError: page.waitForSelector: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('input') to be visible
+        25 × locator resolved to 6 elements. Proceeding with the first one: <input value="" type="text" placeholder="Search consultants by service, location, or company..." class="w-full pl-4 pr-12 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"/>
+
+
+      189 |     
+      190 |     await page.waitForLoadState('networkidle');
+    > 191 |     await page.waitForSelector('input', { timeout: 10000 });
+          |                ^
+      192 |     
+      193 |     // Fill basic form to progress through steps
+      194 |     const inputs = page.locator('input');
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:191:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-4cf72-business-category-selection-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-4cf72-business-category-selection-Mobile-Chrome/error-context.md
+
+
+  5) [Mobile Chrome] › tests/auth.spec.ts:358:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+
+    TimeoutError: page.waitForSelector: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('input') to be visible
+        24 × locator resolved to 6 elements. Proceeding with the first one: <input value="" type="text" placeholder="Search consultants by service, location, or company..." class="w-full pl-4 pr-12 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"/>
+
+
+      374 |     
+      375 |     await page.waitForLoadState('networkidle');
+    > 376 |     await page.waitForSelector('input', { timeout: 10000 });
+          |                ^
+      377 |     
+      378 |     // Fill valid form data
+      379 |     const inputs = page.locator('input');
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:376:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-Mobile-Chrome/error-context.md
+
+
+  6) [Mobile Chrome] › tests/auth.spec.ts:276:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('input').first()
+        - locator resolved to <input value="" type="text" placeholder="Search consultants by service, location, or company..." class="w-full pl-4 pr-12 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent"/>
+        - fill("Test Company")
+      - attempting fill action
+        2 × waiting for element to be visible, enabled and editable
+          - element is not visible
+        - retrying fill action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and editable
+          - element is not visible
+        - retrying fill action
+          - waiting 100ms
+        40 × waiting for element to be visible, enabled and editable
+           - element is not visible
+         - retrying fill action
+           - waiting 500ms
+
+
+      301 |     
+      302 |     if (inputCount >= 4) {
+    > 303 |       await inputs.nth(0).fill('Test Company');
+          |                           ^
+      304 |       await inputs.nth(1).fill('John Doe');
+      305 |       await inputs.nth(2).fill('john@test.com');
+      306 |       await inputs.nth(3).fill('1234567890');
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:303:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-Mobile-Chrome/error-context.md
+
+
+  7) [Mobile Chrome] › tests/auth.spec.ts:409:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for getByTestId('mobile-menu-button')
+        - locator resolved to <button aria-label="Toggle mobile menu" data-testid="mobile-menu-button" class="md:hidden p-2 text-gray-700 hover:text-[#003366]">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 100ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      10 × retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 500ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+
+
+      416 |     const mobileMenuBtn = page.getByTestId('mobile-menu-button');
+      417 |     if (await mobileMenuBtn.isVisible()) {
+    > 418 |       await mobileMenuBtn.click();
+          |                           ^
+      419 |       await page.waitForTimeout(1500);
+      420 |       const listBusinessMobileBtn = page.getByTestId('list-business-mobile-btn');
+      421 |       if (await listBusinessMobileBtn.isVisible()) {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:418:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-Mobile-Chrome/error-context.md
+
+
+  7 failed
+    [Mobile Chrome] › tests/auth.spec.ts:46:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+    [Mobile Chrome] › tests/auth.spec.ts:106:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+    [Mobile Chrome] › tests/auth.spec.ts:131:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+    [Mobile Chrome] › tests/auth.spec.ts:173:3 › Authentication & Business Registration Flows › should handle business category selection 
+    [Mobile Chrome] › tests/auth.spec.ts:276:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance 
+    [Mobile Chrome] › tests/auth.spec.ts:358:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+    [Mobile Chrome] › tests/auth.spec.ts:409:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+  3 passed (40.7s)

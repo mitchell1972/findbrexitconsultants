@@ -1,0 +1,85 @@
+
+Running 1 test using 1 worker
+
+[1/1] …Consultant Profile Pages › should display contact information and methods
+  1) [Mobile Chrome] › tests/consultant-profile.spec.ts:151:3 › Consultant Profile Pages › should display contact information and methods 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('[data-testid="mobile-menu-button"]')
+        - locator resolved to <button aria-label="Toggle mobile menu" data-testid="mobile-menu-button" class="md:hidden p-2 text-gray-700 hover:text-[#003366]">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+      2 × retrying click action
+          - waiting 100ms
+          - waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <div class="flex items-center justify-center space-x-8 py-2 text-sm">…</div> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      14 × retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span class="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span> from <div class="flex-shrink-0">…</div> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <span>500+ Verified Consultants</span> from <div class="bg-[#003366] text-white">…</div> subtree intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+
+
+      22 |       const mobileMenuButton = page.locator('[data-testid="mobile-menu-button"]');
+      23 |       if (await mobileMenuButton.isVisible()) {
+    > 24 |         await mobileMenuButton.click();
+         |                                ^
+      25 |         // Wait for mobile menu to fully open
+      26 |         await page.waitForTimeout(1000);
+      27 |         
+        at navigateToFindConsultants (/workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:24:32)
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:153:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-b5d67-act-information-and-methods-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-b5d67-act-information-and-methods-Mobile-Chrome/error-context.md
+
+
+  1 failed
+    [Mobile Chrome] › tests/consultant-profile.spec.ts:151:3 › Consultant Profile Pages › should display contact information and methods 
+
+  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.

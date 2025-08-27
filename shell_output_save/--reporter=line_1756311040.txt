@@ -1,0 +1,55 @@
+
+Running 48 tests using 16 workers
+
+[1/48] …iness Registration Flows › should handle terms and conditions acceptance
+[2/48] …Profile Pages › should display consultant profile with tabbed navigation
+[3/48] …gistration Flows › should navigate to business listing/registration page
+[4/48] …n & Business Registration Flows › should handle mobile responsive layout
+[5/48] … Business Registration Flows › should handle business category selection
+[6/48] … Consultant Profile Pages › should display "Request Quote" functionality
+[7/48] …nt Profile Pages › should display consultant key metrics and information
+[8/48] …ss Registration Flows › should display business registration form fields
+[9/48] …onsultant Profile Pages › should display contact information and methods
+[10/48] …ration Flows › should validate required fields on business registration
+[11/48] …gistration Flows › should display "List Your Business" option in header
+[12/48] …istration Flows › should validate email format in business registration
+[13/48] …egistration Flows › should submit business registration with valid data
+[14/48] …t Profile Pages › should display consultant ratings and reviews section
+[15/48] … Registration Flows › should display information about listing benefits
+[16/48] …file Pages › should navigate to consultant profiles from search results
+[17/48] …ltant Profile Pages › should display consultant services and industries
+[18/48] …343:3 › Consultant Profile Pages › should navigate between profile tabs
+[19/48] …› Consultant Profile Pages › should handle multiple consultant profiles
+[20/48] …› Consultant Profile Pages › should handle "Request Quote" button click
+[21/48] …› Consultant Profile Pages › should display responsive layout on mobile
+[22/48] …rofile Pages › should display professional credentials and verification
+[23/48] …unctionality › should navigate to quote request from consultant profile
+[24/48] …ality › should display quote request form with consultant pre-populated
+[25/48] …Functionality › should display quote request form with essential fields
+[26/48] …uest Functionality › should validate required fields on form submission
+[27/48] …c.ts:239:3 › Quote Request Functionality › should validate email format
+[28/48] … Quote Request Functionality › should display Brexit service categories
+[29/48] …ote Request Functionality › should submit quote request with valid data
+[30/48] …ote Request Functionality › should handle phone number field validation
+[31/48] …ote Request Functionality › should handle multi-step quote request form
+[32/48] …uest Functionality › should display company/business information fields
+[33/48] … should navigate to quote request on mobile using responsive navigation
+[34/48] …e Request Functionality › should handle urgent/priority request options
+[35/48] …uote Request Functionality › should display responsive layout on mobile
+[36/48] …onality › should find and access reviews section on consultant profiles
+[37/48] …Submission Functionality › should display existing reviews with ratings
+[38/48] … Review Submission Functionality › should show review count information
+[39/48] …nctionality › should display review form with rating and comment fields
+[40/48] …ctionality › should handle "Write Review" or "Add Review" functionality
+[41/48] …eview Submission Functionality › should validate required review fields
+[42/48] …Review Submission Functionality › should handle star rating interaction
+[43/48] …sion Functionality › should submit complete review with rating and text
+…s:453:3 › Consultant Profile Pages › should handle multiple consultant profiles
+Successfully found and tested 6 consultant profiles
+
+[44/48] …on Functionality › should handle authentication requirement for reviews
+[45/48] …ion Functionality › should display review sorting and filtering options
+[46/48] …n Functionality › should handle review pagination if many reviews exist
+[47/48] …ission Functionality › should handle mobile responsive review interface
+[48/48] …ew Submission Functionality › should display average rating calculation
+  48 passed (59.9s)

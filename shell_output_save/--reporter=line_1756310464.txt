@@ -1,0 +1,150 @@
+
+Running 48 tests using 16 workers
+
+[1/48] …gistration Flows › should validate email format in business registration
+[2/48] …ofile Pages › should navigate to consultant profiles from search results
+[3/48] …iness Registration Flows › should handle terms and conditions acceptance
+[4/48] …ss Registration Flows › should display business registration form fields
+[5/48] … Business Registration Flows › should handle business category selection
+[6/48] …onsultant Profile Pages › should display contact information and methods
+[7/48] …Registration Flows › should submit business registration with valid data
+[8/48] …nt Profile Pages › should display consultant ratings and reviews section
+[9/48] …gistration Flows › should navigate to business listing/registration page
+[10/48] …gistration Flows › should display "List Your Business" option in header
+[11/48] …ration Flows › should validate required fields on business registration
+[12/48] …t Profile Pages › should display consultant key metrics and information
+[13/48] … Registration Flows › should display information about listing benefits
+[14/48] … & Business Registration Flows › should handle mobile responsive layout
+[15/48] …Consultant Profile Pages › should display "Request Quote" functionality
+[16/48] …rofile Pages › should display consultant profile with tabbed navigation
+[17/48] …343:3 › Consultant Profile Pages › should navigate between profile tabs
+[18/48] …ltant Profile Pages › should display consultant services and industries
+[19/48] …› Consultant Profile Pages › should handle "Request Quote" button click
+[20/48] …rofile Pages › should display professional credentials and verification
+[21/48] …› Consultant Profile Pages › should handle multiple consultant profiles
+[22/48] …› Consultant Profile Pages › should display responsive layout on mobile
+[23/48] …unctionality › should navigate to quote request from consultant profile
+[24/48] …uest Functionality › should validate required fields on form submission
+[25/48] …ality › should display quote request form with consultant pre-populated
+[26/48] …Functionality › should display quote request form with essential fields
+[27/48] …c.ts:230:3 › Quote Request Functionality › should validate email format
+[28/48] … Quote Request Functionality › should display Brexit service categories
+[29/48] …ote Request Functionality › should submit quote request with valid data
+[30/48] …ote Request Functionality › should handle multi-step quote request form
+[31/48] …ote Request Functionality › should handle phone number field validation
+[32/48] …uest Functionality › should display company/business information fields
+[33/48] … should navigate to quote request on mobile using responsive navigation
+[34/48] …e Request Functionality › should handle urgent/priority request options
+[35/48] …uote Request Functionality › should display responsive layout on mobile
+[36/48] …onality › should find and access reviews section on consultant profiles
+[37/48] …Submission Functionality › should display existing reviews with ratings
+[38/48] … Review Submission Functionality › should show review count information
+[39/48] …ctionality › should handle "Write Review" or "Add Review" functionality
+[40/48] …nctionality › should display review form with rating and comment fields
+[41/48] …eview Submission Functionality › should validate required review fields
+[42/48] …Review Submission Functionality › should handle star rating interaction
+[43/48] …sion Functionality › should submit complete review with rating and text
+[44/48] …on Functionality › should handle authentication requirement for reviews
+[45/48] …ion Functionality › should display review sorting and filtering options
+…s:453:3 › Consultant Profile Pages › should handle multiple consultant profiles
+Successfully found and tested 6 consultant profiles
+
+  1) [chromium] › tests/quote-request.spec.ts:159:3 › Quote Request Functionality › should validate required fields on form submission 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      215 |       });
+      216 |       
+    > 217 |       expect(hasValidationErrors).toBeTruthy();
+          |                                   ^
+      218 |     } else {
+      219 |       // If no submit button found, at least verify the form loaded
+      220 |       const hasFormElements = await page.locator('input').or(
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:217:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/error-context.md
+
+
+[46/48] …n Functionality › should handle review pagination if many reviews exist
+  2) [chromium] › tests/quote-request.spec.ts:230:3 › Quote Request Functionality › should validate email format 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      288 |         });
+      289 |         
+    > 290 |         expect(hasEmailValidationError).toBeTruthy();
+          |                                         ^
+      291 |       } else {
+      292 |         // If no submit button, just verify email field exists
+      293 |         expect(await emailInput.isVisible()).toBeTruthy();
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:290:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/error-context.md
+
+
+[47/48] …ission Functionality › should handle mobile responsive review interface
+  3) [chromium] › tests/quote-request.spec.ts:592:3 › Quote Request Functionality › should display responsive layout on mobile 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Matcher error: received value must be a number or bigint
+
+    Received has value: undefined
+
+      612 |       const firstInput = inputs.first();
+      613 |       const inputBox = await firstInput.boundingBox();
+    > 614 |       expect(inputBox?.width).toBeLessThanOrEqual(375);
+          |                               ^
+      615 |     }
+      616 |     
+      617 |     // Submit button should be accessible
+        at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:614:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium/error-context.md
+
+
+[48/48] …ew Submission Functionality › should display average rating calculation
+  4) [chromium] › tests/review-submission.spec.ts:570:3 › Review Submission Functionality › should display average rating calculation 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      591 |     
+      592 |     // Should display some form of rating, quality indicator, or consultant metrics
+    > 593 |     expect(hasRatingDisplay).toBeTruthy();
+          |                              ^
+      594 |   });
+      595 |
+      596 |   test('should handle mobile responsive review interface', async () => {
+        at /workspace/findbrexit-consultants/tests/review-submission.spec.ts:593:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-09609--average-rating-calculation-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-09609--average-rating-calculation-chromium/error-context.md
+
+
+  4 failed
+    [chromium] › tests/quote-request.spec.ts:159:3 › Quote Request Functionality › should validate required fields on form submission 
+    [chromium] › tests/quote-request.spec.ts:230:3 › Quote Request Functionality › should validate email format 
+    [chromium] › tests/quote-request.spec.ts:592:3 › Quote Request Functionality › should display responsive layout on mobile 
+    [chromium] › tests/review-submission.spec.ts:570:3 › Review Submission Functionality › should display average rating calculation 
+  44 passed (1.0m)
