@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for FindBrexitConsultants */
+@layer base {
+  body {
+    font-family: 'Inter', 'system-ui', 'sans-serif';
+    line-height: 1.6;
+  }
+}
+
+@layer components {
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+  }
+}
+
+@layer utilities {
+  /* Custom colors */
+  .text-brexit-navy { color: #003366; }
+  .bg-brexit-navy { background-color: #003366; }
+  .border-brexit-navy { border-color: #003366; }
+  
+  .text-brexit-green { color: #004225; }
+  .bg-brexit-green { background-color: #004225; }
+  .border-brexit-green { border-color: #004225; }
+  
+  .text-brexit-gold { color: #FFD700; }
+  .bg-brexit-gold { background-color: #FFD700; }
+  .border-brexit-gold { border-color: #FFD700; }
+  
+  /* Smooth scroll */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom focus states */
+  .focus-brexit:focus {
+    outline: 2px solid #003366;
+    outline-offset: 2px;
+  }
+  
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Custom shadows */
+  .shadow-brexit {
+    box-shadow: 0 4px 6px -1px rgba(0, 51, 102, 0.1), 0 2px 4px -1px rgba(0, 51, 102, 0.06);
+  }
+  
+  .shadow-brexit-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 51, 102, 0.1), 0 4px 6px -2px rgba(0, 51, 102, 0.05);
+  }
+}
+
+/* React Hot Toast custom styles */
+.Toastify__toast-container {
+  font-family: 'Inter', 'system-ui', 'sans-serif';
+}
+
+/* Loading states */
+.loading-spinner {
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #003366;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none;
+  }
+}
