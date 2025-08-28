@@ -1,0 +1,3199 @@
+{
+  "config": {
+    "configFile": "/workspace/findbrexit-consultants/playwright.config.ts",
+    "rootDir": "/workspace/findbrexit-consultants/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 16
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/workspace/findbrexit-consultants/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 16
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/findbrexit-consultants/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/workspace/findbrexit-consultants/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 16
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/workspace/findbrexit-consultants/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/workspace/findbrexit-consultants/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 16
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/workspace/findbrexit-consultants/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/workspace/findbrexit-consultants/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 16
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "/workspace/findbrexit-consultants/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/workspace/findbrexit-consultants/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 16
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "/workspace/findbrexit-consultants/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 16,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "quote-request.spec.ts",
+      "file": "quote-request.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Quote Request Functionality",
+          "file": "quote-request.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should navigate to quote request from consultant profile",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 32195,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 16,
+                            "line": 17
+                          },
+                          "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=\"Find Consultants\"')\u001b[22m\n\n\n  15 |   test('should navigate to quote request from consultant profile', async () => {\n  16 |     // Navigate via consultant profile (most common path)\n> 17 |     await page.click('text=\"Find Consultants\"');\n     |                ^\n  18 |     await page.waitForLoadState('networkidle');\n  19 |     \n  20 |     await page.click('text=\"View Profile\"');\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:17:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:23:43.065Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-chromium/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-6104b89c11dab1afd2b9",
+              "file": "quote-request.spec.ts",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "should display quote request form with consultant pre-populated",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 32305,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 16,
+                            "line": 40
+                          },
+                          "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=\"Find Consultants\"')\u001b[22m\n\n\n  38 |   test('should display quote request form with consultant pre-populated', async () => {\n  39 |     // Navigate to quote request via consultant profile\n> 40 |     await page.click('text=\"Find Consultants\"');\n     |                ^\n  41 |     await page.waitForLoadState('networkidle');\n  42 |     \n  43 |     await page.click('text=\"View Profile\"');\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:40:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:23:41.965Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-af710bd9030f1c3a9d15",
+              "file": "quote-request.spec.ts",
+              "line": 38,
+              "column": 3
+            },
+            {
+              "title": "should display quote request form with essential fields",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 13003,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:82:62",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 62,
+                          "line": 82
+                        },
+                        "snippet": "  80 |     \n  81 |     // Should have basic contact and message fields\n> 82 |     expect(hasNameField || hasEmailField || hasMessageField).toBeTruthy();\n     |                                                              ^\n  83 |   });\n  84 |\n  85 |   test('should validate required fields on form submission', async () => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 62,
+                            "line": 82
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  80 |     \n  81 |     // Should have basic contact and message fields\n> 82 |     expect(hasNameField || hasEmailField || hasMessageField).toBeTruthy();\n     |                                                              ^\n  83 |   });\n  84 |\n  85 |   test('should validate required fields on form submission', async () => {\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:82:62"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:23:43.365Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-4a16a--form-with-essential-fields-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-4a16a--form-with-essential-fields-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 62,
+                        "line": 82
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-2bab4b2c514689be2d45",
+              "file": "quote-request.spec.ts",
+              "line": 61,
+              "column": 3
+            },
+            {
+              "title": "should validate required fields on form submission",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 13396,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:23:42.071Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-7589305aa29d62931bc6",
+              "file": "quote-request.spec.ts",
+              "line": 85,
+              "column": 3
+            },
+            {
+              "title": "should validate email format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 14194,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:23:39.971Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-0b02185ca3a464c7f9be",
+              "file": "quote-request.spec.ts",
+              "line": 113,
+              "column": 3
+            },
+            {
+              "title": "should display Brexit service categories",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 12805,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:182:111",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 111,
+                          "line": 182
+                        },
+                        "snippet": "  180 |     \n  181 |     // Should have Brexit-related services\n> 182 |     expect(hasCustomsService || hasVATService || hasComplianceService || hasTradeService || hasBrexitService).toBeTruthy();\n      |                                                                                                               ^\n  183 |   });\n  184 |\n  185 |   test('should submit quote request with valid data', async () => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 111,
+                            "line": 182
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  180 |     \n  181 |     // Should have Brexit-related services\n> 182 |     expect(hasCustomsService || hasVATService || hasComplianceService || hasTradeService || hasBrexitService).toBeTruthy();\n      |                                                                                                               ^\n  183 |   });\n  184 |\n  185 |   test('should submit quote request with valid data', async () => {\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:182:111"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:23:44.066Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 111,
+                        "line": 182
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-fb1645f95ab704c5c958",
+              "file": "quote-request.spec.ts",
+              "line": 155,
+              "column": 3
+            },
+            {
+              "title": "should submit quote request with valid data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 13510,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:23:40.665Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-0928a58c3c6553f95a02",
+              "file": "quote-request.spec.ts",
+              "line": 185,
+              "column": 3
+            },
+            {
+              "title": "should handle multi-step quote request form",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 13002,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:23:40.670Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-d54db05962d996d0994d",
+              "file": "quote-request.spec.ts",
+              "line": 270,
+              "column": 3
+            },
+            {
+              "title": "should handle phone number field validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 8,
+                      "status": "passed",
+                      "duration": 13496,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:23:42.171Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-13c39a872ad1bb48e2ae",
+              "file": "quote-request.spec.ts",
+              "line": 316,
+              "column": 3
+            },
+            {
+              "title": "should display company/business information fields",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 9,
+                      "status": "failed",
+                      "duration": 20303,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:382:69",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 69,
+                          "line": 382
+                        },
+                        "snippet": "  380 |     \n  381 |     // Should have business context fields\n> 382 |     expect(hasCompanyField || hasBusinessField || hasIndustryField).toBeTruthy();\n      |                                                                     ^\n  383 |   });\n  384 |\n  385 |   test('should handle urgent/priority request options', async () => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 69,
+                            "line": 382
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  380 |     \n  381 |     // Should have business context fields\n> 382 |     expect(hasCompanyField || hasBusinessField || hasIndustryField).toBeTruthy();\n      |                                                                     ^\n  383 |   });\n  384 |\n  385 |   test('should handle urgent/priority request options', async () => {\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:382:69"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:23:40.865Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-ae978-business-information-fields-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-ae978-business-information-fields-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 69,
+                        "line": 382
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-13652175b65802fa6897",
+              "file": "quote-request.spec.ts",
+              "line": 363,
+              "column": 3
+            },
+            {
+              "title": "should handle urgent/priority request options",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 10,
+                      "status": "passed",
+                      "duration": 20003,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:23:40.369Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-ace2671b9395ac05ab8a",
+              "file": "quote-request.spec.ts",
+              "line": 385,
+              "column": 3
+            },
+            {
+              "title": "should display responsive layout on mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 11,
+                      "status": "passed",
+                      "duration": 13397,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:23:43.965Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-3d235ed9c001772d8d50",
+              "file": "quote-request.spec.ts",
+              "line": 410,
+              "column": 3
+            },
+            {
+              "title": "should navigate to quote request from consultant profile",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 12,
+                      "status": "timedOut",
+                      "duration": 32603,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 16,
+                            "line": 17
+                          },
+                          "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=\"Find Consultants\"')\u001b[22m\n\n\n  15 |   test('should navigate to quote request from consultant profile', async () => {\n  16 |     // Navigate via consultant profile (most common path)\n> 17 |     await page.click('text=\"Find Consultants\"');\n     |                ^\n  18 |     await page.waitForLoadState('networkidle');\n  19 |     \n  20 |     await page.click('text=\"View Profile\"');\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:17:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:23:44.968Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-firefox/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-a6142f7f99beead2fdeb",
+              "file": "quote-request.spec.ts",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "should display quote request form with consultant pre-populated",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 13,
+                      "status": "timedOut",
+                      "duration": 33003,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 16,
+                            "line": 40
+                          },
+                          "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=\"Find Consultants\"')\u001b[22m\n\n\n  38 |   test('should display quote request form with consultant pre-populated', async () => {\n  39 |     // Navigate to quote request via consultant profile\n> 40 |     await page.click('text=\"Find Consultants\"');\n     |                ^\n  41 |     await page.waitForLoadState('networkidle');\n  42 |     \n  43 |     await page.click('text=\"View Profile\"');\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:40:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:23:40.970Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-firefox/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-beb2fde818b15ff0bb67",
+              "file": "quote-request.spec.ts",
+              "line": 38,
+              "column": 3
+            },
+            {
+              "title": "should display quote request form with essential fields",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 14,
+                      "status": "timedOut",
+                      "duration": 34493,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 62,
+                            "line": 82
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  80 |     \n  81 |     // Should have basic contact and message fields\n> 82 |     expect(hasNameField || hasEmailField || hasMessageField).toBeTruthy();\n     |                                                              ^\n  83 |   });\n  84 |\n  85 |   test('should validate required fields on form submission', async () => {\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:82:62"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:23:42.165Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-4a16a--form-with-essential-fields-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-4a16a--form-with-essential-fields-firefox/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-061ec238ce9c144dcf76",
+              "file": "quote-request.spec.ts",
+              "line": 61,
+              "column": 3
+            },
+            {
+              "title": "should validate required fields on form submission",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 15,
+                      "status": "timedOut",
+                      "duration": 35407,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 16,
+                            "line": 88
+                          },
+                          "message": "Error: page.waitForLoadState: Target page, context or browser has been closed\n\n  86 |     // Navigate to quote request page\n  87 |     await page.goto('/request-quote');\n> 88 |     await page.waitForLoadState('networkidle');\n     |                ^\n  89 |     \n  90 |     // Try to submit empty form\n  91 |     const submitButton = page.locator('button[type=\"submit\"]').or(\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:88:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:23:40.765Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-firefox/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-832b5b4b4efd1c4afed0",
+              "file": "quote-request.spec.ts",
+              "line": 85,
+              "column": 3
+            },
+            {
+              "title": "should validate email format",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 7,
+                      "status": "timedOut",
+                      "duration": 38490,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 8,
+                          "line": 6
+                        },
+                        "snippet": "  4 |   let page: Page;\n  5 |\n> 6 |   test.beforeEach(async ({ browser }) => {\n    |        ^\n  7 |     page = await browser.newPage();\n  8 |     await page.goto('/');\n  9 |   });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 8,
+                            "line": 6
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  4 |   let page: Page;\n  5 |\n> 6 |   test.beforeEach(async ({ browser }) => {\n    |        ^\n  7 |     page = await browser.newPage();\n  8 |     await page.goto('/');\n  9 |   });\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:24:10.571Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 8,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-e83972d4b0e22e0603d1",
+              "file": "quote-request.spec.ts",
+              "line": 113,
+              "column": 3
+            },
+            {
+              "title": "should display Brexit service categories",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 4,
+                      "status": "timedOut",
+                      "duration": 38505,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 8,
+                          "line": 6
+                        },
+                        "snippet": "  4 |   let page: Page;\n  5 |\n> 6 |   test.beforeEach(async ({ browser }) => {\n    |        ^\n  7 |     page = await browser.newPage();\n  8 |     await page.goto('/');\n  9 |   });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 8,
+                            "line": 6
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  4 |   let page: Page;\n  5 |\n> 6 |   test.beforeEach(async ({ browser }) => {\n    |        ^\n  7 |     page = await browser.newPage();\n  8 |     await page.goto('/');\n  9 |   });\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:24:11.668Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 8,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-21a4b504232d84efa6c1",
+              "file": "quote-request.spec.ts",
+              "line": 155,
+              "column": 3
+            },
+            {
+              "title": "should submit quote request with valid data",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 6,
+                      "status": "timedOut",
+                      "duration": 39693,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 8,
+                          "line": 6
+                        },
+                        "snippet": "  4 |   let page: Page;\n  5 |\n> 6 |   test.beforeEach(async ({ browser }) => {\n    |        ^\n  7 |     page = await browser.newPage();\n  8 |     await page.goto('/');\n  9 |   });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 8,
+                            "line": 6
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  4 |   let page: Page;\n  5 |\n> 6 |   test.beforeEach(async ({ browser }) => {\n    |        ^\n  7 |     page = await browser.newPage();\n  8 |     await page.goto('/');\n  9 |   });\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:24:11.865Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-aba92-ote-request-with-valid-data-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 8,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-0db6d3752b9c1597fda2",
+              "file": "quote-request.spec.ts",
+              "line": 185,
+              "column": 3
+            },
+            {
+              "title": "should handle multi-step quote request form",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 3,
+                      "status": "timedOut",
+                      "duration": 40089,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 8,
+                          "line": 6
+                        },
+                        "snippet": "  4 |   let page: Page;\n  5 |\n> 6 |   test.beforeEach(async ({ browser }) => {\n    |        ^\n  7 |     page = await browser.newPage();\n  8 |     await page.goto('/');\n  9 |   });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 8,
+                            "line": 6
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  4 |   let page: Page;\n  5 |\n> 6 |   test.beforeEach(async ({ browser }) => {\n    |        ^\n  7 |     page = await browser.newPage();\n  8 |     await page.goto('/');\n  9 |   });\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:24:15.266Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-6dced-lti-step-quote-request-form-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 8,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-d60355935f5571a39d93",
+              "file": "quote-request.spec.ts",
+              "line": 270,
+              "column": 3
+            },
+            {
+              "title": "should handle phone number field validation",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 8,
+                      "status": "timedOut",
+                      "duration": 40903,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 8,
+                          "line": 6
+                        },
+                        "snippet": "  4 |   let page: Page;\n  5 |\n> 6 |   test.beforeEach(async ({ browser }) => {\n    |        ^\n  7 |     page = await browser.newPage();\n  8 |     await page.goto('/');\n  9 |   });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 8,
+                            "line": 6
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  4 |   let page: Page;\n  5 |\n> 6 |   test.beforeEach(async ({ browser }) => {\n    |        ^\n  7 |     page = await browser.newPage();\n  8 |     await page.goto('/');\n  9 |   });\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:24:13.069Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-ef8c7-one-number-field-validation-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 8,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-c2f29ea3fa24550e177b",
+              "file": "quote-request.spec.ts",
+              "line": 316,
+              "column": 3
+            },
+            {
+              "title": "should display company/business information fields",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 5,
+                      "status": "timedOut",
+                      "duration": 38903,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 8,
+                          "line": 6
+                        },
+                        "snippet": "  4 |   let page: Page;\n  5 |\n> 6 |   test.beforeEach(async ({ browser }) => {\n    |        ^\n  7 |     page = await browser.newPage();\n  8 |     await page.goto('/');\n  9 |   });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 8,
+                            "line": 6
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  4 |   let page: Page;\n  5 |\n> 6 |   test.beforeEach(async ({ browser }) => {\n    |        ^\n  7 |     page = await browser.newPage();\n  8 |     await page.goto('/');\n  9 |   });\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:24:14.769Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-ae978-business-information-fields-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 8,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-b1e8931a448528d3c9bb",
+              "file": "quote-request.spec.ts",
+              "line": 363,
+              "column": 3
+            },
+            {
+              "title": "should handle urgent/priority request options",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 2,
+                      "status": "timedOut",
+                      "duration": 39407,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 8,
+                          "line": 6
+                        },
+                        "snippet": "  4 |   let page: Page;\n  5 |\n> 6 |   test.beforeEach(async ({ browser }) => {\n    |        ^\n  7 |     page = await browser.newPage();\n  8 |     await page.goto('/');\n  9 |   });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 8,
+                            "line": 6
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  4 |   let page: Page;\n  5 |\n> 6 |   test.beforeEach(async ({ browser }) => {\n    |        ^\n  7 |     page = await browser.newPage();\n  8 |     await page.goto('/');\n  9 |   });\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:24:16.665Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-85e55-nt-priority-request-options-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 8,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-1a68af7465003c2d40f3",
+              "file": "quote-request.spec.ts",
+              "line": 385,
+              "column": 3
+            },
+            {
+              "title": "should display responsive layout on mobile",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 23,
+                      "parallelIndex": 11,
+                      "status": "timedOut",
+                      "duration": 40198,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 8,
+                          "line": 6
+                        },
+                        "snippet": "  4 |   let page: Page;\n  5 |\n> 6 |   test.beforeEach(async ({ browser }) => {\n    |        ^\n  7 |     page = await browser.newPage();\n  8 |     await page.goto('/');\n  9 |   });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 8,
+                            "line": 6
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n  4 |   let page: Page;\n  5 |\n> 6 |   test.beforeEach(async ({ browser }) => {\n    |        ^\n  7 |     page = await browser.newPage();\n  8 |     await page.goto('/');\n  9 |   });\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:6:8"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:24:16.366Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 8,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-44a19d484bad6e9d33c7",
+              "file": "quote-request.spec.ts",
+              "line": 410,
+              "column": 3
+            },
+            {
+              "title": "should navigate to quote request from consultant profile",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 10,
+                      "status": "timedOut",
+                      "duration": 39100,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 16,
+                            "line": 17
+                          },
+                          "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=\"Find Consultants\"')\u001b[22m\n\n\n  15 |   test('should navigate to quote request from consultant profile', async () => {\n  16 |     // Navigate via consultant profile (most common path)\n> 17 |     await page.click('text=\"Find Consultants\"');\n     |                ^\n  18 |     await page.waitForLoadState('networkidle');\n  19 |     \n  20 |     await page.click('text=\"View Profile\"');\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:17:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:24:18.767Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-webkit/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-6e4d0f50d3c3582af6e7",
+              "file": "quote-request.spec.ts",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "should display quote request form with consultant pre-populated",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 25,
+                      "parallelIndex": 9,
+                      "status": "timedOut",
+                      "duration": 38104,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 16,
+                            "line": 40
+                          },
+                          "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=\"Find Consultants\"')\u001b[22m\n\n\n  38 |   test('should display quote request form with consultant pre-populated', async () => {\n  39 |     // Navigate to quote request via consultant profile\n> 40 |     await page.click('text=\"Find Consultants\"');\n     |                ^\n  41 |     await page.waitForLoadState('networkidle');\n  42 |     \n  43 |     await page.click('text=\"View Profile\"');\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:40:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:24:20.873Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-webkit/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-c1ca2ca039dbaec3a50c",
+              "file": "quote-request.spec.ts",
+              "line": 38,
+              "column": 3
+            },
+            {
+              "title": "should display quote request form with essential fields",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 26,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 42103,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 16,
+                            "line": 63
+                          },
+                          "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://findbrexitconsultants.co.uk/request-quote\", waiting until \"load\"\u001b[22m\n\n\n  61 |   test('should display quote request form with essential fields', async () => {\n  62 |     // Navigate to quote request page\n> 63 |     await page.goto('/request-quote');\n     |                ^\n  64 |     await page.waitForLoadState('networkidle');\n  65 |     \n  66 |     // Check for essential form fields\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:63:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:24:35.265Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-4a16a--form-with-essential-fields-webkit/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-5945eafd231220f81964",
+              "file": "quote-request.spec.ts",
+              "line": 61,
+              "column": 3
+            },
+            {
+              "title": "should validate required fields on form submission",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 27,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 40799,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 16,
+                            "line": 87
+                          },
+                          "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://findbrexitconsultants.co.uk/request-quote\", waiting until \"load\"\u001b[22m\n\n\n  85 |   test('should validate required fields on form submission', async () => {\n  86 |     // Navigate to quote request page\n> 87 |     await page.goto('/request-quote');\n     |                ^\n  88 |     await page.waitForLoadState('networkidle');\n  89 |     \n  90 |     // Try to submit empty form\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:87:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:24:36.966Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-webkit/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-de0a98ad3ebfdad7cc1a",
+              "file": "quote-request.spec.ts",
+              "line": 85,
+              "column": 3
+            },
+            {
+              "title": "should validate email format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 28,
+                      "parallelIndex": 15,
+                      "status": "passed",
+                      "duration": 30303,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:25:03.865Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-6f6ef94be58a0e60d9c3",
+              "file": "quote-request.spec.ts",
+              "line": 113,
+              "column": 3
+            },
+            {
+              "title": "should display Brexit service categories",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 29,
+                      "parallelIndex": 13,
+                      "status": "failed",
+                      "duration": 32296,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:182:111",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 111,
+                          "line": 182
+                        },
+                        "snippet": "  180 |     \n  181 |     // Should have Brexit-related services\n> 182 |     expect(hasCustomsService || hasVATService || hasComplianceService || hasTradeService || hasBrexitService).toBeTruthy();\n      |                                                                                                               ^\n  183 |   });\n  184 |\n  185 |   test('should submit quote request with valid data', async () => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 111,
+                            "line": 182
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  180 |     \n  181 |     // Should have Brexit-related services\n> 182 |     expect(hasCustomsService || hasVATService || hasComplianceService || hasTradeService || hasBrexitService).toBeTruthy();\n      |                                                                                                               ^\n  183 |   });\n  184 |\n  185 |   test('should submit quote request with valid data', async () => {\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:182:111"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:25:08.269Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 111,
+                        "line": 182
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-6bebb26e05d81a3091cb",
+              "file": "quote-request.spec.ts",
+              "line": 155,
+              "column": 3
+            },
+            {
+              "title": "should submit quote request with valid data",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 30,
+                      "parallelIndex": 12,
+                      "status": "timedOut",
+                      "duration": 36587,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 31,
+                            "line": 239
+                          },
+                          "message": "Error: locator.isVisible: Target page, context or browser has been closed\nCall log:\n\u001b[2m    - checking visibility of locator('input[type=\"checkbox\"]').first()\u001b[22m\n\n\n  237 |     // Select service checkboxes if available\n  238 |     const serviceCheckbox = page.locator('input[type=\"checkbox\"]').first();\n> 239 |     if (await serviceCheckbox.isVisible()) {\n      |                               ^\n  240 |       await serviceCheckbox.check();\n  241 |     }\n  242 |     \n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:239:31"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:25:10.669Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-aba92-ote-request-with-valid-data-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-aba92-ote-request-with-valid-data-webkit/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-572dc16033253ed584b6",
+              "file": "quote-request.spec.ts",
+              "line": 185,
+              "column": 3
+            },
+            {
+              "title": "should handle multi-step quote request form",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 31,
+                      "parallelIndex": 14,
+                      "status": "passed",
+                      "duration": 29009,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:25:11.268Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-5bbcf248014a93720799",
+              "file": "quote-request.spec.ts",
+              "line": 270,
+              "column": 3
+            },
+            {
+              "title": "should handle phone number field validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 32,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 29005,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:25:40.166Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-fba76fc29a87a66c66bd",
+              "file": "quote-request.spec.ts",
+              "line": 316,
+              "column": 3
+            },
+            {
+              "title": "should display company/business information fields",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 33,
+                      "parallelIndex": 9,
+                      "status": "failed",
+                      "duration": 31105,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:382:69",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 69,
+                          "line": 382
+                        },
+                        "snippet": "  380 |     \n  381 |     // Should have business context fields\n> 382 |     expect(hasCompanyField || hasBusinessField || hasIndustryField).toBeTruthy();\n      |                                                                     ^\n  383 |   });\n  384 |\n  385 |   test('should handle urgent/priority request options', async () => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 69,
+                            "line": 382
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  380 |     \n  381 |     // Should have business context fields\n> 382 |     expect(hasCompanyField || hasBusinessField || hasIndustryField).toBeTruthy();\n      |                                                                     ^\n  383 |   });\n  384 |\n  385 |   test('should handle urgent/priority request options', async () => {\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:382:69"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:25:42.666Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-ae978-business-information-fields-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-ae978-business-information-fields-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 69,
+                        "line": 382
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-5b07210bc11d2911551c",
+              "file": "quote-request.spec.ts",
+              "line": 363,
+              "column": 3
+            },
+            {
+              "title": "should handle urgent/priority request options",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 34,
+                      "parallelIndex": 10,
+                      "status": "passed",
+                      "duration": 34301,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:25:44.065Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-e7581886af6d6dec2af9",
+              "file": "quote-request.spec.ts",
+              "line": 385,
+              "column": 3
+            },
+            {
+              "title": "should display responsive layout on mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 35,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 24801,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:25:44.066Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-1d2a0b8b30140fcde7f2",
+              "file": "quote-request.spec.ts",
+              "line": 410,
+              "column": 3
+            },
+            {
+              "title": "should navigate to quote request from consultant profile",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 36,
+                      "parallelIndex": 6,
+                      "status": "timedOut",
+                      "duration": 35203,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 16,
+                            "line": 17
+                          },
+                          "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=\"Find Consultants\"')\u001b[22m\n\n\n  15 |   test('should navigate to quote request from consultant profile', async () => {\n  16 |     // Navigate via consultant profile (most common path)\n> 17 |     await page.click('text=\"Find Consultants\"');\n     |                ^\n  18 |     await page.waitForLoadState('networkidle');\n  19 |     \n  20 |     await page.click('text=\"View Profile\"');\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:17:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:25:43.566Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-Mobile-Chrome/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-16250fe1080374961d9b",
+              "file": "quote-request.spec.ts",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "should display quote request form with consultant pre-populated",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 38,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 34705,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 16,
+                            "line": 40
+                          },
+                          "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=\"Find Consultants\"')\u001b[22m\n\n\n  38 |   test('should display quote request form with consultant pre-populated', async () => {\n  39 |     // Navigate to quote request via consultant profile\n> 40 |     await page.click('text=\"Find Consultants\"');\n     |                ^\n  41 |     await page.waitForLoadState('networkidle');\n  42 |     \n  43 |     await page.click('text=\"View Profile\"');\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:40:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:25:45.469Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-Mobile-Chrome/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-d44b197f6fbb9eb0578d",
+              "file": "quote-request.spec.ts",
+              "line": 38,
+              "column": 3
+            },
+            {
+              "title": "should display quote request form with essential fields",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 37,
+                      "parallelIndex": 8,
+                      "status": "failed",
+                      "duration": 19580,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:82:62",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 62,
+                          "line": 82
+                        },
+                        "snippet": "  80 |     \n  81 |     // Should have basic contact and message fields\n> 82 |     expect(hasNameField || hasEmailField || hasMessageField).toBeTruthy();\n     |                                                              ^\n  83 |   });\n  84 |\n  85 |   test('should validate required fields on form submission', async () => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 62,
+                            "line": 82
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  80 |     \n  81 |     // Should have basic contact and message fields\n> 82 |     expect(hasNameField || hasEmailField || hasMessageField).toBeTruthy();\n     |                                                              ^\n  83 |   });\n  84 |\n  85 |   test('should validate required fields on form submission', async () => {\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:82:62"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:25:44.770Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-4a16a--form-with-essential-fields-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-4a16a--form-with-essential-fields-Mobile-Chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 62,
+                        "line": 82
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-a503ced2a6c6bbf604fb",
+              "file": "quote-request.spec.ts",
+              "line": 61,
+              "column": 3
+            },
+            {
+              "title": "should validate required fields on form submission",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 39,
+                      "parallelIndex": 11,
+                      "status": "passed",
+                      "duration": 17790,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:25:44.765Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-32b08628342309a23716",
+              "file": "quote-request.spec.ts",
+              "line": 85,
+              "column": 3
+            },
+            {
+              "title": "should validate email format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 40,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 20904,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:25:46.266Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-81e03dcab700c4410190",
+              "file": "quote-request.spec.ts",
+              "line": 113,
+              "column": 3
+            },
+            {
+              "title": "should display Brexit service categories",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 41,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 18904,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:182:111",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 111,
+                          "line": 182
+                        },
+                        "snippet": "  180 |     \n  181 |     // Should have Brexit-related services\n> 182 |     expect(hasCustomsService || hasVATService || hasComplianceService || hasTradeService || hasBrexitService).toBeTruthy();\n      |                                                                                                               ^\n  183 |   });\n  184 |\n  185 |   test('should submit quote request with valid data', async () => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 111,
+                            "line": 182
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  180 |     \n  181 |     // Should have Brexit-related services\n> 182 |     expect(hasCustomsService || hasVATService || hasComplianceService || hasTradeService || hasBrexitService).toBeTruthy();\n      |                                                                                                               ^\n  183 |   });\n  184 |\n  185 |   test('should submit quote request with valid data', async () => {\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:182:111"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:25:47.965Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-Mobile-Chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 111,
+                        "line": 182
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-0e14f22f6beeb9c987e9",
+              "file": "quote-request.spec.ts",
+              "line": 155,
+              "column": 3
+            },
+            {
+              "title": "should submit quote request with valid data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 42,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 26001,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:25:47.368Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-aa057d5b7ae3d1f80998",
+              "file": "quote-request.spec.ts",
+              "line": 185,
+              "column": 3
+            },
+            {
+              "title": "should handle multi-step quote request form",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 43,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 18294,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:25:47.065Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-0ff669b5173bd32b57ed",
+              "file": "quote-request.spec.ts",
+              "line": 270,
+              "column": 3
+            },
+            {
+              "title": "should handle phone number field validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 44,
+                      "parallelIndex": 15,
+                      "status": "passed",
+                      "duration": 17597,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:26:02.468Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-8c61282930177e6d7624",
+              "file": "quote-request.spec.ts",
+              "line": 316,
+              "column": 3
+            },
+            {
+              "title": "should display company/business information fields",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 46,
+                      "parallelIndex": 14,
+                      "status": "failed",
+                      "duration": 15707,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:382:69",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 69,
+                          "line": 382
+                        },
+                        "snippet": "  380 |     \n  381 |     // Should have business context fields\n> 382 |     expect(hasCompanyField || hasBusinessField || hasIndustryField).toBeTruthy();\n      |                                                                     ^\n  383 |   });\n  384 |\n  385 |   test('should handle urgent/priority request options', async () => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 69,
+                            "line": 382
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  380 |     \n  381 |     // Should have business context fields\n> 382 |     expect(hasCompanyField || hasBusinessField || hasIndustryField).toBeTruthy();\n      |                                                                     ^\n  383 |   });\n  384 |\n  385 |   test('should handle urgent/priority request options', async () => {\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:382:69"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:26:05.267Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-ae978-business-information-fields-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-ae978-business-information-fields-Mobile-Chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 69,
+                        "line": 382
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-107fe41665b521d51d5e",
+              "file": "quote-request.spec.ts",
+              "line": 363,
+              "column": 3
+            },
+            {
+              "title": "should handle urgent/priority request options",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 45,
+                      "parallelIndex": 13,
+                      "status": "passed",
+                      "duration": 14905,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:26:07.267Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-bf29cdc19887d69e6c1d",
+              "file": "quote-request.spec.ts",
+              "line": 385,
+              "column": 3
+            },
+            {
+              "title": "should display responsive layout on mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 47,
+                      "parallelIndex": 12,
+                      "status": "passed",
+                      "duration": 14591,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:26:11.369Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-4f6177ee7ee7cb453c41",
+              "file": "quote-request.spec.ts",
+              "line": 410,
+              "column": 3
+            },
+            {
+              "title": "should navigate to quote request from consultant profile",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 48,
+                      "parallelIndex": 11,
+                      "status": "timedOut",
+                      "duration": 33806,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 16,
+                            "line": 17
+                          },
+                          "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=\"Find Consultants\"')\u001b[22m\n\n\n  15 |   test('should navigate to quote request from consultant profile', async () => {\n  16 |     // Navigate via consultant profile (most common path)\n> 17 |     await page.click('text=\"Find Consultants\"');\n     |                ^\n  18 |     await page.waitForLoadState('networkidle');\n  19 |     \n  20 |     await page.click('text=\"View Profile\"');\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:17:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:26:24.267Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-Mobile-Safari/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-Mobile-Safari/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-d3b3248574cfcd91bd9a",
+              "file": "quote-request.spec.ts",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "should display quote request form with consultant pre-populated",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 49,
+                      "parallelIndex": 3,
+                      "status": "timedOut",
+                      "duration": 33907,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 16,
+                            "line": 40
+                          },
+                          "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=\"Find Consultants\"')\u001b[22m\n\n\n  38 |   test('should display quote request form with consultant pre-populated', async () => {\n  39 |     // Navigate to quote request via consultant profile\n> 40 |     await page.click('text=\"Find Consultants\"');\n     |                ^\n  41 |     await page.waitForLoadState('networkidle');\n  42 |     \n  43 |     await page.click('text=\"View Profile\"');\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:40:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:26:26.671Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-Mobile-Safari/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-Mobile-Safari/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-ac9736b9239e015cc300",
+              "file": "quote-request.spec.ts",
+              "line": 38,
+              "column": 3
+            },
+            {
+              "title": "should display quote request form with essential fields",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 50,
+                      "parallelIndex": 8,
+                      "status": "failed",
+                      "duration": 27395,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:82:62",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 62,
+                          "line": 82
+                        },
+                        "snippet": "  80 |     \n  81 |     // Should have basic contact and message fields\n> 82 |     expect(hasNameField || hasEmailField || hasMessageField).toBeTruthy();\n     |                                                              ^\n  83 |   });\n  84 |\n  85 |   test('should validate required fields on form submission', async () => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 62,
+                            "line": 82
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  80 |     \n  81 |     // Should have basic contact and message fields\n> 82 |     expect(hasNameField || hasEmailField || hasMessageField).toBeTruthy();\n     |                                                              ^\n  83 |   });\n  84 |\n  85 |   test('should validate required fields on form submission', async () => {\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:82:62"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:26:26.368Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-4a16a--form-with-essential-fields-Mobile-Safari/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-4a16a--form-with-essential-fields-Mobile-Safari/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 62,
+                        "line": 82
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-3d856f10bb71378832bc",
+              "file": "quote-request.spec.ts",
+              "line": 61,
+              "column": 3
+            },
+            {
+              "title": "should validate required fields on form submission",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 52,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 26598,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:26:27.466Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-bc098f74cc1caeb335d7",
+              "file": "quote-request.spec.ts",
+              "line": 85,
+              "column": 3
+            },
+            {
+              "title": "should validate email format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 51,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 26098,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:26:26.265Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-680d895411f58f0e2173",
+              "file": "quote-request.spec.ts",
+              "line": 113,
+              "column": 3
+            },
+            {
+              "title": "should display Brexit service categories",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 53,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 26997,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:182:111",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 111,
+                          "line": 182
+                        },
+                        "snippet": "  180 |     \n  181 |     // Should have Brexit-related services\n> 182 |     expect(hasCustomsService || hasVATService || hasComplianceService || hasTradeService || hasBrexitService).toBeTruthy();\n      |                                                                                                               ^\n  183 |   });\n  184 |\n  185 |   test('should submit quote request with valid data', async () => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 111,
+                            "line": 182
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  180 |     \n  181 |     // Should have Brexit-related services\n> 182 |     expect(hasCustomsService || hasVATService || hasComplianceService || hasTradeService || hasBrexitService).toBeTruthy();\n      |                                                                                                               ^\n  183 |   });\n  184 |\n  185 |   test('should submit quote request with valid data', async () => {\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:182:111"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:26:29.167Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-Mobile-Safari/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-Mobile-Safari/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 111,
+                        "line": 182
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-b993dcb7c68e1a5286a8",
+              "file": "quote-request.spec.ts",
+              "line": 155,
+              "column": 3
+            },
+            {
+              "title": "should submit quote request with valid data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 54,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 30496,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:26:30.466Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-3205cd09f7c927ada0c2",
+              "file": "quote-request.spec.ts",
+              "line": 185,
+              "column": 3
+            },
+            {
+              "title": "should handle multi-step quote request form",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 55,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 25213,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:26:31.265Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-9bbed091af414ed51a33",
+              "file": "quote-request.spec.ts",
+              "line": 270,
+              "column": 3
+            },
+            {
+              "title": "should handle phone number field validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 56,
+                      "parallelIndex": 9,
+                      "status": "passed",
+                      "duration": 24696,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:26:34.071Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-75eb34678de16566c500",
+              "file": "quote-request.spec.ts",
+              "line": 316,
+              "column": 3
+            },
+            {
+              "title": "should display company/business information fields",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 58,
+                      "parallelIndex": 10,
+                      "status": "failed",
+                      "duration": 24404,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:382:69",
+                        "location": {
+                          "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                          "column": 69,
+                          "line": 382
+                        },
+                        "snippet": "  380 |     \n  381 |     // Should have business context fields\n> 382 |     expect(hasCompanyField || hasBusinessField || hasIndustryField).toBeTruthy();\n      |                                                                     ^\n  383 |   });\n  384 |\n  385 |   test('should handle urgent/priority request options', async () => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                            "column": 69,
+                            "line": 382
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  380 |     \n  381 |     // Should have business context fields\n> 382 |     expect(hasCompanyField || hasBusinessField || hasIndustryField).toBeTruthy();\n      |                                                                     ^\n  383 |   });\n  384 |\n  385 |   test('should handle urgent/priority request options', async () => {\n    at /workspace/findbrexit-consultants/tests/quote-request.spec.ts:382:69"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:26:37.271Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-ae978-business-information-fields-Mobile-Safari/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/findbrexit-consultants/test-results/quote-request-Quote-Reques-ae978-business-information-fields-Mobile-Safari/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/findbrexit-consultants/tests/quote-request.spec.ts",
+                        "column": 69,
+                        "line": 382
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-075eb2d9bf6a0344e9ed",
+              "file": "quote-request.spec.ts",
+              "line": 363,
+              "column": 3
+            },
+            {
+              "title": "should handle urgent/priority request options",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 57,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 25195,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:26:36.372Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-4ecb1540f9a4c4a36ac2",
+              "file": "quote-request.spec.ts",
+              "line": 385,
+              "column": 3
+            },
+            {
+              "title": "should display responsive layout on mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 59,
+                      "parallelIndex": 15,
+                      "status": "passed",
+                      "duration": 24393,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-27T00:26:38.265Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a3e37d759c0d89cf80aa-d884f894cce3ab04a54e",
+              "file": "quote-request.spec.ts",
+              "line": 410,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-27T00:23:26.933Z",
+    "duration": 218447.33000000002,
+    "expected": 26,
+    "skipped": 0,
+    "unexpected": 34,
+    "flaky": 0
+  }
+}
