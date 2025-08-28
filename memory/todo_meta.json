@@ -5,35 +5,35 @@
         "id": "1",
         "content": "Update domain references throughout the project",
         "details": "1. Search and update all occurrences of 'findbrexitconsultants.co.uk' to 'FindBrexitConsultants.co.uk' in documentation files. 2. Update any project configuration files that reference the old domain. 3. Ensure consistency across all files including README.md, CORS setup guides, and deployment instructions.",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "2": {
         "id": "2",
         "content": "Create GitHub Actions workflow for Vercel deployment",
         "details": "1. Create .github/workflows/vercel-deploy.yml with proper build and deployment steps. 2. Configure workflow to trigger on pushes to main branch. 3. Set up environment variables and secrets handling for Vercel deployment token. 4. Ensure the workflow uses the correct build command (npm run build) and output directory (./dist).",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "3": {
         "id": "3",
         "content": "Create GitHub Actions workflow for Hostinger deployment",
-        "details": "1. Create .github/workflows/hostinger-deploy.yml with build and FTP upload steps. 2. Configure workflow to run in parallel with Vercel deployment on pushes to main branch. 3. Set up FTP credentials and environment variables for Hostinger deployment. 4. Use the hostinger-specific build command (npm run build:hostinger) and create necessary .htaccess for SPA routing.",
-        "status": "pending",
+        "details": "1. Create .github/workflows/hostinger-deploy.yml with build and FTP upload steps targeting https://findbrexitconsultants.co.uk/. 2. Configure workflow to run in parallel with Vercel deployment on pushes to main branch. 3. Set up FTP credentials and environment variables for Hostinger deployment. 4. Use the hostinger-specific build command (npm run build:hostinger) and create necessary .htaccess for SPA routing.",
+        "status": "completed",
         "priority": "high"
       },
       "4": {
         "id": "4",
         "content": "Configure Git repository for GitHub integration",
         "details": "1. Set up the correct Git remote URL for https://github.com/mitchell1972/findbrexitconsultants.git. 2. Add all project files to the repository. 3. Create an initial commit with all the updated files. 4. Prepare the repository for pushing to the specified GitHub remote.",
-        "status": "pending",
+        "status": "completed",
         "priority": "medium"
       },
       "5": {
         "id": "5",
         "content": "Create deployment documentation and setup instructions",
         "details": "1. Create comprehensive documentation explaining the GitHub Actions setup. 2. Provide step-by-step instructions for configuring required secrets in the GitHub repository (VERCEL_TOKEN, Hostinger FTP credentials). 3. Include testing and verification steps for both deployment pipelines. 4. Document the complete CI/CD process for future maintenance.",
-        "status": "pending",
+        "status": "completed",
         "priority": "medium"
       }
     }
