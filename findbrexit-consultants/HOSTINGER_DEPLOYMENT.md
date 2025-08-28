@@ -1,7 +1,7 @@
 # Hostinger Deployment Configuration
 
 ## Domain Setup
-- **Production Domain**: https://findbrexitconsultants.co.uk
+- **Production Domain**: https://FindBrexitConsultants.co.uk
 - **Hosting Provider**: Hostinger
 - **Server Type**: Apache (shared/premium hosting)
 
@@ -14,7 +14,7 @@
 
 ## Environment Variables for Production:
 ```
-VITE_SITE_URL=https://findbrexitconsultants.co.uk
+VITE_SITE_URL=https://FindBrexitConsultants.co.uk
 VITE_SUPABASE_URL=https://zjfilhbczaquokqlcoej.supabase.co
 VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpqZmlsaGJjemFxdW9rcWxjb2VqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU1MzQ2MjIsImV4cCI6MjA3MTExMDYyMn0.b6YATor8UyDwYSiSagOQUxM_4sqfCv-89CBXVgC2hP0
 BUILD_MODE=prod
@@ -42,8 +42,8 @@ npm run preview:prod
 
 ## Supabase CORS Configuration:
 Ensure the following domain is added to Supabase CORS settings:
-- https://findbrexitconsultants.co.uk
-- https://*.findbrexitconsultants.co.uk (for subdomains)
+- https://FindBrexitConsultants.co.uk
+- https://*.FindBrexitConsultants.co.uk (for subdomains)
 
 ## SSL Certificate:
 Hostinger typically provides free SSL certificates. Ensure HTTPS is enabled for the domain.

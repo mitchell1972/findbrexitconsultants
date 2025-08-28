@@ -60,7 +60,7 @@ if [ -d "dist" ]; then
     echo ""
     echo "🎉 Production build ready for Hostinger deployment!"
     echo "📤 Upload the contents of the 'dist/' folder to your Hostinger public_html directory."
-    echo "🌐 Domain: https://findbrexitconsultants.co.uk"
+    echo "🌐 Domain: https://FindBrexitConsultants.co.uk"
     echo ""
     echo "📋 Next steps:"
     echo "1. Upload dist/ contents to Hostinger public_html"
