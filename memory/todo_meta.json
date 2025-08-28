@@ -3,37 +3,37 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Investigate Authentication System Issues",
-        "details": "1. Test sign-up functionality with various scenarios. 2. Test sign-in process. 3. Check for console errors. 4. Verify Supabase authentication configuration.",
-        "status": "completed",
+        "content": "Update domain references throughout the project",
+        "details": "1. Search and update all occurrences of 'findbrexitconsultants.co.uk' to 'FindBrexitConsultants.co.uk' in documentation files. 2. Update any project configuration files that reference the old domain. 3. Ensure consistency across all files including README.md, CORS setup guides, and deployment instructions.",
+        "status": "pending",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Debug Registration Form Submission",
-        "details": "1. Test form submission at each step. 2. Identify where form failures occur. 3. Check for specific error messages. 4. Verify data persistence between steps.",
-        "status": "completed",
+        "content": "Create GitHub Actions workflow for Vercel deployment",
+        "details": "1. Create .github/workflows/vercel-deploy.yml with proper build and deployment steps. 2. Configure workflow to trigger on pushes to main branch. 3. Set up environment variables and secrets handling for Vercel deployment token. 4. Ensure the workflow uses the correct build command (npm run build) and output directory (./dist).",
+        "status": "pending",
         "priority": "high"
       },
       "3": {
         "id": "3",
-        "content": "Analyze Browser Console Errors",
-        "details": "1. Check console logs during registration. 2. Identify JavaScript errors. 3. Check network requests. 4. Verify API responses.",
-        "status": "completed",
+        "content": "Create GitHub Actions workflow for Hostinger deployment",
+        "details": "1. Create .github/workflows/hostinger-deploy.yml with build and FTP upload steps. 2. Configure workflow to run in parallel with Vercel deployment on pushes to main branch. 3. Set up FTP credentials and environment variables for Hostinger deployment. 4. Use the hostinger-specific build command (npm run build:hostinger) and create necessary .htaccess for SPA routing.",
+        "status": "pending",
         "priority": "high"
       },
       "4": {
         "id": "4",
-        "content": "Test Complete Registration Flow",
-        "details": "1. End-to-end registration test. 2. Database verification. 3. Email verification process. 4. Dashboard access after registration.",
-        "status": "completed",
-        "priority": "high"
+        "content": "Configure Git repository for GitHub integration",
+        "details": "1. Set up the correct Git remote URL for https://github.com/mitchell1972/findbrexitconsultants.git. 2. Add all project files to the repository. 3. Create an initial commit with all the updated files. 4. Prepare the repository for pushing to the specified GitHub remote.",
+        "status": "pending",
+        "priority": "medium"
       },
       "5": {
         "id": "5",
-        "content": "Run Full Test Suite",
-        "details": "1. Execute all Playwright tests. 2. Generate comprehensive test report. 3. Document all failures and fixes. 4. Verify all authentication flows work.",
-        "status": "completed",
+        "content": "Create deployment documentation and setup instructions",
+        "details": "1. Create comprehensive documentation explaining the GitHub Actions setup. 2. Provide step-by-step instructions for configuring required secrets in the GitHub repository (VERCEL_TOKEN, Hostinger FTP credentials). 3. Include testing and verification steps for both deployment pipelines. 4. Document the complete CI/CD process for future maintenance.",
+        "status": "pending",
         "priority": "medium"
       }
     }
