@@ -1,0 +1,175 @@
+
+Running 50 tests using 16 workers
+
+      1 …ration Flows › should validate required fields on business registration
+      2 …ration Flows › should validate required fields on business registration
+      3 …gistration Flows › should display "List Your Business" option in header
+      4 …istration Flows › should navigate to business listing/registration page
+      5 …Business Registration Flows › should handle business category selection
+      6 …s Registration Flows › should display business registration form fields
+      7 …Business Registration Flows › should handle business category selection
+      8 …ness Registration Flows › should handle terms and conditions acceptance
+      9 … Registration Flows › should display information about listing benefits
+     10 …s Registration Flows › should display business registration form fields
+     11 …istration Flows › should validate email format in business registration
+     12 …gistration Flows › should display "List Your Business" option in header
+     13 …istration Flows › should navigate to business listing/registration page
+     14 … & Business Registration Flows › should handle mobile responsive layout
+     15 …istration Flows › should validate email format in business registration
+     16 …egistration Flows › should submit business registration with valid data
+  ✓   3 …on Flows › should display "List Your Business" option in header (15.4s)  ✓   1 …lows › should validate required fields on business registration (18.0s)  ✓  13 …n Flows › should navigate to business listing/registration page (18.4s)  ✓   6 …ration Flows › should display business registration form fields (20.1s)  ✓   9 …ation Flows › should display information about listing benefits (20.8s)  ✓   7 … Registration Flows › should handle business category selection (23.7s)  ✓  15 …n Flows › should validate email format in business registration (23.0s)  ✓   8 …istration Flows › should handle terms and conditions acceptance (25.0s)  ✓  16 …ion Flows › should submit business registration with valid data (24.3s)  ✓  14 …ess Registration Flows › should handle mobile responsive layout (27.3s)     17 …ness Registration Flows › should handle terms and conditions acceptance
+     18 … Registration Flows › should display information about listing benefits
+     19 … & Business Registration Flows › should handle mobile responsive layout
+     20 …egistration Flows › should submit business registration with valid data
+     21 …gistration Flows › should display "List Your Business" option in header
+     22 …istration Flows › should navigate to business listing/registration page
+     23 …s Registration Flows › should display business registration form fields
+     24 …istration Flows › should validate email format in business registration
+     25 …ration Flows › should validate required fields on business registration
+     26 …Business Registration Flows › should handle business category selection
+  ✘   4 …n Flows › should navigate to business listing/registration page (42.3s)  ✘   5 … Registration Flows › should handle business category selection (38.5s)  ✘  10 …ration Flows › should display business registration form fields (39.6s)  ✘   2 …lows › should validate required fields on business registration (43.7s)
+  ✘  12 …on Flows › should display "List Your Business" option in header (42.4s)Testing stopped early after 5 maximum allowed failures.
+  ✘  11 …n Flows › should validate email format in business registration (41.6s)  ✘  23 …ration Flows › should display business registration form fields (294ms)  ✘  26 … Registration Flows › should handle business category selection (301ms)  ✘  24 …n Flows › should validate email format in business registration (388ms)  ✘  21 …on Flows › should display "List Your Business" option in header (109ms)  ✘  25 …lows › should validate required fields on business registration (587ms)  ✘  19 …ess Registration Flows › should handle mobile responsive layout (598ms)  ✘  20 …ion Flows › should submit business registration with valid data (591ms)  ✘  22 …n Flows › should navigate to business listing/registration page (307ms)  ✘  18 …ration Flows › should display information about listing benefits (2.0s)  ✘  17 …gistration Flows › should handle terms and conditions acceptance (5.5s)
+
+  1) [firefox] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    Error: page.goto: Target page, context or browser has been closed
+    Call log:
+      - navigating to "https://d8kvny808s66.space.minimax.io/", waiting until "load"
+
+
+       6 |   test.beforeEach(async ({ browser }) => {
+       7 |     page = await browser.newPage();
+    >  8 |     await page.goto('/');
+         |                ^
+       9 |   });
+      10 |
+      11 |   test.afterEach(async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:8:16
+
+  2) [firefox] › tests/auth.spec.ts:46:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    Error: page.goto: Target page, context or browser has been closed
+    Call log:
+      - navigating to "https://d8kvny808s66.space.minimax.io/", waiting until "load"
+
+
+       6 |   test.beforeEach(async ({ browser }) => {
+       7 |     page = await browser.newPage();
+    >  8 |     await page.goto('/');
+         |                ^
+       9 |   });
+      10 |
+      11 |   test.afterEach(async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:8:16
+
+  3) [firefox] › tests/auth.spec.ts:77:3 › Authentication & Business Registration Flows › should display business registration form fields 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    Error: page.goto: Target page, context or browser has been closed
+    Call log:
+      - navigating to "https://d8kvny808s66.space.minimax.io/", waiting until "load"
+
+
+       6 |   test.beforeEach(async ({ browser }) => {
+       7 |     page = await browser.newPage();
+    >  8 |     await page.goto('/');
+         |                ^
+       9 |   });
+      10 |
+      11 |   test.afterEach(async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:8:16
+
+  4) [firefox] › tests/auth.spec.ts:106:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+  5) [firefox] › tests/auth.spec.ts:193:3 › Authentication & Business Registration Flows › should handle business category selection 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    Error: page.goto: Target page, context or browser has been closed
+    Call log:
+      - navigating to "https://d8kvny808s66.space.minimax.io/", waiting until "load"
+
+
+       6 |   test.beforeEach(async ({ browser }) => {
+       7 |     page = await browser.newPage();
+    >  8 |     await page.goto('/');
+         |                ^
+       9 |   });
+      10 |
+      11 |   test.afterEach(async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:8:16
+
+  5 failed
+    [firefox] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+    [firefox] › tests/auth.spec.ts:46:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+    [firefox] › tests/auth.spec.ts:77:3 › Authentication & Business Registration Flows › should display business registration form fields 
+    [firefox] › tests/auth.spec.ts:106:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+    [firefox] › tests/auth.spec.ts:193:3 › Authentication & Business Registration Flows › should handle business category selection 
+  11 interrupted
+    [firefox] › tests/auth.spec.ts:151:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+    [firefox] › tests/auth.spec.ts:240:3 › Authentication & Business Registration Flows › should display information about listing benefits 
+    [firefox] › tests/auth.spec.ts:296:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance 
+    [firefox] › tests/auth.spec.ts:378:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+    [firefox] › tests/auth.spec.ts:429:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+    [webkit] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+    [webkit] › tests/auth.spec.ts:46:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+    [webkit] › tests/auth.spec.ts:77:3 › Authentication & Business Registration Flows › should display business registration form fields 
+    [webkit] › tests/auth.spec.ts:106:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+    [webkit] › tests/auth.spec.ts:151:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+    [webkit] › tests/auth.spec.ts:193:3 › Authentication & Business Registration Flows › should handle business category selection 
+  24 did not run
+  10 passed (1.8m)
+  1 error was not a part of any test, see above for details

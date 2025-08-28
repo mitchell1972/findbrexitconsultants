@@ -9,14 +9,16 @@ export function SignInPage() {
   const [password, setPassword] = useState('')
   const [showPassword, setShowPassword] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState('')
   const { signIn } = useAuth()
   const navigate = useNavigate()
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    setError('') // Clear previous errors
     
     if (!email || !password) {
-      toast.error('Please fill in all fields')
+      setError('Please enter both email and password')
       return
     }
 
@@ -25,13 +27,22 @@ export function SignInPage() {
       const { error } = await signIn(email, password)
       
       if (error) {
-        toast.error(error.message || 'Failed to sign in')
+        // Display specific error messages
+        if (error.message.includes('Invalid login credentials')) {
+          setError('Invalid email or password. Please check your credentials and try again.')
+        } else if (error.message.includes('Email not confirmed')) {
+          setError('Please check your email and confirm your account before signing in.')
+        } else {
+          setError(error.message || 'Sign in failed. Please try again.')
+        }
+        toast.error('Sign in failed')
       } else {
         toast.success('Welcome back!')
         navigate('/dashboard')
       }
     } catch (error: any) {
-      toast.error(error.message || 'An unexpected error occurred')
+      setError('An unexpected error occurred. Please try again.')
+      toast.error('An unexpected error occurred')
     } finally {
       setIsLoading(false)
     }
@@ -58,6 +69,11 @@ export function SignInPage() {
 
         {/* Sign in form */}
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+          {error && (
+            <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg">
+              <p className="text-red-600 text-sm">{error}</p>
+            </div>
+          )}
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">

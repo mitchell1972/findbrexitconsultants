@@ -3,43 +3,36 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Integrate Stripe Payment System for FindBrexit Consultants Platform",
-        "details": "Add complete Stripe payment processing for subscription plans (Starter £29/month, Professional £99/month) including payment forms, subscription management, webhooks, and billing portal access.",
+        "content": "Investigate Authentication System Issues",
+        "details": "1. Test sign-up functionality with various scenarios. 2. Test sign-in process. 3. Check for console errors. 4. Verify Supabase authentication configuration.",
         "status": "completed",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Setup Stripe Products and Pricing in Stripe Dashboard",
-        "details": "Create corresponding products and recurring price objects in Stripe for all subscription tiers: Starter (£29/month), Professional (£99/month), and any other plans found in the application.",
+        "content": "Debug Registration Form Submission",
+        "details": "1. Test form submission at each step. 2. Identify where form failures occur. 3. Check for specific error messages. 4. Verify data persistence between steps.",
         "status": "completed",
         "priority": "high"
       },
       "3": {
         "id": "3",
-        "content": "Implement Stripe Checkout Integration",
-        "details": "Add Stripe Checkout sessions for subscription sign-ups with 14-day free trial, upgrade/downgrade functionality, promotional pricing support, and payment processing with proper success/cancel page handling.",
+        "content": "Analyze Browser Console Errors",
+        "details": "1. Check console logs during registration. 2. Identify JavaScript errors. 3. Check network requests. 4. Verify API responses.",
         "status": "completed",
         "priority": "high"
       },
       "4": {
         "id": "4",
-        "content": "Build Subscription Management Features",
-        "details": "Create customer portal access, billing history, payment method management, plan changes, and subscription cancellation functionality.",
+        "content": "Test Complete Registration Flow",
+        "details": "1. End-to-end registration test. 2. Database verification. 3. Email verification process. 4. Dashboard access after registration.",
         "status": "completed",
         "priority": "high"
       },
       "5": {
         "id": "5",
-        "content": "Implement Stripe Webhooks Handler",
-        "details": "Set up Supabase Edge Functions to handle Stripe webhooks for subscription events (created, updated, cancelled, payment succeeded/failed) to keep local database in sync.",
-        "status": "completed",
-        "priority": "high"
-      },
-      "6": {
-        "id": "6",
-        "content": "Add Payment Security & User Experience Enhancements",
-        "details": "Implement proper error handling, loading states, payment confirmation messages, trial period messaging, and security measures for PCI compliance.",
+        "content": "Run Full Test Suite",
+        "details": "1. Execute all Playwright tests. 2. Generate comprehensive test report. 3. Document all failures and fixes. 4. Verify all authentication flows work.",
         "status": "completed",
         "priority": "medium"
       }

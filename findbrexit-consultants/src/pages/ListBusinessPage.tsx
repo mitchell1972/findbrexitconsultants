@@ -183,19 +183,73 @@ export function ListBusinessPage() {
     setIsSubmitting(true)
     
     try {
-      // Insert consultant data
-      const { error } = await supabase
+      // Extract services and industries from form data
+      const { services, industries, ...consultantData } = formData
+      
+      // 1. Insert consultant data (without services/industries)
+      const { data: consultant, error: consultantError } = await supabase
         .from('brexit_consultants')
         .insert({
-          ...formData,
+          ...consultantData,
           user_id: user.id,
           verified: false,
           featured: false,
-          profile_views: 0,
-          created_at: new Date().toISOString()
+          profile_views: 0
         })
+        .select()
+        .single()
       
-      if (error) throw error
+      if (consultantError) throw consultantError
+      
+      // 2. Insert services into junction table
+      if (services && services.length > 0) {
+        // First, get service IDs
+        const { data: serviceTypes, error: serviceError } = await supabase
+          .from('brexit_service_types')
+          .select('id, name')
+          .in('name', services)
+        
+        if (serviceError) throw serviceError
+        
+        // Insert consultant-service relationships
+        const serviceInserts = serviceTypes.map(service => ({
+          consultant_id: consultant.id,
+          service_type_id: service.id
+        }))
+        
+        if (serviceInserts.length > 0) {
+          const { error: serviceJunctionError } = await supabase
+            .from('brexit_consultant_services')
+            .insert(serviceInserts)
+          
+          if (serviceJunctionError) throw serviceJunctionError
+        }
+      }
+      
+      // 3. Insert industries into junction table
+      if (industries && industries.length > 0) {
+        // First, get industry IDs
+        const { data: industryTypes, error: industryError } = await supabase
+          .from('brexit_industries')
+          .select('id, name')
+          .in('name', industries)
+        
+        if (industryError) throw industryError
+        
+        // Insert consultant-industry relationships
+        const industryInserts = industryTypes.map(industry => ({
+          consultant_id: consultant.id,
+          industry_id: industry.id
+        }))
+        
+        if (industryInserts.length > 0) {
+          const { error: industryJunctionError } = await supabase
+            .from('brexit_consultant_industries')
+            .insert(industryInserts)
+          
+          if (industryJunctionError) throw industryJunctionError
+        }
+      }
       
       setShowSuccess(true)
       toast.success('Registration submitted successfully! We will review your application.')
@@ -207,7 +261,21 @@ export function ListBusinessPage() {
       
     } catch (error: any) {
       console.error('Registration error:', error)
-      toast.error('Failed to submit registration. Please try again.')
+      
+      // Provide specific error feedback
+      let errorMessage = 'Failed to submit registration. Please try again.'
+      
+      if (error.message) {
+        if (error.message.includes('duplicate key')) {
+          errorMessage = 'A business with this email is already registered.'
+        } else if (error.message.includes('foreign key')) {
+          errorMessage = 'Please ensure all selected services and industries are valid.'
+        } else {
+          errorMessage = `Registration failed: ${error.message}`
+        }
+      }
+      
+      toast.error(errorMessage)
     } finally {
       setIsSubmitting(false)
     }

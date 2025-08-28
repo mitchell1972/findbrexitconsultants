@@ -33,7 +33,7 @@ export function SignUpPage() {
     }
 
     if (formData.password.length < 6) {
-      toast.error('Password must be at least 6 characters')
+      toast.error('Password must be at least 6 characters long')
       return
     }
 
@@ -52,7 +52,18 @@ export function SignUpPage() {
       const { error } = await signUp(formData.email, formData.password)
       
       if (error) {
-        toast.error(error.message || 'Failed to create account')
+        // Improved error handling
+        let errorMessage = 'Failed to create account'
+        
+        if (error.message.includes('email')) {
+          errorMessage = 'Please enter a valid email address'
+        } else if (error.message.includes('password')) {
+          errorMessage = 'Password does not meet requirements'
+        } else {
+          errorMessage = error.message
+        }
+        
+        toast.error(errorMessage)
       } else {
         toast.success('Account created! Please check your email to verify your account.')
         navigate('/signin')
