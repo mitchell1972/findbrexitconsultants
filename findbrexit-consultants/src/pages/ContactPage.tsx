@@ -137,8 +137,8 @@ export function ContactPage() {
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                   <p className="text-gray-600 text-sm space-y-1">
-                    <a href="mailto:info@findbrexitconsultants.co.uk" className="block hover:text-[#003366] transition-colors">
-                      info@findbrexitconsultants.co.uk
+                    <a href="mailto:info@FindBrexitConsultants.co.uk" className="block hover:text-[#003366] transition-colors">
+                      info@FindBrexitConsultants.co.uk
                     </a>
                   </p>
                 </div>

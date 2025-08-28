@@ -54,7 +54,7 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-[#FFD700]" />
-                <span className="text-sm">info@findbrexitconsultants.co.uk</span>
+                <span className="text-sm">info@FindBrexitConsultants.co.uk</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-[#FFD700]" />

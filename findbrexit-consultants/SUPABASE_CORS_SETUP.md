@@ -8,12 +8,12 @@ Add these domains to your Supabase project's CORS settings:
 
 ### Primary Domain
 ```
-https://findbrexitconsultants.co.uk
+https://FindBrexitConsultants.co.uk
 ```
 
 ### Subdomains (if needed)
 ```
-https://www.findbrexitconsultants.co.uk
+https://www.FindBrexitConsultants.co.uk
 https://*.findbrexitconsultants.co.uk
 ```
 
@@ -46,7 +46,7 @@ supabase login
 supabase link --project-ref zjfilhbczaquokqlcoej
 
 # Update CORS settings
-supabase projects update-cors --origins "https://findbrexitconsultants.co.uk,https://www.findbrexitconsultants.co.uk"
+supabase projects update-cors --origins "https://FindBrexitConsultants.co.uk,https://www.FindBrexitConsultants.co.uk"
 ```
 
 ## Verification Steps
@@ -106,7 +106,7 @@ If you're using Supabase Edge Functions, they inherit the project's CORS setting
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
 
 const corsHeaders = {
-  'Access-Control-Allow-Origin': 'https://findbrexitconsultants.co.uk',
+  'Access-Control-Allow-Origin': 'https://FindBrexitConsultants.co.uk',
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
   'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
 }

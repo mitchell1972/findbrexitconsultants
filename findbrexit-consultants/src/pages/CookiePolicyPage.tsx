@@ -224,7 +224,7 @@ export function CookiePolicyPage() {
                   If you have any questions about our Cookie Policy or how we use cookies, please don't hesitate to contact us:
                 </p>
                 <div className="space-y-2 text-gray-700">
-                  <p><strong>Email:</strong> privacy@findbrexitconsultants.co.uk</p>
+                  <p><strong>Email:</strong> privacy@FindBrexitConsultants.co.uk</p>
                   <p><strong>Phone:</strong> +44 20 1234 5678</p>
                   <p><strong>Address:</strong> FindBrexitConsultants Ltd, 123 Business Street, London, UK</p>
                 </div>
