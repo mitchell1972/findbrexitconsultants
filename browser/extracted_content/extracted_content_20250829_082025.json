@@ -1,0 +1,32 @@
+📄 Extracted from page: findbrexitconsultants/.github/workflows/deploy-vercel.yml at main · mitchell1972/findbrexitconsultants · GitHub
+URL: https://github.com/mitchell1972/findbrexitconsultants/blob/main/.github/workflows/deploy-vercel.yml
+
+Extracted content:
+```json
+{
+    "title": "findbrexitconsultants/.github/workflows/deploy-vercel.yml at main · mitchell1972/findbrexitconsultants · GitHub",
+    "url": "https://github.com/mitchell1972/findbrexitconsultants/blob/main/.github/workflows/deploy-vercel.yml",
+    "summary": "This GitHub Actions workflow (`deploy-vercel.yml`) automates the deployment of the `findbrexitconsultants` project to Vercel. It is configured to run automatically on `push` events to the `main` or `master` branches, on `pull_request` events targeting these branches, or can be triggered manually via `workflow_dispatch`. The workflow utilizes environment variables for Vercel organization and project IDs sourced from GitHub secrets. It defines two primary jobs: `Deploy-Preview` for pull requests and `Deploy-Production` for pushes and manual triggers, both executing on `ubuntu-latest`. Both jobs share common steps including checking out the code, setting up Node.js (v18) and pnpm (v9), caching pnpm dependencies, installing project dependencies using `pnpm install --no-frozen-lockfile`, installing the Vercel CLI, pulling Vercel environment information, building artifacts, and finally deploying to Vercel. The `Deploy-Production` job specifically targets production environments with appropriate Vercel flags and includes a conditional check for the presence of Supabase Edge Functions.",
+    "key_points": [
+        "**Workflow Name**: `Deploy to Vercel`",
+        "**Triggers**: The workflow runs on `push` events to `main` or `master` branches, `pull_request` events targeting these branches, or can be initiated manually via `workflow_dispatch`.",
+        "**Environment Variables**: `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID` are configured using GitHub secrets.",
+        "**Common Steps (across both `Deploy-Preview` and `Deploy-Production` jobs)**:",
+        "-   `Checkout code`: Uses `actions/checkout@v4` to check out the repository code.",
+        "-   `Setup Node.js`: Uses `actions/setup-node@v4` to set up Node.js version `18`.",
+        "-   `Install pnpm`: Uses `pnpm/action-setup@v4` to install pnpm version `9` (`run_install: false`).",
+        "-   `Get pnpm store directory`: `shell: bash`, `run: echo \"STORE_PATH=$(pnpm store path --silent)\" >> $GITHUB_ENV` to get the pnpm store path for caching.",
+        "-   `Setup pnpm cache`: Uses `actions/cache@v4` to cache the pnpm store, leveraging `GITHUB_ENV.STORE_PATH` and `pnpm-lock.yaml` for key generation.",
+        "-   **`Install dependencies`**: `run: pnpm install --no-frozen-lockfile`. This step installs project dependencies using pnpm, allowing the `pnpm-lock.yaml` file to be updated.",
+        "-   `Install Vercel CLI`: `run: npm install --global vercel@canary` to install the Vercel command-line interface.",
+        "**Job: `Deploy-Preview` (for Pull Requests)**:",
+        "-   Conditional execution: `if: github.event_name == 'pull_request'`.",
+        "-   Pulls Vercel environment information: `run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}`.",
+        "-   Builds project artifacts: `run: vercel build --token=${{ secrets.VERCEL_TOKEN }}`.",
+        "-   Deploys project artifacts to Vercel: `run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}`.",
+        "**Job: `Deploy-Production` (for Pushes to main/master or Manual Dispatch)**:",
+        "-   Conditional execution: `if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') || github.event_name == 'workflow_dispatch'`.",
+        "-   Pulls Vercel production environment information: `run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}`.",
+        "-   Builds project artifacts for production: `run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}`.",
+        "-   Deploys project artifacts to Vercel production: `run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}`.",
+        "-   `Deploy Supabase Edge Functions`: A conditional step that checks for the existence of the `supabase/functions` directory and prints a message indicating where Supabase CLI deployment would occur (`run: | if [ -d \"

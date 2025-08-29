@@ -1,0 +1,24 @@
+📄 Extracted from page: Message 306666558050542 - 1756423200 · mitchell1972/findbrexitconsultants@33b1225 · GitHub
+URL: https://github.com/mitchell1972/findbrexitconsultants/actions/runs/17310336500/job/49143001271
+
+Extracted content:
+```json
+{
+    "title": "Message 306666558050542 - 1756423200 · mitchell1972/findbrexitconsultants@33b1225 · GitHub",
+    "url": "https://github.com/mitchell1972/findbrexitconsultants/actions/runs/17310336500/job/49143001271",
+    "summary": "This GitHub Actions job page displays the detailed logs for a failed 'test-and-deploy' workflow run on the 'mitchell1972/findbrexitconsultants' repository. The job, identified by 'Message 306666558050542 - 1756423200 #3', failed after 19 seconds. The core issue is an error in the 'Install dependencies' step, which terminated with exit code 1. All individual step logs are truncated on this page, indicating that full log details would require signing in or downloading the complete log file.",
+    "key_points": [
+        "**Job Status**: The 'test-and-deploy' job failed on August 28, 2025, after 19 seconds.",
+        "**Failed Step**: The 'Install dependencies' step is specifically identified as having an error.",
+        "**Error Annotation**: The annotation for the 'Install dependencies' step states: 'Process completed with exit code 1.'",
+        "**Log Truncation**: For the 'Install dependencies' step, and all other steps, the log information is truncated with the message: 'This step has been truncated due to its large size. Download the full logs from the menu once the workflow run has completed.'",
+        "**Access to Full Logs**: The page indicates that full logs are not displayed without signing in ('Sign in to view logs') or downloading them."
+    ],
+    "relevant_links": [
+        "https://github.com/mitchell1972/findbrexitconsultants/actions/runs/17310336500",
+        "https://github.com/mitchell1972/findbrexitconsultants/actions/runs/17310336500/usage",
+        "https://github.com/mitchell1972/findbrexitconsultants/actions/runs/17310336500/workflow"
+    ],
+    "file_name": "github_actions_job_error_log.json"
+}
+```

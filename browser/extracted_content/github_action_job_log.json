@@ -1,0 +1,44 @@
+📄 Extracted from page: Message 306666558050542 - 1756423200 · mitchell1972/findbrexitconsultants@33b1225 · GitHub
+URL: https://github.com/mitchell1972/findbrexitconsultants/actions/runs/17310336500/job/49143001271
+
+Extracted content:
+```json
+{
+  "title": "Message 306666558050542 - 1756423200 · mitchell1972/findbrexitconsultants@33b1225 · GitHub",
+  "url": "https://github.com/mitchell1972/findbrexitconsultants/actions/runs/17310336500/job/49143001271",
+  "summary": "This GitHub Actions job `test-and-deploy` for the `mitchell1972/findbrexitconsultants` repository failed on August 28, 2025, after 19 seconds. The job log indicates that the 'Install dependencies' step completed with exit code 1, which caused the overall job failure. All individual step logs are truncated on the page, advising to download the full logs for complete details.",
+  "key_points": [
+    "Job Name: test-and-deploy",
+    "Job Status: failed",
+    "Job Duration: 19s",
+    "Date: Aug 28, 2025",
+    "Overall Error: 1 error reported in annotations.",
+    "Specific Failed Step: Install dependencies",
+    "Error Details: 'Install dependencies' Process completed with exit code 1.",
+    "Log Truncation Note: All individual step logs on this page are truncated due to their large size, and advise downloading full logs for complete details.",
+    "Steps and Status/Duration (with truncation message):",
+    "- Set up job: 2s (Error: This step has been truncated...)",
+    "- Run actions/checkout@v4: 7s (Error: This step has been truncated...)",
+    "- Setup Node.js: 1s (Error: This step has been truncated...)",
+    "- Setup pnpm: 2s (Error: This step has been truncated...)",
+    "- Get pnpm store directory: 1s (Error: This step has been truncated...)",
+    "- Setup pnpm cache: 1s (Error: This step has been truncated...)",
+    "- Install dependencies: 1s (FAILED - Process completed with exit code 1. Error: This step has been truncated...)",
+    "- Build project: 0s (Error: This step has been truncated...)",
+    "- Install Playwright Browsers: 0s (Error: This step has been truncated...)",
+    "- Run Playwright tests: 0s (Error: This step has been truncated...)",
+    "- Deploy to Vercel: 0s (Error: This step has been truncated...)",
+    "- Post Setup pnpm cache: 0s (Error: This step has been truncated...)",
+    "- Post Setup pnpm: 0s (Error: This step has been truncated...)",
+    "- Post Setup Node.js: 0s (Error: This step has been truncated...)",
+    "- Post Run actions/checkout@v4: 0s (Error: This step has been truncated...)",
+    "- Complete job: 0s (Error: This step has been truncated...)"
+  ],
+  "relevant_links": [
+    "https://github.com/mitchell1972/findbrexitconsultants/actions/runs/17310336500",
+    "https://github.com/mitchell1972/findbrexitconsultants/actions/runs/17310336500/usage",
+    "https://github.com/mitchell1972/findbrexitconsultants/actions/runs/17310336500/workflow"
+  ],
+  "file_name": "github_action_job_log.json"
+}
+```
