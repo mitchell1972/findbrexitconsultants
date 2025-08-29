@@ -1,0 +1,2432 @@
+.:
+AUTH_SPEC_FIXES_REPORT.docx
+AUTH_SPEC_FIXES_REPORT.md
+AUTH_SPEC_FIXES_REPORT.pdf
+COMPLETE_DEPLOYMENT_GUIDE.sh
+COMPREHENSIVE_PLAYWRIGHT_TEST_EXECUTION_REPORT.md
+COMPREHENSIVE_REGISTRATION_BUGS_REPORT.md
+CRITICAL_ISSUES_RESOLUTION_REPORT.docx
+CRITICAL_ISSUES_RESOLUTION_REPORT.md
+CRITICAL_ISSUES_RESOLUTION_REPORT.pdf
+DEPLOYMENT_COMPLETE.docx
+DEPLOYMENT_COMPLETE.md
+DEPLOYMENT_COMPLETE.pdf
+DEPLOYMENT_PACKAGE_FINAL_REVIEW.md
+DEPLOYMENT_README.md
+DEPLOYMENT_STATUS_FINAL.docx
+DEPLOYMENT_STATUS_FINAL.md
+DEPLOYMENT_STATUS_FINAL.pdf
+DIRECTORY_FILTER_CRITICAL_BUG_FIX_REPORT.md
+DUAL_DEPLOYMENT_GUIDE.md
+EXECUTIVE_TEST_SUMMARY.md
+FINAL_COMPREHENSIVE_TEST_REPORT.md
+FINAL_DIRECTORY_FILTER_BUG_FIX_REPORT.md
+FINDBREXIT_HOSTINGER_DEPLOYMENT_REPORT.md
+FIXED_ListBusinessPage.tsx
+FindBrexitConsultants-Hostinger-Deployment.zip
+FindBrexitConsultants_Complete_Testing_Report.md
+GITHUB_ACTIONS_DEPLOYMENT_GUIDE.md
+GITHUB_ACTIONS_SETUP.md
+GITHUB_ACTIONS_SETUP_GUIDE.sh
+GITHUB_ACTIONS_STATUS.md
+GITHUB_DEPLOYMENT_README.md
+GITHUB_SECRETS_SETUP.md
+GITHUB_SECRETS_SETUP_GUIDE.md
+HOSTINGER_DEPLOYMENT.md
+HOSTINGER_DEPLOYMENT_COMPLETE.docx
+HOSTINGER_DEPLOYMENT_COMPLETE.md
+HOSTINGER_DEPLOYMENT_COMPLETE.pdf
+HOSTINGER_DEPLOYMENT_GUIDE.md
+HOSTINGER_GITHUB_ACTIONS_SETUP.md
+HOSTINGER_UPLOAD_WALKTHROUGH.md
+POST_DEPLOYMENT_SMOKE_TESTS.md
+QUICK_REFERENCE.md
+README.md
+REGISTRATION_FIXES_FINAL_REPORT.docx
+REGISTRATION_FIXES_FINAL_REPORT.md
+REGISTRATION_FIXES_FINAL_REPORT.pdf
+REGISTRATION_FIXES_PLAN.md
+SERVER_CONFIGURATION_GUIDE.md
+STEP_BY_STEP_GITHUB_ACTIONS_SETUP.docx
+STEP_BY_STEP_GITHUB_ACTIONS_SETUP.md
+STEP_BY_STEP_GITHUB_ACTIONS_SETUP.pdf
+SUPABASE_CORS_SETUP.md
+TECHNICAL_ISSUE_ANALYSIS_AND_FIX_GUIDE.md
+TESTING.md
+TESTING_INSTRUCTIONS.md
+ULTIMATE_COMPREHENSIVE_TEST_REPORT.md
+VERCEL_DEPLOYMENT_INSTRUCTIONS.md
+admin_testing_report.md
+authentication_system_test_report.md
+authentication_test_report.md
+authentication_testing_report.md
+automated-smoke-test.sh
+brexit_consultants_research_report.md
+browser
+build-hostinger.sh
+business_listing_page_research_report.md
+business_registration_test_report.md
+charles_burke_profile_analysis.md
+commit-github-actions-fix.sh
+components.json
+comprehensive-test-results.txt
+comprehensive-test-run.txt
+comprehensive_directory_filter_tests.js
+comprehensive_test_plan.md
+comprehensive_testing_final_report.md
+consultant-profile-navigation-fixes-report.md
+consultant_fixes_validation_report.md
+consultant_functionality_test_report.md
+consultant_profile_testing_report.md
+consultant_verification_report.docx
+consultant_verification_report.md
+consultant_verification_report.pdf
+consultant_website_test_report.md
+critical_fixes_test_report.md
+current-test-results.json
+deploy_url.txt
+deployment_instructions_final.md
+deployment_success.txt
+directory_search_filtering_test_report.md
+dist
+docs
+download
+eslint.config.js
+external_api
+extract
+final-auth-results.json
+final-test-results.json
+find_consultants_analysis_report.md
+find_consultants_verification_report.md
+findbrexit-consultants
+findbrexit-consultants-clean
+findbrexit-consultants-deployment.tar.gz
+findbrexit-consultants-fresh
+findbrexit-consultants-playwright-test-report.md
+findbrexit-consultants-production.zip
+findbrexit_qa_report.md
+fixes_deployment_status.txt
+github-actions-fix.md
+github_actions_failure_analysis_report.md
+github_actions_investigation_report.md
+github_actions_research_report.md
+github_repository_analysis_report.md
+homepage.html
+homepage_analysis_report.md
+hostinger-deployment-package
+hostinger_deployment_guide.md
+imgs
+index.html
+location_filter_bug_report.md
+location_filter_fix_test_report.md
+memory
+nginx.conf.example
+package-lock.json
+package.json
+page_source.html
+payment_system_test_report.md
+performance_seo_analysis_report.md
+playwright-report
+playwright.config.ts
+pnpm-lock.yaml
+postcss.config.js
+production_build_test_report.md
+public
+pyproject.toml
+quote-test-results.json
+quote_request_navigation_fixes_report.md
+quote_request_system_test_report.md
+registration_form_testing_report.md
+review_submission_navigation_fix_report.md
+robots.txt
+seo_technical_audit_report.md
+setup-git-and-deploy.sh
+setup-git.sh
+setup-github-deployment.sh
+shell_output_save
+signin_testing_report.md
+signup_testing_report.md
+src
+static_content_pages_test_report.md
+sub_tasks
+supabase
+tailwind.config.js
+temp-review-results.json
+test-optimization-progress.docx
+test-optimization-progress.md
+test-optimization-progress.pdf
+test-results
+test-results-auth.json
+test-results-current.json
+test-results-debug.json
+test-results-focused.json
+test-results-summary.docx
+test-results-summary.md
+test-results-summary.pdf
+test-results-summary.txt
+test-results-tail.txt
+test-results.json
+tests
+trigger-actions.txt
+tsconfig.app.json
+tsconfig.json
+tsconfig.node.json
+updated_deploy-hostinger.yml
+updated_deploy-vercel.yml
+user_input_files
+uv.lock
+vercel.json
+vercel_deployment_success.txt
+verify-deployment-ready.sh
+verify-deployment.sh
+vite.config.ts
+
+./browser:
+browser_extension  extracted_content  global_browser.py  screenshots  user_data
+
+./browser/browser_extension:
+error_capture
+
+./browser/browser_extension/error_capture:
+background.js  content.js  injector.js	manifest.json
+
+./browser/extracted_content:
+404_not_found_error_page.json
+brexit_consultant_profile.json
+brexit_consultant_profiles.json
+brexit_consultants_form_errors.json
+brexit_consultants_listing_page.json
+brexit_consultants_navigation.json
+brexit_consultants_page_data.json
+brexit_consultants_search_results.json
+charles_burke_consultant_profile.json
+extracted_content_20250829_082025.json
+featured_brexit_consultants_section.json
+find_consultants_page_extraction.json
+findbrexitconsultants_list_business_page.json
+findbrexitconsultants_pricing.json
+github_action_job_log.json
+github_actions_intro_page.json
+github_actions_job_error_log.json
+how_it_works.json
+
+./browser/screenshots:
+01_homepage_initial.png
+02_list_business_coming_soon.png
+02_signin_page.png
+03_auth_endpoint_redirect.png
+03_password_reset_page.png
+03_pricing_plans_overview.png
+04_cookie_policy_page.png
+04_list_business_free_plan_selected.png
+05_admin_dashboard.png
+05_contact_form_filled_consultant_inquiry.png
+06_contact_form_backend_error.png
+06_reset_password_page.png
+07_consultant_process_4steps.png
+07_reset_page.png
+about_us_footer.png
+about_us_main_content.png
+about_us_page.png
+about_us_page_analysis.png
+about_us_page_full_content.png
+about_us_values_section.png
+admin_testing_email_confirmation_required.png
+all_consultants_view.png
+authenticated_pricing_page.png
+authenticated_subscription_flow.png
+back_to_top_filters.png
+birmingham_filter_bug_screenshot.png
+birmingham_filter_fixed.png
+birmingham_filter_results.png
+birmingham_filter_still_broken.png
+birmingham_filter_with_results.png
+birmingham_filter_working.png
+brexit_compliance_experts_profile.png
+brexit_compliance_guide.png
+brexit_consultants_404_error.png
+browse_all_consultants.png
+business_listing_page.png
+business_registration_validation_errors.png
+charles_burke_profile.png
+cleared_search_all_consultants.png
+combined_london_vat_filter_working.png
+company_size_dropdown_open.png
+complete_pricing_plans_authenticated.png
+consultant_1_contact_form.png
+consultant_1_contact_tab.png
+consultant_1_reviews_tab.png
+consultant_1_services_tab.png
+consultant_contact_page.png
+consultant_listings_page.png
+consultant_profile_1.png
+consultant_profile_1_top.png
+consultant_profile_attempt_3.png
+consultant_profile_final_state.png
+consultant_profile_full_page.png
+consultant_profile_global_trade.png
+consultant_profile_main.png
+consultant_profile_overview.png
+consultant_profile_page.png
+consultant_profile_second_attempt.png
+consultant_profiles_check.png
+consultants_initial_view.png
+consultants_listing_detailed_analysis.png
+consultants_listing_page.png
+consultants_listing_retry.png
+consultants_listing_scrolled.png
+contact_form_after_submission.png
+contact_form_after_submission_check.png
+contact_form_before_filling.png
+contact_form_complete.png
+contact_form_filled.png
+contact_form_final_state.png
+contact_form_submission_result.png
+contact_form_submitted.png
+contact_form_working.png
+contact_info_tab_content.png
+contact_info_tab_working.png
+contact_quote_request_form.png
+contact_us_main_content.png
+contact_us_page.png
+current_form_state.png
+current_page_state.png
+current_quote_form_status.png
+customs_declarations_service.png
+dashboard_after_login.png
+deploy-vercel-workflow.png
+empty_form_validation_test.png
+empty_signin_validation_test.png
+enterprise_plan_result.png
+failed_workflow_detailed_view.png
+featured_consultants_section.png
+filtered_search_results.png
+filters_after_clear.png
+filters_modal_test.png
+filters_opened.png
+filters_sidebar_view.png
+final-error-summary.png
+final_consultants_page_working.png
+final_homepage_test.png
+final_signin_redirect.png
+find_consultants_all_filters_applied.png
+find_consultants_birmingham_search.png
+find_consultants_customs_search.png
+find_consultants_directory.png
+find_consultants_filters_cleared.png
+find_consultants_filters_opened.png
+find_consultants_final_state.png
+find_consultants_initial.png
+find_consultants_initial_page.png
+find_consultants_location_filters_selected.png
+find_consultants_page.png
+find_consultants_page_scrolled.png
+find_consultants_scrolled_view.png
+find_consultants_service_filters_selected.png
+find_consultants_tax_search.png
+fixed_initial_page_state.png
+footer_content.png
+form_area_after_weak_password_submit.png
+form_filled_properly.png
+form_step1_updated.png
+form_step2_check.png
+form_step3.png
+form_step4_final.png
+form_validation_errors.png
+form_validation_test.png
+github_actions_workflow_status.png
+github_commit_history.png
+global_trade_profile_working.png
+homepage_consultants_verification.png
+homepage_final_test_complete.png
+homepage_footer.png
+homepage_full_page.png
+homepage_initial.png
+homepage_initial_load.png
+homepage_initial_state.png
+homepage_mid_section.png
+homepage_screenshot.png
+homepage_seo_analysis.png
+homepage_start.png
+how_it_works_bottom.png
+how_it_works_mid_section.png
+how_it_works_page.png
+initial_page_load.png
+invalid_signin_error_test.png
+job-logs-bottom.png
+list_business_page.png
+list_business_signup_page.png
+list_your_business_page.png
+login_attempt_admin_test.png
+login_result.png
+london_filter_fixed.png
+london_filter_results.png
+london_filter_test.png
+manchester_filter_working.png
+manchester_profile_working.png
+middle_page_content.png
+navigation_test.png
+password_mismatch_validation_test.png
+payment_faq_expanded.png
+payment_methods_faq.png
+payment_security_and_faq.png
+post_signin_page.png
+pricing_details_visible.png
+pricing_page.png
+pricing_page_authenticated.png
+pricing_page_details.png
+pricing_page_initial.png
+pricing_page_layout.png
+pricing_page_post_payment.png
+pricing_plan_details.png
+pricing_plans_detailed.png
+pricing_plans_overview.png
+pricing_plans_with_cta_buttons.png
+pricing_tiers_overview.png
+production_build_homepage.png
+professional_card_fields.png
+professional_plan_click_result.png
+professional_plan_clicked.png
+professional_plan_stripe_checkout.png
+professional_plan_trial_result.png
+quote_form_step2.png
+quote_form_step3_final.png
+quote_form_submission_result.png
+quote_request_dropdown_opened.png
+quote_request_form.png
+quote_request_form_page.png
+quote_request_form_return.png
+quote_request_form_step1.png
+quote_request_page.png
+quote_request_service_checkboxes.png
+quote_request_step1_full.png
+quote_request_step1_personal_info.png
+quote_request_step2.png
+quote_request_step2_completed.png
+quote_request_step2_fields.png
+quote_request_step2_success.png
+quote_request_step3.png
+quote_request_success_confirmation.png
+quote_request_validation_errors.png
+registration_complete.png
+registration_completed.png
+registration_form_coming_soon.png
+registration_form_fields.png
+registration_form_restart.png
+registration_step2.png
+registration_step2_success.png
+registration_step_2.png
+request_quote_page.png
+reviews_tab_content.png
+reviews_tab_working.png
+scotland_filter_test.png
+screenshot_20250826_232130.png
+screenshot_20250827_011044.png
+screenshot_20250827_011155.png
+screenshot_20250827_011223.png
+scrolled_page_content.png
+search_anna_fixed.png
+search_anna_results.png
+search_brexit_fixed.png
+search_brexit_scrolled.png
+search_results.png
+search_results_birmingham.png
+search_results_customs.png
+search_results_london.png
+search_results_manchester.png
+search_results_page.png
+search_test_anna_jerzewska.png
+search_test_trade_borders.png
+search_trade_borders_before_execution.png
+search_trade_borders_fixed.png
+search_trade_borders_results.png
+services_tab_content.png
+services_tab_working.png
+signed_in_dashboard.png
+signin_initial_state.png
+signin_page_admin_test.png
+signin_page_initial_state.png
+signin_result.png
+signup_form_after_submit.png
+signup_form_completed.png
+signup_form_validation_errors.png
+signup_page_initial.png
+signup_page_initial_state.png
+signup_page_scrolled.png
+sort_test_fastest_response.png
+sorting_test_fastest_response.png
+starter_plan_subscription_flow.png
+starter_subscription_flow.png
+starter_trial_signup_page.png
+step1_filled_form.png
+step1_initial_form_state.png
+step2_after_next_click.png
+step2_filled_complete.png
+step2_navigation.png
+step2_project_details_complete.png
+step3_after_location_next.png
+step3_completed.png
+step3_location_fields_filled.png
+step3_navigation.png
+step3_phone_selected.png
+step3_preferences_complete.png
+step3_success.png
+step4_after_location_fix.png
+step4_business_details_completed.png
+step4_final.png
+step4_submission_area.png
+step5_next_step_after_business_details.png
+step_0_initial_page.png
+step_1_filled_out.png
+step_1_form_fields_visible.png
+step_2_filled_out.png
+step_2_initial.png
+step_3_filled_out.png
+step_3_initial.png
+step_4_after_failed_submission.png
+step_4_better_view.png
+step_4_filled_out.png
+step_4_initial.png
+stripe_after_card_selection.png
+stripe_card_fields_visible.png
+stripe_card_input_fields.png
+stripe_payment_processing.png
+stripe_payment_result.png
+stripe_ready_to_subscribe.png
+stripe_top_section_review.png
+test1_empty_fields_result.png
+test2_fake_credentials_result.png
+test3b_invalid_email_format.png
+test4_forgot_password_page.png
+test4_forgot_password_result.png
+third_consultant_profile_test.png
+vat_tax_filter_applied.png
+wales_filter_test.png
+wales_only_filter_test.png
+weak_password_validation_test.png
+
+./browser/user_data:
+ BrowserMetrics-spare.pma  'Last Version'    component_crx_cache
+ Default		   'Local State'     extensions_crx_cache
+ Dictionaries		   'Safe Browsing'   first_party_sets.db
+ GrShaderCache		    ShaderCache      first_party_sets.db-journal
+ GraphiteDawnCache	    Variations	     segmentation_platform
+
+./browser/user_data/Default:
+'Account Web Data'		    'Network Persistent State'
+'Account Web Data-journal'	     PersistentOriginTrials
+'Affiliation Database'		     Preferences
+'Affiliation Database-journal'	     PreferredApps
+ AutofillStrikeDatabase		     README
+ BrowsingTopicsSiteData		    'Reporting and NEL'
+ BrowsingTopicsSiteData-journal     'Reporting and NEL-journal'
+ BrowsingTopicsState		    'SCT Auditing Pending Reports'
+ BudgetDatabase			    'Safe Browsing Cookies'
+ Cache				    'Safe Browsing Cookies-journal'
+ ClientCertificates		    'Secure Preferences'
+'Code Cache'			    'Segmentation Platform'
+ Cookies			    'Service Worker'
+ Cookies-journal		    'Session Storage'
+ DIPS				     Sessions
+ DIPS-shm			    'Shared Dictionary'
+ DIPS-wal			     SharedStorage
+ DawnGraphiteCache		     SharedStorage-wal
+ DawnWebGPUCache		     Shortcuts
+'Download Service'		     Shortcuts-journal
+'Extension Rules'		    'Site Characteristics Database'
+'Extension Scripts'		    'Sync Data'
+'Extension State'		    'Top Sites'
+ Favicons			    'Top Sites-journal'
+ Favicons-journal		     TransportSecurity
+'Feature Engagement Tracker'	    'Trust Tokens'
+'GCM Store'			    'Trust Tokens-journal'
+ GPUCache			    'Web Data'
+ History			    'Web Data-journal'
+ History-journal		     WebStorage
+ IndexedDB			     blob_storage
+ LOCK				     chrome_cart_db
+ LOG				     commerce_subscription_db
+ LOG.old			     discounts_db
+'Local Storage'			     heavy_ad_intervention_opt_out.db
+'Login Data'			     heavy_ad_intervention_opt_out.db-journal
+'Login Data For Account'	     optimization_guide_hint_cache_store
+'Login Data For Account-journal'     parcel_tracking_db
+'Login Data-journal'		     passkey_enclave_state
+'Network Action Predictor'	     shared_proto_db
+'Network Action Predictor-journal'   trusted_vault.pb
+
+./browser/user_data/Default/AutofillStrikeDatabase:
+LOCK  LOG  LOG.old
+
+./browser/user_data/Default/BudgetDatabase:
+LOCK  LOG  LOG.old
+
+./browser/user_data/Default/Cache:
+Cache_Data
+
+./browser/user_data/Default/Cache/Cache_Data:
+00dda0468fb0524a_0  42297e1d2ff5787c_0	84549215136450e0_0  c601873399e0c92e_0
+01362032a3187a82_0  429314c66168a558_0	848e7f986a271b4d_0  c6870e8db595a4d3_0
+016720d43aab5184_0  431cfb8add8f7714_0	850cb686bd9ab0c5_0  c774baaf62f68d06_0
+02935c6136229a44_0  434bc8ed8bab9614_0	852542d2bbb283a1_0  c89481cef3311a1c_0
+029b8bd59039075b_0  4371be71bc514e6a_0	8586cc868ad51c7a_0  c91cdf4604e5dae2_0
+02c8a8948c235cec_0  44b82b861bd5c6f0_0	85b34ad122f4f570_0  c98996428209b003_0
+02c9acd479b84344_0  45212554ff451589_0	85b4453dd8d8abd3_0  c9951ef9d4d203f4_0
+030b754842a218b7_0  45fd3e53bbfd637b_0	86e675d1131e9222_0  ca0a2f90995f7e33_0
+047062c1d63c82ce_0  4676f8851184965a_0	8702a043a57d3522_0  cb02d12c7e5ae041_0
+0481e5f75dc61212_0  4752c6c21870423d_0	87408efa93c0a25a_0  cb3e831057d0bbad_0
+05fac249ca441207_0  4779d8e6c4bf7136_0	885a6e383ced31dd_0  cb79e06cbb5352d6_0
+0626fb1858278cee_0  4793892e2fa66419_0	891b1f7ebf4e5b1e_0  cba11dd2fd723a04_0
+06a7ca679b0bf70f_0  47bfdd2d9d18b572_0	8983a17c5c1053b0_0  cba8c3a3fae734d8_0
+0782c91dfca618e4_0  47e8e4233b6f38ae_0	8a1888f9075c3f26_0  cbc9a08c124cdb5f_0
+07d8fc70e6cb0b22_0  481f6403e45fccc6_0	8a8ce86b9d8a9bac_0  cbcd44ebed742416_0
+08137cb01d7276ad_0  48e298efed8aa0c5_0	8ae0b5ac4f292c63_0  cc52d6ca938ac75d_0
+08a24eab497dbc37_0  49e6d21e32891cd4_0	8aef1a98387e63b2_0  cc7402c452a35ca8_0
+08ff6804985fd1a2_0  49ecf1a6cea9a1b2_0	8b068637684f3dee_0  cd7b53f2786b623c_0
+09cb750c5c8166ad_0  49ff89ab43a39784_0	8bd399eb21013311_0  cdd008dd7f9b3c69_0
+0a1756262a54f7ec_0  4aef349be3008191_0	8bf58ed2b16d8abc_0  cdfde83e472d4268_0
+0a4e629e5be7a38f_0  4b2623586bab80e4_0	8d2604adc9372e2a_0  ce314d6597aee24b_0
+0aed77669092b9a7_0  4b2bab9793672287_0	8eeffce74c7a008a_0  ce6fdd50fc03397b_0
+0b25485803d7cee6_0  4b355a5d4fa2b29f_0	8ef12e9e6d2245e1_0  d008b27d80763fce_0
+0b9b32bc8335d699_0  4b59002395a6c66c_0	8f0b232297fa22b3_0  d01eb14fa15f67fe_0
+0c13075276410261_0  4b98b300c482dca7_0	8fad4490886402ed_0  d0408e1f5308904e_0
+0c2739cb761ae397_0  4ba1a379c17fd040_0	8fe71875aad7b88e_0  d07feb706d427fbc_0
+0cf1508a8f844656_0  4bc9467e59655829_0	90307f344713efc1_0  d1720b4510df7c57_0
+0d38df507c3ca7fa_0  4c02bf3cffb0987f_0	904e61babc279f3d_0  d1816d140ef19389_0
+0d81950a8dee81c4_0  4c3881e8d9c206a4_0	906b0f31d9a90adc_0  d18e839803bdb203_0
+0dd6bacb49fe905d_0  4c4e3edd91697996_0	907b3d457d5009fd_0  d1a3f481dd0a879e_0
+0de808d4c4895f3b_0  4c79c614509c2756_0	909b479481e41963_0  d1c4e5ea865d6775_0
+0e0703a3539dcef1_0  4ca0288e10cce9c5_0	90a8cd4d20969af0_0  d247b1a4d2e82243_0
+0e1c17af5b41b137_0  4d5d8c221e5f1c95_0	90be95778dd50798_0  d281f1368222526e_0
+0e4d720e94529266_0  4dfe07cde5055f28_0	91b50e81bb2582b2_0  d347a11ad013fc90_0
+0e6c9a6ec5bfd27f_0  4e0135e060aa679f_0	91dcb369dfa02fa4_0  d39f9378c31969ec_0
+0f5a70ec10ae9b7c_0  4e0d823be14ade32_0	91e845e63de0487d_0  d3cd88e9d3b7a03b_0
+0fbef9d0a0db6dfd_0  4e52391d99a6448a_0	9294068f652d02d5_0  d3d617c03cb2b115_0
+100e4ae0369b8ac0_0  4e58e980d9906e20_0	9378be43fe27c16e_0  d4183e4c41368062_0
+1094b9d26ce70d4a_0  4e5c548cd4d1f623_0	937c9ec24f8ca981_0  d42f7aadf56f1b9d_0
+10df39b929d5a1e0_0  4ee5106272922d9e_0	93cc0ad323266f40_0  d4b88ceacf5eda66_0
+1110ce7fd797420c_0  4f0954d49b1b7629_0	93e0cae8663fb1b7_0  d4d4368545228462_0
+1126f791df01bc00_0  4f81e6991ffd122b_0	940b5931b6239a5d_0  d4f24a4e82efa14c_0
+11658a365edb2375_0  4fc1c4259aec8ba9_0	949ebf460e1f7835_0  d575893b280e5c3c_0
+123d6f8bf5eaa744_0  4fea26aa09cc3dd6_0	94ddb494ca9a04f7_0  d617ceecf3f90ebc_0
+1249180cbc272980_0  50118613b3c5d026_0	94ded4d2b2f43694_0  d6a2cf93465a4f5f_0
+129612dbcbbb7000_0  5013e570f1fcc05a_0	9504f75367a3bb9f_0  d6a94b572942b53b_0
+12e38bf0fb06cda6_0  505d38666887340b_0	952fd41e0f7a4de3_0  d6da69f8c52b2bd0_0
+134144bc9f314db3_0  5097dbaf77c9626e_0	95a0ad64742cd86f_0  d6f2779294309b0f_0
+136f8d67dc66a632_0  50af9eee584fe61b_0	965401a0cee43d54_0  d7eeabd53e3f9475_0
+13e38285a75600dc_0  5129430cec10bd91_0	96cee157c3078eb0_0  d8094d2aa5eb4bf7_0
+141817ced6595279_0  5142a0d187c57902_0	96d40625ee763109_0  d99d43fb403879ef_0
+1419167f613c2654_0  51ec61e297632de6_0	96f49b1074e335f6_0  d9d5edf393ec458d_0
+1431e7e49ec84d79_0  524cee01d8fd353c_0	971381c41bcd0e95_0  da18b1297a8d2355_0
+153abcc7a0e2f935_0  527c925d66f42f4b_0	97e3937112c9eb79_0  db3361914ecdebbd_0
+155f0844bff9d2c3_0  52c9b251cec94904_0	98124f5e166de68e_0  db8e165b336d4872_0
+16729c3be6da843b_0  531259a303fec467_0	9855dfc337bbd5da_0  dbaefdb284844833_0
+16a33f33f0607775_0  531708df7ceff7fc_0	98798bce582507d5_0  dcad086bf4922f38_0
+16b8168fdbc3abd3_0  537c6c46ec61f936_0	989982a8ef36d1aa_0  dce3218267bc59f4_0
+16c3e41bd1c9f7bc_0  5404dcaf716569a3_0	98e5e89f70271c4f_0  dd2d3fe0ce32bfe0_0
+1776dd6e467f0e12_0  5416948025e9ee73_0	98f73079418606de_0  dd4f3a6912f2a6ff_0
+1778348b5dec3462_0  54da988a05e61f00_0	990e7090bf5b0f01_0  dd636759b8eec47c_0
+17a0ad45c61dafa5_0  552e0c4e22a25731_0	9962b6bfb3ec5b13_0  ddb16899ab141fc6_0
+17b44f6dbdb15f4b_0  558eb4ebd654ccfb_0	99bc4440d6bf99b7_0  de8d15f3ea6b3327_0
+185490b9a88ad633_0  55e530551dd698a0_0	99d7c1e88f50310b_0  ded88495c16e0531_0
+19658692c672f07a_0  56db5b7e8b357dc6_0	9a869ca6639998b0_0  dedcabf2c6934eb9_0
+1979d7fddbd85eae_0  573045cb2f1cca8b_0	9aaba3d8c403ce70_0  dedf67e64906abbf_0
+19879196ac0820dd_0  57dbcaca2439b3ea_0	9b2f339b6553c3ca_0  df139207657126b1_0
+199617bb0b83cf2c_0  580929106191d67a_0	9b2f345da11fe9b3_0  df1f5926f32d0e45_0
+19a6aef24f91f5d2_0  581f073582fd9702_0	9b7da1c4ad474803_0  df58a9f55ef80719_0
+19d6052afe0ef2f7_0  58f5c65af7b826d7_0	9ba57f9dbe356f9c_0  df5b36efa685692a_0
+1a5fb7a56653e4db_0  59cd41998c099ebc_0	9c12c67cb9a0407e_0  df5f12889ec9fbe2_0
+1a96279f68163077_0  59d054f1bdf25ec8_0	9c62ae427bb9cfe1_0  dfbe3b17317f2d99_0
+1aa0ea7b54498bd7_0  5a75449affb59584_0	9c7b924897e3a322_0  e0590459ed3620a9_0
+1accebc800c05442_0  5aeb9682b8a9176b_0	9cc98fd2893cce7a_0  e067d05f4099562e_0
+1b098b5611697dd6_0  5b462b746c69b806_0	9cd441220d52f1b4_0  e0b8ded0729be5c9_0
+1b2913b393eded25_0  5ca31c309d1bd240_0	9d34ee744f953f03_0  e1bb6af4304c8083_0
+1c11650f598ea5d7_0  5ce5fafe4274c957_0	9d40c340e2eedd8f_0  e1e1a0506cd97a8f_0
+1c5ddb10aee2fdd7_0  5d1db1974148de28_0	9d4f464020bab0bc_0  e2574bbfb004b607_0
+1c715a1217837fc0_0  5e72c8d72e559cc3_0	9d87282d43b8a45d_0  e2821520eaee8b9b_0
+1c91d3cf1a49cf3a_0  5eb2d36c71678537_0	9df3632819b9af1b_0  e2ebc8d02b76cd39_0
+1c98518fa592f4c9_0  5ef18def5f3bc177_0	9df58951ff6d5bc1_0  e30f7a60edf8e9f7_0
+1d9f45cb4df630cb_0  5efa885a0a5c8d89_0	9e9095cd2572a8f6_0  e36c80d1cda387c9_0
+1de41c55b835219a_0  5f204ecfb79ff783_0	9ee18b4cfce59067_0  e3c1263d32974594_0
+1debfc9ddaf853d6_0  5f8276f230c29fa4_0	9f103fa9e491533e_0  e3c15d2ac52d25f4_0
+1e3940f0f1f9fdb5_0  5ff16ea263819830_0	9fbfd88f877488ba_0  e3fec57bfdb12849_0
+1e8de6676261308f_0  6004200f01ee2a8a_0	9ffe8e221746902e_0  e471bc9be1ccb199_0
+1eb6029f004cbf61_0  604a40b7653b8828_0	a0150487f7cbc3da_0  e50bc32a045d9c19_0
+1f1a8b85b866f155_0  60634ef2317751a2_0	a06cac494c520f12_0  e58598c969bba23f_0
+1f6934655f07fbfd_0  607ad569d27df033_0	a14a1f16c87c6cd6_0  e5b67295693f0c51_0
+1f7555107b3ad8e5_0  610fecee22bf0f82_0	a17e8dc811929f71_0  e61c489c0a92a1f1_0
+1f7e9700a82d0958_0  6152d39da5224353_0	a19a02cc1c30e877_0  e67de79e8311d7a6_0
+1f82e4c5a186db17_0  61b0b7bfc0405357_0	a19d3de81b3f1474_0  e689b00e123a1415_0
+1f938e74afdce98e_0  6213e905b9747818_0	a1cc3c0e7359fd9a_0  e68f922d3a084598_0
+1ff012db58c8983d_0  6227037e61e847ef_0	a205085fe56c3629_0  e6a9455b14c91672_0
+200947c366cee695_0  625179ef905b2f4d_0	a28886d6d89fa205_0  e7281a108eafbf96_0
+2016110ba72ff854_0  63077a6ce14bd451_0	a29afeb5504645b3_0  e741192f9f0b78ac_0
+210bbdb94ad1f660_0  6355c2855f223ca8_0	a2cdce18ba0a7619_0  e7637ffbbe1e6e72_0
+219b9ac47c3a18d4_0  637698a47ead3f7c_0	a34ee6ca678a1c27_0  e79f44cc5dfe35a0_0
+21dc251a8df1528c_0  63be849538f0f10d_0	a4a17fa64f4d628c_0  e7ce2fba48c7ee55_0
+21fe9dd1dfde5465_0  641829772ad36e33_0	a5573b8e15bc788e_0  e7dd57e45d7f7eef_0
+2216dbd5467686e7_0  643e3d0fbbf4e9fe_0	a560ccc5ad05f08b_0  e8247c76d20a2821_0
+224e189b4cd955fb_0  64689fb86fe9db12_0	a5923b012f06be43_0  e8ea602a718ae1a5_0
+22ad4586f198a3d4_0  6495d8c0e024247c_0	a5a94127b0a55446_0  e927d9c935cc1a85_0
+22b1f1bce823dd34_0  649a37bd365f3475_0	a62bdabc1de48ec5_0  e9410a34af0652f8_0
+233095008929f32a_0  64de6e9dd749e5b8_0	a67aefb017b64797_0  e95bf27d87f8bf27_0
+2364a62b8171db7c_0  64df9d2a13651d6d_0	a6990c4066e21820_0  e96658e8480153ed_0
+2380028507486c30_0  6522bac00c031db0_0	a7449531a8e72916_0  e974ec5815cf3421_0
+23c48c0da4a99221_0  65345d1884d151cb_0	a7661b430c6fa1c1_0  e9885e22d74dc36b_0
+240573a824960363_0  65923250fc04e35b_0	a78a0e0d962a2c09_0  e994c0163e7572b6_0
+24125165abd5b3d0_0  65bdb273fd6ecb8a_0	a79373862b857cfc_0  e9be28a41de7ea95_0
+244b09eaf0bfd936_0  65d3b52bfd754921_0	a7a91f04111f7729_0  ea2b2094fdaaf05b_0
+252c04589a209e5d_0  66ad2d8d8120fff6_0	a890af9085638d77_0  ea30074e8ed5f238_0
+2558bfb0fa1b2b86_0  670d6d8ad6c1958e_0	a917110596988d08_0  eabd56bef44e96df_0
+261484c5e570eb42_0  6754be3bfc228333_0	a97c7707e3698ef6_0  eb3edbbdbe24910d_0
+263a4a985aed9ceb_0  679083efc4a58d51_0	a9c668b6118759df_0  eb471e777a59ad9e_0
+264309896883d1fb_0  67c305ece8cd93f1_0	aa44ab827db4fc1b_0  eb67b60521f0a122_0
+2898f5f92019ae31_0  67c9b240f2255de9_0	aabd4d0378c4c461_0  eb93b74fa07e8974_0
+28cd48f56474e6d0_0  68368471588bccd1_0	ab8ee4edeb4b06bb_0  eb9c8b69031d0897_0
+291216af99b2438a_0  68cc24b8c94f72ac_0	ab912d93e36c2971_0  ebc1e0f72251fee9_0
+295ec3549754039c_0  6900218710b081c7_0	ab96fba23304088d_0  ebf652c71d282d75_0
+297d89ee6ac48dad_0  69631172f61d4452_0	ac04fb90042246fa_0  ec151a023f8e4a90_0
+298d9733db9b6ba8_0  69cf1ce69c66e6ad_0	ac19ed595e2e5178_0  ec64c0cd9cba3c95_0
+29bf5f9e4b99569c_0  6a04b11aff9f1ce3_0	acac5d6d4191c733_0  ecb6c159ba818494_0
+2a36c699cadc6b06_0  6a1fa852b81e192a_0	ad13854611316f19_0  eccb58ee555beac0_0
+2a51d650db7365bb_0  6accc0f8a07be405_0	ad77e33ef9aeff02_0  ed5152d08612b2ae_0
+2b4e55b829c034d0_0  6b2468435194da2b_0	ad8d11c9dec74a7b_0  edbad59286ac3a4c_0
+2b77fff2709278cd_0  6bd078a6da8072f1_0	ad9342afa9655da2_0  edd30a2b525d9edf_0
+2c308bb4d942b69c_0  6c33bd5a7d012433_0	ae3d788e2f816bdc_0  ede04232afd538a4_0
+2c35ce299f31dd27_0  6c8069893cd14fe4_0	ae85c1f7eacfb8be_0  ee408cff9f350498_0
+2cc9ce90cf72581d_0  6ccdb03d7f1ffad5_0	ae86bfb082795f93_0  ee874036e87113cc_0
+2cfa7f3b7c1b79d6_0  6cd37e2bdc80a54c_0	aea3473db862646b_0  eeec0e7de0a3b3a4_0
+2d7a63b1a5ef7853_0  6d4f204fb1b1c0ce_0	aeb0a2ca3a922f8b_0  ef375474c8653270_0
+2da1a095542dfe5d_0  6d5ab4b01e7b9d13_0	aeb38f56247f3b4f_0  ef41ba17e66f318a_0
+2e4f967d962dba0f_0  6e7eae9d0687da24_0	af9a00b1d22ad8e8_0  ef57c16a453c0486_0
+2ec449d6d7e569ff_0  6e80cfd3c1a35a46_0	afecc56aa042e0dd_0  ef7ed06441675468_0
+2f328fff564fc94c_0  6eb30432663bfa41_0	b079cc6162c5f1bc_0  efee06e99efd99ac_0
+2f4b7cfe658682f6_0  6ed18ac88384635d_0	b0dc16fe2715f5ef_0  f02e38d9c9d35eb3_0
+2fc2107abcf6f8bb_0  7013fbfca9a96832_0	b12d132ce2bf37a6_0  f071d57916d2b868_0
+30ba0404d17ea5c7_0  70a9cdeef17039d0_0	b30d35e2fe445620_0  f0c098bb85bd2981_0
+31639477a946a8e4_0  710362e2f2783b65_0	b352039ac4ad69e8_0  f0ce28aa6f56704d_0
+31696a7fc28f54d1_0  711aeef8c719fc58_0	b4856da0aa732fb2_0  f0e6778cbdda0fea_0
+31a55ad671d84e36_0  71cbba02d05a8555_0	b4b92e25719d978e_0  f0eb20873897fbc3_0
+320d8dca97002dcc_0  7210b75eb33fb951_0	b5a5513f19c132f6_0  f15fa363c2b611ff_0
+3250b26ad76fa897_0  721e9c580bd0f069_0	b60041ff65d5d3e8_0  f187c9f7b8c931cc_0
+325aaea9e317cf73_0  724482c766921a93_0	b611199bf07679d8_0  f2045dadfefc3d61_0
+3280f0dd5f10537f_0  7277067c6c38eaf8_0	b62eb6176b55883c_0  f224ea412f974c43_0
+331bcabccdb737fc_0  72f98281ea7dedbf_0	b682178a39396818_0  f27fa4d8ce843dff_0
+337e8ce7e944ecbe_0  738752dc5f26e266_0	b68db278e299b3e6_0  f2d8014440da37ff_0
+337fe718a8a29548_0  74423c41a6c7c669_0	b6b1f525698d0d2f_0  f3008a43c276887b_0
+33af2ab2e218eb88_0  744802dddad80bd0_0	b6d04ffc83e628c9_0  f38b60761b31e4e2_0
+3404be74caf5d4f6_0  755b8b43f8c17545_0	b6d88e4a409ad14f_0  f40fe250cd7d956d_0
+340cc68f1ef2b694_0  75f8707f9bc394c6_0	b7325d7f35c4bf93_0  f46c24b9662a8673_0
+3461cfd2c3c37e3f_0  764d41afd6fb6806_0	b7661fd23366b606_0  f47331d99cf8847e_0
+346397acee03c366_0  7685574a29f68888_0	b77d180421259c44_0  f4d86cc4c20e1354_0
+34725e8c7ead4524_0  768ebc75e08568a4_0	b7b522d9f4c2e909_0  f509e75ce8ae4418_0
+349b30ce58595c6d_0  76b4fa4a4be01d20_0	b856b70390f0c87b_0  f5193b2133313c3d_0
+34d47ce59281676f_0  76e5bb4bc432d11d_0	b8ba65ce0f2ed6d3_0  f57053219047946c_0
+34dfdd393a5d0deb_0  76fe91ecb7487604_0	b8f6899fde69d0d1_0  f5859940b009f32f_0
+34f0f7e55c8839e9_0  773ba4301cb65d89_0	b8fb4ad8cca386e7_0  f6430cb9f8e17377_0
+3506ee93769c74e1_0  7773231ecc590882_0	b923f0c479b9efd4_0  f64e44a122acd5d3_0
+35a2d65ecabb0882_0  778373d8378cda9e_0	b96f5d45f649ce1c_0  f6a3e93776a3ad45_0
+3675055785545de0_0  77db9fa9f4a2156f_0	b99a768099cf4b50_0  f6d0b87d84a814b0_0
+367eec7cd4a47cc2_0  7831d357f9b704f2_0	ba53ece0e5d3cce7_0  f728457b76c9fd52_0
+36a84139e05b731e_0  785d1d19a4bc5ba4_0	baabfa9e431d24c4_0  f7384ac71f2c965f_0
+37e1cb70f648ccdb_0  78788d8500715def_0	bbf5961de88c8fde_0  f74599db4db884d4_0
+381769beea510196_0  78b9b8cbf14155e4_0	bc49dd5567f1b496_0  f7c991a930e3cd54_0
+387d66e4435015d7_0  791db4f4f477fb06_0	bccacc7cfc4bb0fd_0  f7ce60494636bc70_0
+389546a24b8d0c21_0  7974638c5bfe679d_0	bda7e56d5ccb8102_0  f8e9a943df595953_0
+38c764a993af8410_0  799e823406dcb359_0	be18fd700224632d_0  f9389fb7653c2d0c_0
+39a816cef7dbab2f_0  79a7cd58726ed900_0	be760e954f4abff0_0  fa61c0400560f4f1_0
+39d3c13a20e68d53_0  79ad19c246b58941_0	be8cc173d3d37a2a_0  faa69dfc737c0f11_0
+39dd8e67ee56d8bb_0  79adb0520a3c28d2_0	bf5beb53b28534d0_0  fae4ef7811591627_0
+39f4934a740298a0_0  7a3f77e48f602b01_0	c05eefd575ac26a2_0  fb8817ee4e618f8a_0
+3a65c48af79d521a_0  7b2da0038b678e7a_0	c070b8780aba30d0_0  fba7894bf85d58ca_0
+3adaeb15bebc00f4_0  7c52e1a8b1d3f9f5_0	c11da12460ae8730_0  fbbfd604e6a5beb4_0
+3b0a14593831d784_0  7d63aeee20c5c27d_0	c141f5346fb82f86_0  fbceaad39b823ad9_0
+3b5843172ef68091_0  7d79a8020309f27e_0	c21dfa2b80c22ce8_0  fc375bad829cb62e_0
+3bc24d463cd9f10c_0  7e1cc03d08a303de_0	c27e578fd596feae_0  fc4b97e36aa40346_0
+3be34e600faa976d_0  7e6ebd184730c8e7_0	c2b9b27fd4103695_0  fc686c5dd802b04b_0
+3c11a286a649d999_0  7f4640e5d883794e_0	c2fb1b0c7c432f26_0  fc707506eb507ac9_0
+3cc34fcb1f8ce717_0  7f47d5f52c9ebc78_0	c386815e80b5ad91_0  fcf2ac5dc7febf97_0
+3d1692dbfece6e7e_0  80e520d670be6ef0_0	c3e405e60966caf7_0  fd3579189bf7894a_0
+3da07fdf0d0b9b97_0  80fd5d9b9f713713_0	c40e3abfd5aee596_0  fd98d6947d86a34a_0
+3f4ed26b3b7bd86d_0  815b8aaf8cdc93f4_0	c44446c631c591af_0  fdd195b850fb912f_0
+3fb5f66cc7a88eb3_0  8212aed81c3ee4a1_0	c4bba111bdcee235_0  fe457c2ac65a247f_0
+3fbd1419e05575f0_0  82515a40008500de_0	c51f61fd19e91ee7_0  fea6590eadcecbb0_0
+40a1599f6976a43d_0  8270b69024491d3f_0	c52c032dc2179168_0  ff419cfad979b071_0
+40ef4c46c07691fb_0  82a55c19f806c1ce_0	c57e402c6d34b501_0  ff628b7d1aa2dca6_0
+4114f429e026cc06_0  82c7a1509f594a11_0	c5ab3adf5fc84b64_0  ff8fafad0e9c4c45_0
+4140ead6d49fa431_0  834e8c0d5c93dd58_0	c5f8095ccc37cf63_0  ffacfc20a72bd64e_0
+418a494fb527ec0e_0  83d2a5f3d2d656fc_0	c5ff55e92507c067_0  index
+41b7162e18227205_0  8403b0f342e67333_0	c60111754e481fb8_0  index-dir
+
+./browser/user_data/Default/Cache/Cache_Data/index-dir:
+the-real-index
+
+./browser/user_data/Default/ClientCertificates:
+LOCK  LOG  LOG.old
+
+'./browser/user_data/Default/Code Cache':
+js  wasm
+
+'./browser/user_data/Default/Code Cache/js':
+00294ea7e310445c_0  363126c90bbfbaae_0	7e4b8d23c27b53bc_0  c3ec5940c3ef8f59_0
+00f837e27ceab703_0  36856ae8d21e3080_0	7e6c232e00ec19c1_0  c48117e1b83ae6b2_0
+01f05e985010ef5b_0  3719e0af26131631_0	7f03d57588607cff_0  c4e241bd83178bc4_0
+0233ee3879630424_0  377241ee697a9f92_0	7f0d9a6d44dc8d16_0  c5cb23a4ba80bd59_0
+0270aeb3dbf48e85_0  37a4f90923c70278_0	7f7b43cfd8a013bc_0  c76727ca0bab5bf2_0
+028bfdb0f15b3550_0  37aba4d93ddcac1c_0	7fc98e47865487cf_0  c77818136415aba1_0
+02ebce57f487c546_0  384c5ab58878c31c_0	80e85c205a9fd670_0  c7ac480dc3b238fd_0
+030ab00024fb2abf_0  39662dd8de98fb61_0	81a46124d82222a4_0  c907e3bfa98adcea_0
+03c0d250827cb983_0  396e9163ebb9e4f3_0	81c00cff8c254a1e_0  c9363ba93fbedc85_0
+058131aa634a758d_0  3ab9f6e941a0c1cb_0	829e54bbdb629885_0  c984e1045c817098_0
+058233f99308e949_0  3b18bdf52b173df3_0	83f7dc7e17f5f27f_0  c9af77ad846f3e49_0
+0699bd1e3f406bff_0  3c04f05a50b25a6c_0	8489cd666715d855_0  c9b170a47fa14d25_0
+06bd55a8edd5d5c0_0  3f7a57900b560b37_0	8522edbac62b3bea_0  c9d904dad0373071_0
+088603b781fc2d8d_0  40aff2fa2996389b_0	85cd1f319338c7c1_0  c9f04f42b486fec3_0
+0963900605e5311f_0  40cf8c517613cb03_0	85f621d7bb9f390c_0  ca167aa87aa9cc39_0
+096e93f02ab4cc55_0  412047452094849c_0	86b4b1d1b46e25cb_0  cafebd24b579149b_0
+09749829bf986105_0  43711278913c967a_0	86e790a5ade13480_0  cb4b1a830dafa71f_0
+09851548f38003d4_0  439249a6b1edc0e7_0	873d08db47ce5b67_0  cb4ea021779e9b79_0
+09f88b31f63cb64d_0  43afffe350ced43b_0	87613468086390a0_0  cc65bb3b475355e5_0
+0ae7a48558e152b1_0  43b78bb5bcde436a_0	87ffa7a0a87edd6a_0  cc73b3c823f52c61_0
+0bc86ad0d92dafab_0  43bd596c1de1608e_0	88428a3c57cac2c1_0  cd0490bcc4d5ab00_0
+0c3b5ad02613e392_0  43fb1acbc709b5cb_0	886ea24e86d224e7_0  cd121b2affba7716_0
+0c51149fa4308398_0  4437e387b236bf21_0	88c1095c7a302ea0_0  cd15ade5f2096d32_0
+0c7fce25c8300429_0  4453ba0ca730ff11_0	88c6dbba94b79dcb_0  cdf86bbd5c1c58e9_0
+0cb6f8d3d7531aee_0  45324367b277f497_0	88ce9ca1100dd77b_0  cea96943dbbb491a_0
+0d5799469d06862c_0  48882c3959726fed_0	8a1e94538427f18a_0  ced57b73d354bc11_0
+0d5d5687374ea976_0  491bcff7ddec5d78_0	8a58365e70503e7a_0  cfd7f5326bf378ac_0
+0d8799e18f9e811a_0  4a22d3bffe68c634_0	8b0120c34b157f23_0  d16a4dc83e14e5b2_0
+0e204df4307fcb0a_0  4ba04b0fd375a7a8_0	8b12e85903b13ab8_0  d182052c4d26a24e_0
+0e3af9681a0c0157_0  4cfc29067159264b_0	8b4f8198a30f5a03_0  d2353084dfe97ca1_0
+0f7a3c0bc4419dfc_0  4d8b100ba99a7315_0	8c62d53713f9492d_0  d32e7f65df3615b5_0
+0f87f3606b0cb254_0  4ddab811147da67f_0	8c8405471de07bf2_0  d4368384a143d6e5_0
+0f99668d1a0f889f_0  4e5d3db72c248dae_0	8ecb2f10d3892c01_0  d47aea5e0df3c171_0
+0fef058f249bfae8_0  4e5dc1f623adf807_0	90b7ab2e385bede2_0  d4c4ba02788628b2_0
+1046091e0e84c9ad_0  4e5ec6671229929d_0	920f79d2ea0ec95c_0  d4f41160a66d6f90_0
+106e3ac93c575918_0  4f289ecffac7f99e_0	9294cef002560b18_0  d55719e3066db8b4_0
+10983212df169945_0  5011aa18acf966d8_0	92b8df98642827a8_0  d6f16ef565616e2a_0
+1166dac6ff012bc8_0  506ffd392557a3a6_0	92c87a5b3f7397d9_0  d74bf9d8396136c9_0
+11f658e942ec5872_0  5190d7dfba5b041d_0	92ce28f247bb175f_0  d79e73c2644726d8_0
+122bd6b7c26926ef_0  5193ecf3b370dea8_0	93de221282983342_0  d81f5176f114cea7_0
+12a8c8954cca8b82_0  51eb65a40b68e75b_0	93e2e4f122949b44_0  d84e810b816e3347_0
+13a51a1c3f6f29ea_0  51fb5f2420562879_0	94a2c863562982c7_0  d8cd49ad62516a62_0
+13b91b4802023a5b_0  52fbfa3f9ba84d41_0	9503f5f26c016fe5_0  d8e888e3adaaf21d_0
+13d36cb4315dffb9_0  532db992716221f7_0	952e3d6672a3d7d5_0  d932ea8792301594_0
+13ec52abad447277_0  5418eeec9ed8fcce_0	96976b358bc3dbf9_0  d94246fe806d93cc_0
+144bb469c474697d_0  547f7f2f17d8171e_0	969e95c024627683_0  da283683557fe3da_0
+1712e5ce2927d8d7_0  5553421037e957bd_0	9a0f44c0dceb4f40_0  da346327c46e9cb7_0
+1716dcbab51cae4f_0  5669b08231d53c20_0	9a58ae852142e34a_0  dae9fc1173c9a050_0
+177496ee0f108298_0  56d8a93d5714bcd3_0	9a5d86a1f9efdeeb_0  db7de13e92b3e370_0
+17c63625fca5e60e_0  5740c53f06836d90_0	9a6dd0cce1aebd40_0  db9d2b341d3518ff_0
+17e4c14e51090444_0  5850f3bc27ab8c22_0	9ad2be44c9014956_0  dca25a512309f059_0
+186c037cc9cb7f77_0  58866f3acb2301a8_0	9b2f1b9907a1b2df_0  dcb5ae659105e023_0
+18f3fa8dc11df108_0  58c937c1b2731290_0	9bd4ec5210a89f26_0  dcd74b3fcb28252e_0
+19f528c0035d5f28_0  5a7aabd3aedfc66c_0	9c0b69cfc36d37fd_0  dcd7e193c9b7db96_0
+1a94f24a8c5305a9_0  5aeda2180762b001_0	9c0bb09d0f5b77f3_0  dd4e131ecbc47b6c_0
+1b71aa6af7fbe2d1_0  5b09101c52541029_0	9c6eaa12da71a182_0  ddb55ec5be40c51d_0
+1bc5dcd3102ab2c6_0  5b25c49f6999f779_0	9eb04b41641b59b6_0  ddd18551b9fd5eac_0
+1d5fb9fe3e4f176a_0  5b4c4236b5dc2049_0	9f52df68d4454096_0  dddd5b6b176fe13d_0
+1d638456ec116fc1_0  5c373a6c94565c63_0	9f6f392db072d0c4_0  de73c03a756e885b_0
+1d693f863206cac4_0  5ca9781c04d417c7_0	a03667e8a3867d14_0  de8bc53ab3ee4316_0
+1db0598997acd0f7_0  5d3b02989f1c4eb9_0	a03c296a30b44ad2_0  deadb5678df519bd_0
+1dbcb6009d1591ef_0  5e58a25fc03b4af4_0	a047897a70c66292_0  dee2dad3787d20f2_0
+1e49132517c1bc8f_0  5e81a720a6195013_0	a0f7775e20e1bda3_0  dfd1fe8117ac83ce_0
+1e95967a98dafbfe_0  5ef4dbc66e503745_0	a3dc3cd7fe3bb602_0  dfe0066032a42e7e_0
+1f0e8b9f60068be6_0  60c5615db974c351_0	a3ec242c480c05d3_0  e21f6fbcc888841f_0
+200a48e62d23acd7_0  6241fa7ec7cb1eb3_0	a4b7292a335d99de_0  e3b691d37aff09f2_0
+203c0f2d60a00e50_0  638e662ef8e792c4_0	a545c3aec96fe09b_0  e4365938f14aa9a6_0
+205ff334d402165b_0  63d1f5f6c4cc159c_0	a604056a80fb6756_0  e438eafbf8180b0f_0
+20d2e50a27b4e583_0  64938edfed58bb64_0	a800f856edffeb2c_0  e625498e3330419c_0
+2110b6f14aec0765_0  65001bc24d0cec94_0	aacb63a9852699fe_0  e724dc45b1ae2b1b_0
+2111d1cf7a47abca_0  65f51bf4380f2a72_0	aad26a42ff13a91d_0  e74b18732391bd28_0
+21585d253b334c4c_0  663b31fdf18a31b5_0	aad3695335a1ce26_0  e7fd9c1ca7c7c5d0_0
+2159f760febdd949_0  664f3199196a3b97_0	aaefdedcef7724a1_0  e84f96a5dc64afa8_0
+2160aeba09a2721e_0  665659acb299807b_0	ab10f091305ac8a2_0  e8b576641a41a691_0
+21bfff22ae98322f_0  66b8ef9a305b65c3_0	ab49d8ddc8938dba_0  e9025a3dc2bf3f35_0
+221fdcbaf16cd05e_0  670e9935f4fc0f8e_0	ab8de1cc17831a10_0  e949af42cb06f40d_0
+2243c960f739d3ac_0  67f121cafb117c99_0	ac5483ab8e32f2e1_0  e98e09ec17a11397_0
+2348c3e9e9f82b58_0  681be9bf1ce18dc2_0	acb84cdb8995a807_0  eab6b734fda886d0_0
+235e6621bf99541d_0  6878abfdb01204bc_0	ad30e309c4f2254c_0  eaed490e174a02bb_0
+24990585ac26149d_0  689c287232bf8a0f_0	aebcf821669d24b4_0  eb88d10423772c06_0
+24bbbb6b9ec1699d_0  6bad9ac21e851e9e_0	af0015a1fb60e55d_0  ed2337da2c443a99_0
+24e2ec154567e83e_0  6c1c38106e64b9c2_0	af28b40a9bbd45f2_0  ed73183dbe41f03c_0
+24f440f511a7f1fd_0  6cc0214877f83d56_0	b10d1f31a9b2b6b3_0  edc34bc0ab2e51a0_0
+24fe3c6882793be7_0  6d5d840cc50a8f71_0	b46b2ace637a2fe9_0  ee239a2deb48421f_0
+250a9356ce0b0df4_0  6efae317603b59c9_0	b49fb2dcc19ffcca_0  efc02d3102f73ae6_0
+251bf8ef3f591675_0  6f000ca14fbd7f84_0	b4b315ef66b9ae86_0  f0df1627f33c6ed1_0
+25a04c15b3fb294b_0  6f4ad39a69cdba8d_0	b4fe02f4a01845e5_0  f18f1e1134570e53_0
+25ba841e40ba5eaf_0  6fc690b8614d8c49_0	b5a48ef3ada14a4e_0  f1c5093bac5a5d8e_0
+26a77c56fe846809_0  7087e952ff7241c3_0	b5c3623dd84dda56_0  f21dfaceb769949a_0
+26e083bd00c172ec_0  71d834c615527a41_0	b67b4b34d016de6a_0  f27454bbff53d1df_0
+282182e4b1fb66d7_0  72778f953d031190_0	b67fdcf642078c0a_0  f2dc2c8f74f2576f_0
+282c4a6cd9ed9acb_0  728e6d05aebf8b40_0	b6fd4c92ff2af8e8_0  f327c6e61ea9986a_0
+283afdcd88808511_0  7409681e15c824b1_0	b71d1dc800fbad34_0  f50c527cd657b587_0
+28e639050d0a772c_0  744e3597bddfe327_0	b76a0040e5c77623_0  f59dba229808c8ca_0
+2905d05f71d93bfd_0  75f6a0d5a4849570_0	b794b4c45f3dda6e_0  f79886370e62cb2b_0
+2927240846f19e7c_0  7602ebae379ee1b6_0	b859a3f6f27c5562_0  f812f919eee2b70e_0
+293b81db6801c0be_0  763bc2105e30aaec_0	b9b65e18006e3309_0  f98a31d4a3793d0f_0
+297277e3107d202c_0  767a72eb0d2303ef_0	baa09ce89f28ba86_0  fa652644c4d6da1a_0
+2b67bebf6f184e15_0  76813840e316266d_0	bbb8329feee798b7_0  faced73fd4e3dce9_0
+2c58b6405683e790_0  76a1752db2f94d1b_0	bc0084f78db55a1e_0  faee4dd7ec8cd7c1_0
+2c5bf40a2733d055_0  78adb26252aafd87_0	bcd70147c088877d_0  fb02b29dac8c89bc_0
+2ccaceec029d8d1f_0  797ad4d4a4715a59_0	bd277dad0d906023_0  fb155ad64ec5aac5_0
+2fbbf1b1fd5aaafe_0  79d44c5feb72c139_0	bd463d6f8e3022b9_0  fb31c1b229850e56_0
+3053daa9908b625c_0  7af79a7efd7dc990_0	bded169503793026_0  fc0870990c12ca5a_0
+305a57de0ad910d6_0  7b10ea06db061c53_0	be358e157ad7ec98_0  fc2348d0ee71638c_0
+30b60ca107c5bf3d_0  7b860f812f152441_0	be3efcec83607fb7_0  fd0024bf41d367d2_0
+312b7c34219ae749_0  7b9eaa36661f3c60_0	befdc33f1b44d826_0  fd23d663891205ab_0
+32df027b3a659d52_0  7bb8ae24c4bfe5e6_0	bfb0d6a152abe55f_0  fdfe0db5ca0c8d62_0
+33f783c1a7d8177a_0  7c4f047fa3246bbf_0	c05377cfa6705288_0  fe021b648b7855ac_0
+340e6dc2351c50d5_0  7c671bbe753a08c7_0	c0b7cd9d57824f8f_0  ffa7723331ecee34_0
+345a26e3f8696213_0  7d2c4ba0f71b4950_0	c2063f390da1227b_0  index
+345a923157771569_0  7dd55e48e3c3c96a_0	c261261267592318_0  index-dir
+36062c4c9b9d911d_0  7e1343d46f5e0fc6_0	c3d57601500915ba_0
+
+'./browser/user_data/Default/Code Cache/js/index-dir':
+the-real-index
+
+'./browser/user_data/Default/Code Cache/wasm':
+index  index-dir
+
+'./browser/user_data/Default/Code Cache/wasm/index-dir':
+the-real-index
+
+./browser/user_data/Default/DawnGraphiteCache:
+data_0	data_1	data_2	data_3	index
+
+./browser/user_data/Default/DawnWebGPUCache:
+data_0	data_1	data_2	data_3	index
+
+'./browser/user_data/Default/Download Service':
+EntryDB  Files
+
+'./browser/user_data/Default/Download Service/EntryDB':
+LOCK  LOG  LOG.old
+
+'./browser/user_data/Default/Download Service/Files':
+
+'./browser/user_data/Default/Extension Rules':
+000003.log  CURRENT  LOCK  LOG	LOG.old  MANIFEST-000001
+
+'./browser/user_data/Default/Extension Scripts':
+000003.log  CURRENT  LOCK  LOG	LOG.old  MANIFEST-000001
+
+'./browser/user_data/Default/Extension State':
+000003.log  CURRENT  LOCK  LOG	LOG.old  MANIFEST-000001
+
+'./browser/user_data/Default/Feature Engagement Tracker':
+AvailabilityDB	EventDB
+
+'./browser/user_data/Default/Feature Engagement Tracker/AvailabilityDB':
+LOCK  LOG  LOG.old
+
+'./browser/user_data/Default/Feature Engagement Tracker/EventDB':
+LOCK  LOG  LOG.old
+
+'./browser/user_data/Default/GCM Store':
+Encryption
+
+'./browser/user_data/Default/GCM Store/Encryption':
+000003.log  CURRENT  LOCK  LOG	LOG.old  MANIFEST-000001
+
+./browser/user_data/Default/GPUCache:
+data_0	data_1	data_2	data_3	index
+
+./browser/user_data/Default/IndexedDB:
+https_agent.minimax.io_0.indexeddb.leveldb
+
+./browser/user_data/Default/IndexedDB/https_agent.minimax.io_0.indexeddb.leveldb:
+000004.log  000005.ldb	CURRENT  LOCK  LOG  MANIFEST-000001
+
+'./browser/user_data/Default/Local Storage':
+leveldb
+
+'./browser/user_data/Default/Local Storage/leveldb':
+000004.log  000005.ldb	CURRENT  LOCK  LOG  LOG.old  MANIFEST-000001
+
+./browser/user_data/Default/PersistentOriginTrials:
+LOCK  LOG  LOG.old
+
+'./browser/user_data/Default/Segmentation Platform':
+SegmentInfoDB  SignalDB  SignalStorageConfigDB
+
+'./browser/user_data/Default/Segmentation Platform/SegmentInfoDB':
+LOCK  LOG  LOG.old
+
+'./browser/user_data/Default/Segmentation Platform/SignalDB':
+LOCK  LOG  LOG.old
+
+'./browser/user_data/Default/Segmentation Platform/SignalStorageConfigDB':
+LOCK  LOG  LOG.old
+
+'./browser/user_data/Default/Service Worker':
+Database  ScriptCache
+
+'./browser/user_data/Default/Service Worker/Database':
+000003.log  CURRENT  LOCK  LOG	LOG.old  MANIFEST-000001
+
+'./browser/user_data/Default/Service Worker/ScriptCache':
+2cc80dabc69f58b6_0  4cb013792b196a35_0	index
+2cc80dabc69f58b6_1  4cb013792b196a35_1	index-dir
+
+'./browser/user_data/Default/Service Worker/ScriptCache/index-dir':
+the-real-index
+
+'./browser/user_data/Default/Session Storage':
+000003.log  CURRENT  LOCK  LOG	LOG.old  MANIFEST-000001
+
+./browser/user_data/Default/Sessions:
+Session_13400636811971847  Tabs_13400873415919084  Tabs_13400899477271121
+
+'./browser/user_data/Default/Shared Dictionary':
+cache  db  db-journal
+
+'./browser/user_data/Default/Shared Dictionary/cache':
+index  index-dir
+
+'./browser/user_data/Default/Shared Dictionary/cache/index-dir':
+the-real-index
+
+'./browser/user_data/Default/Site Characteristics Database':
+000003.log  CURRENT  LOCK  LOG	LOG.old  MANIFEST-000001
+
+'./browser/user_data/Default/Sync Data':
+LevelDB
+
+'./browser/user_data/Default/Sync Data/LevelDB':
+000003.log  CURRENT  LOCK  LOG	LOG.old  MANIFEST-000001
+
+./browser/user_data/Default/WebStorage:
+QuotaManager  QuotaManager-journal
+
+./browser/user_data/Default/blob_storage:
+df7e2d5a-1d39-463c-88bf-303d003cc17d
+
+./browser/user_data/Default/blob_storage/df7e2d5a-1d39-463c-88bf-303d003cc17d:
+
+./browser/user_data/Default/chrome_cart_db:
+LOCK  LOG  LOG.old
+
+./browser/user_data/Default/commerce_subscription_db:
+LOCK  LOG  LOG.old
+
+./browser/user_data/Default/discounts_db:
+LOCK  LOG  LOG.old
+
+./browser/user_data/Default/optimization_guide_hint_cache_store:
+LOCK  LOG  LOG.old
+
+./browser/user_data/Default/parcel_tracking_db:
+LOCK  LOG  LOG.old
+
+./browser/user_data/Default/shared_proto_db:
+000003.log  CURRENT  LOCK  LOG	LOG.old  MANIFEST-000001  metadata
+
+./browser/user_data/Default/shared_proto_db/metadata:
+000003.log  CURRENT  LOCK  LOG	LOG.old  MANIFEST-000001
+
+./browser/user_data/Dictionaries:
+en-US-10-1.bdic
+
+./browser/user_data/GrShaderCache:
+data_0	data_1	data_2	data_3	index
+
+./browser/user_data/GraphiteDawnCache:
+data_0	data_1	data_2	data_3	index
+
+'./browser/user_data/Safe Browsing':
+
+./browser/user_data/ShaderCache:
+data_0	data_1	data_2	data_3	index
+
+./browser/user_data/component_crx_cache:
+metadata.json
+
+./browser/user_data/extensions_crx_cache:
+metadata.json
+
+./browser/user_data/segmentation_platform:
+ukm_db	ukm_db-wal
+
+./dist:
+assets	index.html  robots.txt	sitemap.xml  use.txt
+
+./dist/assets:
+index-BG3AKIHM.js   supabase-DVm0ZTjx.js  vendor-CGeUl3AT.js
+index-BtHGjq7v.css  ui-DuwH06Sf.js
+
+./docs:
+FindBrexit_Consultants_Complete_Test_Report.docx
+FindBrexit_Consultants_Complete_Test_Report.md
+FindBrexit_Consultants_Complete_Test_Report.pdf
+
+./download:
+
+./external_api:
+__init__.py  data_sources  function_utils.py  mcp_function_list.json
+
+./external_api/data_sources:
+__init__.py	   commodities_source.py  scholar_source.py
+base.py		   metal_source.py	  tripadvisor_source.py
+booking_source.py  patents_source.py	  twitter_source.py
+client.py	   pinterest_source.py	  yahoo_source.py
+
+./extract:
+acra_belfast.json			 github_actions_status.json
+business_registration_page_content.json  hostinger_site_check.json
+clearborder_consultants.json		 trade_advisers.json
+customs_advisor.json			 vercel_site_check.json
+cutraco_consultants.json
+
+./final-auth-results.json:
+auth-Authentication-Busine-d40eb-r-Business-option-in-header-Mobile-Chrome
+
+./final-auth-results.json/auth-Authentication-Busine-d40eb-r-Business-option-in-header-Mobile-Chrome:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants:
+AUTH_SPEC_FIXES_REPORT.docx	    nginx.conf.example
+AUTH_SPEC_FIXES_REPORT.md	    package-lock.json
+AUTH_SPEC_FIXES_REPORT.pdf	    package.json
+COMPLETE_DEPLOYMENT_GUIDE.sh	    playwright-report
+DEPLOYMENT_COMPLETE.docx	    playwright.config.ts
+DEPLOYMENT_COMPLETE.md		    pnpm-lock.yaml
+DEPLOYMENT_COMPLETE.pdf		    postcss.config.js
+DUAL_DEPLOYMENT_GUIDE.md	    public
+GITHUB_ACTIONS_DEPLOYMENT_GUIDE.md  quote-test-results.json
+GITHUB_ACTIONS_SETUP.md		    setup-git-and-deploy.sh
+GITHUB_DEPLOYMENT_README.md	    setup-git.sh
+GITHUB_SECRETS_SETUP.md		    setup-github-deployment.sh
+GITHUB_SECRETS_SETUP_GUIDE.md	    src
+HOSTINGER_DEPLOYMENT.md		    supabase
+HOSTINGER_GITHUB_ACTIONS_SETUP.md   tailwind.config.js
+POST_DEPLOYMENT_SMOKE_TESTS.md	    temp-review-results.json
+QUICK_REFERENCE.md		    test-results
+README.md			    test-results-auth.json
+SERVER_CONFIGURATION_GUIDE.md	    test-results-current.json
+SUPABASE_CORS_SETUP.md		    test-results-debug.json
+VERCEL_DEPLOYMENT_INSTRUCTIONS.md   test-results-focused.json
+automated-smoke-test.sh		    test-results-summary.txt
+build-hostinger.sh		    test-results-tail.txt
+components.json			    test-results.json
+comprehensive-test-results.txt	    tests
+comprehensive-test-run.txt	    tsconfig.app.json
+current-test-results.json	    tsconfig.json
+dist				    tsconfig.node.json
+eslint.config.js		    vercel.json
+final-auth-results.json		    verify-deployment-ready.sh
+final-test-results.json		    verify-deployment.sh
+index.html			    vite.config.ts
+
+./findbrexit-consultants/dist:
+assets	index.html  robots.txt	sitemap.xml  use.txt
+
+./findbrexit-consultants/dist/assets:
+index-BtHGjq7v.css  supabase-DVm0ZTjx.js  vendor-CGeUl3AT.js
+index-Dk27V799.js   ui-DuwH06Sf.js
+
+./findbrexit-consultants/final-auth-results.json:
+auth-Authentication-Busine-d40eb-r-Business-option-in-header-Mobile-Chrome
+
+./findbrexit-consultants/final-auth-results.json/auth-Authentication-Busine-d40eb-r-Business-option-in-header-Mobile-Chrome:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/playwright-report:
+index.html
+
+./findbrexit-consultants/public:
+robots.txt  sitemap.xml  use.txt
+
+./findbrexit-consultants/src:
+App.css  components  hooks	lib	  pages
+App.tsx  contexts    index.css	main.tsx  vite-env.d.ts
+
+./findbrexit-consultants/src/components:
+ErrorBoundary.tsx	 Footer.tsx  HeroSection.tsx	ServiceCategories.tsx
+FeaturedConsultants.tsx  Header.tsx  RecentReviews.tsx	SubscriptionManager.tsx
+
+./findbrexit-consultants/src/contexts:
+AuthContext.tsx
+
+./findbrexit-consultants/src/hooks:
+use-mobile.tsx
+
+./findbrexit-consultants/src/lib:
+supabase.ts  utils.ts
+
+./findbrexit-consultants/src/pages:
+AboutPage.tsx		   HowItWorksPage.tsx	   PrivacyPage.tsx
+BrexitGuidePage.tsx	   IndustryPage.tsx	   RequestQuotePage.tsx
+ConsultantProfilePage.tsx  ListBusinessPage.tsx    ServiceCategoryPage.tsx
+ContactPage.tsx		   LocationPage.tsx	   TermsPage.tsx
+CookiePolicyPage.tsx	   PaymentCancelPage.tsx   auth
+FindConsultantsPage.tsx    PaymentSuccessPage.tsx  dashboard
+HomePage.tsx		   PricingPage.tsx
+
+./findbrexit-consultants/src/pages/auth:
+ForgotPasswordPage.tsx	ResetPasswordPage.tsx  SignInPage.tsx  SignUpPage.tsx
+
+./findbrexit-consultants/src/pages/dashboard:
+AdminDashboard.tsx  ConsultantDashboard.tsx
+
+./findbrexit-consultants/supabase:
+functions
+
+./findbrexit-consultants/supabase/functions:
+create-subscription  customer-portal  stripe-webhook
+
+./findbrexit-consultants/supabase/functions/create-subscription:
+index.ts
+
+./findbrexit-consultants/supabase/functions/customer-portal:
+index.ts
+
+./findbrexit-consultants/supabase/functions/stripe-webhook:
+index.ts
+
+./findbrexit-consultants/test-results:
+auth-Authentication-Busine-d40eb-r-Business-option-in-header-firefox
+consultant-profile-Consult-b5d67-act-information-and-methods-chromium
+
+./findbrexit-consultants/test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-firefox:
+
+./findbrexit-consultants/test-results/consultant-profile-Consult-b5d67-act-information-and-methods-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-auth.json:
+
+./findbrexit-consultants/test-results-current.json:
+auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium
+auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium
+auth-Authentication-Busine-200fd-s-listing-registration-page-firefox
+auth-Authentication-Busine-4cf72-business-category-selection-chromium
+auth-Authentication-Busine-4cf72-business-category-selection-firefox
+auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium
+auth-Authentication-Busine-6fb25-tion-about-listing-benefits-firefox
+auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium
+auth-Authentication-Busine-a2bdc-at-in-business-registration-firefox
+auth-Authentication-Busine-bc5f9-ss-registration-form-fields-firefox
+auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium
+auth-Authentication-Busine-d40eb-r-Business-option-in-header-firefox
+auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium
+auth-Authentication-Busine-d6f5a-ds-on-business-registration-firefox
+auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium
+consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium
+consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium
+consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium
+consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium
+consultant-profile-Consult-b5d67-act-information-and-methods-chromium
+consultant-profile-Consult-c49d6-key-metrics-and-information-chromium
+consultant-profile-Consult-de0af-rofiles-from-search-results-chromium
+consultant-profile-Consult-ee56e-ant-services-and-industries-chromium
+consultant-profile-Consult-f614d-redentials-and-verification-chromium
+quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium
+quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium
+quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium
+quote-request-Quote-Reques-44297-hould-validate-email-format-chromium
+quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium
+quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium
+review-submission-Review-S-09609--average-rating-calculation-chromium
+review-submission-Review-S-67e0d-ow-review-count-information-chromium
+review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium
+review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium
+review-submission-Review-S-bb85a-responsive-review-interface-chromium
+
+./findbrexit-consultants/test-results-current.json/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/auth-Authentication-Busine-200fd-s-listing-registration-page-firefox:
+
+./findbrexit-consultants/test-results-current.json/auth-Authentication-Busine-4cf72-business-category-selection-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/auth-Authentication-Busine-4cf72-business-category-selection-firefox:
+
+./findbrexit-consultants/test-results-current.json/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-firefox:
+
+./findbrexit-consultants/test-results-current.json/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/auth-Authentication-Busine-a2bdc-at-in-business-registration-firefox:
+
+./findbrexit-consultants/test-results-current.json/auth-Authentication-Busine-bc5f9-ss-registration-form-fields-firefox:
+
+./findbrexit-consultants/test-results-current.json/auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/auth-Authentication-Busine-d40eb-r-Business-option-in-header-firefox:
+test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/auth-Authentication-Busine-d6f5a-ds-on-business-registration-firefox:
+
+./findbrexit-consultants/test-results-current.json/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/consultant-profile-Consult-b5d67-act-information-and-methods-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/consultant-profile-Consult-c49d6-key-metrics-and-information-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/consultant-profile-Consult-de0af-rofiles-from-search-results-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/consultant-profile-Consult-ee56e-ant-services-and-industries-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/consultant-profile-Consult-f614d-redentials-and-verification-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/review-submission-Review-S-09609--average-rating-calculation-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/review-submission-Review-S-67e0d-ow-review-count-information-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-current.json/review-submission-Review-S-bb85a-responsive-review-interface-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-debug.json:
+
+./findbrexit-consultants/test-results-focused.json:
+auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium
+auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium
+auth-Authentication-Busine-4cf72-business-category-selection-chromium
+auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium
+auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium
+auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium
+auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium
+auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium
+consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium
+consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium
+consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium
+consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium
+consultant-profile-Consult-b5d67-act-information-and-methods-chromium
+consultant-profile-Consult-c49d6-key-metrics-and-information-chromium
+consultant-profile-Consult-de0af-rofiles-from-search-results-chromium
+consultant-profile-Consult-ee56e-ant-services-and-industries-chromium
+consultant-profile-Consult-f614d-redentials-and-verification-chromium
+quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium
+quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium
+quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium
+quote-request-Quote-Reques-44297-hould-validate-email-format-chromium
+quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium
+quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium
+review-submission-Review-S-09609--average-rating-calculation-chromium
+review-submission-Review-S-67e0d-ow-review-count-information-chromium
+review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium
+review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium
+review-submission-Review-S-bb85a-responsive-review-interface-chromium
+
+./findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-4cf72-business-category-selection-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-b5d67-act-information-and-methods-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-c49d6-key-metrics-and-information-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-de0af-rofiles-from-search-results-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-ee56e-ant-services-and-industries-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/consultant-profile-Consult-f614d-redentials-and-verification-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/review-submission-Review-S-09609--average-rating-calculation-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/review-submission-Review-S-67e0d-ow-review-count-information-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/test-results-focused.json/review-submission-Review-S-bb85a-responsive-review-interface-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants/tests:
+auth.spec.ts		    quote-request.spec.ts
+consultant-profile.spec.ts  review-submission.spec.ts
+
+./findbrexit-consultants-clean:
+AUTH_SPEC_FIXES_REPORT.docx	   nginx.conf.example
+AUTH_SPEC_FIXES_REPORT.md	   package-lock.json
+AUTH_SPEC_FIXES_REPORT.pdf	   package.json
+COMPLETE_DEPLOYMENT_GUIDE.sh	   playwright.config.ts
+GITHUB_ACTIONS_SETUP.md		   pnpm-lock.yaml
+HOSTINGER_DEPLOYMENT.md		   postcss.config.js
+POST_DEPLOYMENT_SMOKE_TESTS.md	   public
+README.md			   quote-test-results.json
+SERVER_CONFIGURATION_GUIDE.md	   setup-git.sh
+SUPABASE_CORS_SETUP.md		   src
+VERCEL_DEPLOYMENT_INSTRUCTIONS.md  supabase
+automated-smoke-test.sh		   tailwind.config.js
+build-hostinger.sh		   temp-review-results.json
+components.json			   tests
+comprehensive-test-results.txt	   tsconfig.app.json
+comprehensive-test-run.txt	   tsconfig.json
+current-test-results.json	   tsconfig.node.json
+dist				   vercel.json
+eslint.config.js		   verify-deployment-ready.sh
+final-auth-results.json		   verify-deployment.sh
+final-test-results.json		   vite.config.ts
+index.html
+
+./findbrexit-consultants-clean/dist:
+assets	index.html  robots.txt	sitemap.xml  use.txt
+
+./findbrexit-consultants-clean/dist/assets:
+index-BtHGjq7v.css  supabase-DVm0ZTjx.js  vendor-CGeUl3AT.js
+index-Dk27V799.js   ui-DuwH06Sf.js
+
+./findbrexit-consultants-clean/final-auth-results.json:
+auth-Authentication-Busine-d40eb-r-Business-option-in-header-Mobile-Chrome
+
+./findbrexit-consultants-clean/final-auth-results.json/auth-Authentication-Busine-d40eb-r-Business-option-in-header-Mobile-Chrome:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-clean/public:
+robots.txt  sitemap.xml  use.txt
+
+./findbrexit-consultants-clean/src:
+App.css  components  hooks	lib	  pages
+App.tsx  contexts    index.css	main.tsx  vite-env.d.ts
+
+./findbrexit-consultants-clean/src/components:
+ErrorBoundary.tsx	 Footer.tsx  HeroSection.tsx	ServiceCategories.tsx
+FeaturedConsultants.tsx  Header.tsx  RecentReviews.tsx	SubscriptionManager.tsx
+
+./findbrexit-consultants-clean/src/contexts:
+AuthContext.tsx
+
+./findbrexit-consultants-clean/src/hooks:
+use-mobile.tsx
+
+./findbrexit-consultants-clean/src/lib:
+supabase.ts  utils.ts
+
+./findbrexit-consultants-clean/src/pages:
+AboutPage.tsx		   HowItWorksPage.tsx	   PrivacyPage.tsx
+BrexitGuidePage.tsx	   IndustryPage.tsx	   RequestQuotePage.tsx
+ConsultantProfilePage.tsx  ListBusinessPage.tsx    ServiceCategoryPage.tsx
+ContactPage.tsx		   LocationPage.tsx	   TermsPage.tsx
+CookiePolicyPage.tsx	   PaymentCancelPage.tsx   auth
+FindConsultantsPage.tsx    PaymentSuccessPage.tsx  dashboard
+HomePage.tsx		   PricingPage.tsx
+
+./findbrexit-consultants-clean/src/pages/auth:
+ForgotPasswordPage.tsx	ResetPasswordPage.tsx  SignInPage.tsx  SignUpPage.tsx
+
+./findbrexit-consultants-clean/src/pages/dashboard:
+AdminDashboard.tsx  ConsultantDashboard.tsx
+
+./findbrexit-consultants-clean/supabase:
+functions
+
+./findbrexit-consultants-clean/supabase/functions:
+create-subscription  customer-portal  stripe-webhook
+
+./findbrexit-consultants-clean/supabase/functions/create-subscription:
+index.ts
+
+./findbrexit-consultants-clean/supabase/functions/customer-portal:
+index.ts
+
+./findbrexit-consultants-clean/supabase/functions/stripe-webhook:
+index.ts
+
+./findbrexit-consultants-clean/tests:
+auth.spec.ts		    quote-request.spec.ts
+consultant-profile.spec.ts  review-submission.spec.ts
+
+./findbrexit-consultants-fresh:
+AUTH_SPEC_FIXES_REPORT.docx	    package-lock.json
+AUTH_SPEC_FIXES_REPORT.md	    package.json
+AUTH_SPEC_FIXES_REPORT.pdf	    playwright-report
+COMPLETE_DEPLOYMENT_GUIDE.sh	    playwright.config.ts
+DEPLOYMENT_COMPLETE.docx	    pnpm-lock.yaml
+DEPLOYMENT_COMPLETE.md		    postcss.config.js
+DEPLOYMENT_COMPLETE.pdf		    public
+DUAL_DEPLOYMENT_GUIDE.md	    quote-test-results.json
+GITHUB_ACTIONS_DEPLOYMENT_GUIDE.md  setup-git-and-deploy.sh
+GITHUB_ACTIONS_SETUP.md		    setup-git.sh
+GITHUB_DEPLOYMENT_README.md	    setup-github-deployment.sh
+GITHUB_SECRETS_SETUP.md		    src
+HOSTINGER_DEPLOYMENT.md		    supabase
+HOSTINGER_GITHUB_ACTIONS_SETUP.md   tailwind.config.js
+POST_DEPLOYMENT_SMOKE_TESTS.md	    temp-review-results.json
+QUICK_REFERENCE.md		    test-results
+README.md			    test-results-auth.json
+SERVER_CONFIGURATION_GUIDE.md	    test-results-current.json
+SUPABASE_CORS_SETUP.md		    test-results-debug.json
+VERCEL_DEPLOYMENT_INSTRUCTIONS.md   test-results-focused.json
+automated-smoke-test.sh		    test-results-summary.txt
+build-hostinger.sh		    test-results-tail.txt
+components.json			    test-results.json
+comprehensive-test-results.txt	    tests
+comprehensive-test-run.txt	    tsconfig.app.json
+current-test-results.json	    tsconfig.json
+dist				    tsconfig.node.json
+eslint.config.js		    vercel.json
+final-auth-results.json		    verify-deployment-ready.sh
+final-test-results.json		    verify-deployment.sh
+index.html			    vite.config.ts
+nginx.conf.example
+
+./findbrexit-consultants-fresh/dist:
+assets	index.html  robots.txt	sitemap.xml  use.txt
+
+./findbrexit-consultants-fresh/dist/assets:
+index-BtHGjq7v.css  supabase-DVm0ZTjx.js  vendor-CGeUl3AT.js
+index-Dk27V799.js   ui-DuwH06Sf.js
+
+./findbrexit-consultants-fresh/final-auth-results.json:
+auth-Authentication-Busine-d40eb-r-Business-option-in-header-Mobile-Chrome
+
+./findbrexit-consultants-fresh/final-auth-results.json/auth-Authentication-Busine-d40eb-r-Business-option-in-header-Mobile-Chrome:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/playwright-report:
+index.html
+
+./findbrexit-consultants-fresh/public:
+robots.txt  sitemap.xml  use.txt
+
+./findbrexit-consultants-fresh/src:
+App.css  components  hooks	lib	  pages
+App.tsx  contexts    index.css	main.tsx  vite-env.d.ts
+
+./findbrexit-consultants-fresh/src/components:
+ErrorBoundary.tsx	 Footer.tsx  HeroSection.tsx	ServiceCategories.tsx
+FeaturedConsultants.tsx  Header.tsx  RecentReviews.tsx	SubscriptionManager.tsx
+
+./findbrexit-consultants-fresh/src/contexts:
+AuthContext.tsx
+
+./findbrexit-consultants-fresh/src/hooks:
+use-mobile.tsx
+
+./findbrexit-consultants-fresh/src/lib:
+supabase.ts  utils.ts
+
+./findbrexit-consultants-fresh/src/pages:
+AboutPage.tsx		   HowItWorksPage.tsx	   PrivacyPage.tsx
+BrexitGuidePage.tsx	   IndustryPage.tsx	   RequestQuotePage.tsx
+ConsultantProfilePage.tsx  ListBusinessPage.tsx    ServiceCategoryPage.tsx
+ContactPage.tsx		   LocationPage.tsx	   TermsPage.tsx
+CookiePolicyPage.tsx	   PaymentCancelPage.tsx   auth
+FindConsultantsPage.tsx    PaymentSuccessPage.tsx  dashboard
+HomePage.tsx		   PricingPage.tsx
+
+./findbrexit-consultants-fresh/src/pages/auth:
+ForgotPasswordPage.tsx	ResetPasswordPage.tsx  SignInPage.tsx  SignUpPage.tsx
+
+./findbrexit-consultants-fresh/src/pages/dashboard:
+AdminDashboard.tsx  ConsultantDashboard.tsx
+
+./findbrexit-consultants-fresh/supabase:
+functions
+
+./findbrexit-consultants-fresh/supabase/functions:
+create-subscription  customer-portal  stripe-webhook
+
+./findbrexit-consultants-fresh/supabase/functions/create-subscription:
+index.ts
+
+./findbrexit-consultants-fresh/supabase/functions/customer-portal:
+index.ts
+
+./findbrexit-consultants-fresh/supabase/functions/stripe-webhook:
+index.ts
+
+./findbrexit-consultants-fresh/test-results:
+auth-Authentication-Busine-d40eb-r-Business-option-in-header-firefox
+consultant-profile-Consult-b5d67-act-information-and-methods-chromium
+
+./findbrexit-consultants-fresh/test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-firefox:
+
+./findbrexit-consultants-fresh/test-results/consultant-profile-Consult-b5d67-act-information-and-methods-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-auth.json:
+
+./findbrexit-consultants-fresh/test-results-current.json:
+auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium
+auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium
+auth-Authentication-Busine-200fd-s-listing-registration-page-firefox
+auth-Authentication-Busine-4cf72-business-category-selection-chromium
+auth-Authentication-Busine-4cf72-business-category-selection-firefox
+auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium
+auth-Authentication-Busine-6fb25-tion-about-listing-benefits-firefox
+auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium
+auth-Authentication-Busine-a2bdc-at-in-business-registration-firefox
+auth-Authentication-Busine-bc5f9-ss-registration-form-fields-firefox
+auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium
+auth-Authentication-Busine-d40eb-r-Business-option-in-header-firefox
+auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium
+auth-Authentication-Busine-d6f5a-ds-on-business-registration-firefox
+auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium
+consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium
+consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium
+consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium
+consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium
+consultant-profile-Consult-b5d67-act-information-and-methods-chromium
+consultant-profile-Consult-c49d6-key-metrics-and-information-chromium
+consultant-profile-Consult-de0af-rofiles-from-search-results-chromium
+consultant-profile-Consult-ee56e-ant-services-and-industries-chromium
+consultant-profile-Consult-f614d-redentials-and-verification-chromium
+quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium
+quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium
+quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium
+quote-request-Quote-Reques-44297-hould-validate-email-format-chromium
+quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium
+quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium
+review-submission-Review-S-09609--average-rating-calculation-chromium
+review-submission-Review-S-67e0d-ow-review-count-information-chromium
+review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium
+review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium
+review-submission-Review-S-bb85a-responsive-review-interface-chromium
+
+./findbrexit-consultants-fresh/test-results-current.json/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/auth-Authentication-Busine-200fd-s-listing-registration-page-firefox:
+
+./findbrexit-consultants-fresh/test-results-current.json/auth-Authentication-Busine-4cf72-business-category-selection-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/auth-Authentication-Busine-4cf72-business-category-selection-firefox:
+
+./findbrexit-consultants-fresh/test-results-current.json/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-firefox:
+
+./findbrexit-consultants-fresh/test-results-current.json/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/auth-Authentication-Busine-a2bdc-at-in-business-registration-firefox:
+
+./findbrexit-consultants-fresh/test-results-current.json/auth-Authentication-Busine-bc5f9-ss-registration-form-fields-firefox:
+
+./findbrexit-consultants-fresh/test-results-current.json/auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/auth-Authentication-Busine-d40eb-r-Business-option-in-header-firefox:
+test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/auth-Authentication-Busine-d6f5a-ds-on-business-registration-firefox:
+
+./findbrexit-consultants-fresh/test-results-current.json/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/consultant-profile-Consult-b5d67-act-information-and-methods-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/consultant-profile-Consult-c49d6-key-metrics-and-information-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/consultant-profile-Consult-de0af-rofiles-from-search-results-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/consultant-profile-Consult-ee56e-ant-services-and-industries-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/consultant-profile-Consult-f614d-redentials-and-verification-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/review-submission-Review-S-09609--average-rating-calculation-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/review-submission-Review-S-67e0d-ow-review-count-information-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-current.json/review-submission-Review-S-bb85a-responsive-review-interface-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-debug.json:
+
+./findbrexit-consultants-fresh/test-results-focused.json:
+auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium
+auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium
+auth-Authentication-Busine-4cf72-business-category-selection-chromium
+auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium
+auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium
+auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium
+auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium
+auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium
+consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium
+consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium
+consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium
+consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium
+consultant-profile-Consult-b5d67-act-information-and-methods-chromium
+consultant-profile-Consult-c49d6-key-metrics-and-information-chromium
+consultant-profile-Consult-de0af-rofiles-from-search-results-chromium
+consultant-profile-Consult-ee56e-ant-services-and-industries-chromium
+consultant-profile-Consult-f614d-redentials-and-verification-chromium
+quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium
+quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium
+quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium
+quote-request-Quote-Reques-44297-hould-validate-email-format-chromium
+quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium
+quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium
+review-submission-Review-S-09609--average-rating-calculation-chromium
+review-submission-Review-S-67e0d-ow-review-count-information-chromium
+review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium
+review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium
+review-submission-Review-S-bb85a-responsive-review-interface-chromium
+
+./findbrexit-consultants-fresh/test-results-focused.json/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/auth-Authentication-Busine-4cf72-business-category-selection-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/consultant-profile-Consult-b5d67-act-information-and-methods-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/consultant-profile-Consult-c49d6-key-metrics-and-information-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/consultant-profile-Consult-de0af-rofiles-from-search-results-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/consultant-profile-Consult-ee56e-ant-services-and-industries-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/consultant-profile-Consult-f614d-redentials-and-verification-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/review-submission-Review-S-09609--average-rating-calculation-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/review-submission-Review-S-67e0d-ow-review-count-information-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/test-results-focused.json/review-submission-Review-S-bb85a-responsive-review-interface-chromium:
+error-context.md  test-failed-1.png
+
+./findbrexit-consultants-fresh/tests:
+auth.spec.ts		    quote-request.spec.ts
+consultant-profile.spec.ts  review-submission.spec.ts
+
+./hostinger-deployment-package:
+DEPLOYMENT_CHECKLIST.md        assets	   robots.txt	use.txt
+HOSTINGER_DEPLOYMENT_GUIDE.md  index.html  sitemap.xml
+
+./hostinger-deployment-package/assets:
+index-CI3IbpB4.js   supabase-BkTJ-oRS.js  vendor-CGeUl3AT.js
+index-DL8T8n5G.css  ui-DuwH06Sf.js
+
+./imgs:
+
+./memory:
+todo_meta.json
+
+./playwright-report:
+index.html
+
+./public:
+robots.txt  sitemap.xml  use.txt
+
+./shell_output_save:
+'--max-failures=2_1756292448.txt'
+'--max-failures=3_1756306923.txt'
+'--max-failures=3_1756307020.txt'
+'--max-failures=5_1756307116.txt'
+'--max-failures=5_1756369427.txt'
+'--output=test-results-focused.json_1756251637.txt'
+'--project=chromium_1756255348.txt'
+'--project=chromium_1756255837.txt'
+'--project=chromium_1756281868.txt'
+'--project=chromium_1756281915.txt'
+'--project=chromium_1756281965.txt'
+'--project=chromium_1756282022.txt'
+'--project=chromium_1756282356.txt'
+'--project=chromium_1756282532.txt'
+'--project=chromium_1756282654.txt'
+'--project=chromium_1756282704.txt'
+'--reporter=line_1756254883.txt'
+'--reporter=line_1756256677.txt'
+'--reporter=line_1756308790.txt'
+'--reporter=line_1756308938.txt'
+'--reporter=line_1756309198.txt'
+'--reporter=line_1756309711.txt'
+'--reporter=line_1756310040.txt'
+'--reporter=line_1756310080.txt'
+'--reporter=line_1756310148.txt'
+'--reporter=line_1756310375.txt'
+'--reporter=line_1756310464.txt'
+'--reporter=line_1756311040.txt'
+'--reporter=line_1756311154.txt'
+'--reporter=list_1756284980.txt'
+'--reporter=list_1756285056.txt'
+'--reporter=list_1756285207.txt'
+'--reporter=list_1756285530.txt'
+'--reporter=list_1756285820.txt'
+'--reporter=list_1756285891.txt'
+'--reporter=list_1756286082.txt'
+'--reporter=list_1756287846.txt'
+'--reporter=list_1756288942.txt'
+'--reporter=list_1756288976.txt'
+'--reporter=list_1756289013.txt'
+'--reporter=list_1756291220.txt'
+'--reporter=list_1756291269.txt'
+'--reporter=list_1756291356.txt'
+'--timeout=10000_1756292613.txt'
+ -100_1756200338.txt
+ -50_1756257058.txt
+ -F_1756461273.txt
+ -R_1756457759.txt
+ -l_1756387560.txt
+ -la_1756387667.txt
+ -la_1756396334.txt
+ -la_1756454154.txt
+ @playwright_test_1756281382.txt
+ @playwright_test_1756369143.txt
+'Chrome"_1756309877.txt'
+'\;_1756305877.txt'
+'\;_1756382232.txt'
+ _workspace_1756382203.txt
+'automatically!"_1756382957.txt'
+ build-hostinger.sh_1756250883.txt
+ build:prod_1756323170.txt
+ build:prod_1756369674.txt
+ build_1756202802.txt
+ build_1756212436.txt
+ build_1756229086.txt
+ build_1756456635.txt
+ cat_1756282036.txt
+'commit"_1756396372.txt'
+ comprehensive-test-run.txt_1756257684.txt
+ comprehensive_directory_filter_tests.js_1756212139.txt
+ comprehensive_directory_filter_tests.js_1756243128.txt
+'deployment"_1756372033.txt'
+'deployment"_1756387697.txt'
+ grep_1756283609.txt
+ grep_1756287044.txt
+'header"_1756290451.txt'
+ https:__github.com_mitchell1972_findbrexitconsultants.git_1756376926.txt
+ install_1756246738.txt
+ install_1756281411.txt
+ install_1756306284.txt
+ install_1756369176.txt
+ install_1756459562.txt
+ main_1756396507.txt
+ main_1756400631.txt
+ master_1756391042.txt
+ master_1756418987.txt
+ master_1756427047.txt
+ master_1756455160.txt
+ monitor_1756287595_1756287595.txt
+ monitor_1756308457_1756308474.txt
+ monitor_1756308600_1756308614.txt
+ monitor_timeout_1756247105_1756247160.txt
+ monitor_timeout_1756247171_1756247226.txt
+ monitor_timeout_1756248169_1756248224.txt
+ monitor_timeout_1756251452_1756251507.txt
+ monitor_timeout_1756281735_1756281790.txt
+ monitor_timeout_1756287176_1756287201.txt
+ monitor_timeout_1756287355_1756287411.txt
+ monitor_timeout_1756290999_1756291024.txt
+ monitor_timeout_1756291670_1756291695.txt
+ monitor_timeout_1756306413_1756306468.txt
+ monitor_timeout_1756306475_1756306530.txt
+ monitor_timeout_1756370589_1756370645.txt
+ monitor_timeout_1756459693_1756459748.txt
+ monitor_timeout_1756461425_1756461480.txt
+'pipeline"_1756454959.txt'
+ status_1756460843.txt
+ test-results__1756251521.txt
+ timeout_1756247097.txt
+ timeout_1756248013.txt
+ timeout_1756248159.txt
+ timeout_1756251440.txt
+ timeout_1756254850.txt
+ timeout_1756256069.txt
+ timeout_1756256426.txt
+ timeout_1756256602.txt
+ timeout_1756257540.txt
+ timeout_1756281728.txt
+ timeout_1756283598.txt
+ timeout_1756283814.txt
+ timeout_1756284012.txt
+ timeout_1756284143.txt
+ timeout_1756284269.txt
+ timeout_1756284392.txt
+ timeout_1756284767.txt
+ timeout_1756287165.txt
+ timeout_1756287348.txt
+ timeout_1756287588.txt
+ timeout_1756290269.txt
+ timeout_1756290992.txt
+ timeout_1756291663.txt
+ timeout_1756292136.txt
+ timeout_1756306258.txt
+ timeout_1756306404.txt
+ timeout_1756306660.txt
+ timeout_1756306789.txt
+ timeout_1756308453.txt
+ timeout_1756308595.txt
+ timeout_1756309119.txt
+ timeout_1756370579.txt
+ timeout_1756459534.txt
+ timeout_1756459683.txt
+ timeout_1756461417.txt
+ timeout_1756461624.txt
+
+./src:
+App.css  components  hooks	lib	  pages
+App.tsx  contexts    index.css	main.tsx  vite-env.d.ts
+
+./src/components:
+ErrorBoundary.tsx	 Footer.tsx  HeroSection.tsx	ServiceCategories.tsx
+FeaturedConsultants.tsx  Header.tsx  RecentReviews.tsx	SubscriptionManager.tsx
+
+./src/contexts:
+AuthContext.tsx
+
+./src/hooks:
+use-mobile.tsx
+
+./src/lib:
+supabase.ts  utils.ts
+
+./src/pages:
+AboutPage.tsx		   HowItWorksPage.tsx	   PrivacyPage.tsx
+BrexitGuidePage.tsx	   IndustryPage.tsx	   RequestQuotePage.tsx
+ConsultantProfilePage.tsx  ListBusinessPage.tsx    ServiceCategoryPage.tsx
+ContactPage.tsx		   LocationPage.tsx	   TermsPage.tsx
+CookiePolicyPage.tsx	   PaymentCancelPage.tsx   auth
+FindConsultantsPage.tsx    PaymentSuccessPage.tsx  dashboard
+HomePage.tsx		   PricingPage.tsx
+
+./src/pages/auth:
+ForgotPasswordPage.tsx	ResetPasswordPage.tsx  SignInPage.tsx  SignUpPage.tsx
+
+./src/pages/dashboard:
+AdminDashboard.tsx  ConsultantDashboard.tsx
+
+./sub_tasks:
+task_summary_github_actions_debugging_fix.docx
+task_summary_github_actions_debugging_fix.md
+task_summary_github_actions_debugging_fix.pdf
+task_summary_github_actions_package_json_fix.docx
+task_summary_github_actions_package_json_fix.md
+task_summary_github_actions_package_json_fix.pdf
+task_summary_github_actions_workflow_fix.docx
+task_summary_github_actions_workflow_fix.md
+task_summary_github_actions_workflow_fix.pdf
+task_summary_github_actions_workflow_setup.docx
+task_summary_github_actions_workflow_setup.md
+task_summary_github_actions_workflow_setup.pdf
+task_summary_github_repository_push_completed.docx
+task_summary_github_repository_push_completed.md
+task_summary_github_repository_push_completed.pdf
+task_summary_stripe_payment_integration_findbrexit.docx
+task_summary_stripe_payment_integration_findbrexit.md
+task_summary_stripe_payment_integration_findbrexit.pdf
+task_summary_typescript_build_errors_fix.docx
+task_summary_typescript_build_errors_fix.md
+task_summary_typescript_build_errors_fix.pdf
+
+./supabase:
+functions  tables
+
+./supabase/functions:
+approve-consultant   customer-portal	 submit-quote-request
+create-admin-user    search-consultants
+create-subscription  stripe-webhook
+
+./supabase/functions/approve-consultant:
+index.ts
+
+./supabase/functions/create-admin-user:
+index.ts
+
+./supabase/functions/create-subscription:
+index.ts
+
+./supabase/functions/customer-portal:
+index.ts
+
+./supabase/functions/search-consultants:
+index.ts
+
+./supabase/functions/stripe-webhook:
+index.ts
+
+./supabase/functions/submit-quote-request:
+index.ts
+
+./supabase/tables:
+brexit_case_studies.sql		  brexit_quote_requests.sql
+brexit_consultant_industries.sql  brexit_quote_responses.sql
+brexit_consultant_locations.sql   brexit_reviews.sql
+brexit_consultant_services.sql	  brexit_service_types.sql
+brexit_consultants.sql		  brexit_subscriptions.sql
+brexit_industries.sql		  contact_submissions.sql
+brexit_locations.sql		  fbc_plans.sql
+brexit_plans.sql		  fbc_subscriptions.sql
+
+./test-results:
+
+./test-results-auth.json:
+
+./test-results-current.json:
+auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium
+auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium
+auth-Authentication-Busine-200fd-s-listing-registration-page-firefox
+auth-Authentication-Busine-4cf72-business-category-selection-chromium
+auth-Authentication-Busine-4cf72-business-category-selection-firefox
+auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium
+auth-Authentication-Busine-6fb25-tion-about-listing-benefits-firefox
+auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium
+auth-Authentication-Busine-a2bdc-at-in-business-registration-firefox
+auth-Authentication-Busine-bc5f9-ss-registration-form-fields-firefox
+auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium
+auth-Authentication-Busine-d40eb-r-Business-option-in-header-firefox
+auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium
+auth-Authentication-Busine-d6f5a-ds-on-business-registration-firefox
+auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium
+consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium
+consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium
+consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium
+consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium
+consultant-profile-Consult-b5d67-act-information-and-methods-chromium
+consultant-profile-Consult-c49d6-key-metrics-and-information-chromium
+consultant-profile-Consult-de0af-rofiles-from-search-results-chromium
+consultant-profile-Consult-ee56e-ant-services-and-industries-chromium
+consultant-profile-Consult-f614d-redentials-and-verification-chromium
+quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium
+quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium
+quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium
+quote-request-Quote-Reques-44297-hould-validate-email-format-chromium
+quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium
+quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium
+review-submission-Review-S-09609--average-rating-calculation-chromium
+review-submission-Review-S-67e0d-ow-review-count-information-chromium
+review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium
+review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium
+review-submission-Review-S-bb85a-responsive-review-interface-chromium
+
+./test-results-current.json/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/auth-Authentication-Busine-200fd-s-listing-registration-page-firefox:
+
+./test-results-current.json/auth-Authentication-Busine-4cf72-business-category-selection-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/auth-Authentication-Busine-4cf72-business-category-selection-firefox:
+
+./test-results-current.json/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-firefox:
+
+./test-results-current.json/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/auth-Authentication-Busine-a2bdc-at-in-business-registration-firefox:
+
+./test-results-current.json/auth-Authentication-Busine-bc5f9-ss-registration-form-fields-firefox:
+
+./test-results-current.json/auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/auth-Authentication-Busine-d40eb-r-Business-option-in-header-firefox:
+test-failed-1.png
+
+./test-results-current.json/auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/auth-Authentication-Busine-d6f5a-ds-on-business-registration-firefox:
+
+./test-results-current.json/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/consultant-profile-Consult-b5d67-act-information-and-methods-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/consultant-profile-Consult-c49d6-key-metrics-and-information-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/consultant-profile-Consult-de0af-rofiles-from-search-results-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/consultant-profile-Consult-ee56e-ant-services-and-industries-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/consultant-profile-Consult-f614d-redentials-and-verification-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/review-submission-Review-S-09609--average-rating-calculation-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/review-submission-Review-S-67e0d-ow-review-count-information-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-current.json/review-submission-Review-S-bb85a-responsive-review-interface-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-debug.json:
+
+./test-results-focused.json:
+auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium
+auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium
+auth-Authentication-Busine-4cf72-business-category-selection-chromium
+auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium
+auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium
+auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium
+auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium
+auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium
+consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium
+consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium
+consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium
+consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium
+consultant-profile-Consult-b5d67-act-information-and-methods-chromium
+consultant-profile-Consult-c49d6-key-metrics-and-information-chromium
+consultant-profile-Consult-de0af-rofiles-from-search-results-chromium
+consultant-profile-Consult-ee56e-ant-services-and-industries-chromium
+consultant-profile-Consult-f614d-redentials-and-verification-chromium
+quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium
+quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium
+quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium
+quote-request-Quote-Reques-44297-hould-validate-email-format-chromium
+quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium
+quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium
+review-submission-Review-S-09609--average-rating-calculation-chromium
+review-submission-Review-S-67e0d-ow-review-count-information-chromium
+review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium
+review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium
+review-submission-Review-S-bb85a-responsive-review-interface-chromium
+
+./test-results-focused.json/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/auth-Authentication-Busine-4cf72-business-category-selection-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/consultant-profile-Consult-b5d67-act-information-and-methods-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/consultant-profile-Consult-c49d6-key-metrics-and-information-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/consultant-profile-Consult-de0af-rofiles-from-search-results-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/consultant-profile-Consult-ee56e-ant-services-and-industries-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/consultant-profile-Consult-f614d-redentials-and-verification-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/quote-request-Quote-Reques-955f7-responsive-layout-on-mobile-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/quote-request-Quote-Reques-aba92-ote-request-with-valid-data-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/review-submission-Review-S-09609--average-rating-calculation-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/review-submission-Review-S-67e0d-ow-review-count-information-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium:
+error-context.md  test-failed-1.png
+
+./test-results-focused.json/review-submission-Review-S-bb85a-responsive-review-interface-chromium:
+error-context.md  test-failed-1.png
+
+./tests:
+auth.spec.ts		    quote-request.spec.ts
+consultant-profile.spec.ts  review-submission.spec.ts
+
+./user_input_files:
+image.png  image_1.png	image_2.png  image_3.png  image_4.png
