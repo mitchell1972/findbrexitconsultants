@@ -1,0 +1,2435 @@
+
+> findbrexit-consultants@0.0.1 test:e2e /workspace
+> playwright test
+
+
+Running 240 tests using 24 workers
+
+[1/240] …egistration Flows › should submit business registration with valid data
+[2/240] …ltant Profile Pages › should display consultant services and industries
+[3/240] …t Profile Pages › should display consultant key metrics and information
+[4/240] … & Business Registration Flows › should handle mobile responsive layout
+[5/240] …ness Registration Flows › should handle terms and conditions acceptance
+[6/240] …ration Flows › should validate required fields on business registration
+[7/240] …rofile Pages › should display consultant profile with tabbed navigation
+  1) [chromium] › tests/auth.spec.ts:378:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+  2) [chromium] › tests/auth.spec.ts:429:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+  3) [chromium] › tests/consultant-profile.spec.ts:130:3 › Consultant Profile Pages › should display consultant key metrics and information 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+[8/240] …› Consultant Profile Pages › should handle "Request Quote" button click
+  4) [chromium] › tests/consultant-profile.spec.ts:290:3 › Consultant Profile Pages › should display consultant services and industries 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+  5) [chromium] › tests/consultant-profile.spec.ts:71:3 › Consultant Profile Pages › should display consultant profile with tabbed navigation 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+  6) [chromium] › tests/consultant-profile.spec.ts:398:3 › Consultant Profile Pages › should handle "Request Quote" button click 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+  7) [chromium] › tests/auth.spec.ts:296:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+[9/240] …343:3 › Consultant Profile Pages › should navigate between profile tabs
+  8) [chromium] › tests/consultant-profile.spec.ts:343:3 › Consultant Profile Pages › should navigate between profile tabs 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+[10/240] …sultant Profile Pages › should display contact information and methods
+  9) [chromium] › tests/consultant-profile.spec.ts:187:3 › Consultant Profile Pages › should display contact information and methods 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+[11/240] … Registration Flows › should display business registration form fields
+  10) [chromium] › tests/auth.spec.ts:77:3 › Authentication & Business Registration Flows › should display business registration form fields 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+  11) [chromium] › tests/auth.spec.ts:106:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+[12/240] …onsultant Profile Pages › should display "Request Quote" functionality
+  12) [chromium] › tests/consultant-profile.spec.ts:176:3 › Consultant Profile Pages › should display "Request Quote" functionality 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+[13/240] … Consultant Profile Pages › should handle multiple consultant profiles
+  13) [chromium] › tests/consultant-profile.spec.ts:453:3 › Consultant Profile Pages › should handle multiple consultant profiles 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+[14/240] …stration Flows › should validate email format in business registration
+  14) [chromium] › tests/auth.spec.ts:151:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+[15/240] … Consultant Profile Pages › should display responsive layout on mobile
+  15) [chromium] › tests/consultant-profile.spec.ts:485:3 › Consultant Profile Pages › should display responsive layout on mobile 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+[16/240] …nctionality › should navigate to quote request from consultant profile
+  16) [chromium] › tests/quote-request.spec.ts:38:3 › Quote Request Functionality › should navigate to quote request from consultant profile 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+[17/240] …stration Flows › should navigate to business listing/registration page
+  17) [chromium] › tests/auth.spec.ts:46:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+[18/240] … Profile Pages › should display consultant ratings and reviews section
+  18) [chromium] › tests/consultant-profile.spec.ts:251:3 › Consultant Profile Pages › should display consultant ratings and reviews section 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+[19/240] …istration Flows › should display "List Your Business" option in header
+  19) [chromium] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+[20/240] …ofile Pages › should display professional credentials and verification
+  20) [chromium] › tests/consultant-profile.spec.ts:421:3 › Consultant Profile Pages › should display professional credentials and verification 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+[21/240] …usiness Registration Flows › should handle business category selection
+  21) [chromium] › tests/auth.spec.ts:193:3 › Authentication & Business Registration Flows › should handle business category selection 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+[22/240] …ile Pages › should navigate to consultant profiles from search results
+  22) [chromium] › tests/consultant-profile.spec.ts:48:3 › Consultant Profile Pages › should navigate to consultant profiles from search results 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+[23/240] …Registration Flows › should display information about listing benefits
+[24/240] …lity › should display quote request form with consultant pre-populated
+  23) [chromium] › tests/auth.spec.ts:240:3 › Authentication & Business Registration Flows › should display information about listing benefits 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+  24) [chromium] › tests/quote-request.spec.ts:61:3 › Quote Request Functionality › should display quote request form with consultant pre-populated 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+[25/240] …view Submission Functionality › should validate required review fields
+[26/240] …est Functionality › should validate required fields on form submission
+[27/240] … Request Functionality › should handle urgent/priority request options
+  25) [chromium] › tests/review-submission.spec.ts:296:3 › Review Submission Functionality › should validate required review fields 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+  26) [chromium] › tests/quote-request.spec.ts:159:3 › Quote Request Functionality › should validate required fields on form submission 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  27) [chromium] › tests/quote-request.spec.ts:568:3 › Quote Request Functionality › should handle urgent/priority request options 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+[28/240] …Quote Request Functionality › should display Brexit service categories
+[29/240] …unctionality › should display quote request form with essential fields
+[30/240] …should navigate to quote request on mobile using responsive navigation
+[31/240] ….ts:239:3 › Quote Request Functionality › should validate email format
+[32/240] …te Request Functionality › should handle phone number field validation
+[33/240] …ote Request Functionality › should display responsive layout on mobile
+[34/240] …ubmission Functionality › should display existing reviews with ratings
+  28) [chromium] › tests/quote-request.spec.ts:135:3 › Quote Request Functionality › should display quote request form with essential fields 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  29) [chromium] › tests/quote-request.spec.ts:593:3 › Quote Request Functionality › should navigate to quote request on mobile using responsive navigation 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+[35/240] …eview Submission Functionality › should handle star rating interaction
+  30) [chromium] › tests/quote-request.spec.ts:322:3 › Quote Request Functionality › should display Brexit service categories 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  31) [chromium] › tests/quote-request.spec.ts:239:3 › Quote Request Functionality › should validate email format 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  32) [chromium] › tests/review-submission.spec.ts:113:3 › Review Submission Functionality › should display existing reviews with ratings 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+  33) [chromium] › tests/quote-request.spec.ts:499:3 › Quote Request Functionality › should handle phone number field validation 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  34) [chromium] › tests/review-submission.spec.ts:336:3 › Review Submission Functionality › should handle star rating interaction 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+[36/240] …w Submission Functionality › should display average rating calculation
+  35) [chromium] › tests/review-submission.spec.ts:570:3 › Review Submission Functionality › should display average rating calculation 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+[37/240] …te Request Functionality › should handle multi-step quote request form
+[38/240] …ctionality › should display review form with rating and comment fields
+[39/240] …Review Submission Functionality › should show review count information
+[40/240] …ion Functionality › should submit complete review with rating and text
+[41/240] …on Functionality › should display review sorting and filtering options
+  36) [chromium] › tests/quote-request.spec.ts:609:3 › Quote Request Functionality › should display responsive layout on mobile 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  37) [chromium] › tests/review-submission.spec.ts:172:3 › Review Submission Functionality › should show review count information 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+  38) [chromium] › tests/review-submission.spec.ts:379:3 › Review Submission Functionality › should submit complete review with rating and text 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+[42/240] …tionality › should handle "Write Review" or "Add Review" functionality
+  39) [chromium] › tests/quote-request.spec.ts:453:3 › Quote Request Functionality › should handle multi-step quote request form 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  40) [chromium] › tests/review-submission.spec.ts:257:3 › Review Submission Functionality › should display review form with rating and comment fields 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+  41) [chromium] › tests/review-submission.spec.ts:501:3 › Review Submission Functionality › should display review sorting and filtering options 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+[43/240] …ssion Functionality › should handle mobile responsive review interface
+  42) [chromium] › tests/review-submission.spec.ts:209:3 › Review Submission Functionality › should handle "Write Review" or "Add Review" functionality 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+[44/240] …nality › should find and access reviews section on consultant profiles
+[45/240] …n Functionality › should handle authentication requirement for reviews
+[46/240] … Functionality › should handle review pagination if many reviews exist
+[47/240] …est Functionality › should display company/business information fields
+  43) [chromium] › tests/review-submission.spec.ts:42:3 › Review Submission Functionality › should find and access reviews section on consultant profiles 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+  44) [chromium] › tests/review-submission.spec.ts:460:3 › Review Submission Functionality › should handle authentication requirement for reviews 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+  45) [chromium] › tests/review-submission.spec.ts:608:3 › Review Submission Functionality › should handle mobile responsive review interface 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+  46) [chromium] › tests/review-submission.spec.ts:537:3 › Review Submission Functionality › should handle review pagination if many reviews exist 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+[48/240] …te Request Functionality › should submit quote request with valid data
+  47) [chromium] › tests/quote-request.spec.ts:546:3 › Quote Request Functionality › should display company/business information fields 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  48) [chromium] › tests/quote-request.spec.ts:391:3 › Quote Request Functionality › should submit quote request with valid data 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+[49/240] …stration Flows › should navigate to business listing/registration page
+[50/240] … Registration Flows › should display business registration form fields
+  49) [firefox] › tests/auth.spec.ts:46:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+  50) [firefox] › tests/auth.spec.ts:77:3 › Authentication & Business Registration Flows › should display business registration form fields 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+[51/240] …stration Flows › should validate email format in business registration
+[52/240] …gistration Flows › should submit business registration with valid data
+[53/240] …ess Registration Flows › should handle terms and conditions acceptance
+  51) [firefox] › tests/auth.spec.ts:378:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+  52) [firefox] › tests/auth.spec.ts:151:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+[54/240] …ofile Pages › should display professional credentials and verification
+  53) [firefox] › tests/auth.spec.ts:296:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+[55/240] …sultant Profile Pages › should display contact information and methods
+[56/240] …tant Profile Pages › should display consultant services and industries
+[57/240] …Registration Flows › should display information about listing benefits
+[58/240] …ofile Pages › should display consultant profile with tabbed navigation
+[59/240] …& Business Registration Flows › should handle mobile responsive layout
+[60/240] …ile Pages › should navigate to consultant profiles from search results
+[61/240] …onsultant Profile Pages › should display "Request Quote" functionality
+  54) [firefox] › tests/consultant-profile.spec.ts:290:3 › Consultant Profile Pages › should display consultant services and industries 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+  55) [firefox] › tests/consultant-profile.spec.ts:421:3 › Consultant Profile Pages › should display professional credentials and verification 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+[62/240] … Consultant Profile Pages › should handle "Request Quote" button click
+  56) [firefox] › tests/consultant-profile.spec.ts:187:3 › Consultant Profile Pages › should display contact information and methods 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+[63/240] … Profile Pages › should display consultant key metrics and information
+  57) [firefox] › tests/auth.spec.ts:240:3 › Authentication & Business Registration Flows › should display information about listing benefits 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+  58) [firefox] › tests/auth.spec.ts:429:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+  59) [firefox] › tests/consultant-profile.spec.ts:176:3 › Consultant Profile Pages › should display "Request Quote" functionality 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+  60) [firefox] › tests/consultant-profile.spec.ts:130:3 › Consultant Profile Pages › should display consultant key metrics and information 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+  61) [firefox] › tests/consultant-profile.spec.ts:398:3 › Consultant Profile Pages › should handle "Request Quote" button click 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+[64/240] …43:3 › Consultant Profile Pages › should navigate between profile tabs
+  62) [firefox] › tests/consultant-profile.spec.ts:48:3 › Consultant Profile Pages › should navigate to consultant profiles from search results 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+  63) [firefox] › tests/consultant-profile.spec.ts:71:3 › Consultant Profile Pages › should display consultant profile with tabbed navigation 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+[65/240] …ation Flows › should validate required fields on business registration
+[66/240] … Consultant Profile Pages › should handle multiple consultant profiles
+[67/240] …istration Flows › should display "List Your Business" option in header
+  64) [firefox] › tests/consultant-profile.spec.ts:343:3 › Consultant Profile Pages › should navigate between profile tabs 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+  65) [firefox] › tests/auth.spec.ts:106:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+  66) [firefox] › tests/consultant-profile.spec.ts:453:3 › Consultant Profile Pages › should handle multiple consultant profiles 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+  67) [firefox] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+[68/240] …nctionality › should navigate to quote request from consultant profile
+[69/240] … Consultant Profile Pages › should display responsive layout on mobile
+[70/240] …usiness Registration Flows › should handle business category selection
+  68) [firefox] › tests/quote-request.spec.ts:38:3 › Quote Request Functionality › should navigate to quote request from consultant profile 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  69) [firefox] › tests/consultant-profile.spec.ts:485:3 › Consultant Profile Pages › should display responsive layout on mobile 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+[71/240] …lity › should display quote request form with consultant pre-populated
+[72/240] … Profile Pages › should display consultant ratings and reviews section
+  70) [firefox] › tests/auth.spec.ts:193:3 › Authentication & Business Registration Flows › should handle business category selection 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+  71) [firefox] › tests/quote-request.spec.ts:61:3 › Quote Request Functionality › should display quote request form with consultant pre-populated 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  72) [firefox] › tests/consultant-profile.spec.ts:251:3 › Consultant Profile Pages › should display consultant ratings and reviews section 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/tests/consultant-profile.spec.ts:12:16
+
+
+[73/240] …est Functionality › should validate required fields on form submission
+[74/240] …Quote Request Functionality › should display Brexit service categories
+[75/240] ….ts:239:3 › Quote Request Functionality › should validate email format
+  73) [firefox] › tests/quote-request.spec.ts:159:3 › Quote Request Functionality › should validate required fields on form submission 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  74) [firefox] › tests/quote-request.spec.ts:322:3 › Quote Request Functionality › should display Brexit service categories 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  75) [firefox] › tests/quote-request.spec.ts:239:3 › Quote Request Functionality › should validate email format 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+[76/240] …ion Functionality › should submit complete review with rating and text
+[77/240] …eview Submission Functionality › should handle star rating interaction
+[78/240] …nality › should find and access reviews section on consultant profiles
+[79/240] …te Request Functionality › should submit quote request with valid data
+[80/240] …te Request Functionality › should handle multi-step quote request form
+[81/240] …te Request Functionality › should handle phone number field validation
+[82/240] …should navigate to quote request on mobile using responsive navigation
+  76) [firefox] › tests/review-submission.spec.ts:336:3 › Review Submission Functionality › should handle star rating interaction 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+  77) [firefox] › tests/review-submission.spec.ts:42:3 › Review Submission Functionality › should find and access reviews section on consultant profiles 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+  78) [firefox] › tests/quote-request.spec.ts:391:3 › Quote Request Functionality › should submit quote request with valid data 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  79) [firefox] › tests/review-submission.spec.ts:379:3 › Review Submission Functionality › should submit complete review with rating and text 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+  80) [firefox] › tests/quote-request.spec.ts:453:3 › Quote Request Functionality › should handle multi-step quote request form 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+[83/240] …unctionality › should display quote request form with essential fields
+[84/240] …Review Submission Functionality › should show review count information
+[85/240] …n Functionality › should handle authentication requirement for reviews
+[86/240] …tionality › should handle "Write Review" or "Add Review" functionality
+  81) [firefox] › tests/quote-request.spec.ts:593:3 › Quote Request Functionality › should navigate to quote request on mobile using responsive navigation 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  82) [firefox] › tests/quote-request.spec.ts:499:3 › Quote Request Functionality › should handle phone number field validation 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  83) [firefox] › tests/review-submission.spec.ts:460:3 › Review Submission Functionality › should handle authentication requirement for reviews 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+  84) [firefox] › tests/quote-request.spec.ts:135:3 › Quote Request Functionality › should display quote request form with essential fields 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  85) [firefox] › tests/review-submission.spec.ts:172:3 › Review Submission Functionality › should show review count information 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+[87/240] … Request Functionality › should handle urgent/priority request options
+[88/240] …ote Request Functionality › should display responsive layout on mobile
+  86) [firefox] › tests/review-submission.spec.ts:209:3 › Review Submission Functionality › should handle "Write Review" or "Add Review" functionality 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+[89/240] …view Submission Functionality › should validate required review fields
+  87) [firefox] › tests/quote-request.spec.ts:568:3 › Quote Request Functionality › should handle urgent/priority request options 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  88) [firefox] › tests/quote-request.spec.ts:609:3 › Quote Request Functionality › should display responsive layout on mobile 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+[90/240] …ctionality › should display review form with rating and comment fields
+[91/240] …on Functionality › should display review sorting and filtering options
+[92/240] …est Functionality › should display company/business information fields
+[93/240] …ubmission Functionality › should display existing reviews with ratings
+  89) [firefox] › tests/review-submission.spec.ts:296:3 › Review Submission Functionality › should validate required review fields 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+[94/240] …ssion Functionality › should handle mobile responsive review interface
+[95/240] …w Submission Functionality › should display average rating calculation
+  90) [firefox] › tests/quote-request.spec.ts:546:3 › Quote Request Functionality › should display company/business information fields 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      13 |
+      14 |   test.afterEach(async () => {
+    > 15 |     await page.close();
+         |                ^
+      16 |   });
+      17 |
+      18 |   // Helper function for responsive navigation
+        at /workspace/tests/quote-request.spec.ts:15:16
+
+
+  91) [firefox] › tests/review-submission.spec.ts:113:3 › Review Submission Functionality › should display existing reviews with ratings 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+  92) [firefox] › tests/review-submission.spec.ts:501:3 › Review Submission Functionality › should display review sorting and filtering options 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+  93) [firefox] › tests/review-submission.spec.ts:570:3 › Review Submission Functionality › should display average rating calculation 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+  94) [firefox] › tests/review-submission.spec.ts:257:3 › Review Submission Functionality › should display review form with rating and comment fields 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+  95) [firefox] › tests/review-submission.spec.ts:608:3 › Review Submission Functionality › should handle mobile responsive review interface 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+[96/240] … Functionality › should handle review pagination if many reviews exist
+  96) [firefox] › tests/review-submission.spec.ts:537:3 › Review Submission Functionality › should handle review pagination if many reviews exist 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function for responsive navigation
+        at /workspace/tests/review-submission.spec.ts:12:16
+
+
+[97/240] …stration Flows › should navigate to business listing/registration page
+  97) [webkit] › tests/auth.spec.ts:46:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+
+    Error: browserType.launch: Executable doesn't exist at /home/minimax/.cache/ms-playwright/webkit-2203/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     pnpm exec playwright install                                        ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/tests/auth.spec.ts:12:16
+
+
+[98/240] …stration Flows › should validate email format in business registration
+[99/240] …ile Pages › should navigate to consultant profiles from search results
+[100/240] …Registration Flows › should display business registration form fields
