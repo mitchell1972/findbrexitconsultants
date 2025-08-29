@@ -1,0 +1,687 @@
+
+> findbrexit-consultants@0.0.1 test:e2e /workspace
+> playwright test
+
+
+Running 240 tests using 24 workers
+
+[1/240] …ration Flows › should validate required fields on business registration
+[2/240] …nsultant Profile Pages › should display contact information and methods
+[3/240] …file Pages › should navigate to consultant profiles from search results
+[4/240] …ality › should display quote request form with consultant pre-populated
+[5/240] …Business Registration Flows › should handle business category selection
+[6/240] …ltant Profile Pages › should display consultant services and industries
+[7/240] …rofile Pages › should display consultant profile with tabbed navigation
+[8/240] …› Consultant Profile Pages › should display responsive layout on mobile
+[9/240] …343:3 › Consultant Profile Pages › should navigate between profile tabs
+[10/240] …ess Registration Flows › should handle terms and conditions acceptance
+[11/240] …gistration Flows › should submit business registration with valid data
+[12/240] … Consultant Profile Pages › should handle "Request Quote" button click
+[13/240] … Consultant Profile Pages › should handle multiple consultant profiles
+[14/240] … Registration Flows › should display business registration form fields
+[15/240] …stration Flows › should navigate to business listing/registration page
+[16/240] …istration Flows › should display "List Your Business" option in header
+[17/240] …onsultant Profile Pages › should display "Request Quote" functionality
+[18/240] … Profile Pages › should display consultant ratings and reviews section
+[19/240] …nctionality › should navigate to quote request from consultant profile
+[20/240] … Profile Pages › should display consultant key metrics and information
+[21/240] …Registration Flows › should display information about listing benefits
+[22/240] …& Business Registration Flows › should handle mobile responsive layout
+[23/240] …stration Flows › should validate email format in business registration
+[24/240] …ofile Pages › should display professional credentials and verification
+[25/240] …unctionality › should display quote request form with essential fields
+[26/240] …est Functionality › should validate required fields on form submission
+  1) [chromium] › tests/consultant-profile.spec.ts:187:3 › Consultant Profile Pages › should display contact information and methods 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.scrollIntoViewIfNeeded: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="View Profile"').or(locator('a:has-text("View Profile")').or(locator('button:has-text("View Profile")').or(locator('[href*="profile"]').or(locator('[data-testid*="view-profile"]'))))).first()
+        - locator resolved to visible <a data-matrix-name="Link" data-component-line="576" data-component-name="Link" data-testid="view-profile-btn" data-component-file="FindConsultantsPage.tsx" data-component-path="src/pages/FindConsultantsPage.tsx" href="/consultant/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6" data-matrix-id="src/pages/FindConsultantsPage.tsx:576:24" class="flex-1 bg-[#003366] text-white px-4 py-2 rounded-lg text-sm font-medium text-center hover:bg-blue-800 transition-colors" data-component-content="%7B%22to%22%3A%22%5BTe…>View Profile</a>
+
+
+      206 |     // Ensure we can find and click a profile
+      207 |     await expect(viewProfileButton).toBeVisible({ timeout: 10000 });
+    > 208 |     await viewProfileButton.scrollIntoViewIfNeeded();
+          |                             ^
+      209 |     await viewProfileButton.click({ force: true });
+      210 |     await page.waitForLoadState('networkidle');
+      211 |     
+        at /workspace/tests/consultant-profile.spec.ts:208:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-b5d67-act-information-and-methods-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-b5d67-act-information-and-methods-chromium/error-context.md
+
+
+  2) [chromium] › tests/auth.spec.ts:106:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium/error-context.md
+
+
+  3) [chromium] › tests/auth.spec.ts:193:3 › Authentication & Business Registration Flows › should handle business category selection 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('input').nth(2)
+        - locator resolved to <input value="" type="text" required="" placeholder="John Smith" data-matrix-name="input" data-component-line="408" data-component-name="input" data-testid="contact-person-input" data-component-file="ListBusinessPage.tsx" data-component-path="src/pages/ListBusinessPage.tsx" data-matrix-id="src/pages/ListBusinessPage.tsx:408:18" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent" data-component-content="%7B%22type%22%3A%22text%22%2C%22v…/>
+        - fill("john@testcompany.com")
+      - attempting fill action
+        - waiting for element to be visible, enabled and editable
+
+
+      215 |     await inputs.nth(0).fill('Test Brexit Consulting Ltd');
+      216 |     await inputs.nth(1).fill('John Smith');
+    > 217 |     await inputs.nth(2).fill('john@testcompany.com');
+          |                         ^
+      218 |     await inputs.nth(3).fill('+44 20 1234 5678');
+      219 |     
+      220 |     // Try to progress through form steps
+        at /workspace/tests/auth.spec.ts:217:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-4cf72-business-category-selection-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-4cf72-business-category-selection-chromium/error-context.md
+
+
+[27/240] …Quote Request Functionality › should display Brexit service categories
+  4) [chromium] › tests/consultant-profile.spec.ts:48:3 › Consultant Profile Pages › should navigate to consultant profiles from search results 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('h1').or(locator('h2')).first()
+    Expected: visible
+    Received: <element(s) not found>
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('h1').or(locator('h2')).first()
+
+
+      66 |     
+      67 |     // Should display consultant profile content
+    > 68 |     await expect(page.locator('h1').or(page.locator('h2')).first()).toBeVisible({ timeout: 10000 });
+         |                                                                     ^
+      69 |   });
+      70 |
+      71 |   test('should display consultant profile with tabbed navigation', async () => {
+        at /workspace/tests/consultant-profile.spec.ts:68:69
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-de0af-rofiles-from-search-results-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-de0af-rofiles-from-search-results-chromium/error-context.md
+
+
+[28/240] …te Request Functionality › should handle multi-step quote request form
+  5) [chromium] › tests/consultant-profile.spec.ts:290:3 › Consultant Profile Pages › should display consultant services and industries 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.scrollIntoViewIfNeeded: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="Services"').or(locator('text="Industries"')).first()
+
+
+      316 |     
+      317 |     if (await servicesTab.isVisible()) {
+    > 318 |       await servicesTab.scrollIntoViewIfNeeded();
+          |                         ^
+      319 |       await servicesTab.click({ force: true });
+      320 |       await page.waitForTimeout(1000);
+      321 |     }
+        at /workspace/tests/consultant-profile.spec.ts:318:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-ee56e-ant-services-and-industries-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-ee56e-ant-services-and-industries-chromium/error-context.md
+
+
+  6) [chromium] › tests/quote-request.spec.ts:61:3 › Quote Request Functionality › should display quote request form with consultant pre-populated 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="View Profile"').first()
+        - locator resolved to <a data-matrix-name="Link" data-component-line="576" data-component-name="Link" data-testid="view-profile-btn" data-component-file="FindConsultantsPage.tsx" data-component-path="src/pages/FindConsultantsPage.tsx" href="/consultant/5c1cf28a-d8bd-4500-b2e2-e0164a1461c6" data-matrix-id="src/pages/FindConsultantsPage.tsx:576:24" class="flex-1 bg-[#003366] text-white px-4 py-2 rounded-lg text-sm font-medium text-center hover:bg-blue-800 transition-colors" data-component-content="%7B%22to%22%3A%22%5BTe…>View Profile</a>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+
+
+      76 |       const viewProfileBtn = page.locator('text="View Profile"').first();
+      77 |       if (await viewProfileBtn.isVisible()) {
+    > 78 |         await viewProfileBtn.click();
+         |                              ^
+      79 |         await page.waitForLoadState('networkidle');
+      80 |         await page.waitForTimeout(3000);
+      81 |         
+        at /workspace/tests/quote-request.spec.ts:78:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium/error-context.md
+
+
+  7) [chromium] › tests/consultant-profile.spec.ts:71:3 › Consultant Profile Pages › should display consultant profile with tabbed navigation 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.scrollIntoViewIfNeeded: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="View Profile"').or(locator('a:has-text("View Profile")').or(locator('button:has-text("View Profile")').or(locator('[href*="profile"]').or(locator('[data-testid*="view-profile"]'))))).first()
+
+
+       97 |     if (hasViewProfileButton) {
+       98 |       await expect(viewProfileButton).toBeVisible({ timeout: 10000 });
+    >  99 |       await viewProfileButton.scrollIntoViewIfNeeded();
+          |                               ^
+      100 |       await viewProfileButton.click({ force: true });
+      101 |       await page.waitForLoadState('networkidle');
+      102 |       
+        at /workspace/tests/consultant-profile.spec.ts:99:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-5bfc5-file-with-tabbed-navigation-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-5bfc5-file-with-tabbed-navigation-chromium/error-context.md
+
+
+[29/240] … Request Functionality › should handle urgent/priority request options
+  8) [chromium] › tests/consultant-profile.spec.ts:343:3 › Consultant Profile Pages › should navigate between profile tabs 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForTimeout: Target page, context or browser has been closed
+
+      344 |     // Navigate to consultant directory using responsive navigation
+      345 |     await navigateToFindConsultants();
+    > 346 |     await page.waitForTimeout(5000);
+          |                ^
+      347 |     
+      348 |     // Look for and click on the first consultant profile
+      349 |     // Based on the research, there should be Charles Burke, Dr Anna Jerzewska, etc.
+        at /workspace/tests/consultant-profile.spec.ts:346:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium/error-context.md
+
+
+  9) [chromium] › tests/consultant-profile.spec.ts:485:3 › Consultant Profile Pages › should display responsive layout on mobile 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForTimeout: Target page, context or browser has been closed
+
+      490 |     // Use responsive navigation helper that will handle mobile correctly
+      491 |     await navigateToFindConsultants();
+    > 492 |     await page.waitForTimeout(3000);
+          |                ^
+      493 |     
+      494 |     // Check that we successfully navigated to Find Consultants page
+      495 |     expect(page.url()).toContain('/find-consultants');
+        at /workspace/tests/consultant-profile.spec.ts:492:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium/error-context.md
+
+
+  10) [chromium] › tests/auth.spec.ts:378:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('input').nth(2)
+
+
+      400 |     await inputs.nth(0).fill('Test Brexit Consulting Ltd');
+      401 |     await inputs.nth(1).fill('John Smith');
+    > 402 |     await inputs.nth(2).fill('john@testbrexitconsulting.com');
+          |                         ^
+      403 |     await inputs.nth(3).fill('+44 20 1234 5678');
+      404 |     
+      405 |     // Add website if field exists
+        at /workspace/tests/auth.spec.ts:402:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium/error-context.md
+
+
+[30/240] …ctionality › should display review form with rating and comment fields
+[31/240] …tionality › should handle "Write Review" or "Add Review" functionality
+  11) [chromium] › tests/auth.spec.ts:296:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('input').nth(2)
+        - locator resolved to <input value="" type="text" required="" placeholder="John Smith" data-matrix-name="input" data-component-line="408" data-component-name="input" data-testid="contact-person-input" data-component-file="ListBusinessPage.tsx" data-component-path="src/pages/ListBusinessPage.tsx" data-matrix-id="src/pages/ListBusinessPage.tsx:408:18" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003366] focus:border-transparent" data-component-content="%7B%22type%22%3A%22text%22%2C%22v…/>
+        - fill("john@test.com")
+      - attempting fill action
+        - waiting for element to be visible, enabled and editable
+
+
+      323 |       await inputs.nth(0).fill('Test Company');
+      324 |       await inputs.nth(1).fill('John Doe');
+    > 325 |       await inputs.nth(2).fill('john@test.com');
+          |                           ^
+      326 |       await inputs.nth(3).fill('1234567890');
+      327 |     }
+      328 |     
+        at /workspace/tests/auth.spec.ts:325:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium/error-context.md
+
+
+  12) [chromium] › tests/consultant-profile.spec.ts:453:3 › Consultant Profile Pages › should handle multiple consultant profiles 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('text="View Profile"').first()
+
+
+      472 |     if (profileCount > 0) {
+      473 |       // Click on first consultant profile
+    > 474 |       await viewProfileLinks.first().click();
+          |                                      ^
+      475 |       await page.waitForLoadState('networkidle');
+      476 |       
+      477 |       // Should load consultant profile
+        at /workspace/tests/consultant-profile.spec.ts:474:38
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium/error-context.md
+
+
+  13) [chromium] › tests/consultant-profile.spec.ts:251:3 › Consultant Profile Pages › should display consultant ratings and reviews section 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium/error-context.md
+
+
+  14) [chromium] › tests/quote-request.spec.ts:38:3 › Quote Request Functionality › should navigate to quote request from consultant profile 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-chromium/error-context.md
+
+
+  15) [chromium] › tests/consultant-profile.spec.ts:130:3 › Consultant Profile Pages › should display consultant key metrics and information 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/consultant-profile-Consult-c49d6-key-metrics-and-information-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-c49d6-key-metrics-and-information-chromium/error-context.md
+
+
+  16) [chromium] › tests/auth.spec.ts:429:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForTimeout: Target page, context or browser has been closed
+
+      451 |     
+      452 |     await page.waitForLoadState('networkidle');
+    > 453 |     await page.waitForTimeout(3000);
+          |                ^
+      454 |     
+      455 |     // Check that essential content is visible on mobile
+      456 |     const hasTitle = await page.locator('h1, h2').first().isVisible();
+        at /workspace/tests/auth.spec.ts:453:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-chromium/error-context.md
+
+
+  17) [chromium] › tests/auth.spec.ts:151:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium/error-context.md
+
+
+[32/240] …te Request Functionality › should submit quote request with valid data
+[33/240] ….ts:239:3 › Quote Request Functionality › should validate email format
+[34/240] …eview Submission Functionality › should handle star rating interaction
+[35/240] …te Request Functionality › should handle phone number field validation
+[36/240] …ote Request Functionality › should display responsive layout on mobile
+[37/240] …ubmission Functionality › should display existing reviews with ratings
+[38/240] …nality › should find and access reviews section on consultant profiles
+[39/240] …view Submission Functionality › should validate required review fields
+[40/240] …est Functionality › should display company/business information fields
+[41/240] …should navigate to quote request on mobile using responsive navigation
+[42/240] …Review Submission Functionality › should show review count information
+[43/240] …on Functionality › should display review sorting and filtering options
+[44/240] … Functionality › should handle review pagination if many reviews exist
+[45/240] …ion Functionality › should submit complete review with rating and text
+[46/240] …n Functionality › should handle authentication requirement for reviews
+[47/240] …w Submission Functionality › should display average rating calculation
+[48/240] …ssion Functionality › should handle mobile responsive review interface
+[49/240] …istration Flows › should display "List Your Business" option in header
+[50/240] …ation Flows › should validate required fields on business registration
+[51/240] … Registration Flows › should display business registration form fields
+[52/240] …stration Flows › should navigate to business listing/registration page
+[53/240] …stration Flows › should validate email format in business registration
+[54/240] …usiness Registration Flows › should handle business category selection
+[55/240] …Registration Flows › should display information about listing benefits
+  18) [chromium] › tests/quote-request.spec.ts:239:3 › Quote Request Functionality › should validate email format 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/error-context.md
+
+
+  19) [chromium] › tests/review-submission.spec.ts:113:3 › Review Submission Functionality › should display existing reviews with ratings 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium/error-context.md
+
+
+  20) [chromium] › tests/review-submission.spec.ts:172:3 › Review Submission Functionality › should show review count information 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-67e0d-ow-review-count-information-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-67e0d-ow-review-count-information-chromium/error-context.md
+
+
+  21) [chromium] › tests/review-submission.spec.ts:42:3 › Review Submission Functionality › should find and access reviews section on consultant profiles 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.isVisible: Target page, context or browser has been closed
+    Call log:
+        - checking visibility of locator('h1').or(locator('h2').or(locator('text="Edinburgh"').or(locator('text="London"')))).first()
+
+
+       95 |             )
+       96 |           )
+    >  97 |         ).first().isVisible();
+          |                   ^
+       98 |         
+       99 |         expect(hasProfileContent).toBeTruthy();
+      100 |       }
+        at /workspace/tests/review-submission.spec.ts:97:19
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────
+    test-results/review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium/error-context.md
+
+
+[56/240] …ile Pages › should navigate to consultant profiles from search results
+[57/240] …gistration Flows › should submit business registration with valid data
+[58/240] …ess Registration Flows › should handle terms and conditions acceptance
+[59/240] … Profile Pages › should display consultant key metrics and information
+[60/240] …& Business Registration Flows › should handle mobile responsive layout
+[61/240] …ofile Pages › should display consultant profile with tabbed navigation
+[62/240] …onsultant Profile Pages › should display "Request Quote" functionality
+[63/240] …43:3 › Consultant Profile Pages › should navigate between profile tabs
+[64/240] … Consultant Profile Pages › should handle "Request Quote" button click
+[65/240] …sultant Profile Pages › should display contact information and methods
+[66/240] … Profile Pages › should display consultant ratings and reviews section
+[67/240] … Consultant Profile Pages › should display responsive layout on mobile
+[68/240] …tant Profile Pages › should display consultant services and industries
+[69/240] … Consultant Profile Pages › should handle multiple consultant profiles
+[70/240] …nctionality › should navigate to quote request from consultant profile
+[71/240] …lity › should display quote request form with consultant pre-populated
+[72/240] …ofile Pages › should display professional credentials and verification
+  22) [firefox] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/tests/auth.spec.ts:6:8
+
+    Error Context: test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-firefox/error-context.md
+
+
+  23) [firefox] › tests/auth.spec.ts:106:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/tests/auth.spec.ts:6:8
+
+    Error: page.goto: Target page, context or browser has been closed
+    Call log:
+      - navigating to "http://localhost:3000/", waiting until "load"
+
+
+       6 |   test.beforeEach(async ({ browser }) => {
+       7 |     page = await browser.newPage();
+    >  8 |     await page.goto('/');
+         |                ^
+       9 |   });
+      10 |
+      11 |   test.afterEach(async () => {
+        at /workspace/tests/auth.spec.ts:8:16
+
+
+  24) [firefox] › tests/auth.spec.ts:77:3 › Authentication & Business Registration Flows › should display business registration form fields 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/tests/auth.spec.ts:6:8
+
+    Error: page.goto: Target page, context or browser has been closed
+    Call log:
+      - navigating to "http://localhost:3000/", waiting until "load"
+
+
+       6 |   test.beforeEach(async ({ browser }) => {
+       7 |     page = await browser.newPage();
+    >  8 |     await page.goto('/');
+         |                ^
+       9 |   });
+      10 |
+      11 |   test.afterEach(async () => {
+        at /workspace/tests/auth.spec.ts:8:16
+
+
+  25) [firefox] › tests/auth.spec.ts:46:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/tests/auth.spec.ts:6:8
+
+    Error: page.goto: Target page, context or browser has been closed
+    Call log:
+      - navigating to "http://localhost:3000/", waiting until "load"
+
+
+       6 |   test.beforeEach(async ({ browser }) => {
+       7 |     page = await browser.newPage();
+    >  8 |     await page.goto('/');
+         |                ^
+       9 |   });
+      10 |
+      11 |   test.afterEach(async () => {
+        at /workspace/tests/auth.spec.ts:8:16
+
+
+  26) [firefox] › tests/auth.spec.ts:193:3 › Authentication & Business Registration Flows › should handle business category selection 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/tests/auth.spec.ts:6:8
+
+    Error: page.goto: Target page, context or browser has been closed
+    Call log:
+      - navigating to "http://localhost:3000/", waiting until "load"
+
+
+       6 |   test.beforeEach(async ({ browser }) => {
+       7 |     page = await browser.newPage();
+    >  8 |     await page.goto('/');
+         |                ^
+       9 |   });
+      10 |
+      11 |   test.afterEach(async () => {
+        at /workspace/tests/auth.spec.ts:8:16
+
+
+  27) [firefox] › tests/auth.spec.ts:151:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/tests/auth.spec.ts:6:8
+
+    Error: page.goto: Target page, context or browser has been closed
+    Call log:
+      - navigating to "http://localhost:3000/", waiting until "load"
+
+
+       6 |   test.beforeEach(async ({ browser }) => {
+       7 |     page = await browser.newPage();
+    >  8 |     await page.goto('/');
+         |                ^
+       9 |   });
+      10 |
+      11 |   test.afterEach(async () => {
+        at /workspace/tests/auth.spec.ts:8:16
+
+
+  28) [firefox] › tests/auth.spec.ts:240:3 › Authentication & Business Registration Flows › should display information about listing benefits 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/tests/auth.spec.ts:6:8
+
+    Error: page.goto: Target page, context or browser has been closed
+    Call log:
+      - navigating to "http://localhost:3000/", waiting until "load"
+
+
+       6 |   test.beforeEach(async ({ browser }) => {
+       7 |     page = await browser.newPage();
+    >  8 |     await page.goto('/');
+         |                ^
+       9 |   });
+      10 |
+      11 |   test.afterEach(async () => {
+        at /workspace/tests/auth.spec.ts:8:16
+
+
