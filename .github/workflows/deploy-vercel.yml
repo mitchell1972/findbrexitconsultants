@@ -57,6 +57,7 @@ jobs:
       run: pnpm exec playwright test
       continue-on-error: true
       env:
+        PLAYWRIGHT_BASE_URL: https://FindBrexitConsultants.co.uk
         VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
         VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
         VITE_STRIPE_PUBLISHABLE_KEY: ${{ secrets.VITE_STRIPE_PUBLISHABLE_KEY }}
