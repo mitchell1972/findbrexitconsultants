@@ -1,183 +1,120 @@
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.39.3'
 
-        const planConfigs = {"starter": {"amount": 2900, "name": "Starter Plan", "currency": "gbp", "interval": "month", "monthlyLimit": 5}, "professional": {"amount": 9900, "name": "Professional Plan", "currency": "gbp", "interval": "month", "monthlyLimit": 25}, "enterprise": {"amount": 24900, "name": "Enterprise Plan", "currency": "gbp", "interval": "month", "monthlyLimit": 100}}
-        const tableName = "fbc_plans"
-
-async function createDynamicPrice(planType: string, stripeSecretKey: string) {
-  const config = planConfigs[planType];
-  if (!config) throw new Error(`Unsupported plan type: ${planType}`);
-
-  const priceParams = new URLSearchParams({
-    currency: config.currency,
-    unit_amount: config.amount.toString(),
-    'recurring[interval]': config.interval,
-    'product_data[name]': config.name,
-    'metadata[plan_type]': planType
-  });
-
-  const response = await fetch('https://api.stripe.com/v1/prices', {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${stripeSecretKey}`,
-      'Content-Type': 'application/x-www-form-urlencoded'
-    },
-    body: priceParams.toString()
-  });
-
-  if (!response.ok) throw new Error(`Failed to create price: ${await response.text()}`);
-  
-  const priceData = await response.json();
-  const priceId = priceData.id;
-
-  const serviceRoleKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
-  const supabaseUrl = Deno.env.get('SUPABASE_URL');
-  
-  if (serviceRoleKey && supabaseUrl) {
-    try {
-      await fetch(`${supabaseUrl}/rest/v1/${tableName}`, {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${serviceRoleKey}`,
-          'apikey': serviceRoleKey,
-          'Content-Type': 'application/json',
-          'Prefer': 'resolution=merge-duplicates'
-        },
-        body: JSON.stringify({
-          price_id: priceId,
-          plan_type: planType,
-          price: config.amount,
-          monthly_limit: config.monthlyLimit,
-          created_at: new Date().toISOString(),
-          updated_at: new Date().toISOString()
-        })
-      });
-      
-      console.log(`Plan synced to database: ${planType} -> ${priceId} (table: ${tableName})`);
-    } catch (syncError) {
-      console.error('Failed to sync plan to database:', syncError);
-      throw new Error(`Failed to sync plan to database`)
-    }
-  }
-
-  return priceId;
+const corsHeaders = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+  'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, PUT, DELETE, PATCH',
+  'Access-Control-Max-Age': '86400',
+  'Access-Control-Allow-Credentials': 'false'
 }
 
+const STRIPE_SECRET_KEY = Deno.env.get('STRIPE_SECRET_KEY')
+const SUPABASE_URL = Deno.env.get('SUPABASE_URL')
+const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')
 
-async function getOrCreatePrice(planType: string, stripeSecretKey: string) {
-  const config = planConfigs[planType];
-  if (!config) throw new Error(`Unsupported plan type: ${planType}`);
+if (!STRIPE_SECRET_KEY || !SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
+  throw new Error('Missing required environment variables')
+}
 
-  const serviceRoleKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
-  const supabaseUrl = Deno.env.get('SUPABASE_URL');
-
-  if (serviceRoleKey && supabaseUrl) {
-    try {
-      const localResponse = await fetch(
-        `${supabaseUrl}/rest/v1/${tableName}?plan_type=eq.${planType}&select=price_id`,
-        { 
-          headers: { 
-            'Authorization': `Bearer ${serviceRoleKey}`, 
-            'apikey': serviceRoleKey 
-          } 
-        }
-      );
-      
-      if (localResponse.ok) {
-        const localData = await localResponse.json();
-        if (localData?.length > 0) {
-          console.log(`Found existing plan in local database: ${planType} -> ${localData[0].price_id}`);
-          return localData[0].price_id;
-        }
-      }
-    } catch (error) {
-      console.error('Local database query failed:', error);
-    }
-  }
-  console.log(`Plan not found locally, creating new price for: ${planType}`);
-  return await createDynamicPrice(planType, stripeSecretKey);
+interface CreateCheckoutRequest {
+  planType: 'starter' | 'professional' | 'enterprise'
+  customerEmail: string
 }
 
 Deno.serve(async (req) => {
-  const corsHeaders = {
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
-    'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, PUT, DELETE, PATCH',
-    'Access-Control-Max-Age': '86400',
-    'Access-Control-Allow-Credentials': 'false'
-  };
-  if (req.method === 'OPTIONS') return new Response(null, { status: 200, headers: corsHeaders });
+  if (req.method === 'OPTIONS') {
+    return new Response(null, { status: 200, headers: corsHeaders })
+  }
 
   try {
-    const origin = req.headers.get('origin') || req.headers.get('referer')
-      
-    const { planType, customerEmail } = await req.json();
-    if (!planType || !customerEmail) throw new Error('Missing required params');
+    const { planType, customerEmail }: CreateCheckoutRequest = await req.json()
 
-    const stripeSecretKey = Deno.env.get('STRIPE_SECRET_KEY');
-    const serviceRoleKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
-    const supabaseUrl = Deno.env.get('SUPABASE_URL');
-    if (!stripeSecretKey || !serviceRoleKey || !supabaseUrl) throw new Error('Missing env config');
-
-    // Get or create dynamic price based on planType
-    const priceId = await getOrCreatePrice(planType, stripeSecretKey);
-
-    // 获取 userId
-    let userId = null;
-    const token = req.headers.get('authorization')?.replace('Bearer ', '');
-    if (token) {
-      const userRes = await fetch(`${supabaseUrl}/auth/v1/user`, {
-        headers: { 'Authorization': `Bearer ${token}`, 'apikey': serviceRoleKey }
-      });
-      if (userRes.ok) userId = (await userRes.json()).id;
+    if (!planType || !customerEmail) {
+      throw new Error('Missing required fields: planType, customerEmail')
     }
 
-    // 查找或创建 Stripe customer
-    let customerId = null;
-    const customerRes = await fetch(`https://api.stripe.com/v1/customers/search?query=metadata['user_id']:'${userId}'&limit=1`, {
-    headers: { 'Authorization': `Bearer ${stripeSecretKey}` }
-    });
-    const customerData = await customerRes.json();
-    if (customerData.data?.length) {
-        customerId = customerData.data[0].id;
-        console.log(`Found customer by user_id: ${userId} -> ${customerId}`);
-    } else {
-      const params = new URLSearchParams({ email: customerEmail, 'metadata[user_id]': userId || '', 'metadata[plan_type]': planType });
-      const createRes = await fetch('https://api.stripe.com/v1/customers', {
-        method: 'POST',
-        headers: { 'Authorization': `Bearer ${stripeSecretKey}`, 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: params.toString()
-      });
-      customerId = (await createRes.json()).id;
+    // Initialize Supabase client
+    const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY)
+
+    // Get plan details from database
+    const { data: plan, error: planError } = await supabase
+      .from('fbc_plans')
+      .select('*')
+      .eq('plan_type', planType)
+      .single()
+
+    if (planError || !plan) {
+      throw new Error(`Plan not found: ${planType}`)
     }
 
-    const checkoutParams = new URLSearchParams({
-      customer: customerId, mode: 'subscription',
-      'line_items[0][price]': priceId, 'line_items[0][quantity]': '1',
-      success_url: `${origin}/dashboard?subscription=success&session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${origin}/pricing?subscription=cancelled`,
-      'metadata[user_id]': userId || '', 'metadata[plan_type]': planType
-    });
-    const checkoutRes = await fetch('https://api.stripe.com/v1/checkout/sessions', {
-      method: 'POST',
-      headers: { 'Authorization': `Bearer ${stripeSecretKey}`, 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: checkoutParams.toString()
-    });
-    const checkoutSession = await checkoutRes.json();
+    // Create Stripe checkout session
+    const checkoutSession = await createStripeCheckoutSession({
+      priceId: plan.price_id,
+      customerEmail,
+      planType
+    })
 
-    // 返回 checkout url
-    return new Response(JSON.stringify({
-      data: {
-        checkoutSessionId: checkoutSession.id,
-        checkoutUrl: checkoutSession.url,
-        customerId,
-        planType,
-        priceId // Return dynamic price ID
+    return new Response(
+      JSON.stringify({ data: { checkoutUrl: checkoutSession.url } }),
+      {
+        status: 200,
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' }
       }
-    }), { headers: { ...corsHeaders, 'Content-Type': 'application/json' } });
+    )
 
   } catch (error) {
-    return new Response(JSON.stringify({ error: { message: error.message } }), {
-      status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' }
-    });
+    console.error('Create subscription error:', error)
+    return new Response(
+      JSON.stringify({ 
+        error: {
+          code: 'CREATE_SUBSCRIPTION_ERROR',
+          message: error.message || 'Failed to create subscription'
+        }
+      }),
+      {
+        status: 500,
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+      }
+    )
   }
-});
-        
+})
+
+async function createStripeCheckoutSession({
+  priceId,
+  customerEmail,
+  planType
+}: {
+  priceId: string
+  customerEmail: string
+  planType: string
+}) {
+  const response = await fetch('https://api.stripe.com/v1/checkout/sessions', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${STRIPE_SECRET_KEY}`,
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: new URLSearchParams({
+      'payment_method_types[0]': 'card',
+      'line_items[0][price]': priceId,
+      'line_items[0][quantity]': '1',
+      'mode': 'subscription',
+      'customer_email': customerEmail,
+      'success_url': `${Deno.env.get('SUPABASE_URL')?.replace('supabase.co', 'space.minimaxi.cn')}/payment/success?session_id={CHECKOUT_SESSION_ID}`,
+      'cancel_url': `${Deno.env.get('SUPABASE_URL')?.replace('supabase.co', 'space.minimaxi.cn')}/payment/cancel`,
+      'metadata[plan_type]': planType,
+      'metadata[customer_email]': customerEmail,
+      'subscription_data[trial_period_days]': '14',
+      'billing_address_collection': 'required',
+      'allow_promotion_codes': 'true',
+      'automatic_tax[enabled]': 'true'
+    })
+  })
+
+  if (!response.ok) {
+    const errorData = await response.json()
+    throw new Error(`Stripe API error: ${errorData.error?.message || 'Unknown error'}`)
+  }
+
+  return await response.json()
+}

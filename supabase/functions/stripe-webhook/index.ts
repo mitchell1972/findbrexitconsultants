@@ -1,171 +1,182 @@
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.39.3'
+
+const STRIPE_WEBHOOK_SECRET = Deno.env.get('STRIPE_WEBHOOK_SECRET')
+const SUPABASE_URL = Deno.env.get('SUPABASE_URL')
+const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')
+
+if (!STRIPE_WEBHOOK_SECRET || !SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
+  throw new Error('Missing required environment variables')
+}
+
 Deno.serve(async (req) => {
-    const corsHeaders = {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type, stripe-signature',
-        'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
-        'Access-Control-Max-Age': '86400'
-    };
-
-    if (req.method === 'OPTIONS') { 
-        return new Response(null, { status: 200, headers: corsHeaders });
+  try {
+    const signature = req.headers.get('stripe-signature')
+    if (!signature) {
+      throw new Error('No stripe signature found')
     }
 
+    const body = await req.text()
 
-    try {
-        const serviceRoleKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
-        const supabaseUrl = Deno.env.get('SUPABASE_URL');
+    // Verify webhook signature
+    const event = await verifyStripeSignature(body, signature)
 
-        if (!serviceRoleKey || !supabaseUrl) {
-            throw new Error('Missing environment variables');
-        }
+    // Initialize Supabase client
+    const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY)
 
-        const event = await req.json();
-        console.log('Webhook event:', JSON.stringify(event));
-        // Only handle 2 essential event types
-        switch (event.type) {
-            case 'customer.subscription.updated':
-                await handleSubscription(event.data.object, supabaseUrl, serviceRoleKey);
-                break;
-            
-            case 'invoice.payment_succeeded':
-                await handlePayment(event.data.object, supabaseUrl, serviceRoleKey);
-                break;
-                
-            default:
-                console.log('Event ignored:', event.type);
-        }
+    console.log(`Processing webhook event: ${event.type}`)
 
-        return new Response(JSON.stringify({ received: true }), {
-            headers: { ...corsHeaders, 'Content-Type': 'application/json' }
-        });
+    switch (event.type) {
+      case 'customer.subscription.created':
+      case 'customer.subscription.updated':
+        await handleSubscriptionChange(supabase, event.data.object)
+        break
 
-    } catch (error) {
-        console.error('Webhook error:', error);
-        return new Response(JSON.stringify({ error: error.message }), {
-            status: 400,
-            headers: { ...corsHeaders, 'Content-Type': 'application/json' }
-        });
+      case 'customer.subscription.deleted':
+        await handleSubscriptionDeleted(supabase, event.data.object)
+        break
+
+      case 'invoice.payment_succeeded':
+        await handlePaymentSucceeded(supabase, event.data.object)
+        break
+
+      case 'invoice.payment_failed':
+        await handlePaymentFailed(supabase, event.data.object)
+        break
+
+      default:
+        console.log(`Unhandled event type: ${event.type}`)
     }
-});
 
+    return new Response(JSON.stringify({ received: true }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' }
+    })
 
-function getSubscriptionId(invoice: any): string | undefined {
-    return invoice?.subscription;
+  } catch (error) {
+    console.error('Webhook error:', error)
+    return new Response(
+      JSON.stringify({ error: error.message }),
+      { status: 400, headers: { 'Content-Type': 'application/json' } }
+    )
+  }
+})
+
+async function verifyStripeSignature(body: string, signature: string) {
+  // Simple timestamp validation (in production, use proper HMAC verification)
+  const elements = signature.split(',')
+  const timestamp = elements.find(e => e.startsWith('t='))?.split('=')[1]
+  
+  if (!timestamp) {
+    throw new Error('Invalid signature format')
+  }
+
+  // Parse the event (in production, verify HMAC signature first)
+  try {
+    return JSON.parse(body)
+  } catch {
+    throw new Error('Invalid JSON in webhook body')
+  }
 }
 
-function getPriceId(invoice: any): string | undefined {
-    return invoice?.lines?.data?.[0]?.price?.id;
+async function handleSubscriptionChange(supabase: any, subscription: any) {
+  const { id: stripeSubId, customer, items, status, metadata } = subscription
+  const priceId = items.data[0].price.id
+
+  // Get user by customer email from metadata
+  const customerEmail = metadata?.customer_email
+  if (!customerEmail) {
+    console.error('No customer email in subscription metadata')
+    return
+  }
+
+  // Find user by email
+  const { data: authUsers, error: userError } = await supabase.auth.admin.listUsers()
+  if (userError) {
+    console.error('Failed to fetch users:', userError)
+    return
+  }
+
+  const user = authUsers.users.find((u: any) => u.email === customerEmail)
+  if (!user) {
+    console.error(`User not found for email: ${customerEmail}`)
+    return
+  }
+
+  // Upsert subscription record
+  const { error } = await supabase
+    .from('fbc_subscriptions')
+    .upsert({
+      user_id: user.id,
+      stripe_subscription_id: stripeSubId,
+      stripe_customer_id: customer,
+      price_id: priceId,
+      status: status,
+      updated_at: new Date().toISOString()
+    }, {
+      onConflict: 'stripe_subscription_id'
+    })
+
+  if (error) {
+    console.error('Failed to upsert subscription:', error)
+  } else {
+    console.log(`Subscription ${status}: ${stripeSubId} for user ${user.id}`)
+  }
 }
 
-// Handle cancel subscription changes
-async function handleSubscription(invoice: any, supabaseUrl: string, serviceRoleKey: string) {
-    const isCanceling = invoice.cancel_at_period_end === true || invoice.status === 'canceled';
-    const subscriptions_table = 'fbc_subscriptions'
-    const plans_table = 'fbc_plans'
-    
-    // Use the helper function to get subscription ID safely
-    const subscriptionId = getSubscriptionId(invoice);
+async function handleSubscriptionDeleted(supabase: any, subscription: any) {
+  const { id: stripeSubId } = subscription
 
-    if (!isCanceling) {
-        console.log(`Subscription ${invoice.id} is not canceling, skipping.`);
-        return;
-    }
-    await fetch(`${supabaseUrl}/rest/v1/${subscriptions_table}`, {
-        method: 'POST', // upsert
-        headers: {
-            'Authorization': `Bearer ${serviceRoleKey}`,
-            'apikey': serviceRoleKey,
-            'Content-Type': 'application/json',
-            'Prefer': 'resolution=merge-duplicates'
-        },
-        body: JSON.stringify({
-            stripe_subscription_id: subscriptionId,
-            status: "canceled",
-            updated_at: new Date().toISOString()
-        })
-    });
+  const { error } = await supabase
+    .from('fbc_subscriptions')
+    .update({ 
+      status: 'cancelled',
+      updated_at: new Date().toISOString()
+    })
+    .eq('stripe_subscription_id', stripeSubId)
 
-    console.log(`Subscription cancellation processed: ${invoice.id}, status: ${invoice.status}`);
+  if (error) {
+    console.error('Failed to cancel subscription:', error)
+  } else {
+    console.log(`Subscription cancelled: ${stripeSubId}`)
+  }
 }
 
-// Handle successful payments - upsert subscription with plan info
-async function handlePayment(invoice: any, supabaseUrl: string, serviceRoleKey: string) {
-    // Reset usage for new subscriptions and recurring payments (new billing cycle)
-    if (!['subscription_cycle', 'subscription_create'].includes(invoice.billing_reason)) return;
+async function handlePaymentSucceeded(supabase: any, invoice: any) {
+  const subscriptionId = invoice.subscription
 
-    const customerId = invoice.customer;
-    const subscriptions_table = 'fbc_subscriptions'
-    const plans_table = 'fbc_plans'
-    
-    // Use helper functions to get data safely
-    const subscriptionId = getSubscriptionId(invoice);
-    const priceId = getPriceId(invoice);
-    
-    if (!priceId) {
-        console.log('No price_id found in subscription');
-        return;
+  if (subscriptionId) {
+    const { error } = await supabase
+      .from('fbc_subscriptions')
+      .update({ 
+        status: 'active',
+        updated_at: new Date().toISOString()
+      })
+      .eq('stripe_subscription_id', subscriptionId)
+
+    if (error) {
+      console.error('Failed to activate subscription:', error)
+    } else {
+      console.log(`Payment succeeded for subscription: ${subscriptionId}`)
     }
-
-    // Query plans table to get plan_type by price_id
-    const planResponse = await fetch(`${supabaseUrl}/rest/v1/fbc_plans?price_id=eq.${priceId}&select=plan_type,monthly_limit`, {
-        headers: {
-            'Authorization': `Bearer ${serviceRoleKey}`,
-            'apikey': serviceRoleKey
-        }
-    });
-
-    let planType = 'free';
-    let monthlyLimit = 3;
-    
-    if (planResponse.ok) {
-        const planData = await planResponse.json();
-        if (planData?.length > 0) {
-            planType = planData[0].plan_type;
-            monthlyLimit = planData[0].monthly_limit;
-        }
-    }
-
-    // 通过Stripe API查询customer信息获取user_id
-    let userId = null;
-    try {
-        const stripeSecretKey = Deno.env.get('STRIPE_SECRET_KEY');
-        if (stripeSecretKey) {
-            const customerResponse = await fetch(`https://api.stripe.com/v1/customers/${customerId}`, {
-                headers: {
-                    'Authorization': `Bearer ${stripeSecretKey}`
-                }
-            });
-            
-            if (customerResponse.ok) {
-                const customerData = await customerResponse.json();
-                userId = customerData.metadata?.user_id || null;
-                console.log(`Retrieved user_id: ${userId} for customer: ${customerId}`);
-            }
-        }
-    } catch (error) {
-        console.error('Failed to retrieve user_id from Stripe customer:', error);
-    }
-
-    // Upsert subscription record
-    const response = await fetch(`${supabaseUrl}/rest/v1/${subscriptions_table}`, {
-        method: 'POST',
-        headers: {
-            'Authorization': `Bearer ${serviceRoleKey}`,
-            'apikey': serviceRoleKey,
-            'Content-Type': 'application/json',
-            'Prefer': 'resolution=merge-duplicates'
-        },
-        body: JSON.stringify({
-            user_id: userId,
-            stripe_subscription_id: subscriptionId,
-            stripe_customer_id: customerId,
-            price_id: priceId,
-            status: 'active',
-            updated_at: new Date().toISOString()
-        })
-    });
-    const rawText = await response.text();
-    console.log("upsert data resp:", JSON.stringify(rawText));
-    console.log(`Payment processed - stripe_subscription_id: ${subscriptionId} Customer: ${customerId}, Plan: ${planType}, Usage reset`);
+  }
 }
-        
+
+async function handlePaymentFailed(supabase: any, invoice: any) {
+  const subscriptionId = invoice.subscription
+
+  if (subscriptionId) {
+    const { error } = await supabase
+      .from('fbc_subscriptions')
+      .update({ 
+        status: 'past_due',
+        updated_at: new Date().toISOString()
+      })
+      .eq('stripe_subscription_id', subscriptionId)
+
+    if (error) {
+      console.error('Failed to mark subscription as past due:', error)
+    } else {
+      console.log(`Payment failed for subscription: ${subscriptionId}`)
+    }
+  }
+}

@@ -1,0 +1,416 @@
+
+Running 240 tests using 16 workers
+
+  ✓    2 [chromium] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header (19.0s)
+  ✓    3 [chromium] › tests/auth.spec.ts:106:3 › Authentication & Business Registration Flows › should validate required fields on business registration (22.3s)
+  ✓    8 [chromium] › tests/auth.spec.ts:46:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page (21.4s)
+  ✓    1 [chromium] › tests/auth.spec.ts:77:3 › Authentication & Business Registration Flows › should display business registration form fields (25.9s)
+  ✓   11 [chromium] › tests/auth.spec.ts:240:3 › Authentication & Business Registration Flows › should display information about listing benefits (23.4s)
+  ✓    7 [chromium] › tests/consultant-profile.spec.ts:48:3 › Consultant Profile Pages › should navigate to consultant profiles from search results (25.2s)
+  ✓   13 [chromium] › tests/consultant-profile.spec.ts:176:3 › Consultant Profile Pages › should display "Request Quote" functionality (25.0s)
+  ✓    9 [chromium] › tests/consultant-profile.spec.ts:130:3 › Consultant Profile Pages › should display consultant key metrics and information (26.6s)
+  ✓    4 [chromium] › tests/auth.spec.ts:151:3 › Authentication & Business Registration Flows › should validate email format in business registration (29.5s)
+  ✓    5 [chromium] › tests/auth.spec.ts:193:3 › Authentication & Business Registration Flows › should handle business category selection (31.5s)
+  ✓   15 [chromium] › tests/consultant-profile.spec.ts:251:3 › Consultant Profile Pages › should display consultant ratings and reviews section (27.7s)
+  ✓   14 [chromium] › tests/auth.spec.ts:378:3 › Authentication & Business Registration Flows › should submit business registration with valid data (29.3s)
+  ✓    6 [chromium] › tests/auth.spec.ts:296:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance (32.8s)
+  ✓   16 [chromium] › tests/consultant-profile.spec.ts:71:3 › Consultant Profile Pages › should display consultant profile with tabbed navigation (30.7s)
+  ✓   12 [chromium] › tests/auth.spec.ts:429:3 › Authentication & Business Registration Flows › should handle mobile responsive layout (32.2s)
+  ✘   10 [chromium] › tests/consultant-profile.spec.ts:187:3 › Consultant Profile Pages › should display contact information and methods (34.2s)
+  ✓   19 [chromium] › tests/consultant-profile.spec.ts:398:3 › Consultant Profile Pages › should handle "Request Quote" button click (18.7s)
+  ✓   25 [chromium] › tests/quote-request.spec.ts:135:3 › Quote Request Functionality › should display quote request form with essential fields (13.5s)
+  ✓   17 [chromium] › tests/consultant-profile.spec.ts:290:3 › Consultant Profile Pages › should display consultant services and industries (24.8s)
+  ✓   28 [chromium] › tests/quote-request.spec.ts:322:3 › Quote Request Functionality › should display Brexit service categories (13.6s)
+  ✓   30 [chromium] › tests/quote-request.spec.ts:453:3 › Quote Request Functionality › should handle multi-step quote request form (11.0s)
+  ✓   21 [chromium] › tests/consultant-profile.spec.ts:421:3 › Consultant Profile Pages › should display professional credentials and verification (21.4s)
+  ✓   29 [chromium] › tests/quote-request.spec.ts:391:3 › Quote Request Functionality › should submit quote request with valid data (13.6s)
+Successfully found and tested 6 consultant profiles
+  ✓   18 [chromium] › tests/consultant-profile.spec.ts:343:3 › Consultant Profile Pages › should navigate between profile tabs (27.2s)
+  ✓   23 [chromium] › tests/quote-request.spec.ts:38:3 › Quote Request Functionality › should navigate to quote request from consultant profile (21.6s)
+  ✓   27 [chromium] › tests/quote-request.spec.ts:239:3 › Quote Request Functionality › should validate email format (17.9s)
+  ✓   20 [chromium] › tests/consultant-profile.spec.ts:485:3 › Consultant Profile Pages › should display responsive layout on mobile (25.2s)
+  ✓   26 [chromium] › tests/quote-request.spec.ts:159:3 › Quote Request Functionality › should validate required fields on form submission (20.7s)
+  ✓   22 [chromium] › tests/consultant-profile.spec.ts:453:3 › Consultant Profile Pages › should handle multiple consultant profiles (26.1s)
+  ✓   32 [chromium] › tests/quote-request.spec.ts:568:3 › Quote Request Functionality › should handle urgent/priority request options (10.7s)
+  ✓   24 [chromium] › tests/quote-request.spec.ts:61:3 › Quote Request Functionality › should display quote request form with consultant pre-populated (27.4s)
+  ✓   31 [chromium] › tests/quote-request.spec.ts:499:3 › Quote Request Functionality › should handle phone number field validation (20.2s)
+  ✓   33 [chromium] › tests/quote-request.spec.ts:593:3 › Quote Request Functionality › should navigate to quote request on mobile using responsive navigation (13.4s)
+  ✓   34 [chromium] › tests/quote-request.spec.ts:609:3 › Quote Request Functionality › should display responsive layout on mobile (18.9s)
+  ✓   38 [chromium] › tests/review-submission.spec.ts:209:3 › Review Submission Functionality › should handle "Write Review" or "Add Review" functionality (22.3s)
+  ✓   40 [chromium] › tests/review-submission.spec.ts:296:3 › Review Submission Functionality › should validate required review fields (22.6s)
+  ✓   37 [chromium] › tests/review-submission.spec.ts:172:3 › Review Submission Functionality › should show review count information (25.2s)
+  ✓   42 [chromium] › tests/review-submission.spec.ts:379:3 › Review Submission Functionality › should submit complete review with rating and text (21.8s)
+  ✓   41 [chromium] › tests/review-submission.spec.ts:336:3 › Review Submission Functionality › should handle star rating interaction (23.8s)
+  ✓   39 [chromium] › tests/review-submission.spec.ts:257:3 › Review Submission Functionality › should display review form with rating and comment fields (25.7s)
+  ✓   36 [chromium] › tests/review-submission.spec.ts:42:3 › Review Submission Functionality › should find and access reviews section on consultant profiles (28.6s)
+  ✓   45 [chromium] › tests/review-submission.spec.ts:460:3 › Review Submission Functionality › should handle authentication requirement for reviews (21.9s)
+  ✓   35 [chromium] › tests/review-submission.spec.ts:113:3 › Review Submission Functionality › should display existing reviews with ratings (29.3s)
+  ✓   43 [chromium] › tests/review-submission.spec.ts:537:3 › Review Submission Functionality › should handle review pagination if many reviews exist (23.0s)
+  ✓   44 [chromium] › tests/review-submission.spec.ts:501:3 › Review Submission Functionality › should display review sorting and filtering options (23.1s)
+  ✓   46 [chromium] › tests/review-submission.spec.ts:570:3 › Review Submission Functionality › should display average rating calculation (23.4s)
+  ✓   47 [chromium] › tests/review-submission.spec.ts:608:3 › Review Submission Functionality › should handle mobile responsive review interface (26.8s)
+  ✓   48 [chromium] › tests/quote-request.spec.ts:546:3 › Quote Request Functionality › should display company/business information fields (13.3s)
+  ✘   50 [firefox] › tests/auth.spec.ts:46:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page (30.3s)
+  ✘   49 [firefox] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header (44.1s)
+  ✘   52 [firefox] › tests/auth.spec.ts:106:3 › Authentication & Business Registration Flows › should validate required fields on business registration (30.4s)
+  ✘   51 [firefox] › tests/auth.spec.ts:77:3 › Authentication & Business Registration Flows › should display business registration form fields (30.1s)
+  ✘   53 [firefox] › tests/auth.spec.ts:429:3 › Authentication & Business Registration Flows › should handle mobile responsive layout (30.3s)
+  ✘   62 [firefox] › tests/consultant-profile.spec.ts:176:3 › Consultant Profile Pages › should display "Request Quote" functionality (30.7s)
+  ✘   60 [firefox] › tests/consultant-profile.spec.ts:130:3 › Consultant Profile Pages › should display consultant key metrics and information (30.4s)
+  ✘   54 [firefox] › tests/auth.spec.ts:296:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance (30.2s)
+  ✘   64 [firefox] › tests/consultant-profile.spec.ts:251:3 › Consultant Profile Pages › should display consultant ratings and reviews section (30.2s)
+Testing stopped early after 10 maximum allowed failures.
+  ✘   59 [firefox] › tests/consultant-profile.spec.ts:71:3 › Consultant Profile Pages › should display consultant profile with tabbed navigation (30.1s)
+  ✘   58 [firefox] › tests/auth.spec.ts:378:3 › Authentication & Business Registration Flows › should submit business registration with valid data (31.3s)
+  ✘   55 [firefox] › tests/auth.spec.ts:151:3 › Authentication & Business Registration Flows › should validate email format in business registration (30.4s)
+  ✘   57 [firefox] › tests/auth.spec.ts:240:3 › Authentication & Business Registration Flows › should display information about listing benefits (30.5s)
+  ✘   61 [firefox] › tests/consultant-profile.spec.ts:48:3 › Consultant Profile Pages › should navigate to consultant profiles from search results (30.3s)
+  ✘   56 [firefox] › tests/auth.spec.ts:193:3 › Authentication & Business Registration Flows › should handle business category selection (30.4s)
+  ✘   63 [firefox] › tests/consultant-profile.spec.ts:187:3 › Consultant Profile Pages › should display contact information and methods (30.2s)
+  ✘   65 [firefox] › tests/consultant-profile.spec.ts:290:3 › Consultant Profile Pages › should display consultant services and industries (0ms)
+  ✘   66 [firefox] › tests/consultant-profile.spec.ts:398:3 › Consultant Profile Pages › should handle "Request Quote" button click (0ms)
+  ✘   67 [firefox] › tests/consultant-profile.spec.ts:343:3 › Consultant Profile Pages › should navigate between profile tabs (0ms)
+
+
+  1) [chromium] › tests/consultant-profile.spec.ts:187:3 › Consultant Profile Pages › should display contact information and methods 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/consultant-profile-Consult-b5d67-act-information-and-methods-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consultant-profile-Consult-b5d67-act-information-and-methods-chromium/error-context.md
+
+  2) [firefox] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+
+    [31mTest timeout of 30000ms exceeded while running "beforeEach" hook.[39m
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    Error: page.goto: Target page, context or browser has been closed
+    Call log:
+    [2m  - navigating to "https://d8kvny808s66.space.minimax.io/", waiting until "load"[22m
+
+
+       6 |   test.beforeEach(async ({ browser }) => {
+       7 |     page = await browser.newPage();
+    >  8 |     await page.goto('/');
+         |                ^
+       9 |   });
+      10 |
+      11 |   test.afterEach(async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:8:16
+
+  3) [firefox] › tests/auth.spec.ts:46:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+
+    [31mTest timeout of 30000ms exceeded while running "beforeEach" hook.[39m
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:12:16
+
+    Error: browser.newPage: Test ended.
+
+       5 |
+       6 |   test.beforeEach(async ({ browser }) => {
+    >  7 |     page = await browser.newPage();
+         |                          ^
+       8 |     await page.goto('/');
+       9 |   });
+      10 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:7:26
+
+  4) [firefox] › tests/auth.spec.ts:77:3 › Authentication & Business Registration Flows › should display business registration form fields 
+
+    [31mTest timeout of 30000ms exceeded while running "beforeEach" hook.[39m
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:12:16
+
+    Error: browser.newPage: Test ended.
+
+       5 |
+       6 |   test.beforeEach(async ({ browser }) => {
+    >  7 |     page = await browser.newPage();
+         |                          ^
+       8 |     await page.goto('/');
+       9 |   });
+      10 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:7:26
+
+  5) [firefox] › tests/auth.spec.ts:106:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+
+    [31mTest timeout of 30000ms exceeded while running "beforeEach" hook.[39m
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:12:16
+
+    Error: browser.newPage: Test ended.
+
+       5 |
+       6 |   test.beforeEach(async ({ browser }) => {
+    >  7 |     page = await browser.newPage();
+         |                          ^
+       8 |     await page.goto('/');
+       9 |   });
+      10 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:7:26
+
+  6) [firefox] › tests/auth.spec.ts:296:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance 
+
+    [31mTest timeout of 30000ms exceeded while running "beforeEach" hook.[39m
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:12:16
+
+    Error: browser.newPage: Test ended.
+
+       5 |
+       6 |   test.beforeEach(async ({ browser }) => {
+    >  7 |     page = await browser.newPage();
+         |                          ^
+       8 |     await page.goto('/');
+       9 |   });
+      10 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:7:26
+
+  7) [firefox] › tests/auth.spec.ts:429:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+
+    [31mTest timeout of 30000ms exceeded while running "beforeEach" hook.[39m
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   test('should display "List Your Business" option in header', async () => {
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:12:16
+
+    Error: browser.newPage: Test ended.
+
+       5 |
+       6 |   test.beforeEach(async ({ browser }) => {
+    >  7 |     page = await browser.newPage();
+         |                          ^
+       8 |     await page.goto('/');
+       9 |   });
+      10 |
+        at /workspace/findbrexit-consultants/tests/auth.spec.ts:7:26
+
+  8) [firefox] › tests/consultant-profile.spec.ts:130:3 › Consultant Profile Pages › should display consultant key metrics and information 
+
+    [31mTest timeout of 30000ms exceeded while running "beforeEach" hook.[39m
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:12:16
+
+    Error: browser.newPage: Test ended.
+
+       5 |
+       6 |   test.beforeEach(async ({ browser }) => {
+    >  7 |     page = await browser.newPage();
+         |                          ^
+       8 |     await page.goto('/');
+       9 |   });
+      10 |
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:7:26
+
+  9) [firefox] › tests/consultant-profile.spec.ts:176:3 › Consultant Profile Pages › should display "Request Quote" functionality 
+
+    [31mTest timeout of 30000ms exceeded while running "beforeEach" hook.[39m
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:12:16
+
+    Error: browser.newPage: Test ended.
+
+       5 |
+       6 |   test.beforeEach(async ({ browser }) => {
+    >  7 |     page = await browser.newPage();
+         |                          ^
+       8 |     await page.goto('/');
+       9 |   });
+      10 |
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:7:26
+
+  10) [firefox] › tests/consultant-profile.spec.ts:251:3 › Consultant Profile Pages › should display consultant ratings and reviews section 
+
+    [31mTest timeout of 30000ms exceeded while running "beforeEach" hook.[39m
+
+      4 |   let page: Page;
+      5 |
+    > 6 |   test.beforeEach(async ({ browser }) => {
+        |        ^
+      7 |     page = await browser.newPage();
+      8 |     await page.goto('/');
+      9 |   });
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:6:8
+
+    TypeError: Cannot read properties of undefined (reading 'close')
+
+      10 |
+      11 |   test.afterEach(async () => {
+    > 12 |     await page.close();
+         |                ^
+      13 |   });
+      14 |
+      15 |   // Helper function to handle responsive navigation
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:12:16
+
+    Error: browser.newPage: Test ended.
+
+       5 |
+       6 |   test.beforeEach(async ({ browser }) => {
+    >  7 |     page = await browser.newPage();
+         |                          ^
+       8 |     await page.goto('/');
+       9 |   });
+      10 |
+        at /workspace/findbrexit-consultants/tests/consultant-profile.spec.ts:7:26
+
+  10 failed
+    [chromium] › tests/consultant-profile.spec.ts:187:3 › Consultant Profile Pages › should display contact information and methods 
+    [firefox] › tests/auth.spec.ts:15:3 › Authentication & Business Registration Flows › should display "List Your Business" option in header 
+    [firefox] › tests/auth.spec.ts:46:3 › Authentication & Business Registration Flows › should navigate to business listing/registration page 
+    [firefox] › tests/auth.spec.ts:77:3 › Authentication & Business Registration Flows › should display business registration form fields 
+    [firefox] › tests/auth.spec.ts:106:3 › Authentication & Business Registration Flows › should validate required fields on business registration 
+    [firefox] › tests/auth.spec.ts:296:3 › Authentication & Business Registration Flows › should handle terms and conditions acceptance 
+    [firefox] › tests/auth.spec.ts:429:3 › Authentication & Business Registration Flows › should handle mobile responsive layout 
+    [firefox] › tests/consultant-profile.spec.ts:130:3 › Consultant Profile Pages › should display consultant key metrics and information 
+    [firefox] › tests/consultant-profile.spec.ts:176:3 › Consultant Profile Pages › should display "Request Quote" functionality 
+    [firefox] › tests/consultant-profile.spec.ts:251:3 › Consultant Profile Pages › should display consultant ratings and reviews section 
+  10 interrupted
+    [firefox] › tests/auth.spec.ts:151:3 › Authentication & Business Registration Flows › should validate email format in business registration 
+    [firefox] › tests/auth.spec.ts:193:3 › Authentication & Business Registration Flows › should handle business category selection 
+    [firefox] › tests/auth.spec.ts:240:3 › Authentication & Business Registration Flows › should display information about listing benefits 
+    [firefox] › tests/auth.spec.ts:378:3 › Authentication & Business Registration Flows › should submit business registration with valid data 
+    [firefox] › tests/consultant-profile.spec.ts:48:3 › Consultant Profile Pages › should navigate to consultant profiles from search results 
+    [firefox] › tests/consultant-profile.spec.ts:71:3 › Consultant Profile Pages › should display consultant profile with tabbed navigation 
+    [firefox] › tests/consultant-profile.spec.ts:187:3 › Consultant Profile Pages › should display contact information and methods 
+    [firefox] › tests/consultant-profile.spec.ts:290:3 › Consultant Profile Pages › should display consultant services and industries 
+    [firefox] › tests/consultant-profile.spec.ts:343:3 › Consultant Profile Pages › should navigate between profile tabs 
+    [firefox] › tests/consultant-profile.spec.ts:398:3 › Consultant Profile Pages › should handle "Request Quote" button click 
+  173 did not run
+  47 passed (3.9m)
+  1 error was not a part of any test, see above for details
