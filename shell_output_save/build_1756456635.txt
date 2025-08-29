@@ -1,0 +1,123 @@
+
+> findbrexit-consultants@0.0.0 build /workspace
+> yes | pnpm install && rm -rf node_modules/.vite-temp && tsc -b && vite build
+
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +443
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Progress: resolved 443, reused 0, downloaded 0, added 0
+249Progress: resolved 443, reused 30, downloaded 0, added 0
+4167809Progress: resolved 443, reused 104, downloaded 0, added 0
+395892235321416
+   ╭──────────────────────────────────────────╮
+   │                                          │
+   │   Update available! 10.12.4 → 10.15.0.   │
+   │   Changelog: https://pnpm.io/v/10.15.0   │
+   │     To update, run: pnpm add -g pnpm     │
+   │                                          │
+   ╰──────────────────────────────────────────╯
+
+Progress: resolved 443, reused 416, downloaded 0, added 0
+Progress: resolved 443, reused 443, downloaded 0, added 15
+41Progress: resolved 443, reused 443, downloaded 0, added 166
+234833419Progress: resolved 443, reused 443, downloaded 0, added 443, done
+
+dependencies:
++ @hookform/resolvers 3.10.0
++ @radix-ui/react-accordion 1.2.4
++ @radix-ui/react-alert-dialog 1.1.7
++ @radix-ui/react-aspect-ratio 1.1.3
++ @radix-ui/react-avatar 1.1.4
++ @radix-ui/react-checkbox 1.1.5
++ @radix-ui/react-collapsible 1.1.4
++ @radix-ui/react-context-menu 2.2.7
++ @radix-ui/react-dialog 1.1.7
++ @radix-ui/react-dropdown-menu 2.1.7
++ @radix-ui/react-hover-card 1.1.7
++ @radix-ui/react-label 2.1.3
++ @radix-ui/react-menubar 1.1.7
++ @radix-ui/react-navigation-menu 1.2.6
++ @radix-ui/react-popover 1.1.7
++ @radix-ui/react-progress 1.1.3
++ @radix-ui/react-radio-group 1.2.4
++ @radix-ui/react-scroll-area 1.2.4
++ @radix-ui/react-select 2.1.7
++ @radix-ui/react-separator 1.1.3
++ @radix-ui/react-slider 1.2.4
++ @radix-ui/react-slot 1.2.0
++ @radix-ui/react-switch 1.1.4
++ @radix-ui/react-tabs 1.1.4
++ @radix-ui/react-toast 1.2.7
++ @radix-ui/react-toggle 1.1.3
++ @radix-ui/react-toggle-group 1.1.3
++ @radix-ui/react-tooltip 1.2.0
++ @supabase/supabase-js 2.56.0
++ class-variance-authority 0.7.1
++ clsx 2.1.1
++ cmdk 1.0.0
++ date-fns 3.6.0
++ embla-carousel-react 8.6.0
++ input-otp 1.4.2
++ lucide-react 0.364.0
++ next-themes 0.4.6
++ playwright 1.55.0
++ react 18.3.1
++ react-day-picker 8.10.1
++ react-dom 18.3.1
++ react-hook-form 7.55.0
++ react-hot-toast 2.6.0
++ react-resizable-panels 2.1.7
++ react-router-dom 6.30.0
++ recharts 2.15.2
++ sonner 1.7.4
++ tailwind-merge 2.6.0
++ tailwindcss-animate 1.0.7
++ vaul 1.1.2
++ zod 3.24.2
+
+devDependencies:
++ @eslint/js 9.24.0
++ @playwright/test 1.55.0
++ @types/node 22.14.1
++ @types/react 18.3.20
++ @types/react-dom 18.3.6
++ @types/react-router-dom 5.3.3
++ @vitejs/plugin-react 4.3.4
++ autoprefixer 10.4.20
++ eslint 9.24.0
++ eslint-plugin-react-hooks 5.2.0
++ eslint-plugin-react-refresh 0.4.19
++ globals 15.15.0
++ postcss 8.4.49
++ tailwindcss 3.4.16
++ terser 5.43.1
++ typescript 5.6.3
++ typescript-eslint 8.29.1
++ vite 6.2.6
++ vite-plugin-source-identifier 1.1.2
+
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: esbuild.                                            │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Done in 9.9s using pnpm v10.12.4
+vite v6.2.6 building for production...
+transforming (1) src/main.tsxtransforming (5) src/components/ErrorBoundary.tsxtransforming (7) node_modules/.pnpm/react-hot-toast@2.6.0_react-dom@18.3.1_transforming (9) node_modules/.pnpm/react@18.3.1/node_modules/react/cjs/reatransforming (18) node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-rutransforming (24) src/pages/TermsPage.tsxtransforming (35) node_modules/.pnpm/goober@2.1.16_csstype@3.1.3/node_modultransforming (36) node_modules/.pnpm/@remix-run+router@1.23.0/node_modules/transforming (55) node_modules/.pnpm/lucide-react@0.364.0_react@18.3.1/nodetransforming (75) node_modules/.pnpm/lucide-react@0.364.0_react@18.3.1/nodetransforming (195) node_modules/.pnpm/lucide-react@0.364.0_react@18.3.1/nodtransforming (328) node_modules/.pnpm/lucide-react@0.364.0_react@18.3.1/nodtransforming (455) node_modules/.pnpm/lucide-react@0.364.0_react@18.3.1/nodtransforming (615) node_modules/.pnpm/lucide-react@0.364.0_react@18.3.1/nodtransforming (788) node_modules/.pnpm/lucide-react@0.364.0_react@18.3.1/nodtransforming (975) node_modules/.pnpm/lucide-react@0.364.0_react@18.3.1/nodtransforming (1168) node_modules/.pnpm/lucide-react@0.364.0_react@18.3.1/notransforming (1355) node_modules/.pnpm/lucide-react@0.364.0_react@18.3.1/notransforming (1507) node_modules/.pnpm/scheduler@0.23.2/node_modules/schedutransforming (1519) node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_mtransforming (1561) node_modules/.pnpm/@supabase+postgrest-js@1.21.3/node_m✓ 1586 modules transformed.
+transforming (1589) node_modules/.pnpm/@radix-ui+react-dialog@1.1.7_@types+transforming (1635) node_modules/.pnpm/use-sidecar@1.1.3_@types+react@18.3.rendering chunks (1)...rendering chunks (2)...rendering chunks (3)...rendering chunks (4)...computing gzip size (0)...computing gzip size (1)...computing gzip size (2)...computing gzip size (3)...computing gzip size (4)...computing gzip size (5)...computing gzip size (6)...dist/index.html                       2.68 kB │ gzip:   0.80 kB
+dist/assets/index-BtHGjq7v.css       33.22 kB │ gzip:   6.02 kB
+dist/assets/ui-DuwH06Sf.js            1.14 kB │ gzip:   0.68 kB
+dist/assets/supabase-DVm0ZTjx.js    124.42 kB │ gzip:  33.18 kB
+dist/assets/vendor-CGeUl3AT.js      139.94 kB │ gzip:  45.22 kB
+dist/assets/index-BG3AKIHM.js     1,045.96 kB │ gzip: 116.30 kB
+
+(!) Some chunks are larger than 1000 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 13.59s
