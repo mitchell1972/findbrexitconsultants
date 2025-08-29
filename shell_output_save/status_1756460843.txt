@@ -1,0 +1,131 @@
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   package.json
+	modified:   playwright-report/index.html
+	modified:   playwright.config.ts
+	deleted:    test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-chromium/test-failed-1.png
+	deleted:    test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-firefox/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-0a623-egistration-with-valid-data-firefox/test-failed-1.png
+	deleted:    test-results/auth-Authentication-Busine-0d1f6-le-mobile-responsive-layout-firefox/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-200fd-s-listing-registration-page-chromium/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-200fd-s-listing-registration-page-chromium/test-failed-1.png
+	deleted:    test-results/auth-Authentication-Busine-200fd-s-listing-registration-page-firefox/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-200fd-s-listing-registration-page-firefox/test-failed-1.png
+	deleted:    test-results/auth-Authentication-Busine-4cf72-business-category-selection-chromium/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-4cf72-business-category-selection-chromium/test-failed-1.png
+	deleted:    test-results/auth-Authentication-Busine-4cf72-business-category-selection-firefox/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-4cf72-business-category-selection-firefox/test-failed-1.png
+	deleted:    test-results/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-chromium/test-failed-1.png
+	deleted:    test-results/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-firefox/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-6fb25-tion-about-listing-benefits-firefox/test-failed-1.png
+	deleted:    test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-chromium/test-failed-1.png
+	deleted:    test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-firefox/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-a2bdc-at-in-business-registration-firefox/test-failed-1.png
+	deleted:    test-results/auth-Authentication-Busine-bc5f9-ss-registration-form-fields-chromium/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-bc5f9-ss-registration-form-fields-chromium/test-failed-1.png
+	deleted:    test-results/auth-Authentication-Busine-bc5f9-ss-registration-form-fields-firefox/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-bc5f9-ss-registration-form-fields-firefox/test-failed-1.png
+	deleted:    test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-chromium/test-failed-1.png
+	deleted:    test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-firefox/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-d40eb-r-Business-option-in-header-firefox/test-failed-1.png
+	deleted:    test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-chromium/test-failed-1.png
+	deleted:    test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-firefox/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-d6f5a-ds-on-business-registration-firefox/test-failed-1.png
+	deleted:    test-results/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-chromium/test-failed-1.png
+	deleted:    test-results/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-firefox/error-context.md
+	deleted:    test-results/auth-Authentication-Busine-f268d-s-and-conditions-acceptance-firefox/test-failed-1.png
+	deleted:    test-results/consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium/error-context.md
+	deleted:    test-results/consultant-profile-Consult-343ec-vigate-between-profile-tabs-chromium/test-failed-1.png
+	deleted:    test-results/consultant-profile-Consult-5bfc5-file-with-tabbed-navigation-chromium/error-context.md
+	deleted:    test-results/consultant-profile-Consult-5bfc5-file-with-tabbed-navigation-chromium/test-failed-1.png
+	deleted:    test-results/consultant-profile-Consult-5bfc5-file-with-tabbed-navigation-firefox/error-context.md
+	deleted:    test-results/consultant-profile-Consult-5bfc5-file-with-tabbed-navigation-firefox/test-failed-1.png
+	deleted:    test-results/consultant-profile-Consult-7d0eb-Request-Quote-functionality-chromium/error-context.md
+	deleted:    test-results/consultant-profile-Consult-7d0eb-Request-Quote-functionality-chromium/test-failed-1.png
+	deleted:    test-results/consultant-profile-Consult-7d0eb-Request-Quote-functionality-firefox/error-context.md
+	deleted:    test-results/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium/error-context.md
+	deleted:    test-results/consultant-profile-Consult-952cf-ultiple-consultant-profiles-chromium/test-failed-1.png
+	deleted:    test-results/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium/error-context.md
+	deleted:    test-results/consultant-profile-Consult-9c5b4-responsive-layout-on-mobile-chromium/test-failed-1.png
+	deleted:    test-results/consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium/error-context.md
+	deleted:    test-results/consultant-profile-Consult-a82ec-ratings-and-reviews-section-chromium/test-failed-1.png
+	deleted:    test-results/consultant-profile-Consult-a82ec-ratings-and-reviews-section-firefox/error-context.md
+	deleted:    test-results/consultant-profile-Consult-b5d67-act-information-and-methods-chromium/error-context.md
+	deleted:    test-results/consultant-profile-Consult-b5d67-act-information-and-methods-chromium/test-failed-1.png
+	deleted:    test-results/consultant-profile-Consult-b5d67-act-information-and-methods-firefox/error-context.md
+	deleted:    test-results/consultant-profile-Consult-c49d6-key-metrics-and-information-chromium/error-context.md
+	deleted:    test-results/consultant-profile-Consult-c49d6-key-metrics-and-information-chromium/test-failed-1.png
+	deleted:    test-results/consultant-profile-Consult-c49d6-key-metrics-and-information-firefox/error-context.md
+	deleted:    test-results/consultant-profile-Consult-c677f--Request-Quote-button-click-chromium/error-context.md
+	deleted:    test-results/consultant-profile-Consult-c677f--Request-Quote-button-click-chromium/test-failed-1.png
+	deleted:    test-results/consultant-profile-Consult-c677f--Request-Quote-button-click-firefox/error-context.md
+	deleted:    test-results/consultant-profile-Consult-de0af-rofiles-from-search-results-chromium/error-context.md
+	deleted:    test-results/consultant-profile-Consult-de0af-rofiles-from-search-results-chromium/test-failed-1.png
+	deleted:    test-results/consultant-profile-Consult-de0af-rofiles-from-search-results-firefox/error-context.md
+	deleted:    test-results/consultant-profile-Consult-ee56e-ant-services-and-industries-chromium/error-context.md
+	deleted:    test-results/consultant-profile-Consult-ee56e-ant-services-and-industries-chromium/test-failed-1.png
+	deleted:    test-results/consultant-profile-Consult-ee56e-ant-services-and-industries-firefox/error-context.md
+	deleted:    test-results/consultant-profile-Consult-ee56e-ant-services-and-industries-firefox/test-failed-1.png
+	deleted:    test-results/consultant-profile-Consult-f614d-redentials-and-verification-chromium/error-context.md
+	deleted:    test-results/consultant-profile-Consult-f614d-redentials-and-verification-chromium/test-failed-1.png
+	deleted:    test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/error-context.md
+	deleted:    test-results/quote-request-Quote-Reques-08cc6-d-fields-on-form-submission-chromium/test-failed-1.png
+	deleted:    test-results/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium/error-context.md
+	deleted:    test-results/quote-request-Quote-Reques-38c07-y-Brexit-service-categories-chromium/test-failed-1.png
+	deleted:    test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium/error-context.md
+	deleted:    test-results/quote-request-Quote-Reques-3c41b-th-consultant-pre-populated-chromium/test-failed-1.png
+	deleted:    test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/error-context.md
+	deleted:    test-results/quote-request-Quote-Reques-44297-hould-validate-email-format-chromium/test-failed-1.png
+	deleted:    test-results/quote-request-Quote-Reques-4a16a--form-with-essential-fields-chromium/error-context.md
+	deleted:    test-results/quote-request-Quote-Reques-4a16a--form-with-essential-fields-chromium/test-failed-1.png
+	deleted:    test-results/quote-request-Quote-Reques-768ae-using-responsive-navigation-chromium/error-context.md
+	deleted:    test-results/quote-request-Quote-Reques-768ae-using-responsive-navigation-chromium/test-failed-1.png
+	deleted:    test-results/quote-request-Quote-Reques-ae978-business-information-fields-chromium/error-context.md
+	deleted:    test-results/quote-request-Quote-Reques-ae978-business-information-fields-chromium/test-failed-1.png
+	deleted:    test-results/quote-request-Quote-Reques-ef8c7-one-number-field-validation-chromium/error-context.md
+	deleted:    test-results/quote-request-Quote-Reques-ef8c7-one-number-field-validation-chromium/test-failed-1.png
+	deleted:    test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-chromium/error-context.md
+	deleted:    test-results/quote-request-Quote-Reques-f09f7-est-from-consultant-profile-chromium/test-failed-1.png
+	deleted:    test-results/review-submission-Review-S-09609--average-rating-calculation-chromium/error-context.md
+	deleted:    test-results/review-submission-Review-S-09609--average-rating-calculation-chromium/test-failed-1.png
+	deleted:    test-results/review-submission-Review-S-61547-review-with-rating-and-text-chromium/error-context.md
+	deleted:    test-results/review-submission-Review-S-61547-review-with-rating-and-text-chromium/test-failed-1.png
+	deleted:    test-results/review-submission-Review-S-63667-h-rating-and-comment-fields-chromium/error-context.md
+	deleted:    test-results/review-submission-Review-S-63667-h-rating-and-comment-fields-chromium/test-failed-1.png
+	deleted:    test-results/review-submission-Review-S-67e0d-ow-review-count-information-chromium/error-context.md
+	deleted:    test-results/review-submission-Review-S-67e0d-ow-review-count-information-chromium/test-failed-1.png
+	deleted:    test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium/error-context.md
+	deleted:    test-results/review-submission-Review-S-6fef5-isting-reviews-with-ratings-chromium/test-failed-1.png
+	deleted:    test-results/review-submission-Review-S-75df3-date-required-review-fields-chromium/error-context.md
+	deleted:    test-results/review-submission-Review-S-75df3-date-required-review-fields-chromium/test-failed-1.png
+	deleted:    test-results/review-submission-Review-S-761ba-dle-star-rating-interaction-chromium/error-context.md
+	deleted:    test-results/review-submission-Review-S-761ba-dle-star-rating-interaction-chromium/test-failed-1.png
+	deleted:    test-results/review-submission-Review-S-7f224-ation-if-many-reviews-exist-chromium/error-context.md
+	deleted:    test-results/review-submission-Review-S-7f224-ation-if-many-reviews-exist-chromium/test-failed-1.png
+	deleted:    test-results/review-submission-Review-S-81439-ion-requirement-for-reviews-chromium/error-context.md
+	deleted:    test-results/review-submission-Review-S-81439-ion-requirement-for-reviews-chromium/test-failed-1.png
+	deleted:    test-results/review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium/error-context.md
+	deleted:    test-results/review-submission-Review-S-906f1-tion-on-consultant-profiles-chromium/test-failed-1.png
+	deleted:    test-results/review-submission-Review-S-91446-rting-and-filtering-options-chromium/error-context.md
+	deleted:    test-results/review-submission-Review-S-91446-rting-and-filtering-options-chromium/test-failed-1.png
+	deleted:    test-results/review-submission-Review-S-937f8-or-Add-Review-functionality-chromium/error-context.md
+	deleted:    test-results/review-submission-Review-S-937f8-or-Add-Review-functionality-chromium/test-failed-1.png
+	deleted:    test-results/review-submission-Review-S-bb85a-responsive-review-interface-chromium/error-context.md
+	deleted:    test-results/review-submission-Review-S-bb85a-responsive-review-interface-chromium/test-failed-1.png
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env.example
+	TESTING.md
+	shell_output_save/.git__1756460837.txt
+	test-results/.last-run.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
