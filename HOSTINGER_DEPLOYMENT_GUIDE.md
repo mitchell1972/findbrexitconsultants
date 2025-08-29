@@ -1,238 +1,196 @@
-# FindBrexit Consultants - Hostinger Deployment Guide
+# Complete Guide: Moving FindBrexit Consultants to Your Hostinger Domain
 
-## Complete Migration to FindBrexitConsultants.co.uk
+## 🎯 Overview
+This guide will help you deploy your FindBrexit Consultants platform with complete Stripe integration to your Hostinger hosting account at **findbrexitconsultants.co.uk**.
 
-This guide provides step-by-step instructions to deploy your FindBrexit Consultants application to your Hostinger hosting account using your domain **FindBrexitConsultants.co.uk**.
+## 📋 Prerequisites
 
----
+### What You Need:
+- ✅ Hostinger hosting account with domain **findbrexitconsultants.co.uk**
+- ✅ FTP/File Manager access to your Hostinger account
+- ✅ The built application files (already prepared)
+- ✅ Supabase project with Stripe integration (already configured)
 
-## 📋 Pre-Deployment Checklist
+## 🚀 Step-by-Step Deployment Process
 
-### ✅ What You Have
-- ✅ Hostinger hosting account
-- ✅ Domain: FindBrexitConsultants.co.uk
-- ✅ Complete production build files
-- ✅ Stripe integration fully configured
-- ✅ Supabase backend ready
+### Step 1: Prepare Production Build
+The application is already built for production with Hostinger-optimized settings. The build includes:
+- ✅ Stripe payment integration
+- ✅ 14-day free trial system  
+- ✅ Subscription management
+- ✅ Optimized for Hostinger Apache servers
 
-### ✅ What's Included in This Package
-- ✅ Complete `dist/` folder with production build
-- ✅ Configured `.htaccess` file for Apache/Hostinger
-- ✅ Security headers and performance optimizations
-- ✅ HTTPS redirect configuration
-- ✅ React SPA routing support
+### Step 2: Access Your Hostinger Account
 
----
+1. **Login to Hostinger hPanel**
+   - Go to: https://hpanel.hostinger.com/
+   - Login with your Hostinger credentials
 
-## 🚀 Step-by-Step Deployment Instructions
+2. **Navigate to File Manager**
+   - Click on "File Manager" in the hPanel dashboard
+   - Navigate to `public_html` folder (this is your website root)
 
-### Step 1: Access Your Hostinger Control Panel
-1. Log in to your Hostinger account
-2. Navigate to **File Manager** or use **FTP/SFTP**
-3. Locate your domain's root directory (usually `/public_html/` or `/domains/FindBrexitConsultants.co.uk/public_html/`)
+### Step 3: Upload Website Files
 
-### Step 2: Clear Existing Files (If Any)
-1. **BACKUP** any existing files you want to keep
-2. Remove all files from your domain's root directory
-3. Ensure the directory is completely clean
-
-### Step 3: Upload Production Files
-1. Upload **ALL contents** from the `dist/` folder to your domain's root directory
-2. The structure should look like this in your Hostinger file manager:
+#### Option A: Using Hostinger File Manager
+1. **Clear existing files** (if any) in `public_html`
+2. **Upload all files** from the `/workspace/findbrexit-consultants/dist/` folder:
    ```
-   /public_html/ (or your domain root)
+   📁 Files to upload:
    ├── index.html
-   ├── .htaccess
+   ├── .htaccess (CRITICAL for React routing)
    ├── robots.txt
    ├── sitemap.xml
-   ├── use.txt
-   └── assets/
-       ├── index-CI3IbpB4.js
-       ├── index-DL8T8n5G.css
-       ├── supabase-BkTJ-oRS.js
-       ├── vendor-CGeUl3AT.js
-       └── ui-DuwH06Sf.js
+   └── assets/ (entire folder with all JS/CSS files)
    ```
 
-### Step 4: Verify .htaccess Configuration
-1. Ensure the `.htaccess` file is uploaded correctly
-2. The file contains all necessary configurations:
-   - ✅ React Router support
-   - ✅ Security headers
-   - ✅ HTTPS redirect
-   - ✅ Gzip compression
-   - ✅ Browser caching
+#### Option B: Using FTP Client (FileZilla, etc.)
+1. **FTP Credentials** (find in hPanel → FTP Accounts):
+   - Host: your-domain.com or IP address
+   - Username: your FTP username
+   - Password: your FTP password
+   - Port: 21
 
-### Step 5: Test Your Deployment
-1. Open your browser and navigate to: **https://FindBrexitConsultants.co.uk**
-2. Test the following features:
-   - ✅ Homepage loads correctly
-   - ✅ Navigation between pages works
-   - ✅ Direct URL access (e.g., `/pricing`, `/find-consultants`) works
-   - ✅ HTTPS is enforced (HTTP redirects to HTTPS)
-   - ✅ Payment system is functional
-   - ✅ Consultant search works
-   - ✅ User registration/login works
+2. **Upload Process**:
+   - Connect to FTP
+   - Navigate to `public_html/`
+   - Upload all files from `dist/` folder
 
----
+### Step 4: Configure Domain & SSL
 
-## 🔧 Hostinger-Specific Configuration
+1. **Domain Settings**:
+   - Ensure **findbrexitconsultants.co.uk** points to your Hostinger servers
+   - DNS should be managed by Hostinger nameservers
 
-### Domain Setup
-- **Domain**: FindBrexitConsultants.co.uk
-- **SSL Certificate**: Enable SSL/TLS in Hostinger control panel
-- **DNS**: Ensure your domain points to your Hostinger hosting
+2. **Enable SSL Certificate**:
+   - In hPanel → SSL → Enable free SSL for your domain
+   - Force HTTPS redirect (should be automatic)
 
-### File Upload Methods
-Choose one of these methods to upload files:
+### Step 5: Configure Supabase CORS
 
-#### Method 1: Hostinger File Manager (Recommended)
-1. Use Hostinger's built-in File Manager
-2. Upload files directly through the web interface
-3. Extract ZIP files if needed
+1. **Login to Supabase Dashboard**:
+   - Go to: https://supabase.com/dashboard
+   - Select your project: `zjfilhbczaquokqlcoej`
 
-#### Method 2: FTP/SFTP
-1. Use FTP credentials from your Hostinger account
-2. Use clients like FileZilla, WinSCP, or VS Code SFTP extension
-3. Upload files to the correct directory
+2. **Update CORS Settings**:
+   - Navigate to: Settings → API
+   - In "CORS Settings", add your domain:
+   ```
+   https://findbrexitconsultants.co.uk
+   https://*.findbrexitconsultants.co.uk
+   ```
 
-#### Method 3: ZIP Upload
-1. Create a ZIP file of all contents in the `dist/` folder
-2. Upload the ZIP file to your domain root
-3. Extract the ZIP file using Hostinger's File Manager
+### Step 6: Update Stripe Webhook URL
 
----
+1. **Access Stripe Dashboard**:
+   - Go to: https://dashboard.stripe.com
+   - Navigate to: Developers → Webhooks
 
-## 🔍 Troubleshooting Common Issues
+2. **Update Webhook Endpoint**:
+   - Find your existing webhook
+   - Update URL to: `https://zjfilhbczaquokqlcoej.supabase.co/functions/v1/stripe-webhook`
+   - Ensure these events are selected:
+     - `customer.subscription.created`
+     - `customer.subscription.updated`
+     - `customer.subscription.deleted`
+     - `invoice.payment_succeeded`
+     - `invoice.payment_failed`
 
-### Issue 1: 404 Errors on Direct URLs
-**Problem**: Pages like `/pricing` show 404 errors when accessed directly
-**Solution**: Ensure `.htaccess` file is uploaded and contains the React Router configuration
+### Step 7: Test Deployment
 
-### Issue 2: HTTPS Not Working
-**Problem**: Site loads with HTTP instead of HTTPS
-**Solution**: 
-1. Enable SSL in Hostinger control panel
-2. Verify `.htaccess` contains HTTPS redirect rules
-3. Wait up to 24 hours for SSL propagation
+#### Critical Tests to Perform:
+1. **Website Loading**: Visit https://findbrexitconsultants.co.uk
+2. **React Routing**: Test navigation (should work without 404 errors)
+3. **Authentication**: Test sign up/sign in functionality
+4. **Payment System**: 
+   - Test subscription signup (use Stripe test mode)
+   - Verify 14-day free trial workflow
+   - Test customer portal access
 
-### Issue 3: Static Assets Not Loading
-**Problem**: CSS/JS files return 404 errors
-**Solution**: 
-1. Verify the `assets/` folder is uploaded completely
-2. Check file permissions (should be 644 for files, 755 for directories)
+#### Test Payment Flow:
+1. Go to pricing page
+2. Click "Start Free Trial" on any plan
+3. Complete Stripe Checkout (use test card: 4242424242424242)
+4. Verify subscription appears in dashboard
+5. Test customer portal access
 
-### Issue 4: Slow Loading Times
-**Problem**: Website loads slowly
-**Solution**: 
-1. Verify Gzip compression is enabled in `.htaccess`
-2. Check browser caching headers
-3. Consider upgrading Hostinger plan for better performance
+## 🔧 Configuration Files Already Optimized
 
-### Issue 5: Payment System Issues
-**Problem**: Stripe payments not working
-**Solution**: 
-1. Verify your domain is added to Stripe dashboard settings
-2. Update Stripe webhook endpoints to your new domain
-3. Test payment flows thoroughly
+### .htaccess Configuration
+Your site includes an optimized `.htaccess` file for:
+- ✅ React SPA routing support
+- ✅ HTTPS redirect
+- ✅ Gzip compression
+- ✅ Browser caching
+- ✅ Security headers
 
----
-
-## 🔐 Security Considerations
-
-### SSL/TLS Certificate
-- ✅ SSL is automatically handled by Hostinger
-- ✅ HTTPS redirect is configured in `.htaccess`
-- ✅ Security headers are implemented
-
-### CORS Configuration
-Your Supabase configuration should include your new domain:
-- Add `https://FindBrexitConsultants.co.uk` to allowed origins
-- Update any API whitelist configurations
-
-### Stripe Webhook Updates
-Update your Stripe webhook endpoints:
-1. Log in to Stripe Dashboard
-2. Go to Developers → Webhooks
-3. Update webhook URLs from temporary domain to `https://FindBrexitConsultants.co.uk`
-
----
-
-## 🚀 Post-Deployment Tasks
-
-### 1. Update External Services
-- [ ] **Stripe**: Update webhook URLs and allowed domains
-- [ ] **Supabase**: Add new domain to CORS settings
-- [ ] **Google Analytics** (if used): Update tracking configuration
-- [ ] **Search Console**: Submit new sitemap
-
-### 2. SEO Setup
-- [ ] Submit `https://FindBrexitConsultants.co.uk/sitemap.xml` to Google Search Console
-- [ ] Update any business listings with new domain
-- [ ] Set up Google Analytics for the new domain
-
-### 3. Monitor and Test
-- [ ] Monitor error logs in Hostinger control panel
-- [ ] Test all payment flows end-to-end
-- [ ] Verify email notifications work correctly
-- [ ] Check mobile responsiveness
-
----
-
-## 📞 Support Information
-
-### Hostinger Support
-- **Documentation**: Hostinger Knowledge Base
-- **Support**: Available through Hostinger control panel
-- **Community**: Hostinger Community Forum
-
-### Application Support
-- **Supabase**: Check Supabase status and documentation
-- **Stripe**: Monitor Stripe dashboard for webhook status
-- **General**: Review browser console for any JavaScript errors
-
----
-
-## 📁 File Structure Reference
-
-Your final hosting directory should contain:
-
+### Environment Variables
+Production build uses:
 ```
-/public_html/ (or domain root)
-├── index.html                 # Main application entry point
-├── .htaccess                  # Apache configuration for routing/security
-├── robots.txt                 # Search engine crawler instructions
-├── sitemap.xml                # SEO sitemap
-├── use.txt                    # Usage/terms file
-└── assets/                    # Static assets
-    ├── index-CI3IbpB4.js      # Main application bundle
-    ├── index-DL8T8n5G.css     # Stylesheet bundle  
-    ├── supabase-BkTJ-oRS.js   # Supabase client bundle
-    ├── vendor-CGeUl3AT.js     # Third-party vendor libraries
-    └── ui-DuwH06Sf.js         # UI component library
+VITE_SITE_URL=https://findbrexitconsultants.co.uk
+VITE_SUPABASE_URL=https://zjfilhbczaquokqlcoej.supabase.co
+VITE_SUPABASE_ANON_KEY=[your-key]
+BUILD_MODE=prod
+NODE_ENV=production
 ```
 
----
+## 🛡️ Security Features Included
 
-## ✅ Final Checklist
+- ✅ **PCI Compliance**: Stripe handles all payment data
+- ✅ **SSL/TLS**: HTTPS encryption for all traffic
+- ✅ **CORS Protection**: Configured for your domain only
+- ✅ **Webhook Security**: Stripe signature verification
+- ✅ **Authentication**: Supabase secure user management
 
-Before going live, verify:
-- [ ] All files uploaded successfully
-- [ ] `.htaccess` file is present and configured
-- [ ] SSL certificate is active
-- [ ] Domain resolves to your site
-- [ ] All pages are accessible
-- [ ] Payment system works correctly
-- [ ] User registration/login functions
-- [ ] Search functionality operates properly
+## 💳 Stripe Integration Features Live
+
+- ✅ **14-Day Free Trials**: No upfront payment required
+- ✅ **Three Subscription Tiers**: Starter (£29), Professional (£99), Enterprise (£249)
+- ✅ **Customer Portal**: Self-service billing management
+- ✅ **Automated Invoicing**: Stripe handles all billing
+- ✅ **Subscription Management**: Upgrade/downgrade/cancel functionality
+
+## 🚨 Troubleshooting
+
+### Common Issues & Solutions:
+
+**1. 404 Errors on Page Refresh**
+- **Problem**: `.htaccess` file missing or not working
+- **Solution**: Ensure `.htaccess` file is uploaded and contains React routing rules
+
+**2. Payment Not Working**
+- **Problem**: CORS or webhook configuration
+- **Solution**: Check Supabase CORS settings and Stripe webhook URL
+
+**3. Site Not Loading**
+- **Problem**: DNS or SSL issues
+- **Solution**: Wait up to 24 hours for DNS propagation, verify SSL certificate
+
+**4. Authentication Issues**
+- **Problem**: Supabase CORS settings
+- **Solution**: Ensure your domain is added to Supabase CORS whitelist
+
+## 📞 Support Resources
+
+- **Hostinger Support**: Available 24/7 via hPanel chat
+- **Supabase Docs**: https://supabase.com/docs
+- **Stripe Support**: https://support.stripe.com
+
+## 🎉 Go Live Checklist
+
+Before announcing your site:
+- [ ] Website loads correctly at your domain
+- [ ] All pages navigate properly (no 404s)
+- [ ] User registration/login works
+- [ ] Payment system processes test transactions
+- [ ] Customer portal accessible
+- [ ] SSL certificate active (green padlock)
+- [ ] Contact forms working
 - [ ] Mobile responsiveness verified
-- [ ] External service integrations updated
 
 ---
 
-**🎉 Congratulations!** Your FindBrexit Consultants application should now be live at **https://FindBrexitConsultants.co.uk** with full Stripe integration and all features functional.
+Your FindBrexit Consultants platform with complete Stripe integration is ready for production! 🚀
 
----
-
-*Generated on: 2025-08-28*  
-*Author: MiniMax Agent*
+**Live URL**: https://findbrexitconsultants.co.uk (once deployed)
+**Admin Dashboard**: Accessible after deployment for managing consultants and subscriptions
