@@ -82,26 +82,6 @@ jobs:
 
     - name: Deploy to Hostinger via FTP
       if: github.ref == 'refs/heads/master'
-      run: |
-        if [ -z "$HOSTINGER_FTP_SERVER" ]; then
-          echo "⚠️  Hostinger deployment skipped: FTP secrets not configured"
-          echo "To enable Hostinger deployment, add the following secrets to your GitHub repository:"
-          echo "- HOSTINGER_FTP_SERVER"
-          echo "- HOSTINGER_FTP_USERNAME" 
-          echo "- HOSTINGER_FTP_PASSWORD"
-          echo "✅ Build completed successfully - deployment skipped due to missing FTP configuration"
-          exit 0
-        fi
-        
-        echo "✅ FTP secrets configured - proceeding with Hostinger deployment"
-        echo "Using FTP Deploy Action to upload files..."
-      env:
-        HOSTINGER_FTP_SERVER: ${{ secrets.HOSTINGER_FTP_SERVER }}
-        HOSTINGER_FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
-        HOSTINGER_FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
-
-    - name: Execute FTP Deploy
-      if: github.ref == 'refs/heads/master' && env.HOSTINGER_FTP_SERVER != ''
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.HOSTINGER_FTP_SERVER }}
@@ -114,5 +94,3 @@ jobs:
           **/.git*/**
           **/node_modules/**
           .github/**
-      env:
-        HOSTINGER_FTP_SERVER: ${{ secrets.HOSTINGER_FTP_SERVER }}
