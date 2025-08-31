@@ -52,14 +52,37 @@ jobs:
     - name: Install Playwright Browsers
       run: pnpm exec playwright install --with-deps
 
+    - name: Start local server for testing
+      run: |
+        # Start a local server with the built files
+        npx serve -s dist -p 3000 &
+        SERVER_PID=$!
+        echo "SERVER_PID=$SERVER_PID" >> $GITHUB_ENV
+        sleep 5  # Give server time to start
+
     - name: Run Playwright tests
-      run: pnpm exec playwright test
+      run: |
+        if [ -z "$VITE_SUPABASE_URL" ] || [ -z "$VITE_SUPABASE_ANON_KEY" ]; then
+          echo "Supabase environment variables not set, skipping tests that require backend connectivity"
+          pnpm exec playwright test --grep-invert "(auth|consultant-profile|quote-request|review-submission)" --timeout=30000 --workers=2
+        else
+          echo "Supabase environment variables set, running all tests"
+          pnpm exec playwright test --timeout=30000 --workers=2
+        fi
       continue-on-error: true
+      timeout-minutes: 15
       env:
-        PLAYWRIGHT_BASE_URL: https://FindBrexitConsultants.co.uk
+        PLAYWRIGHT_BASE_URL: http://localhost:3000
         VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
         VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
         VITE_STRIPE_PUBLISHABLE_KEY: ${{ secrets.VITE_STRIPE_PUBLISHABLE_KEY }}
+
+    - name: Stop local server
+      if: always()
+      run: |
+        if [ ! -z "$SERVER_PID" ]; then
+          kill $SERVER_PID || true
+        fi
 
     - name: Deploy to Hostinger via FTP
       if: github.ref == 'refs/heads/master'
