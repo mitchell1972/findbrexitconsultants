@@ -64,13 +64,13 @@ jobs:
       run: |
         if [ -z "$VITE_SUPABASE_URL" ] || [ -z "$VITE_SUPABASE_ANON_KEY" ]; then
           echo "Supabase environment variables not set, skipping tests that require backend connectivity"
-          pnpm exec playwright test --grep-invert "(auth|consultant-profile|quote-request|review-submission)" --timeout=30000 --workers=5
+          pnpm exec playwright test --grep-invert "(auth|consultant-profile|quote-request|review-submission)" --timeout=15000 --workers=5 --max-failures=10
         else
           echo "Supabase environment variables set, running all tests"
-          pnpm exec playwright test --timeout=30000 --workers=5
+          pnpm exec playwright test --timeout=15000 --workers=5 --max-failures=10
         fi
       continue-on-error: true
-      timeout-minutes: 15
+      timeout-minutes: 8
       env:
         PLAYWRIGHT_BASE_URL: http://localhost:4000
         VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}

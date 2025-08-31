@@ -62,9 +62,9 @@ jobs:
         sleep 5  # Give server time to start
       
     - name: Run Playwright tests
-      run: pnpm exec playwright test --timeout=30000 --workers=5
+      run: pnpm exec playwright test --timeout=15000 --workers=5 --max-failures=10
       continue-on-error: true
-      timeout-minutes: 15
+      timeout-minutes: 8
       env:
         PLAYWRIGHT_BASE_URL: http://localhost:4000
         VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
