@@ -270,9 +270,10 @@ export function PricingPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {pricingPlans.map((plan) => {
             const IconComponent = plan.icon
-            const annualPrice = plan.id === 'free' ? '£0' 
+            const annualPrice = plan.id === 'starter' ? '£23'
               : plan.id === 'professional' ? '£79'
-              : '£239'
+              : plan.id === 'enterprise' ? '£199'
+              : '£0'
               
             const displayPrice = billingPeriod === 'annual' && plan.id !== 'free' ? annualPrice : plan.price
             const displayPeriod = billingPeriod === 'annual' && plan.id !== 'free' ? 'per month (billed annually)' : plan.period
@@ -306,7 +307,7 @@ export function PricingPage() {
                       <div className="text-sm text-gray-500">{displayPeriod}</div>
                       {billingPeriod === 'annual' && plan.id !== 'free' && (
                         <div className="text-sm text-green-600 font-medium mt-1">
-                          Save £{plan.id === 'professional' ? '240' : '720'}/year
+                          Save £{plan.id === 'starter' ? '72' : plan.id === 'professional' ? '240' : '600'}/year
                         </div>
                       )}
                       <div className="flex items-center justify-center space-x-1 mt-2">
