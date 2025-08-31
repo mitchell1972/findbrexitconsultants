@@ -82,9 +82,19 @@ jobs:
 
     - name: Deploy to Hostinger via FTP
       if: github.ref == 'refs/heads/master'
+      run: |
+        # Extract hostname from FTP URL (remove ftp:// prefix if present)
+        FTP_HOST=$(echo "${{ secrets.HOSTINGER_FTP_SERVER }}" | sed 's|^ftp://||')
+        echo "Deploying to FTP server: $FTP_HOST"
+        echo "Using username: ${{ secrets.HOSTINGER_FTP_USERNAME }}"
+        echo "Local directory: ./dist/"
+        echo "Remote directory: ./public_html/"
+      
+    - name: Execute FTP Deploy
+      if: github.ref == 'refs/heads/master'
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ${{ secrets.HOSTINGER_FTP_SERVER }}
+        server: 82.29.157.106
         username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
         password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
         local-dir: ./dist/
