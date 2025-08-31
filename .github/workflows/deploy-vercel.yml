@@ -55,18 +55,18 @@ jobs:
 
     - name: Start local server for testing
       run: |
-        # Start a local server with the built files
-        npx serve -s dist -p 3000 &
+        # Start a local server with the built files on port 4000 to avoid conflicts
+        npx serve -s dist -p 4000 &
         SERVER_PID=$!
         echo "SERVER_PID=$SERVER_PID" >> $GITHUB_ENV
         sleep 5  # Give server time to start
       
     - name: Run Playwright tests
-      run: pnpm exec playwright test --timeout=30000 --workers=2
+      run: pnpm exec playwright test --timeout=30000 --workers=5
       continue-on-error: true
       timeout-minutes: 15
       env:
-        PLAYWRIGHT_BASE_URL: http://localhost:3000
+        PLAYWRIGHT_BASE_URL: http://localhost:4000
         VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
         VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
         VITE_STRIPE_PUBLISHABLE_KEY: ${{ secrets.VITE_STRIPE_PUBLISHABLE_KEY }}

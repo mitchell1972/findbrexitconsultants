@@ -54,8 +54,8 @@ jobs:
 
     - name: Start local server for testing
       run: |
-        # Start a local server with the built files
-        npx serve -s dist -p 3000 &
+        # Start a local server with the built files on a different port to avoid conflicts
+        npx serve -s dist -p 4000 &
         SERVER_PID=$!
         echo "SERVER_PID=$SERVER_PID" >> $GITHUB_ENV
         sleep 5  # Give server time to start
@@ -64,15 +64,15 @@ jobs:
       run: |
         if [ -z "$VITE_SUPABASE_URL" ] || [ -z "$VITE_SUPABASE_ANON_KEY" ]; then
           echo "Supabase environment variables not set, skipping tests that require backend connectivity"
-          pnpm exec playwright test --grep-invert "(auth|consultant-profile|quote-request|review-submission)" --timeout=30000 --workers=2
+          pnpm exec playwright test --grep-invert "(auth|consultant-profile|quote-request|review-submission)" --timeout=30000 --workers=5
         else
           echo "Supabase environment variables set, running all tests"
-          pnpm exec playwright test --timeout=30000 --workers=2
+          pnpm exec playwright test --timeout=30000 --workers=5
         fi
       continue-on-error: true
       timeout-minutes: 15
       env:
-        PLAYWRIGHT_BASE_URL: http://localhost:3000
+        PLAYWRIGHT_BASE_URL: http://localhost:4000
         VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
         VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
         VITE_STRIPE_PUBLISHABLE_KEY: ${{ secrets.VITE_STRIPE_PUBLISHABLE_KEY }}
@@ -86,6 +86,24 @@ jobs:
 
     - name: Deploy to Hostinger via FTP
       if: github.ref == 'refs/heads/master'
+      run: |
+        if [ -z "$HOSTINGER_FTP_SERVER" ]; then
+          echo "⚠️  Hostinger deployment skipped: FTP secrets not configured"
+          echo "To enable Hostinger deployment, add the following secrets to your GitHub repository:"
+          echo "- HOSTINGER_FTP_SERVER"
+          echo "- HOSTINGER_FTP_USERNAME" 
+          echo "- HOSTINGER_FTP_PASSWORD"
+          exit 0
+        fi
+        
+        echo "Deploying to Hostinger via FTP..."
+      env:
+        HOSTINGER_FTP_SERVER: ${{ secrets.HOSTINGER_FTP_SERVER }}
+        HOSTINGER_FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
+        HOSTINGER_FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+
+    - name: FTP Deploy Action
+      if: github.ref == 'refs/heads/master' && env.HOSTINGER_FTP_SERVER != ''
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.HOSTINGER_FTP_SERVER }}
