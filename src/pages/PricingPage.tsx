@@ -273,7 +273,7 @@ export function PricingPage() {
             const annualPrice = plan.id === 'starter' ? '£23'
               : plan.id === 'professional' ? '£79'
               : plan.id === 'enterprise' ? '£199'
-              : '£0'
+              : plan.price
               
             const displayPrice = billingPeriod === 'annual' && plan.id !== 'free' ? annualPrice : plan.price
             const displayPeriod = billingPeriod === 'annual' && plan.id !== 'free' ? 'per month (billed annually)' : plan.period
