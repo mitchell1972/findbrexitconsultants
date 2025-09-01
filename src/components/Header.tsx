@@ -41,7 +41,7 @@ export function Header({ onSearchSubmit }: HeaderProps) {
               <div className="w-8 h-8 bg-[#003366] rounded flex items-center justify-center">
                 <span className="text-white font-bold text-sm">FB</span>
               </div>
-              <span className="font-bold text-xl text-[#003366]">FindBrexitConsultants.co.uk</span>
+              <span className="font-bold text-xl text-[#003366]">FindBrexitConsultants.com</span>
             </Link>
           </div>
 

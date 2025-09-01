@@ -43,7 +43,7 @@ export function TermsPage() {
             
             <h2 className="text-2xl font-bold text-[#003366] mb-6">Overview</h2>
             <p className="text-gray-700 mb-6">
-              FindBrexitConsultants.co.uk is a directory platform connecting UK businesses with Brexit compliance consultants. 
+              FindBrexitConsultants.com is a directory platform connecting UK businesses with Brexit compliance consultants.
               Our detailed terms of service will cover:
             </p>
             

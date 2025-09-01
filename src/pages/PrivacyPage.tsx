@@ -42,7 +42,7 @@ export function PrivacyPage() {
             
             <h2 className="text-2xl font-bold text-[#003366] mb-6">Our Commitment to Privacy</h2>
             <p className="text-gray-700 mb-6">
-              At FindBrexitConsultants.co.uk, we take your privacy seriously. We are committed to protecting 
+              At FindBrexitConsultants.com, we take your privacy seriously. We are committed to protecting
               your personal information and being transparent about how we collect, use, and share your data.
             </p>
             

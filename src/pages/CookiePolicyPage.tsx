@@ -14,7 +14,7 @@ export function CookiePolicyPage() {
               <h1 className="text-4xl font-bold text-white">Cookie Policy</h1>
             </div>
             <p className="text-xl text-blue-100 leading-relaxed">
-              Learn about how FindBrexitConsultants.co.uk uses cookies to enhance your browsing experience
+              Learn about how FindBrexitConsultants.com uses cookies to enhance your browsing experience
             </p>
             <p className="text-blue-200 mt-2">
               Last updated: August 27, 2025
@@ -224,7 +224,7 @@ export function CookiePolicyPage() {
                   If you have any questions about our Cookie Policy or how we use cookies, please don't hesitate to contact us:
                 </p>
                 <div className="space-y-2 text-gray-700">
-                  <p><strong>Email:</strong> privacy@FindBrexitConsultants.co.uk</p>
+                  <p><strong>Email:</strong> privacy@findbrexitconsultants.com</p>
                   <p><strong>Phone:</strong> +44 20 1234 5678</p>
                   <p><strong>Address:</strong> FindBrexitConsultants Ltd, 123 Business Street, London, UK</p>
                 </div>

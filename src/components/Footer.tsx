@@ -54,7 +54,7 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-[#FFD700]" />
-                <span className="text-sm">info@FindBrexitConsultants.co.uk</span>
+                <span className="text-sm">info@findbrexitconsultants.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-[#FFD700]" />
@@ -170,7 +170,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="text-sm text-blue-100">
-              © {currentYear} FindBrexitConsultants.co.uk. All rights reserved.
+              © {currentYear} FindBrexitConsultants.com. All rights reserved.
             </div>
             
             {/* Legal links */}
