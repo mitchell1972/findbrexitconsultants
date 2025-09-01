@@ -17,7 +17,9 @@ CORS (Cross-Origin Resource Sharing) controls which domains can access your Supa
 ### Step 3: Navigate to API Settings
 1. In the left sidebar, click on "Settings" (gear icon)
 2. Click on "API" in the settings menu
-3. Scroll down to find the "CORS Settings" section
+3. Scroll down to find the "CORS Settings" section (NOT Edge Functions CORS)
+
+**Important**: You want the main API CORS settings, not the Edge Functions CORS that you might see first.
 
 ### Step 4: Update CORS Settings
 In the CORS settings section, you'll see a text area with allowed origins. You need to add your domain:
