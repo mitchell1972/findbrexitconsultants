@@ -1,4 +1,4 @@
-# Vercel Deployment Guide for FindBrexitConsultants.co.uk
+# Vercel Deployment Guide for FindBrexitConsultants.com
 
 ## Prerequisites
 - Vercel account (you mentioned you already have one)
@@ -8,7 +8,7 @@
 
 ### Step 1: Prepare the Project
 The project is already configured with:
-- ✅ Domain set to FindBrexitConsultants.co.uk in all configuration files
+- ✅ Domain set to FindBrexitConsultants.com in all configuration files
 - ✅ Vercel configuration file (`vercel.json`) created
 - ✅ Built files ready in the `dist` folder
 - ✅ All meta tags, sitemap, and robots.txt configured with correct domain
@@ -49,13 +49,13 @@ The project is already configured with:
 1. **Add Custom Domain**:
    - In your Vercel dashboard, go to your project
    - Navigate to "Settings" → "Domains"
-   - Add `FindBrexitConsultants.co.uk`
-   - Add `www.FindBrexitConsultants.co.uk` (recommended for SEO)
+   - Add `FindBrexitConsultants.com`
+   - Add `www.FindBrexitConsultants.com` (recommended for SEO)
 
 2. **Update DNS Settings**:
    You'll need to update your domain's DNS settings with your domain provider:
    
-   **For Apex Domain (FindBrexitConsultants.co.uk):**
+   **For Apex Domain (FindBrexitConsultants.com):**
    - Type: `A`
    - Name: `@` or leave blank
    - Value: `76.76.19.61` (Vercel's IP)
@@ -106,7 +106,7 @@ After deployment, verify:
 ## Deployment Status
 
 ✅ **Project Configuration**: Complete
-✅ **Domain Configuration**: Complete (FindBrexitConsultants.co.uk)
+✅ **Domain Configuration**: Complete (FindBrexitConsultants.com)
 ✅ **Build Files**: Ready
 ✅ **Vercel Configuration**: Created
 ✅ **Environment Variables**: Identified (need to be added in Vercel dashboard)

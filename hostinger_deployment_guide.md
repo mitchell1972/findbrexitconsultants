@@ -1,12 +1,12 @@
 # Complete Guide: Moving FindBrexit Consultants to Your Hostinger Domain
 
 ## 🎯 Overview
-This guide will help you deploy your FindBrexit Consultants platform with complete Stripe integration to your Hostinger hosting account at **findbrexitconsultants.co.uk**.
+This guide will help you deploy your FindBrexit Consultants platform with complete Stripe integration to your Hostinger hosting account at **findbrexitconsultants.com**.
 
 ## 📋 Prerequisites
 
 ### What You Need:
-- ✅ Hostinger hosting account with domain **findbrexitconsultants.co.uk**
+- ✅ Hostinger hosting account with domain **findbrexitconsultants.com**
 - ✅ FTP/File Manager access to your Hostinger account
 - ✅ The built application files (already prepared)
 - ✅ Supabase project with Stripe integration (already configured)
@@ -59,7 +59,7 @@ The application is already built for production with Hostinger-optimized setting
 ### Step 4: Configure Domain & SSL
 
 1. **Domain Settings**:
-   - Ensure **findbrexitconsultants.co.uk** points to your Hostinger servers
+   - Ensure **findbrexitconsultants.com** points to your Hostinger servers
    - DNS should be managed by Hostinger nameservers
 
 2. **Enable SSL Certificate**:
@@ -75,10 +75,10 @@ The application is already built for production with Hostinger-optimized setting
 2. **Update CORS Settings**:
    - Navigate to: Settings → API
    - In "CORS Settings", add your domain:
-   ```
-   https://findbrexitconsultants.co.uk
-   https://*.findbrexitconsultants.co.uk
-   ```
+```
+VITE_SITE_URL=https://findbrexitconsultants.com
+VITE_SUPABASE_URL=https://zjfilhbczaquokqlcoej.supabase.co
+```
 
 ### Step 6: Update Stripe Webhook URL
 
@@ -99,7 +99,7 @@ The application is already built for production with Hostinger-optimized setting
 ### Step 7: Test Deployment
 
 #### Critical Tests to Perform:
-1. **Website Loading**: Visit https://findbrexitconsultants.co.uk
+1. **Website Loading**: Visit https://findbrexitconsultants.com
 2. **React Routing**: Test navigation (should work without 404 errors)
 3. **Authentication**: Test sign up/sign in functionality
 4. **Payment System**: 
@@ -127,7 +127,7 @@ Your site includes an optimized `.htaccess` file for:
 ### Environment Variables
 Production build uses:
 ```
-VITE_SITE_URL=https://findbrexitconsultants.co.uk
+VITE_SITE_URL=https://findbrexitconsultants.com
 VITE_SUPABASE_URL=https://zjfilhbczaquokqlcoej.supabase.co
 VITE_SUPABASE_ANON_KEY=[your-key]
 BUILD_MODE=prod
@@ -192,5 +192,5 @@ Before announcing your site:
 
 Your FindBrexit Consultants platform with complete Stripe integration is ready for production! 🚀
 
-**Live URL**: https://findbrexitconsultants.co.uk (once deployed)
+**Live URL**: https://findbrexitconsultants.com (once deployed)
 **Admin Dashboard**: Accessible after deployment for managing consultants and subscriptions
